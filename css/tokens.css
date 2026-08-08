@@ -1,0 +1,99 @@
+/* Design tokens — Szydełkomania_amigurumi */
+:root {
+  /* Palette */
+  --cream: #f7f0e5;
+  --cream-deep: #ebe2d3;
+  --espresso: #3b2a20;
+  --espresso-soft: #4a372c;
+  --ink: #2a1f17;
+  /* Brand accent: rgba(80, 147, 139, 1) */
+  --rose: #50938b;
+  --rose-deep: #3f7a73;
+  --terracotta: #3a6f69;
+  --terracotta-deep: #2f5c57;
+  --sage: #7eb5ad;
+  --taupe: #8a7a66;
+  --paper: #ffffff;
+  --placeholder: #e8dfd3;
+
+  /* Semantic */
+  --bg: var(--cream);
+  --bg-dark: var(--espresso);
+  --text: var(--ink);
+  --text-muted: var(--taupe);
+  --text-on-dark: var(--cream);
+  --text-on-dark-muted: rgba(247, 240, 229, 0.72);
+  --accent: var(--rose);
+  --accent-hover: var(--terracotta);
+  --surface: var(--paper);
+  --border: rgba(42, 31, 23, 0.12);
+  --border-dark: rgba(247, 240, 229, 0.16);
+
+  /* Typography */
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-signature: "Caveat", "Segoe Script", cursive;
+
+  --text-hero: clamp(2.75rem, 7.5vw, 7rem);
+  --text-h2: clamp(2rem, 4.5vw, 3.75rem);
+  --text-h3: clamp(1.25rem, 2vw, 1.75rem);
+  --text-body: clamp(1rem, 0.95rem + 0.2vw, 1.125rem);
+  --text-small: 0.875rem;
+  --text-eyebrow: 0.75rem;
+
+  --leading-tight: 1.1;
+  --leading-snug: 1.25;
+  --leading-body: 1.65;
+  --tracking-tight: -0.03em;
+  --tracking-wide: 0.12em;
+
+  /* Spacing scale (4/8 rhythm) */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --space-10: 8rem;
+
+  --section-pad: clamp(4rem, 10vw, 8rem);
+  --container: min(1120px, calc(100% - 2.5rem));
+  --container-wide: min(1280px, calc(100% - 2rem));
+
+  /* Radii */
+  --radius-sm: 4px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(43, 26, 17, 0.06);
+  --shadow-md: 0 1px 2px rgba(43, 26, 17, 0.06), 0 8px 24px rgba(43, 26, 17, 0.04);
+  --shadow-lg: 0 4px 12px rgba(43, 26, 17, 0.08), 0 16px 40px rgba(43, 26, 17, 0.08);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 150ms;
+  --dur-med: 280ms;
+  --dur-slow: 500ms;
+
+  /* Z-index */
+  --z-nav: 100;
+  --z-lightbox: 1000;
+  --z-toast: 1100;
+
+  /* Theme */
+  color-scheme: light;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-fast: 0ms;
+    --dur-med: 0ms;
+    --dur-slow: 0ms;
+  }
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Szydełkomania">
+  <rect width="64" height="64" rx="14" fill="#50938B"/>
+  <circle cx="32" cy="30" r="14" fill="none" stroke="#F7F0E5" stroke-width="3.5"/>
+  <circle cx="32" cy="30" r="5" fill="#F7F0E5"/>
+  <path d="M32 44v10" stroke="#F7F0E5" stroke-width="3" stroke-linecap="round"/>
+  <path d="M28 52h8" stroke="#EBE2D3" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
