@@ -33,7 +33,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@400;500;600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/tokens.css" />
@@ -50,7 +50,8 @@
     "image": "https://szydelkomania-amigurumi.pl/assets/images/og-hero.jpg",
     "priceRange": "$$",
     "sameAs": [
-      "https://www.facebook.com/szydelkomania.amigurumi/"
+      "https://www.facebook.com/szydelkomania.amigurumi/",
+      "https://www.instagram.com/szydelkomania_amigurumi/"
     ],
     "makesOffer": [
       { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Torebki szydełkowe" } },
@@ -326,7 +327,7 @@
           </a>
 
           <a class="category-card reveal" href="oferta/zestawy-dla-dzieci.html">
-            <figure class="category-card__media media-slot">
+            <figure class="category-card__media media-slot" data-auto-img="assets/images/cat-zestawy.jpg" data-auto-alt="Zestawy szydełkowe dla dzieci" data-auto-width="800" data-auto-height="600">
               <div class="media-slot__placeholder" style="aspect-ratio: 4 / 3;" role="img" aria-label="Placeholder — zestawy dla dzieci">
                 <svg viewBox="0 0 4 3" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="4" height="3" fill="#E8DFD3"/></svg>
                 <span class="media-slot__label">cat-zestawy.jpg</span>
@@ -340,7 +341,7 @@
           </a>
 
           <a class="category-card reveal" href="oferta/dodatki.html">
-            <figure class="category-card__media media-slot">
+            <figure class="category-card__media media-slot" data-auto-img="assets/images/cat-dodatki.jpg" data-auto-alt="Szydełkowe dodatki handmade" data-auto-width="800" data-auto-height="600">
               <div class="media-slot__placeholder" style="aspect-ratio: 4 / 3;" role="img" aria-label="Placeholder — dodatki">
                 <svg viewBox="0 0 4 3" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="4" height="3" fill="#E8DFD3"/></svg>
                 <span class="media-slot__label">cat-dodatki.jpg</span>
@@ -354,7 +355,7 @@
           </a>
 
           <a class="category-card reveal" href="oferta/personalizowane-zwierzaki.html">
-            <figure class="category-card__media media-slot">
+            <figure class="category-card__media media-slot" data-auto-img="assets/images/cat-zwierzaki.jpg" data-auto-alt="Personalizowane zwierzaki amigurumi" data-auto-width="800" data-auto-height="600">
               <div class="media-slot__placeholder" style="aspect-ratio: 4 / 3;" role="img" aria-label="Placeholder — personalizowane zwierzaki">
                 <svg viewBox="0 0 4 3" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="4" height="3" fill="#E8DFD3"/></svg>
                 <span class="media-slot__label">cat-zwierzaki.jpg</span>
@@ -368,7 +369,7 @@
           </a>
 
           <a class="category-card reveal" href="oferta/zabawki-dla-zwierzat.html">
-            <figure class="category-card__media media-slot">
+            <figure class="category-card__media media-slot" data-auto-img="assets/images/cat-zabawki.jpg" data-auto-alt="Zabawki szydełkowe dla zwierząt" data-auto-width="800" data-auto-height="600">
               <div class="media-slot__placeholder" style="aspect-ratio: 4 / 3;" role="img" aria-label="Placeholder — zabawki dla zwierząt">
                 <svg viewBox="0 0 4 3" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="4" height="3" fill="#E8DFD3"/></svg>
                 <span class="media-slot__label">cat-zabawki.jpg</span>
@@ -382,7 +383,7 @@
           </a>
 
           <a class="category-card reveal" href="oferta/dekoracje.html">
-            <figure class="category-card__media media-slot">
+            <figure class="category-card__media media-slot" data-auto-img="assets/images/cat-dekoracje.jpg" data-auto-alt="Dekoracje szydełkowe handmade" data-auto-width="800" data-auto-height="600">
               <div class="media-slot__placeholder" style="aspect-ratio: 4 / 3;" role="img" aria-label="Placeholder — dekoracje">
                 <svg viewBox="0 0 4 3" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="4" height="3" fill="#E8DFD3"/></svg>
                 <span class="media-slot__label">cat-dekoracje.jpg</span>
@@ -797,29 +798,16 @@
           </p>
 
           <ul class="contact__channels">
-            <!-- TODO: replace with real links -->
             <li>
-              <a class="contact__channel" href="#" aria-label="Facebook Szydełkomania">
+              <a class="contact__channel" href="https://www.facebook.com/szydelkomania.amigurumi/" target="_blank" rel="noopener noreferrer" aria-label="Facebook Szydełkomania">
                 <img src="assets/icons/facebook.svg" alt="" width="20" height="20" />
                 <span>Facebook</span>
               </a>
             </li>
             <li>
-              <a class="contact__channel" href="#" aria-label="Instagram Szydełkomania">
+              <a class="contact__channel" href="https://www.instagram.com/szydelkomania_amigurumi/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Szydełkomania">
                 <img src="assets/icons/instagram.svg" alt="" width="20" height="20" />
                 <span>Instagram</span>
-              </a>
-            </li>
-            <li>
-              <a class="contact__channel" href="mailto:#" aria-label="Napisz e-mail">
-                <img src="assets/icons/mail.svg" alt="" width="20" height="20" />
-                <span>E-mail</span>
-              </a>
-            </li>
-            <li>
-              <a class="contact__channel" href="tel:#" aria-label="Zadzwoń">
-                <img src="assets/icons/phone.svg" alt="" width="20" height="20" />
-                <span>Telefon</span>
               </a>
             </li>
           </ul>
@@ -911,15 +899,14 @@
       <div class="footer__nav">
         <p class="footer__heading">Social</p>
         <ul class="footer__social">
-          <!-- TODO: replace href -->
           <li>
-            <a href="#" aria-label="Facebook">
+            <a href="https://www.facebook.com/szydelkomania.amigurumi/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
               <img src="assets/icons/facebook.svg" alt="" width="20" height="20" />
               Facebook
             </a>
           </li>
           <li>
-            <a href="#" aria-label="Instagram">
+            <a href="https://www.instagram.com/szydelkomania_amigurumi/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <img src="assets/icons/instagram.svg" alt="" width="20" height="20" />
               Instagram
             </a>
@@ -942,6 +929,7 @@
   </footer>
 
   <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/media-loader.js"></script>
   <script type="module" src="js/animations.js"></script>
 </body>
 </html>

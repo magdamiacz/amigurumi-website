@@ -1,0 +1,7 @@
+﻿{
+  "name": "szydelkomania-amigurumi",
+  "private": true,
+  "scripts": {
+    "generate:oferta": "node scripts/generate-oferta.js"
+  }
+}

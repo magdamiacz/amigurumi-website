@@ -1,51 +1,66 @@
-# Sloty zdjęć — Szydełkomania_amigurumi
+# Zdjęcia — Szydełkomania_amigurumi
 
-Wrzucaj pliki **o dokładnie tych nazwach** do tego folderu.
-Po wrzuceniu podmień placeholdery w `index.html` na prawdziwe `<img>`.
+## Kategorie oferty (automatycznie na stronie)
 
-## Jak podmienić placeholder na zdjęcie
+Wrzuć zdjęcia do folderu kategorii:
 
-Przykład (hero):
-
-**Było:**
-```html
-<div class="media-slot__placeholder" style="aspect-ratio: 4 / 5;" …>
-  <svg>…</svg>
-  <span class="media-slot__label">…</span>
-</div>
+```
+assets/images/oferta/{nazwa-kategorii}/01.jpg
+assets/images/oferta/{nazwa-kategorii}/02.jpg
+…
 ```
 
-**Ma być:**
-```html
-<img
-  src="assets/images/hero-maskotka.jpg"
-  alt="Ręcznie robiona maskotka amigurumi — flagowa realizacja Szydełkomania"
-  width="960"
-  height="1200"
-  decoding="async"
-  fetchpriority="high"
-/>
-```
+Foldery (już utworzone):
 
-Dla galerii: zostaw `data-lightbox-src` i dodaj wewnątrz buttona prawdziwy `<img>` zamiast placeholdera.
+| Folder | Strona |
+|--------|--------|
+| `oferta/torebki/` | Torebki |
+| `oferta/plecaki/` | Plecaki |
+| `oferta/maskotki/` | Maskotki |
+| `oferta/zestawy-dla-dzieci/` | Zestawy dla dzieci |
+| `oferta/dodatki/` | Dodatki |
+| `oferta/personalizowane-zwierzaki/` | Personalizowane zwierzaki |
+| `oferta/zabawki-dla-zwierzat/` | Zabawki dla zwierząt |
+| `oferta/dekoracje/` | Dekoracje |
+| `oferta/kubeczki/` | Kubeczki |
+
+**Nazwy:** `01.jpg`, `02.webp`, `03.png`… (kolejne numery).  
+Po wrzuceniu plików odśwież stronę — zdjęcia pojawią się same (bez edycji HTML).
+
+Opcjonalnie możesz przebudować HTML:
+
+```bash
+node scripts/generate-oferta.js
+```
 
 ---
 
-## Lista plików
+## Strona główna — karty oferty
 
-| Plik | Wymiary (px) | Gdzie | Uwagi |
-|------|--------------|-------|-------|
-| `hero-maskotka.jpg` | 960 × 1200 | Hero (prawa kolumna) | Portret, jasne tło lub studio |
-| `about-tworczyni.jpg` | 800 × 1000 | O mnie | Zdjęcie twórczyni / pracowni |
-| `cat-maskotki.jpg` | 800 × 600 | Oferta — Maskotki | |
-| `cat-torebki.jpg` | 800 × 600 | Oferta — Torebki | |
-| `cat-opaski.jpg` | 800 × 600 | Oferta — Opaski | |
-| `cat-breloczki.jpg` | 800 × 600 | Oferta — Breloczki | |
-| `gallery-01.jpg` … `gallery-12.jpg` | min. 800 px dł. bok | Galeria | Różne proporcje OK |
-| `og-hero.jpg` | 1200 × 630 | Open Graph / social share | |
+| Plik | Kategoria |
+|------|-----------|
+| `cat-zestawy.jpg` | Zestawy dla dzieci |
+| `cat-dodatki.jpg` | Dodatki |
+| `cat-zwierzaki.jpg` | Personalizowane zwierzaki |
+| `cat-zabawki.jpg` | Zabawki dla zwierząt |
+| `cat-dekoracje.jpg` | Dekoracje |
+| `cat-maskotki.jpg` | Maskotki *(już używane)* |
+| `cat-plecaki.jpg` | Plecaki *(już używane)* |
+
+## Galeria na stronie głównej
+
+`gallery-01.jpg` … `gallery-12.jpg` — po wrzuceniu pojawią się automatycznie.
+
+## Inne
+
+| Plik | Gdzie |
+|------|-------|
+| `image-1.jpg` | Hero / torebki |
+| `about-tworczyni.jpg` | O mnie |
+| `og-hero.jpg` | Open Graph |
 
 ## Format
 
-- Preferuj **WebP** lub **JPEG** (jakość 80–85).
-- Nazwy bez polskich znaków.
-- Optymalizuj (np. Squoosh / TinyPNG) — cel: < 200 KB na zdjęcie poniżej foldu, hero < 350 KB.
+- JPEG / WebP / PNG, jakość ok. 80–85
+- Nazwy bez polskich znaków
+- Cel: poniżej 200 KB (below the fold), hero poniżej 350 KB

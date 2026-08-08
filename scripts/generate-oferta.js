@@ -1,11 +1,14 @@
 const fs = require("fs");
 const path = require("path");
 
+const FB = "https://www.facebook.com/szydelkomania.amigurumi/";
+const IG = "https://www.instagram.com/szydelkomania_amigurumi/";
+const IMAGE_EXTS = new Set([".jpg", ".jpeg", ".webp", ".png"]);
+
 const cats = [
   {
     slug: "torebki",
     title: "Torebki",
-    desc: "Ręcznie szydełkowane torebki z bawełnianej przędzy — lekkie, wytrzymałe i dopasowane do Twojego stylu.",
     short: "Handmade torebki z polskiej bawełny — na zamówienie, w Twoim kolorze.",
     products: [
       { name: "Torebka mini", price: "od 140 zł" },
@@ -19,7 +22,6 @@ const cats = [
   {
     slug: "plecaki",
     title: "Plecaki",
-    desc: "Szydełkowe plecaki na co dzień — miękkie, praktyczne i niepowtarzalne, także dla dzieci.",
     short: "Szydełkowe plecaki handmade — wygodne, miękkie i personalizowane.",
     products: [
       { name: "Plecak dziecięcy", price: "od 190 zł" },
@@ -33,7 +35,6 @@ const cats = [
   {
     slug: "maskotki",
     title: "Maskotki",
-    desc: "Klasyczne maskotki amigurumi szydełkowane z sercem — misie, króliki, laleczki i inne postaci.",
     short: "Maskotki amigurumi na zamówienie — unikatowe historie z szydełka.",
     products: [
       { name: "Miś klasyczny", price: "od 120 zł" },
@@ -47,7 +48,6 @@ const cats = [
   {
     slug: "zestawy-dla-dzieci",
     title: "Zestawy dla dzieci",
-    desc: "Kompletne zestawy prezentowe: maskotka, zawieszka i drobne akcesoria — gotowe na wyjątkową okazję.",
     short: "Prezentowe zestawy szydełkowe dla dzieci — kompletne i spójne kolorystycznie.",
     products: [
       { name: "Zestaw roczek", price: "od 220 zł" },
@@ -61,7 +61,6 @@ const cats = [
   {
     slug: "dodatki",
     title: "Dodatki",
-    desc: "Opaski, breloczki, zawieszki i inne drobne akcesoria na szydełku — małe rzeczy z dużym charakterem.",
     short: "Szydełkowe dodatki: opaski, breloczki, zawieszki i drobne akcesoria.",
     products: [
       { name: "Opaska warkocz", price: "od 55 zł" },
@@ -75,7 +74,6 @@ const cats = [
   {
     slug: "personalizowane-zwierzaki",
     title: "Personalizowane zwierzaki",
-    desc: "Maskotka na podstawie zdjęcia Twojego pupila — kolory, rasa i charakterystyczne detale.",
     short: "Amigurumi pupila ze zdjęcia — personalizowane zwierzaki na zamówienie.",
     products: [
       { name: "Piesek ze zdjęcia", price: "od 180 zł" },
@@ -89,7 +87,6 @@ const cats = [
   {
     slug: "zabawki-dla-zwierzat",
     title: "Zabawki dla zwierząt",
-    desc: "Bezpieczne, szydełkowane zabawki dla psów i kotów — solidne sploty i sprawdzone materiały.",
     short: "Szydełkowe zabawki dla psów i kotów — handmade i na zamówienie.",
     products: [
       { name: "Piłka dla kota", price: "od 40 zł" },
@@ -103,7 +100,6 @@ const cats = [
   {
     slug: "dekoracje",
     title: "Dekoracje",
-    desc: "Dekoracje do domu i okazji specjalnych: girlandy, zawieszki, sezonowe ozdoby.",
     short: "Szydełkowe dekoracje do domu i okazji — unikatowe ozdoby handmade.",
     products: [
       { name: "Girlanda kwiatowa", price: "od 90 zł" },
@@ -117,7 +113,6 @@ const cats = [
   {
     slug: "kubeczki",
     title: "Kubeczki",
-    desc: "Ocieplacze i osłonki na kubki — praktyczne, miękkie i w kolorach dopasowanych do Ciebie.",
     short: "Szydełkowe ocieplacze i akcesoria do kubków — handmade na zamówienie.",
     products: [
       { name: "Ocieplacz klasyczny", price: "od 45 zł" },
@@ -130,31 +125,77 @@ const cats = [
   },
 ];
 
-function productCards(c) {
-  return c.products
-    .map((p, i) => {
-      const n = String(i + 1).padStart(2, "0");
-      const priceLabel = p.price === "wycena" ? "wycena" : p.price;
-      const priceFull = p.price === "wycena" ? "wycena indywidualna" : p.price;
-      // Real photos when available (hero bag as first tote sample)
-      let media = `
+const root = path.join(__dirname, "..");
+const imagesRoot = path.join(root, "assets", "images", "oferta");
+
+function ensureCategoryFolders() {
+  fs.mkdirSync(imagesRoot, { recursive: true });
+  for (const c of cats) {
+    fs.mkdirSync(path.join(imagesRoot, c.slug), { recursive: true });
+  }
+}
+
+/** List numbered images 01.*, 02.* … in category folder */
+function listCategoryImages(slug) {
+  const dir = path.join(imagesRoot, slug);
+  if (!fs.existsSync(dir)) return [];
+  const byIndex = new Map();
+  for (const file of fs.readdirSync(dir)) {
+    const ext = path.extname(file).toLowerCase();
+    if (!IMAGE_EXTS.has(ext)) continue;
+    const base = path.basename(file, ext);
+    const m = /^(\d{1,2})$/.exec(base);
+    if (!m) continue;
+    const index = Number(m[1]);
+    if (!byIndex.has(index)) byIndex.set(index, file);
+  }
+  return [...byIndex.entries()]
+    .sort((a, b) => a[0] - b[0])
+    .map(([index, file]) => ({
+      index,
+      file,
+      src: `../assets/images/oferta/${slug}/${file}`,
+    }));
+}
+
+function mediaForProduct(c, p, i, folderImages) {
+  const n = String(i + 1).padStart(2, "0");
+  const fromFolder = folderImages.find((img) => img.index === i + 1);
+  if (fromFolder) {
+    return `<img src="${fromFolder.src}" alt="${p.name}" width="600" height="600" loading="lazy" />`;
+  }
+
+  // Legacy fallbacks for existing root-level photos
+  if (c.slug === "torebki" && i === 0) {
+    return `<img src="../assets/images/image-1.jpg" alt="${p.name}" width="600" height="600" loading="lazy" />`;
+  }
+  if (c.slug === "plecaki" && i === 0) {
+    return `<img src="../assets/images/cat-plecaki.jpg" alt="${p.name}" width="600" height="600" loading="lazy" />`;
+  }
+  if (c.slug === "maskotki" && i === 0) {
+    return `<img src="../assets/images/cat-maskotki.jpg" alt="${p.name}" width="600" height="600" loading="lazy" />`;
+  }
+  if (c.slug === "kubeczki" && i === 0) {
+    return `<img src="../assets/images/about-tworczyni.jpg" alt="${p.name}" width="600" height="600" loading="lazy" />`;
+  }
+
+  return `
                 <div class="media-slot__placeholder" style="aspect-ratio: 1 / 1;" role="img" aria-label="${p.name}">
                   <svg viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="1" height="1" fill="#E4D9CB"/></svg>
-                  <span class="media-slot__label">${c.slug}-${n}.jpg</span>
+                  <span class="media-slot__label">${c.slug}/${n}.jpg</span>
                 </div>`;
-      if (c.slug === "torebki" && i === 0) {
-        media = `<img src="../assets/images/image-1.jpg" alt="${p.name}" width="600" height="600" loading="lazy" />`;
-      } else if (c.slug === "plecaki" && i === 0) {
-        media = `<img src="../assets/images/cat-plecaki.jpg" alt="${p.name}" width="600" height="600" loading="lazy" />`;
-      } else if (c.slug === "maskotki" && i === 0) {
-        media = `<img src="../assets/images/cat-maskotki.jpg" alt="${p.name}" width="600" height="600" loading="lazy" />`;
-      } else if (c.slug === "kubeczki" && i === 0) {
-        media = `<img src="../assets/images/about-tworczyni.jpg" alt="${p.name}" width="600" height="600" loading="lazy" />`;
-      }
+}
+
+function productCards(c, folderImages) {
+  return c.products
+    .map((p, i) => {
+      const priceLabel = p.price === "wycena" ? "wycena" : p.price;
+      const priceFull = p.price === "wycena" ? "wycena indywidualna" : p.price;
+      const media = mediaForProduct(c, p, i, folderImages);
       return `
           <article class="product-card">
             <a class="product-card__link" href="../index.html#kontakt" aria-label="${p.name} — ${priceFull}. Zamów">
-              <figure class="product-card__media media-slot">
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/${c.slug}" data-image-index="${i + 1}" data-image-alt="${p.name}">
                 ${media}
                 <span class="product-card__price-badge">${priceLabel}</span>
               </figure>
@@ -169,7 +210,44 @@ function productCards(c) {
     .join("");
 }
 
+function extraImageCards(c, folderImages) {
+  const extras = folderImages.filter((img) => img.index > c.products.length);
+  return extras
+    .map((img) => {
+      const n = String(img.index).padStart(2, "0");
+      return `
+          <article class="product-card">
+            <a class="product-card__link" href="../index.html#kontakt" aria-label="Realizacja ${n} — zamów podobną">
+              <figure class="product-card__media media-slot">
+                <img src="${img.src}" alt="${c.title} — realizacja ${n}" width="600" height="600" loading="lazy" />
+              </figure>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Realizacja ${n}</h3>
+                <span class="product-card__cta">Zamów podobną <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+          </article>`;
+    })
+    .join("");
+}
+
+function socialBtns(className = "") {
+  return `
+          <div class="order-cta__social ${className}">
+            <a class="btn btn--social" href="${FB}" target="_blank" rel="noopener noreferrer">
+              <img src="../assets/icons/facebook.svg" alt="" width="18" height="18" />
+              Facebook
+            </a>
+            <a class="btn btn--social" href="${IG}" target="_blank" rel="noopener noreferrer">
+              <img src="../assets/icons/instagram.svg" alt="" width="18" height="18" />
+              Instagram
+            </a>
+          </div>`;
+}
+
 function page(c) {
+  const folderImages = listCategoryImages(c.slug);
+
   return `<!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -183,7 +261,7 @@ function page(c) {
   <link rel="icon" href="../assets/logo.png" type="image/png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@400;500;600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../css/reset.css" />
   <link rel="stylesheet" href="../css/tokens.css" />
   <link rel="stylesheet" href="../css/styles.css" />
@@ -227,7 +305,7 @@ function page(c) {
 
   <main id="main">
     <section class="page-hero" aria-labelledby="page-title">
-      <div class="container">
+      <div class="container page-hero__inner">
         <nav class="breadcrumbs" aria-label="Okruszki">
           <a href="../index.html">Strona główna</a>
           <span aria-hidden="true">/</span>
@@ -237,7 +315,18 @@ function page(c) {
         </nav>
         <h1 id="page-title" class="section-title">${c.title}</h1>
         <p class="section-intro">${c.short}</p>
-        <p class="page-hero__note">Ceny orientacyjne „od…” — ostateczna wycena po ustaleniu detali. Zamówienie przez formularz lub social media.</p>
+        <p class="page-hero__note">Ceny orientacyjne „od…” — ostateczna wycena po ustaleniu detali.</p>
+        <div class="page-hero__actions">
+          <a class="btn btn--primary" href="../index.html#kontakt">Napisz przez formularz</a>
+          <a class="btn btn--social" href="${FB}" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/icons/facebook.svg" alt="" width="18" height="18" />
+            Facebook
+          </a>
+          <a class="btn btn--social" href="${IG}" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/icons/instagram.svg" alt="" width="18" height="18" />
+            Instagram
+          </a>
+        </div>
       </div>
     </section>
 
@@ -248,17 +337,9 @@ function page(c) {
           <h2 id="gallery-title" class="section-title">Przykładowe realizacje</h2>
           <p class="section-intro">Wybierz styl, który Ci odpowiada — każde zamówienie szydełkuję indywidualnie.</p>
         </header>
-        <div class="product-grid">
-${productCards(c)}
+        <div class="product-grid" data-auto-gallery="${c.slug}" data-gallery-base="../assets/images/oferta/${c.slug}" data-contact-href="../index.html#kontakt">
+${productCards(c, folderImages)}${extraImageCards(c, folderImages)}
         </div>
-      </div>
-    </section>
-
-    <section class="section category-page category-page--compact">
-      <div class="container category-page__intro">
-        <h2 class="section-title" style="font-size: clamp(1.35rem, 3vw, 1.75rem);">O kategorii</h2>
-        <p>${c.desc}</p>
-        <p>Nie prowadzę sklepu internetowego — każde zamówienie ustalimy indywidualnie: kolor, rozmiar i detale.</p>
       </div>
     </section>
 
@@ -266,11 +347,14 @@ ${productCards(c)}
       <div class="container order-cta__inner">
         <p class="eyebrow">Zamówienie</p>
         <h2 id="order-cta-title" class="order-cta__title">Gotowa na swoją realizację?</h2>
-        <p class="order-cta__text">Napisz, co chcesz zamówić — odpowiem z wyceną i terminami. Bez koszyka, za to z pełną personalizacją.</p>
-        <div class="hero__actions" style="justify-content: center;">
-          <a class="btn btn--primary" href="../index.html#kontakt">Zamów</a>
-          <a class="btn btn--ghost-dark" href="../index.html#oferta">Inne kategorie</a>
+        <p class="order-cta__text">Napisz przez formularz albo od razu na Facebooku / Instagramie — ustalimy kolor, rozmiar i wycenę.</p>
+        <div class="order-cta__actions">
+          <a class="btn btn--primary" href="../index.html#kontakt">Formularz zamówienia</a>
+${socialBtns()}
         </div>
+        <p style="margin-top: 1.25rem;">
+          <a class="text-link" href="../index.html#oferta">← Inne kategorie</a>
+        </p>
       </div>
     </section>
   </main>
@@ -284,23 +368,29 @@ ${productCards(c)}
     <div class="container footer__bottom">
       <p class="footer__copy">© <span id="year"></span> Szydełkomania_amigurumi</p>
       <p class="footer__made">
-        <a href="../index.html#oferta">Oferta</a>
+        <a href="${FB}" target="_blank" rel="noopener noreferrer">Facebook</a>
+        ·
+        <a href="${IG}" target="_blank" rel="noopener noreferrer">Instagram</a>
         ·
         <a href="../index.html#kontakt">Zamów</a>
       </p>
     </div>
   </footer>
   <script type="module" src="../js/main.js"></script>
+  <script type="module" src="../js/media-loader.js"></script>
   <script type="module" src="../js/animations.js"></script>
 </body>
 </html>
 `;
 }
 
-const dir = path.join(__dirname, "..", "oferta");
+ensureCategoryFolders();
+const dir = path.join(root, "oferta");
 fs.mkdirSync(dir, { recursive: true });
 for (const c of cats) {
   fs.writeFileSync(path.join(dir, `${c.slug}.html`), page(c), "utf8");
-  console.log("wrote", c.slug);
+  const count = listCategoryImages(c.slug).length;
+  console.log("wrote", c.slug, count ? `(${count} zdjęć)` : "(brak zdjęć w folderze)");
 }
 console.log("done", cats.length);
+console.log("Wrzuć zdjęcia do assets/images/oferta/{kategoria}/ jako 01.jpg, 02.jpg…");

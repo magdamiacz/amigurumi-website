@@ -79,6 +79,7 @@ const closeMenu = () => {
   toggle.setAttribute("aria-expanded", "false");
   toggle.setAttribute("aria-label", "Otwórz menu");
   menu.classList.remove("is-open");
+  document.body.classList.remove("nav-open");
   document.body.style.overflow = "";
 };
 
@@ -86,6 +87,7 @@ const openMenu = () => {
   if (!toggle || !menu) return;
   toggle.setAttribute("aria-expanded", "true");
   toggle.setAttribute("aria-label", "Zamknij menu");
+  document.body.classList.add("nav-open");
   menu.classList.add("is-open");
   document.body.style.overflow = "hidden";
 };

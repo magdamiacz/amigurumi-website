@@ -49,32 +49,29 @@ amigurumu-website/
 
 ---
 
-## Jak podmienić zdjęcia
+## Jak dodać zdjęcia
 
-1. Wrzuć pliki do `assets/images/` według listy w [`assets/images/README.md`](assets/images/README.md).
-2. W `index.html` zamień bloki `.media-slot__placeholder` na `<img src="assets/images/…">`.
-3. Dla galerii: zostaw atrybuty `data-lightbox-src` / `data-lightbox-alt` i wstaw `<img>` wewnątrz `.gallery__item`.
+Zdjęcia pojawiają się automatycznie po wrzuceniu plików — bez edycji HTML.
 
-**Wymagane pliki:** `hero-maskotka.jpg`, `about-tworczyni.jpg`, `cat-*.jpg` (4×), `gallery-01.jpg`…`gallery-12.jpg`, `og-hero.jpg` (1200×630).
+1. **Kategorie oferty:** `assets/images/oferta/{kategoria}/01.jpg`, `02.jpg`…
+2. **Karty na stronie głównej / galeria:** nazwy z [`assets/images/README.md`](assets/images/README.md) (np. `cat-zestawy.jpg`, `gallery-01.jpg`).
+3. Odśwież stronę w przeglądarce.
+
+Opcjonalnie: `node scripts/generate-oferta.js` — przebuduje strony kategorii i wczyta zdjęcia z folderów.
 
 ---
 
-## Jak podmienić kontakty
+## Kontakty
 
-W `index.html` wyszukaj `TODO:` — wszystkie placeholdery są oznaczone.
+Facebook i Instagram są już podpięte w sekcji kontakt, stopce i na stronach kategorii.
+E-mail i telefon nie są publikowane — zamówienia przez formularz lub social media.
 
-| Co | Gdzie szukać | Przykład |
-|----|--------------|----------|
-| Facebook | `href="#"` + `aria-label="Facebook` | `https://www.facebook.com/szydelkomania.amigurumi/` |
-| Instagram | `aria-label="Instagram` | Twój URL IG |
-| E-mail | `mailto:#` | `mailto:kontakt@…` |
-| Telefon | `tel:#` | `tel:+48…` |
-| Adres | — | lokalizacja usunięta celowo |
-| Formularz | `form action="#"` | Formspree / Getform (patrz niżej) |
-| Canonical / OG URL | `<link rel="canonical">`, meta `og:url` | Twoja domena |
-| Opinie | sekcja `#opinie` | wklej cytaty z FB |
-
-**JSON-LD** (w `<head>`): zaktualizuj `sameAs`, telefon (`telephone`) jeśli dodasz, oraz `url` domeny.
+| Co | Status |
+|----|--------|
+| Facebook | `https://www.facebook.com/szydelkomania.amigurumi/` |
+| Instagram | `https://www.instagram.com/szydelkomania_amigurumi/` |
+| Formularz | `form action="#"` → Formspree / Getform (patrz niżej) |
+| Canonical / OG URL | podmień domenę przy deployu |
 
 ---
 
@@ -126,6 +123,7 @@ Po deployu podmień `https://szydelkomania-amigurumi.pl` w:
 | `--terracotta` | `#3A6F69` | hover / linki |
 | `--sage` | `#7EB5AD` | drugi akcent |
 | Font display | Fraunces | nagłówki |
+| Font logo | Poppins | logo |
 | Font body | Inter | tekst |
 | Font signature | Caveat | podpis |
 
