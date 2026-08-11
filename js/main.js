@@ -108,22 +108,94 @@ if (toggle && menu) {
   });
 }
 
-/* ---------- Lightbox ---------- */
+/* ---------- Lightbox (single + product gallery) ---------- */
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = lightbox?.querySelector(".lightbox__img");
 const lightboxCaption = document.getElementById("lightbox-caption");
-let lastFocus = null;
+const lightboxCounter = document.getElementById("lightbox-counter");
+const lightboxPrev = lightbox?.querySelector("[data-lightbox-prev]");
+const lightboxNext = lightbox?.querySelector("[data-lightbox-next]");
+const IMAGE_EXTS = ["jpg", "jpeg", "webp", "png"];
 
-const openLightbox = (src, alt, caption) => {
-  if (!lightbox || !lightboxImg) return;
-  lastFocus = document.activeElement;
+let lastFocus = null;
+let galleryItems = [];
+let galleryIndex = 0;
+let galleryTitle = "";
+
+const probeImage = (url) =>
+  new Promise((resolve) => {
+    const img = new Image();
+    img.onload = () => resolve(true);
+    img.onerror = () => resolve(false);
+    img.src = url;
+  });
+
+const resolveNumberedUrl = async (baseDir, index) => {
+  const n = String(index).padStart(2, "0");
+  for (const ext of IMAGE_EXTS) {
+    const url = `${baseDir}/${n}.${ext}`;
+    if (await probeImage(url)) return url;
+  }
+  return null;
+};
+
+const collectGalleryImages = async (baseDir, max = 24) => {
+  const found = [];
+  let misses = 0;
+  for (let i = 1; i <= max; i++) {
+    const url = await resolveNumberedUrl(baseDir, i);
+    if (url) {
+      found.push(url);
+      misses = 0;
+    } else {
+      misses += 1;
+      if (found.length === 0 && i >= 4) break;
+      if (found.length > 0 && misses >= 2) break;
+    }
+  }
+  return found;
+};
+
+const renderLightboxSlide = () => {
+  if (!lightboxImg || !galleryItems.length) return;
+  const src = galleryItems[galleryIndex];
   lightboxImg.src = src;
-  lightboxImg.alt = alt || "";
-  if (lightboxCaption) lightboxCaption.textContent = caption || "";
+  lightboxImg.alt = galleryTitle
+    ? `${galleryTitle} — zdjęcie ${galleryIndex + 1}`
+    : `Zdjęcie ${galleryIndex + 1}`;
+  if (lightboxCaption) {
+    lightboxCaption.textContent = galleryTitle
+      ? `${galleryTitle}`
+      : lightboxImg.alt;
+  }
+  if (lightboxCounter) {
+    if (galleryItems.length > 1) {
+      lightboxCounter.hidden = false;
+      lightboxCounter.textContent = `${galleryIndex + 1} / ${galleryItems.length}`;
+    } else {
+      lightboxCounter.hidden = true;
+    }
+  }
+  const multi = galleryItems.length > 1;
+  if (lightboxPrev) lightboxPrev.hidden = !multi;
+  if (lightboxNext) lightboxNext.hidden = !multi;
+};
+
+const openLightboxGallery = (items, title = "", startIndex = 0) => {
+  if (!lightbox || !lightboxImg || !items.length) return;
+  lastFocus = document.activeElement;
+  galleryItems = items;
+  galleryIndex = Math.max(0, Math.min(startIndex, items.length - 1));
+  galleryTitle = title || "";
+  renderLightboxSlide();
   lightbox.hidden = false;
   lightbox.setAttribute("aria-hidden", "false");
   document.body.style.overflow = "hidden";
   lightbox.querySelector(".lightbox__close")?.focus();
+};
+
+const openLightbox = (src, alt, caption) => {
+  openLightboxGallery(src ? [src] : [], caption || alt || "");
 };
 
 const closeLightbox = () => {
@@ -131,8 +203,20 @@ const closeLightbox = () => {
   lightbox.hidden = true;
   lightbox.setAttribute("aria-hidden", "true");
   lightboxImg.removeAttribute("src");
+  galleryItems = [];
+  galleryIndex = 0;
+  galleryTitle = "";
+  if (lightboxCounter) lightboxCounter.hidden = true;
+  if (lightboxPrev) lightboxPrev.hidden = true;
+  if (lightboxNext) lightboxNext.hidden = true;
   document.body.style.overflow = "";
   if (lastFocus && typeof lastFocus.focus === "function") lastFocus.focus();
+};
+
+const stepLightbox = (delta) => {
+  if (galleryItems.length < 2) return;
+  galleryIndex = (galleryIndex + delta + galleryItems.length) % galleryItems.length;
+  renderLightboxSlide();
 };
 
 document.querySelectorAll("[data-gallery] .gallery__item").forEach((btn) => {
@@ -142,17 +226,47 @@ document.querySelectorAll("[data-gallery] .gallery__item").forEach((btn) => {
     const title = btn.getAttribute("data-title") || "";
     const year = btn.getAttribute("data-year") || "";
     const caption = [title, year].filter(Boolean).join(" · ");
-    // Placeholder mode: show caption even without real image
     openLightbox(src, alt, caption || alt);
   });
+});
+
+const openProductGallery = async (trigger) => {
+  const title =
+    trigger.getAttribute("data-gallery-title") ||
+    trigger.querySelector(".product-card__title")?.textContent?.trim() ||
+    "Produkt";
+  const base = trigger.getAttribute("data-gallery-base") || "";
+  const fallback =
+    trigger.getAttribute("data-gallery-fallback") ||
+    trigger.querySelector(".product-card__media img")?.getAttribute("src") ||
+    "";
+
+  let items = [];
+  if (base) items = await collectGalleryImages(base);
+  if (!items.length && fallback) items = [fallback];
+  if (!items.length) return;
+  openLightboxGallery(items, title);
+};
+
+document.addEventListener("click", (e) => {
+  const trigger = e.target.closest("[data-product-gallery]");
+  if (!trigger) return;
+  if (e.target.closest("a[href]")) return;
+  e.preventDefault();
+  openProductGallery(trigger);
 });
 
 lightbox?.querySelectorAll("[data-lightbox-close]").forEach((el) => {
   el.addEventListener("click", closeLightbox);
 });
+lightboxPrev?.addEventListener("click", () => stepLightbox(-1));
+lightboxNext?.addEventListener("click", () => stepLightbox(1));
 
 document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape" && lightbox && !lightbox.hidden) closeLightbox();
+  if (!lightbox || lightbox.hidden) return;
+  if (e.key === "Escape") closeLightbox();
+  if (e.key === "ArrowLeft") stepLightbox(-1);
+  if (e.key === "ArrowRight") stepLightbox(1);
 });
 
 /* ---------- Contact form ---------- */
@@ -163,6 +277,7 @@ const validators = {
   name: (v) => v.trim().length >= 2,
   email: (v) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()),
   message: (v) => v.trim().length >= 10,
+  consent: (_v, input) => Boolean(input?.checked),
 };
 
 const showFieldError = (id, show) => {
@@ -177,7 +292,7 @@ const showFieldError = (id, show) => {
 const validateField = (id) => {
   const input = document.getElementById(id);
   if (!input || !validators[id]) return true;
-  const ok = validators[id](input.value);
+  const ok = validators[id](input.value, input);
   showFieldError(id, !ok);
   return ok;
 };
@@ -191,10 +306,13 @@ if (form) {
     });
   });
 
+  const consentInput = document.getElementById("consent");
+  consentInput?.addEventListener("change", () => validateField("consent"));
+
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
 
-    const results = ["name", "email", "message"].map(validateField);
+    const results = ["name", "email", "message", "consent"].map(validateField);
     if (results.includes(false)) {
       const firstInvalid = form.querySelector(".is-invalid");
       firstInvalid?.focus();
@@ -221,7 +339,7 @@ if (form) {
         await new Promise((r) => setTimeout(r, 600));
         console.log("Form data (placeholder):", Object.fromEntries(new FormData(form)));
         if (statusEl) {
-          statusEl.textContent = "Dzięki! Odezwę się w 24h. (tryb demo — podmień action formularza)";
+          statusEl.textContent = "Dzięki za zapytanie! Odezwę się z propozycją w 24h. (tryb demo — podmień action formularza)";
           statusEl.className = "form-status is-success";
         }
         form.reset();
@@ -233,7 +351,7 @@ if (form) {
         });
         if (!res.ok) throw new Error("Network error");
         if (statusEl) {
-          statusEl.textContent = "Dzięki! Odezwę się w 24h.";
+          statusEl.textContent = "Dzięki za zapytanie! Odezwę się z propozycją w 24h.";
           statusEl.className = "form-status is-success";
         }
         form.reset();

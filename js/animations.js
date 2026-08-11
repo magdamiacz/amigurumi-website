@@ -118,10 +118,9 @@ function initHeroSplit() {
   if (media) {
     animate(media, {
       opacity: [0, 1],
-      scale: [0.96, 1],
-      duration: 900,
-      delay: 400,
-      ease: "outExpo",
+      duration: 1100,
+      delay: 200,
+      ease: "outQuart",
     });
   }
 }

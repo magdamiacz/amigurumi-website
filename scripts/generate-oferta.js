@@ -5,11 +5,22 @@ const FB = "https://www.facebook.com/szydelkomania.amigurumi/";
 const IG = "https://www.instagram.com/szydelkomania_amigurumi/";
 const IMAGE_EXTS = new Set([".jpg", ".jpeg", ".webp", ".png"]);
 
+const SAFETY_BAG =
+  "Bezpieczeństwo: polska przędza bawełniana, solidne wykonanie handmade. Produkt użytkowy — sprawdzaj szwy i uchwyty przed każdym użyciem. Nie jest zabawką.";
+const SAFETY_DECOR_MASCOT =
+  "Bezpieczeństwo: maskotka dekoracyjna do pokoju dziecięcego (nie zabawka do intensywnej zabawy). Oczy i detale są trwale mocowane; poniżej 3. r.ż. tylko pod nadzorem dorosłych.";
+const SAFETY_GENERAL =
+  "Bezpieczeństwo: rękodzieło z polskiej przędzy bawełnianej. Sprawdzaj mocowanie detali. Nie jest zabawką przeznaczoną dla niemowląt bez nadzoru.";
+const SAFETY_PET =
+  "Bezpieczeństwo: zabawka dla zwierząt — używaj pod nadzorem. Usuń przy uszkodzeniu (ryzyko połknięcia włóczki). Nie dla dzieci.";
+
 const cats = [
   {
     slug: "torebki",
     title: "Torebki",
-    short: "Handmade torebki z polskiej bawełny — na zamówienie, w Twoim kolorze.",
+    short:
+      "Handmade torebki z polskiej przędzy bawełnianej — kolory do wyboru z palety 45+, rozmiar i detal na Twoją propozycję.",
+    safety: SAFETY_BAG,
     products: [
       { name: "Torebka mini", price: "od 140 zł" },
       { name: "Torebka miejska", price: "od 180 zł" },
@@ -22,9 +33,10 @@ const cats = [
   {
     slug: "plecaki",
     title: "Plecaki",
-    short: "Szydełkowe plecaki handmade — wygodne, miękkie i personalizowane.",
+    short: "Szydełkowe plecaki z polskiej przędzy bawełnianej — wygodne, miękkie i personalizowane.",
+    safety: SAFETY_BAG,
     products: [
-      { name: "Plecak dziecięcy", price: "od 190 zł" },
+      { name: "Plecak do pokoju dziecięcego", price: "od 190 zł" },
       { name: "Plecak miejski", price: "od 240 zł" },
       { name: "Mini plecaczek", price: "od 160 zł" },
       { name: "Plecak z kieszenią", price: "od 260 zł" },
@@ -34,24 +46,28 @@ const cats = [
   },
   {
     slug: "maskotki",
-    title: "Maskotki",
-    short: "Maskotki amigurumi na zamówienie — unikatowe historie z szydełka.",
+    title: "Maskotki dekoracyjne",
+    short:
+      "Maskotki dekoracyjne do pokoju dziecięcego — unikatowe amigurumi z polskiej bawełny, na Twoją propozycję.",
+    safety: SAFETY_DECOR_MASCOT,
     products: [
-      { name: "Miś klasyczny", price: "od 120 zł" },
+      { name: "Miś dekoracyjny", price: "od 120 zł" },
       { name: "Królik w ubranku", price: "od 140 zł" },
-      { name: "Laleczka", price: "od 150 zł" },
+      { name: "Laleczka dekoracyjna", price: "od 150 zł" },
       { name: "Słonik", price: "od 130 zł" },
       { name: "Wilczek", price: "od 145 zł" },
-      { name: "Maskotka na zamówienie", price: "wycena" },
+      { name: "Maskotka dekoracyjna na zamówienie", price: "wycena" },
     ],
   },
   {
     slug: "zestawy-dla-dzieci",
-    title: "Zestawy dla dzieci",
-    short: "Prezentowe zestawy szydełkowe dla dzieci — kompletne i spójne kolorystycznie.",
+    title: "Zestawy do pokoju dziecięcego",
+    short:
+      "Kompletne zestawy dekoracyjne do pokoju dziecięcego — spójne kolorystycznie, z polskiej przędzy bawełnianej.",
+    safety: SAFETY_DECOR_MASCOT,
     products: [
-      { name: "Zestaw roczek", price: "od 220 zł" },
-      { name: "Zestaw chrzest", price: "od 240 zł" },
+      { name: "Zestaw roczek (dekoracyjny)", price: "od 220 zł" },
+      { name: "Zestaw chrzest (dekoracyjny)", price: "od 240 zł" },
       { name: "Zestaw urodzinowy", price: "od 200 zł" },
       { name: "Zestaw baby shower", price: "od 210 zł" },
       { name: "Zestaw pastelowy", price: "od 230 zł" },
@@ -61,11 +77,12 @@ const cats = [
   {
     slug: "dodatki",
     title: "Dodatki",
-    short: "Szydełkowe dodatki: opaski, breloczki, zawieszki i drobne akcesoria.",
+    short: "Szydełkowe dodatki: opaski, breloczki, zawieszki — z polskiej przędzy bawełnianej.",
+    safety: SAFETY_GENERAL,
     products: [
       { name: "Opaska warkocz", price: "od 55 zł" },
       { name: "Breloczek mini", price: "od 35 zł" },
-      { name: "Zawieszka do smoczka", price: "od 45 zł" },
+      { name: "Zawieszka dekoracyjna", price: "od 45 zł" },
       { name: "Opaska cienka", price: "od 50 zł" },
       { name: "Breloczek zwierzątko", price: "od 40 zł" },
       { name: "Dodatek na zamówienie", price: "wycena" },
@@ -74,7 +91,9 @@ const cats = [
   {
     slug: "personalizowane-zwierzaki",
     title: "Personalizowane zwierzaki",
-    short: "Amigurumi pupila ze zdjęcia — personalizowane zwierzaki na zamówienie.",
+    short:
+      "Dekoracyjne amigurumi pupila ze zdjęcia — pamiątka z charakterem, z polskiej bawełny.",
+    safety: SAFETY_DECOR_MASCOT,
     products: [
       { name: "Piesek ze zdjęcia", price: "od 180 zł" },
       { name: "Kotek ze zdjęcia", price: "od 180 zł" },
@@ -87,7 +106,8 @@ const cats = [
   {
     slug: "zabawki-dla-zwierzat",
     title: "Zabawki dla zwierząt",
-    short: "Szydełkowe zabawki dla psów i kotów — handmade i na zamówienie.",
+    short: "Szydełkowe zabawki dla psów i kotów — handmade z polskiej przędzy bawełnianej.",
+    safety: SAFETY_PET,
     products: [
       { name: "Piłka dla kota", price: "od 40 zł" },
       { name: "Myszka szydełkowa", price: "od 45 zł" },
@@ -100,7 +120,8 @@ const cats = [
   {
     slug: "dekoracje",
     title: "Dekoracje",
-    short: "Szydełkowe dekoracje do domu i okazji — unikatowe ozdoby handmade.",
+    short: "Szydełkowe dekoracje do domu — unikatowe ozdoby z polskiej przędzy bawełnianej.",
+    safety: SAFETY_GENERAL,
     products: [
       { name: "Girlanda kwiatowa", price: "od 90 zł" },
       { name: "Zawieszka sezonowa", price: "od 45 zł" },
@@ -113,7 +134,8 @@ const cats = [
   {
     slug: "kubeczki",
     title: "Kubeczki",
-    short: "Szydełkowe ocieplacze i akcesoria do kubków — handmade na zamówienie.",
+    short: "Szydełkowe ocieplacze i akcesoria do kubków — z polskiej przędzy bawełnianej.",
+    safety: SAFETY_GENERAL,
     products: [
       { name: "Ocieplacz klasyczny", price: "od 45 zł" },
       { name: "Ocieplacz z uszami", price: "od 55 zł" },
@@ -131,7 +153,12 @@ const imagesRoot = path.join(root, "assets", "images", "oferta");
 function ensureCategoryFolders() {
   fs.mkdirSync(imagesRoot, { recursive: true });
   for (const c of cats) {
-    fs.mkdirSync(path.join(imagesRoot, c.slug), { recursive: true });
+    const catDir = path.join(imagesRoot, c.slug);
+    fs.mkdirSync(catDir, { recursive: true });
+    c.products.forEach((_, i) => {
+      const n = String(i + 1).padStart(2, "0");
+      fs.mkdirSync(path.join(catDir, n), { recursive: true });
+    });
   }
 }
 
@@ -165,7 +192,6 @@ function mediaForProduct(c, p, i, folderImages) {
     return `<img src="${fromFolder.src}" alt="${p.name}" width="600" height="600" loading="lazy" />`;
   }
 
-  // Legacy fallbacks for existing root-level photos
   if (c.slug === "torebki" && i === 0) {
     return `<img src="../assets/images/image-1.jpg" alt="${p.name}" width="600" height="600" loading="lazy" />`;
   }
@@ -189,12 +215,24 @@ function mediaForProduct(c, p, i, folderImages) {
 function productCards(c, folderImages) {
   return c.products
     .map((p, i) => {
+      const n = String(i + 1).padStart(2, "0");
       const priceLabel = p.price === "wycena" ? "wycena" : p.price;
       const priceFull = p.price === "wycena" ? "wycena indywidualna" : p.price;
       const media = mediaForProduct(c, p, i, folderImages);
+      const fallbackMatch = media.match(/src="([^"]+)"/);
+      const fallback = fallbackMatch ? fallbackMatch[1] : "";
+      const galleryBase = `../assets/images/oferta/${c.slug}/${n}`;
       return `
           <article class="product-card">
-            <a class="product-card__link" href="../index.html#kontakt" aria-label="${p.name} — ${priceFull}. Zamów">
+            <button
+              type="button"
+              class="product-card__link"
+              data-product-gallery
+              data-gallery-base="${galleryBase}"
+              data-gallery-fallback="${fallback}"
+              data-gallery-title="${p.name}"
+              aria-label="${p.name} — zobacz galerię"
+            >
               <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/${c.slug}" data-image-index="${i + 1}" data-image-alt="${p.name}">
                 ${media}
                 <span class="product-card__price-badge">${priceLabel}</span>
@@ -202,9 +240,13 @@ function productCards(c, folderImages) {
               <div class="product-card__body">
                 <h3 class="product-card__title">${p.name}</h3>
                 <p class="product-card__price">${priceFull}</p>
-                <span class="product-card__cta">Zamów <span aria-hidden="true">→</span></span>
+                <span class="product-card__cta">Zobacz galerię <span aria-hidden="true">→</span></span>
               </div>
-            </a>
+            </button>
+            <div class="product-card__footer">
+              <a class="product-card__inquire" href="../index.html#kontakt">Wyślij zapytanie</a>
+              <p class="product-card__safety">${c.safety}</p>
+            </div>
           </article>`;
     })
     .join("");
@@ -215,17 +257,30 @@ function extraImageCards(c, folderImages) {
   return extras
     .map((img) => {
       const n = String(img.index).padStart(2, "0");
+      const galleryBase = `../assets/images/oferta/${c.slug}/${n}`;
       return `
           <article class="product-card">
-            <a class="product-card__link" href="../index.html#kontakt" aria-label="Realizacja ${n} — zamów podobną">
+            <button
+              type="button"
+              class="product-card__link"
+              data-product-gallery
+              data-gallery-base="${galleryBase}"
+              data-gallery-fallback="${img.src}"
+              data-gallery-title="Realizacja ${n}"
+              aria-label="Realizacja ${n} — zobacz galerię"
+            >
               <figure class="product-card__media media-slot">
                 <img src="${img.src}" alt="${c.title} — realizacja ${n}" width="600" height="600" loading="lazy" />
               </figure>
               <div class="product-card__body">
                 <h3 class="product-card__title">Realizacja ${n}</h3>
-                <span class="product-card__cta">Zamów podobną <span aria-hidden="true">→</span></span>
+                <span class="product-card__cta">Zobacz galerię <span aria-hidden="true">→</span></span>
               </div>
-            </a>
+            </button>
+            <div class="product-card__footer">
+              <a class="product-card__inquire" href="../index.html#kontakt">Wyślij zapytanie</a>
+              <p class="product-card__safety">${c.safety}</p>
+            </div>
           </article>`;
     })
     .join("");
@@ -243,6 +298,34 @@ function socialBtns(className = "") {
               Instagram
             </a>
           </div>`;
+}
+
+function legalNavLinks(prefix = "../") {
+  return `
+          <li><a class="nav__link" href="${prefix}regulamin.html">Regulamin</a></li>`;
+}
+
+function lightboxMarkup() {
+  return `
+  <div class="lightbox" id="lightbox" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-label="Galeria produktu">
+    <div class="lightbox__backdrop" data-lightbox-close></div>
+    <div class="lightbox__dialog">
+      <button class="lightbox__close" type="button" data-lightbox-close aria-label="Zamknij">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="lightbox__stage">
+        <button class="lightbox__nav lightbox__nav--prev" type="button" data-lightbox-prev aria-label="Poprzednie zdjęcie" hidden>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <img class="lightbox__img" src="" alt="" width="1200" height="1500" />
+        <button class="lightbox__nav lightbox__nav--next" type="button" data-lightbox-next aria-label="Następne zdjęcie" hidden>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+      <p class="lightbox__caption" id="lightbox-caption"></p>
+      <p class="lightbox__counter" id="lightbox-counter" hidden></p>
+    </div>
+  </div>`;
 }
 
 function page(c) {
@@ -286,7 +369,8 @@ function page(c) {
           <li><a class="nav__link" href="../index.html#galeria">Galeria</a></li>
           <li><a class="nav__link" href="../index.html#proces">Proces</a></li>
           <li><a class="nav__link" href="../index.html#faq">FAQ</a></li>
-          <li><a class="nav__link nav__link--cta" href="../index.html#kontakt">Zamów</a></li>
+${legalNavLinks()}
+          <li><a class="nav__link nav__link--cta" href="../index.html#kontakt">Wyślij zapytanie</a></li>
         </ul>
       </div>
     </nav>
@@ -299,43 +383,22 @@ function page(c) {
         Wróć do oferty
       </a>
       <span class="category-bar__current">${c.title}</span>
-      <a class="category-bar__home" href="../index.html#kontakt">Zamów</a>
+      <a class="category-bar__home" href="../index.html#kontakt">Wyślij zapytanie</a>
     </div>
   </div>
 
   <main id="main">
-    <section class="page-hero" aria-labelledby="page-title">
-      <div class="container page-hero__inner">
-        <nav class="breadcrumbs" aria-label="Okruszki">
-          <a href="../index.html">Strona główna</a>
-          <span aria-hidden="true">/</span>
-          <a href="../index.html#oferta">Oferta</a>
-          <span aria-hidden="true">/</span>
-          <span aria-current="page">${c.title}</span>
-        </nav>
-        <h1 id="page-title" class="section-title">${c.title}</h1>
-        <p class="section-intro">${c.short}</p>
-        <p class="page-hero__note">Ceny orientacyjne „od…” — ostateczna wycena po ustaleniu detali.</p>
-        <div class="page-hero__actions">
-          <a class="btn btn--primary" href="../index.html#kontakt">Napisz przez formularz</a>
-          <a class="btn btn--social" href="${FB}" target="_blank" rel="noopener noreferrer">
-            <img src="../assets/icons/facebook.svg" alt="" width="18" height="18" />
-            Facebook
-          </a>
-          <a class="btn btn--social" href="${IG}" target="_blank" rel="noopener noreferrer">
-            <img src="../assets/icons/instagram.svg" alt="" width="18" height="18" />
-            Instagram
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section product-gallery" aria-labelledby="gallery-title">
+    <section class="section product-gallery" aria-labelledby="page-title">
       <div class="container">
         <header class="section-header">
-          <p class="eyebrow">Galeria</p>
-          <h2 id="gallery-title" class="section-title">Przykładowe realizacje</h2>
-          <p class="section-intro">Wybierz styl, który Ci odpowiada — każde zamówienie szydełkuję indywidualnie.</p>
+          <nav class="breadcrumbs" aria-label="Okruszki">
+            <a href="../index.html">Strona główna</a>
+            <span aria-hidden="true">/</span>
+            <a href="../index.html#oferta">Oferta</a>
+            <span aria-hidden="true">/</span>
+            <span aria-current="page">${c.title}</span>
+          </nav>
+          <h1 id="page-title" class="section-title">${c.title}</h1>
         </header>
         <div class="product-grid" data-auto-gallery="${c.slug}" data-gallery-base="../assets/images/oferta/${c.slug}" data-contact-href="../index.html#kontakt">
 ${productCards(c, folderImages)}${extraImageCards(c, folderImages)}
@@ -345,11 +408,11 @@ ${productCards(c, folderImages)}${extraImageCards(c, folderImages)}
 
     <section class="order-cta" aria-labelledby="order-cta-title">
       <div class="container order-cta__inner">
-        <p class="eyebrow">Zamówienie</p>
-        <h2 id="order-cta-title" class="order-cta__title">Gotowa na swoją realizację?</h2>
-        <p class="order-cta__text">Napisz przez formularz albo od razu na Facebooku / Instagramie — ustalimy kolor, rozmiar i wycenę.</p>
+        <p class="eyebrow">Zapytanie</p>
+        <h2 id="order-cta-title" class="order-cta__title">Masz pomysł? Wyślij propozycję.</h2>
+        <p class="order-cta__text">To nie sklep z koszykiem — napisz przez formularz albo na Facebooku / Instagramie. Razem ustalimy kolor, rozmiar i wycenę.</p>
         <div class="order-cta__actions">
-          <a class="btn btn--primary" href="../index.html#kontakt">Formularz zamówienia</a>
+          <a class="btn btn--primary" href="../index.html#kontakt">Wyślij zapytanie</a>
 ${socialBtns()}
         </div>
         <p style="margin-top: 1.25rem;">
@@ -361,7 +424,7 @@ ${socialBtns()}
 
   <div class="category-mobile-cta" aria-label="Szybkie akcje">
     <a class="btn btn--ghost-light" href="../index.html#oferta">← Oferta</a>
-    <a class="btn btn--primary" href="../index.html#kontakt">Zamów</a>
+    <a class="btn btn--primary" href="../index.html#kontakt">Wyślij zapytanie</a>
   </div>
 
   <footer class="footer footer--category">
@@ -372,10 +435,13 @@ ${socialBtns()}
         ·
         <a href="${IG}" target="_blank" rel="noopener noreferrer">Instagram</a>
         ·
-        <a href="../index.html#kontakt">Zamów</a>
+        <a href="../regulamin.html">Regulamin i RODO</a>
+        ·
+        <a href="../index.html#kontakt">Wyślij zapytanie</a>
       </p>
     </div>
   </footer>
+${lightboxMarkup()}
   <script type="module" src="../js/main.js"></script>
   <script type="module" src="../js/media-loader.js"></script>
   <script type="module" src="../js/animations.js"></script>
@@ -393,4 +459,5 @@ for (const c of cats) {
   console.log("wrote", c.slug, count ? `(${count} zdjęć)` : "(brak zdjęć w folderze)");
 }
 console.log("done", cats.length);
-console.log("Wrzuć zdjęcia do assets/images/oferta/{kategoria}/ jako 01.jpg, 02.jpg…");
+console.log("Miniatury produktów: assets/images/oferta/{kategoria}/01.jpg …");
+console.log("Galeria produktu: assets/images/oferta/{kategoria}/01/01.jpg, 02.jpg …");

@@ -143,15 +143,26 @@ const hydrateAutoGalleries = async () => {
       const article = document.createElement("article");
       article.className = "product-card";
       article.innerHTML = `
-        <a class="product-card__link" href="${contactHref}" aria-label="Realizacja ${n} — zamów podobną">
+        <button
+          type="button"
+          class="product-card__link"
+          data-product-gallery
+          data-gallery-base="${baseDir}/${n}"
+          data-gallery-fallback="${url}"
+          data-gallery-title="Realizacja ${n}"
+          aria-label="Realizacja ${n} — zobacz galerię"
+        >
           <figure class="product-card__media media-slot">
             <img src="${url}" alt="${slug} — realizacja ${n}" width="600" height="600" loading="lazy" />
           </figure>
           <div class="product-card__body">
             <h3 class="product-card__title">Realizacja ${n}</h3>
-            <span class="product-card__cta">Zamów podobną <span aria-hidden="true">→</span></span>
+            <span class="product-card__cta">Zobacz galerię <span aria-hidden="true">→</span></span>
           </div>
-        </a>`;
+        </button>
+        <div class="product-card__footer">
+          <a class="product-card__inquire" href="${contactHref}">Wyślij zapytanie</a>
+        </div>`;
       grid.appendChild(article);
     });
   }
