@@ -115,12 +115,23 @@ const lightboxCaption = document.getElementById("lightbox-caption");
 const lightboxCounter = document.getElementById("lightbox-counter");
 const lightboxPrev = lightbox?.querySelector("[data-lightbox-prev]");
 const lightboxNext = lightbox?.querySelector("[data-lightbox-next]");
+const lightboxThumbs = document.getElementById("lightbox-thumbs");
+const lightboxInfo = document.getElementById("lightbox-info");
+const lightboxTitleEl = document.getElementById("lightbox-title");
+const lightboxPriceEl = document.getElementById("lightbox-price");
+const lightboxDescEl = document.getElementById("lightbox-desc");
+const lightboxMaterialEl = document.getElementById("lightbox-material");
+const lightboxSafetyEl = document.getElementById("lightbox-safety");
+const lightboxCareEl = document.getElementById("lightbox-care");
+const lightboxLeadEl = document.getElementById("lightbox-lead");
+const lightboxInquire = document.getElementById("lightbox-inquire");
 const IMAGE_EXTS = ["jpg", "jpeg", "webp", "png"];
 
 let lastFocus = null;
 let galleryItems = [];
 let galleryIndex = 0;
 let galleryTitle = "";
+let galleryMode = "simple";
 
 const probeImage = (url) =>
   new Promise((resolve) => {
@@ -156,6 +167,46 @@ const collectGalleryImages = async (baseDir, max = 24) => {
   return found;
 };
 
+const setText = (el, value) => {
+  if (!el) return;
+  el.textContent = value || "";
+};
+
+const renderThumbs = () => {
+  if (!lightboxThumbs) return;
+  if (galleryMode !== "product" || galleryItems.length < 2) {
+    lightboxThumbs.hidden = true;
+    lightboxThumbs.innerHTML = "";
+    return;
+  }
+  lightboxThumbs.hidden = false;
+  lightboxThumbs.innerHTML = galleryItems
+    .map(
+      (src, i) =>
+        `<button type="button" class="lightbox__thumb${i === galleryIndex ? " is-active" : ""}" data-thumb-index="${i}" aria-label="Zdjęcie ${i + 1}" aria-current="${i === galleryIndex ? "true" : "false"}"><img src="${src}" alt="" width="64" height="64" /></button>`
+    )
+    .join("");
+};
+
+const fillProductInfo = (meta) => {
+  if (!lightboxInfo) return;
+  if (!meta) {
+    lightboxInfo.hidden = true;
+    return;
+  }
+  lightboxInfo.hidden = false;
+  setText(lightboxTitleEl, meta.title);
+  setText(lightboxPriceEl, meta.price);
+  setText(lightboxDescEl, meta.desc);
+  setText(lightboxMaterialEl, meta.material);
+  setText(lightboxSafetyEl, meta.safety);
+  setText(lightboxCareEl, meta.care);
+  setText(lightboxLeadEl, meta.lead);
+  if (lightboxInquire && meta.inquire) {
+    lightboxInquire.href = meta.inquire;
+  }
+};
+
 const renderLightboxSlide = () => {
   if (!lightboxImg || !galleryItems.length) return;
   const src = galleryItems[galleryIndex];
@@ -164,12 +215,17 @@ const renderLightboxSlide = () => {
     ? `${galleryTitle} — zdjęcie ${galleryIndex + 1}`
     : `Zdjęcie ${galleryIndex + 1}`;
   if (lightboxCaption) {
-    lightboxCaption.textContent = galleryTitle
-      ? `${galleryTitle}`
-      : lightboxImg.alt;
+    if (galleryMode === "product") {
+      lightboxCaption.hidden = true;
+    } else {
+      lightboxCaption.hidden = false;
+      lightboxCaption.textContent = galleryTitle
+        ? `${galleryTitle}`
+        : lightboxImg.alt;
+    }
   }
   if (lightboxCounter) {
-    if (galleryItems.length > 1) {
+    if (galleryMode !== "product" && galleryItems.length > 1) {
       lightboxCounter.hidden = false;
       lightboxCounter.textContent = `${galleryIndex + 1} / ${galleryItems.length}`;
     } else {
@@ -179,14 +235,24 @@ const renderLightboxSlide = () => {
   const multi = galleryItems.length > 1;
   if (lightboxPrev) lightboxPrev.hidden = !multi;
   if (lightboxNext) lightboxNext.hidden = !multi;
+  if (lightboxThumbs) {
+    lightboxThumbs.querySelectorAll(".lightbox__thumb").forEach((btn, i) => {
+      btn.classList.toggle("is-active", i === galleryIndex);
+      btn.setAttribute("aria-current", i === galleryIndex ? "true" : "false");
+    });
+  }
 };
 
-const openLightboxGallery = (items, title = "", startIndex = 0) => {
+const openLightboxGallery = (items, title = "", startIndex = 0, meta = null) => {
   if (!lightbox || !lightboxImg || !items.length) return;
   lastFocus = document.activeElement;
   galleryItems = items;
   galleryIndex = Math.max(0, Math.min(startIndex, items.length - 1));
   galleryTitle = title || "";
+  galleryMode = meta ? "product" : "simple";
+  lightbox.classList.toggle("lightbox--product", galleryMode === "product");
+  fillProductInfo(meta);
+  renderThumbs();
   renderLightboxSlide();
   lightbox.hidden = false;
   lightbox.setAttribute("aria-hidden", "false");
@@ -202,13 +268,20 @@ const closeLightbox = () => {
   if (!lightbox || !lightboxImg) return;
   lightbox.hidden = true;
   lightbox.setAttribute("aria-hidden", "true");
+  lightbox.classList.remove("lightbox--product");
   lightboxImg.removeAttribute("src");
   galleryItems = [];
   galleryIndex = 0;
   galleryTitle = "";
+  galleryMode = "simple";
   if (lightboxCounter) lightboxCounter.hidden = true;
   if (lightboxPrev) lightboxPrev.hidden = true;
   if (lightboxNext) lightboxNext.hidden = true;
+  if (lightboxThumbs) {
+    lightboxThumbs.hidden = true;
+    lightboxThumbs.innerHTML = "";
+  }
+  if (lightboxInfo) lightboxInfo.hidden = true;
   document.body.style.overflow = "";
   if (lastFocus && typeof lastFocus.focus === "function") lastFocus.focus();
 };
@@ -245,8 +318,30 @@ const openProductGallery = async (trigger) => {
   if (base) items = await collectGalleryImages(base);
   if (!items.length && fallback) items = [fallback];
   if (!items.length) return;
-  openLightboxGallery(items, title);
+
+  const meta = {
+    title,
+    price: trigger.getAttribute("data-gallery-price") || "",
+    desc: trigger.getAttribute("data-gallery-desc") || "",
+    material: trigger.getAttribute("data-gallery-material") || "",
+    safety: trigger.getAttribute("data-gallery-safety") || "",
+    care: trigger.getAttribute("data-gallery-care") || "",
+    lead: trigger.getAttribute("data-gallery-lead") || "",
+    inquire:
+      trigger.getAttribute("data-gallery-inquire") ||
+      `../index.html?produkt=${encodeURIComponent(title)}#kontakt`,
+  };
+  openLightboxGallery(items, title, 0, meta);
 };
+
+lightboxThumbs?.addEventListener("click", (e) => {
+  const btn = e.target.closest("[data-thumb-index]");
+  if (!btn) return;
+  const index = Number(btn.getAttribute("data-thumb-index"));
+  if (Number.isNaN(index)) return;
+  galleryIndex = index;
+  renderLightboxSlide();
+});
 
 document.addEventListener("click", (e) => {
   const trigger = e.target.closest("[data-product-gallery]");
@@ -272,6 +367,14 @@ document.addEventListener("keydown", (e) => {
 /* ---------- Contact form ---------- */
 const form = document.getElementById("contact-form");
 const statusEl = document.getElementById("form-status");
+
+const productParam = new URLSearchParams(window.location.search).get("produkt");
+if (productParam && form) {
+  const message = document.getElementById("message");
+  if (message && !message.value.trim()) {
+    message.value = `Chciałabym/chciałbym zapytać o produkt: ${productParam}.`;
+  }
+}
 
 const validators = {
   name: (v) => v.trim().length >= 2,
@@ -369,6 +472,35 @@ if (form) {
     }
   });
 }
+
+/* ---------- Category product gallery ---------- */
+document.querySelectorAll("[data-pdp-gallery]").forEach((gallery) => {
+  const main = gallery.querySelector(".pdp__main");
+  const thumbs = [...gallery.querySelectorAll("[data-pdp-thumb]")];
+  if (!main || !thumbs.length) return;
+
+  const sources = thumbs.map((btn) => btn.getAttribute("data-src")).filter(Boolean);
+  let index = Math.max(
+    0,
+    thumbs.findIndex((btn) => btn.classList.contains("is-active"))
+  );
+
+  const show = (next) => {
+    if (!sources.length) return;
+    index = (next + sources.length) % sources.length;
+    main.src = sources[index];
+    thumbs.forEach((btn, i) => {
+      btn.classList.toggle("is-active", i === index);
+      btn.setAttribute("aria-current", i === index ? "true" : "false");
+    });
+  };
+
+  thumbs.forEach((btn, i) => {
+    btn.addEventListener("click", () => show(i));
+  });
+  gallery.querySelector("[data-pdp-prev]")?.addEventListener("click", () => show(index - 1));
+  gallery.querySelector("[data-pdp-next]")?.addEventListener("click", () => show(index + 1));
+});
 
 /* ---------- FAQ smooth open (progressive enhancement) ---------- */
 document.querySelectorAll(".faq__item").forEach((details) => {

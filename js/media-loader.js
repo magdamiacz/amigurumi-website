@@ -6,7 +6,7 @@
  * Gallery:         data-lightbox-src — shows img when file exists
  */
 
-const IMAGE_EXTS = ["jpg", "jpeg", "webp", "png"];
+const IMAGE_EXTS = ["jpg", "webp", "png"];
 
 const probeImage = (url) =>
   new Promise((resolve) => {
@@ -33,11 +33,11 @@ const collectNumberedImages = async (baseDir, max = 48) => {
     if (url) {
       found.push({ index: i, url });
       misses = 0;
-    } else {
-      misses += 1;
-      if (found.length === 0 && i >= 8) break;
-      if (found.length > 0 && misses >= 2) break;
+      continue;
     }
+    // Folder empty or gap — stop immediately so the console is not flooded with 404s.
+    if (found.length === 0 || misses >= 1) break;
+    misses += 1;
   }
   return found;
 };
@@ -128,7 +128,8 @@ const hydrateAutoGalleries = async () => {
     if (!found.length) continue;
 
     const cards = [...grid.querySelectorAll(".product-card")];
-    const contactHref = grid.getAttribute("data-contact-href") || "../index.html#kontakt";
+    const sample = cards[0]?.querySelector("[data-product-gallery]");
+    const inherit = (name) => sample?.getAttribute(name) || "";
 
     found.forEach(({ index, url }, i) => {
       const card = cards[i];
@@ -140,6 +141,8 @@ const hydrateAutoGalleries = async () => {
       }
 
       const n = String(index).padStart(2, "0");
+      const title = `Realizacja ${n}`;
+      const inquire = `../index.html?produkt=${encodeURIComponent(title)}#kontakt`;
       const article = document.createElement("article");
       article.className = "product-card";
       article.innerHTML = `
@@ -147,21 +150,28 @@ const hydrateAutoGalleries = async () => {
           type="button"
           class="product-card__link"
           data-product-gallery
-          data-gallery-base="${baseDir}/${n}"
+          data-gallery-base="${base}/${n}"
           data-gallery-fallback="${url}"
-          data-gallery-title="Realizacja ${n}"
-          aria-label="Realizacja ${n} — zobacz galerię"
+          data-gallery-title="${title}"
+          data-gallery-price="wycena indywidualna"
+          data-gallery-desc="${inherit("data-gallery-desc")}"
+          data-gallery-material="${inherit("data-gallery-material")}"
+          data-gallery-safety="${inherit("data-gallery-safety")}"
+          data-gallery-care="${inherit("data-gallery-care")}"
+          data-gallery-lead="${inherit("data-gallery-lead")}"
+          data-gallery-inquire="${inquire}"
+          aria-label="${title} — zobacz galerię"
         >
           <figure class="product-card__media media-slot">
-            <img src="${url}" alt="${slug} — realizacja ${n}" width="600" height="600" loading="lazy" />
+            <img src="${url}" alt="${slug} — ${title}" width="600" height="600" loading="lazy" />
           </figure>
           <div class="product-card__body">
-            <h3 class="product-card__title">Realizacja ${n}</h3>
+            <h3 class="product-card__title">${title}</h3>
             <span class="product-card__cta">Zobacz galerię <span aria-hidden="true">→</span></span>
           </div>
         </button>
         <div class="product-card__footer">
-          <a class="product-card__inquire" href="${contactHref}">Wyślij zapytanie</a>
+          <a class="product-card__inquire" href="${inquire}">Zapytaj o produkt</a>
         </div>`;
       grid.appendChild(article);
     });

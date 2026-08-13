@@ -12,9 +12,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@400;500;600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/reset.css" />
-  <link rel="stylesheet" href="../css/tokens.css" />
-  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reset.css?v=20260813d" />
+  <link rel="stylesheet" href="../css/tokens.css?v=20260813d" />
+  <link rel="stylesheet" href="../css/styles.css?v=20260813d" />
 </head>
 <body class="page-category">
   <a class="skip-link" href="#main">Przejdź do treści</a>
@@ -37,7 +37,7 @@
           <li><a class="nav__link" href="../index.html#proces">Proces</a></li>
           <li><a class="nav__link" href="../index.html#faq">FAQ</a></li>
 
-          <li><a class="nav__link" href="../regulamin.html">Regulamin</a></li>
+          <li><a class="nav__link" href="../regulamin.html" target="_blank" rel="noopener noreferrer">Regulamin</a></li>
           <li><a class="nav__link nav__link--cta" href="../index.html#kontakt">Wyślij zapytanie</a></li>
         </ul>
       </div>
@@ -56,9 +56,21 @@
   </div>
 
   <main id="main">
-    <section class="section product-gallery" aria-labelledby="page-title">
-      <div class="container">
-        <header class="section-header">
+
+    <section class="pdp" aria-labelledby="page-title">
+      <div class="container pdp__grid">
+        <div class="pdp__gallery" data-pdp-gallery>
+          
+          <figure class="pdp__stage">
+            
+            <div class="media-slot__placeholder pdp__placeholder" style="aspect-ratio: 1 / 1;" role="img" aria-label="Personalizowane zwierzaki">
+              <svg viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="1" height="1" fill="#E4D9CB"/></svg>
+              <span class="media-slot__label">personalizowane-zwierzaki/01.jpg</span>
+            </div>
+            
+          </figure>
+        </div>
+        <div class="pdp__info">
           <nav class="breadcrumbs" aria-label="Okruszki">
             <a href="../index.html">Strona główna</a>
             <span aria-hidden="true">/</span>
@@ -66,7 +78,39 @@
             <span aria-hidden="true">/</span>
             <span aria-current="page">Personalizowane zwierzaki</span>
           </nav>
-          <h1 id="page-title" class="section-title">Personalizowane zwierzaki</h1>
+          <h1 id="page-title" class="pdp__title">Personalizowane zwierzaki</h1>
+          <p class="pdp__price">od 180 zł</p>
+          <p class="pdp__desc">Dekoracyjne amigurumi pupila ze zdjęcia — pamiątka z charakterem, z polskiej bawełny.</p>
+          <div class="pdp__accordions">
+            <details class="faq__item pdp__accordion" open>
+              <summary class="faq__question">Skład</summary>
+              <div class="faq__answer"><p>Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać.</p></div>
+            </details>
+            <details class="faq__item pdp__accordion">
+              <summary class="faq__question">Bezpieczeństwo</summary>
+              <div class="faq__answer"><p>Bezpieczeństwo: maskotka dekoracyjna do pokoju dziecięcego (nie zabawka do intensywnej zabawy). Oczy i detale są trwale mocowane; poniżej 3. r.ż. tylko pod nadzorem dorosłych.</p></div>
+            </details>
+          </div>
+          <div class="pdp__actions">
+            <a class="btn btn--primary" href="../index.html?produkt=Personalizowane%20zwierzaki#kontakt">Zapytaj o produkt</a>
+            <a class="btn btn--social" href="https://www.facebook.com/szydelkomania.amigurumi/" target="_blank" rel="noopener noreferrer">
+              <img src="../assets/icons/facebook.svg" alt="" width="18" height="18" />
+              Facebook
+            </a>
+            <a class="btn btn--social" href="https://www.instagram.com/szydelkomania_amigurumi/" target="_blank" rel="noopener noreferrer">
+              <img src="../assets/icons/instagram.svg" alt="" width="18" height="18" />
+              Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section product-gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow">Realizacje</p>
+          <h2 id="gallery-title" class="section-title">Przykładowe modele</h2>
         </header>
         <div class="product-grid" data-auto-gallery="personalizowane-zwierzaki" data-gallery-base="../assets/images/oferta/personalizowane-zwierzaki" data-contact-href="../index.html#kontakt">
 
@@ -78,6 +122,13 @@
               data-gallery-base="../assets/images/oferta/personalizowane-zwierzaki/01"
               data-gallery-fallback=""
               data-gallery-title="Piesek ze zdjęcia"
+              data-gallery-price="od 180 zł"
+              data-gallery-desc="Dekoracyjne amigurumi pupila ze zdjęcia — pamiątka z charakterem, z polskiej bawełny."
+              data-gallery-material="Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać."
+              data-gallery-safety="Bezpieczeństwo: maskotka dekoracyjna do pokoju dziecięcego (nie zabawka do intensywnej zabawy). Oczy i detale są trwale mocowane; poniżej 3. r.ż. tylko pod nadzorem dorosłych."
+              data-gallery-care="Pranie ręczne w letniej wodzie, bez wybielaczy. Suszyć na płasko, z dala od grzejnika. Nie prasować na wysokiej temperaturze."
+              data-gallery-lead="Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie."
+              data-gallery-inquire="../index.html?produkt=Piesek%20ze%20zdj%C4%99cia#kontakt"
               aria-label="Piesek ze zdjęcia — zobacz galerię"
             >
               <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/personalizowane-zwierzaki" data-image-index="1" data-image-alt="Piesek ze zdjęcia">
@@ -95,8 +146,7 @@
               </div>
             </button>
             <div class="product-card__footer">
-              <a class="product-card__inquire" href="../index.html#kontakt">Wyślij zapytanie</a>
-              <p class="product-card__safety">Bezpieczeństwo: maskotka dekoracyjna do pokoju dziecięcego (nie zabawka do intensywnej zabawy). Oczy i detale są trwale mocowane; poniżej 3. r.ż. tylko pod nadzorem dorosłych.</p>
+              <a class="product-card__inquire" href="../index.html?produkt=Piesek%20ze%20zdj%C4%99cia#kontakt">Zapytaj o produkt</a>
             </div>
           </article>
           <article class="product-card">
@@ -107,6 +157,13 @@
               data-gallery-base="../assets/images/oferta/personalizowane-zwierzaki/02"
               data-gallery-fallback=""
               data-gallery-title="Kotek ze zdjęcia"
+              data-gallery-price="od 180 zł"
+              data-gallery-desc="Dekoracyjne amigurumi pupila ze zdjęcia — pamiątka z charakterem, z polskiej bawełny."
+              data-gallery-material="Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać."
+              data-gallery-safety="Bezpieczeństwo: maskotka dekoracyjna do pokoju dziecięcego (nie zabawka do intensywnej zabawy). Oczy i detale są trwale mocowane; poniżej 3. r.ż. tylko pod nadzorem dorosłych."
+              data-gallery-care="Pranie ręczne w letniej wodzie, bez wybielaczy. Suszyć na płasko, z dala od grzejnika. Nie prasować na wysokiej temperaturze."
+              data-gallery-lead="Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie."
+              data-gallery-inquire="../index.html?produkt=Kotek%20ze%20zdj%C4%99cia#kontakt"
               aria-label="Kotek ze zdjęcia — zobacz galerię"
             >
               <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/personalizowane-zwierzaki" data-image-index="2" data-image-alt="Kotek ze zdjęcia">
@@ -124,8 +181,7 @@
               </div>
             </button>
             <div class="product-card__footer">
-              <a class="product-card__inquire" href="../index.html#kontakt">Wyślij zapytanie</a>
-              <p class="product-card__safety">Bezpieczeństwo: maskotka dekoracyjna do pokoju dziecięcego (nie zabawka do intensywnej zabawy). Oczy i detale są trwale mocowane; poniżej 3. r.ż. tylko pod nadzorem dorosłych.</p>
+              <a class="product-card__inquire" href="../index.html?produkt=Kotek%20ze%20zdj%C4%99cia#kontakt">Zapytaj o produkt</a>
             </div>
           </article>
           <article class="product-card">
@@ -136,6 +192,13 @@
               data-gallery-base="../assets/images/oferta/personalizowane-zwierzaki/03"
               data-gallery-fallback=""
               data-gallery-title="Królik ze zdjęcia"
+              data-gallery-price="od 170 zł"
+              data-gallery-desc="Dekoracyjne amigurumi pupila ze zdjęcia — pamiątka z charakterem, z polskiej bawełny."
+              data-gallery-material="Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać."
+              data-gallery-safety="Bezpieczeństwo: maskotka dekoracyjna do pokoju dziecięcego (nie zabawka do intensywnej zabawy). Oczy i detale są trwale mocowane; poniżej 3. r.ż. tylko pod nadzorem dorosłych."
+              data-gallery-care="Pranie ręczne w letniej wodzie, bez wybielaczy. Suszyć na płasko, z dala od grzejnika. Nie prasować na wysokiej temperaturze."
+              data-gallery-lead="Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie."
+              data-gallery-inquire="../index.html?produkt=Kr%C3%B3lik%20ze%20zdj%C4%99cia#kontakt"
               aria-label="Królik ze zdjęcia — zobacz galerię"
             >
               <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/personalizowane-zwierzaki" data-image-index="3" data-image-alt="Królik ze zdjęcia">
@@ -153,8 +216,7 @@
               </div>
             </button>
             <div class="product-card__footer">
-              <a class="product-card__inquire" href="../index.html#kontakt">Wyślij zapytanie</a>
-              <p class="product-card__safety">Bezpieczeństwo: maskotka dekoracyjna do pokoju dziecięcego (nie zabawka do intensywnej zabawy). Oczy i detale są trwale mocowane; poniżej 3. r.ż. tylko pod nadzorem dorosłych.</p>
+              <a class="product-card__inquire" href="../index.html?produkt=Kr%C3%B3lik%20ze%20zdj%C4%99cia#kontakt">Zapytaj o produkt</a>
             </div>
           </article>
           <article class="product-card">
@@ -165,6 +227,13 @@
               data-gallery-base="../assets/images/oferta/personalizowane-zwierzaki/04"
               data-gallery-fallback=""
               data-gallery-title="Mini portret pupila"
+              data-gallery-price="od 150 zł"
+              data-gallery-desc="Dekoracyjne amigurumi pupila ze zdjęcia — pamiątka z charakterem, z polskiej bawełny."
+              data-gallery-material="Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać."
+              data-gallery-safety="Bezpieczeństwo: maskotka dekoracyjna do pokoju dziecięcego (nie zabawka do intensywnej zabawy). Oczy i detale są trwale mocowane; poniżej 3. r.ż. tylko pod nadzorem dorosłych."
+              data-gallery-care="Pranie ręczne w letniej wodzie, bez wybielaczy. Suszyć na płasko, z dala od grzejnika. Nie prasować na wysokiej temperaturze."
+              data-gallery-lead="Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie."
+              data-gallery-inquire="../index.html?produkt=Mini%20portret%20pupila#kontakt"
               aria-label="Mini portret pupila — zobacz galerię"
             >
               <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/personalizowane-zwierzaki" data-image-index="4" data-image-alt="Mini portret pupila">
@@ -182,8 +251,7 @@
               </div>
             </button>
             <div class="product-card__footer">
-              <a class="product-card__inquire" href="../index.html#kontakt">Wyślij zapytanie</a>
-              <p class="product-card__safety">Bezpieczeństwo: maskotka dekoracyjna do pokoju dziecięcego (nie zabawka do intensywnej zabawy). Oczy i detale są trwale mocowane; poniżej 3. r.ż. tylko pod nadzorem dorosłych.</p>
+              <a class="product-card__inquire" href="../index.html?produkt=Mini%20portret%20pupila#kontakt">Zapytaj o produkt</a>
             </div>
           </article>
           <article class="product-card">
@@ -194,6 +262,13 @@
               data-gallery-base="../assets/images/oferta/personalizowane-zwierzaki/05"
               data-gallery-fallback=""
               data-gallery-title="Duży portret pupila"
+              data-gallery-price="od 240 zł"
+              data-gallery-desc="Dekoracyjne amigurumi pupila ze zdjęcia — pamiątka z charakterem, z polskiej bawełny."
+              data-gallery-material="Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać."
+              data-gallery-safety="Bezpieczeństwo: maskotka dekoracyjna do pokoju dziecięcego (nie zabawka do intensywnej zabawy). Oczy i detale są trwale mocowane; poniżej 3. r.ż. tylko pod nadzorem dorosłych."
+              data-gallery-care="Pranie ręczne w letniej wodzie, bez wybielaczy. Suszyć na płasko, z dala od grzejnika. Nie prasować na wysokiej temperaturze."
+              data-gallery-lead="Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie."
+              data-gallery-inquire="../index.html?produkt=Du%C5%BCy%20portret%20pupila#kontakt"
               aria-label="Duży portret pupila — zobacz galerię"
             >
               <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/personalizowane-zwierzaki" data-image-index="5" data-image-alt="Duży portret pupila">
@@ -211,8 +286,7 @@
               </div>
             </button>
             <div class="product-card__footer">
-              <a class="product-card__inquire" href="../index.html#kontakt">Wyślij zapytanie</a>
-              <p class="product-card__safety">Bezpieczeństwo: maskotka dekoracyjna do pokoju dziecięcego (nie zabawka do intensywnej zabawy). Oczy i detale są trwale mocowane; poniżej 3. r.ż. tylko pod nadzorem dorosłych.</p>
+              <a class="product-card__inquire" href="../index.html?produkt=Du%C5%BCy%20portret%20pupila#kontakt">Zapytaj o produkt</a>
             </div>
           </article>
           <article class="product-card">
@@ -223,6 +297,13 @@
               data-gallery-base="../assets/images/oferta/personalizowane-zwierzaki/06"
               data-gallery-fallback=""
               data-gallery-title="Własny projekt"
+              data-gallery-price="wycena indywidualna"
+              data-gallery-desc="Dekoracyjne amigurumi pupila ze zdjęcia — pamiątka z charakterem, z polskiej bawełny."
+              data-gallery-material="Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać."
+              data-gallery-safety="Bezpieczeństwo: maskotka dekoracyjna do pokoju dziecięcego (nie zabawka do intensywnej zabawy). Oczy i detale są trwale mocowane; poniżej 3. r.ż. tylko pod nadzorem dorosłych."
+              data-gallery-care="Pranie ręczne w letniej wodzie, bez wybielaczy. Suszyć na płasko, z dala od grzejnika. Nie prasować na wysokiej temperaturze."
+              data-gallery-lead="Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie."
+              data-gallery-inquire="../index.html?produkt=W%C5%82asny%20projekt#kontakt"
               aria-label="Własny projekt — zobacz galerię"
             >
               <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/personalizowane-zwierzaki" data-image-index="6" data-image-alt="Własny projekt">
@@ -240,8 +321,7 @@
               </div>
             </button>
             <div class="product-card__footer">
-              <a class="product-card__inquire" href="../index.html#kontakt">Wyślij zapytanie</a>
-              <p class="product-card__safety">Bezpieczeństwo: maskotka dekoracyjna do pokoju dziecięcego (nie zabawka do intensywnej zabawy). Oczy i detale są trwale mocowane; poniżej 3. r.ż. tylko pod nadzorem dorosłych.</p>
+              <a class="product-card__inquire" href="../index.html?produkt=W%C5%82asny%20projekt#kontakt">Zapytaj o produkt</a>
             </div>
           </article>
         </div>
@@ -251,7 +331,7 @@
     <section class="order-cta" aria-labelledby="order-cta-title">
       <div class="container order-cta__inner">
         <p class="eyebrow">Zapytanie</p>
-        <h2 id="order-cta-title" class="order-cta__title">Masz pomysł? Wyślij propozycję.</h2>
+        <h2 id="order-cta-title" class="order-cta__title">Gotowa na swoją realizację?</h2>
         <p class="order-cta__text">To nie sklep z koszykiem — napisz przez formularz albo na Facebooku / Instagramie. Razem ustalimy kolor, rozmiar i wycenę.</p>
         <div class="order-cta__actions">
           <a class="btn btn--primary" href="../index.html#kontakt">Wyślij zapytanie</a>
@@ -287,34 +367,65 @@
         ·
         <a href="https://www.instagram.com/szydelkomania_amigurumi/" target="_blank" rel="noopener noreferrer">Instagram</a>
         ·
-        <a href="../regulamin.html">Regulamin i RODO</a>
+        <a href="../regulamin.html" target="_blank" rel="noopener noreferrer">Regulamin i RODO</a>
         ·
         <a href="../index.html#kontakt">Wyślij zapytanie</a>
       </p>
     </div>
   </footer>
 
-  <div class="lightbox" id="lightbox" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-label="Galeria produktu">
+  <div class="lightbox lightbox--product" id="lightbox" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-label="Podgląd produktu">
     <div class="lightbox__backdrop" data-lightbox-close></div>
-    <div class="lightbox__dialog">
+    <div class="lightbox__dialog lightbox__dialog--product">
       <button class="lightbox__close" type="button" data-lightbox-close aria-label="Zamknij">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
       </button>
-      <div class="lightbox__stage">
-        <button class="lightbox__nav lightbox__nav--prev" type="button" data-lightbox-prev aria-label="Poprzednie zdjęcie" hidden>
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
-        </button>
-        <img class="lightbox__img" src="" alt="" width="1200" height="1500" />
-        <button class="lightbox__nav lightbox__nav--next" type="button" data-lightbox-next aria-label="Następne zdjęcie" hidden>
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
-        </button>
+      <div class="lightbox__layout">
+        <div class="lightbox__gallery">
+          <div class="lightbox__thumbs" id="lightbox-thumbs" hidden></div>
+          <div class="lightbox__stage">
+            <button class="lightbox__nav lightbox__nav--prev" type="button" data-lightbox-prev aria-label="Poprzednie zdjęcie" hidden>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <img class="lightbox__img" src="" alt="" width="1200" height="1500" />
+            <button class="lightbox__nav lightbox__nav--next" type="button" data-lightbox-next aria-label="Następne zdjęcie" hidden>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="lightbox__info" id="lightbox-info">
+          <h2 class="lightbox__title" id="lightbox-title"></h2>
+          <p class="lightbox__price" id="lightbox-price"></p>
+          <p class="lightbox__desc" id="lightbox-desc"></p>
+          <div class="lightbox__accordions">
+            <details class="faq__item lightbox__accordion" open>
+              <summary class="faq__question">Skład</summary>
+              <div class="faq__answer" id="lightbox-material"></div>
+            </details>
+            <details class="faq__item lightbox__accordion">
+              <summary class="faq__question">Bezpieczeństwo</summary>
+              <div class="faq__answer" id="lightbox-safety"></div>
+            </details>
+          </div>
+          <div class="lightbox__actions">
+            <a class="btn btn--primary" id="lightbox-inquire" href="../index.html#kontakt">Zapytaj o produkt</a>
+            <a class="btn btn--social" href="https://www.facebook.com/szydelkomania.amigurumi/" target="_blank" rel="noopener noreferrer">
+              <img src="../assets/icons/facebook.svg" alt="" width="18" height="18" />
+              Facebook
+            </a>
+            <a class="btn btn--social" href="https://www.instagram.com/szydelkomania_amigurumi/" target="_blank" rel="noopener noreferrer">
+              <img src="../assets/icons/instagram.svg" alt="" width="18" height="18" />
+              Instagram
+            </a>
+          </div>
+        </div>
       </div>
-      <p class="lightbox__caption" id="lightbox-caption"></p>
+      <p class="lightbox__caption" id="lightbox-caption" hidden></p>
       <p class="lightbox__counter" id="lightbox-counter" hidden></p>
     </div>
   </div>
-  <script type="module" src="../js/main.js"></script>
-  <script type="module" src="../js/media-loader.js"></script>
-  <script type="module" src="../js/animations.js"></script>
+  <script type="module" src="../js/main.js?v=20260813d"></script>
+  <script type="module" src="../js/media-loader.js?v=20260813d"></script>
+  <script type="module" src="../js/animations.js?v=20260813d"></script>
 </body>
 </html>

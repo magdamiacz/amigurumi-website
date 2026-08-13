@@ -1,0 +1,39 @@
+name: Deploy to LH.pl
+
+on:
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Pobierz kod
+        uses: actions/checkout@v6
+
+      - name: Zainstaluj lftp
+        run: sudo apt-get update && sudo apt-get install -y lftp
+
+      - name: Deploy na LH.pl
+        env:
+          FTP_HOST: ${{ secrets.LH_FTP_HOST }}
+          FTP_USER: ${{ secrets.LH_FTP_USER }}
+          FTP_PASSWORD: ${{ secrets.LH_FTP_PASSWORD }}
+        run: |
+          lftp -c "
+            open ftp://$FTP_HOST;
+            user \"$FTP_USER\" \"$FTP_PASSWORD\";
+            mirror --reverse \
+              --delete \
+              --verbose \
+              --exclude .git/ \
+              --exclude .github/ \
+              ./ /;
+          "

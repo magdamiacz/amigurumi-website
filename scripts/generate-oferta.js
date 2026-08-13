@@ -14,6 +14,47 @@ const SAFETY_GENERAL =
 const SAFETY_PET =
   "Bezpieczeństwo: zabawka dla zwierząt — używaj pod nadzorem. Usuń przy uszkodzeniu (ryzyko połknięcia włóczki). Nie dla dzieci.";
 
+const MATERIAL_COTTON =
+  "Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać.";
+const CARE_GENERAL =
+  "Pranie ręczne w letniej wodzie, bez wybielaczy. Suszyć na płasko, z dala od grzejnika. Nie prasować na wysokiej temperaturze.";
+const CARE_PET =
+  "Po zabawie sprawdź splot. Przy uszkodzeniu odłóż zabawkę — luźna włóczka nie powinna trafić do żołądka pupila. Czyść na sucho lub delikatnie ręcznie.";
+const LEAD_TIME_GENERAL =
+  "Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie.";
+
+function copyFor(c) {
+  return {
+    material: c.material || MATERIAL_COTTON,
+    care: c.care || (c.safety === SAFETY_PET ? CARE_PET : CARE_GENERAL),
+    lead: c.lead || LEAD_TIME_GENERAL,
+    safety: c.safety,
+  };
+}
+
+function esc(s) {
+  return String(s)
+    .replace(/&/g, "&amp;")
+    .replace(/"/g, "&quot;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+}
+
+function galleryDataAttrs(c, title, priceFull) {
+  const copy = copyFor(c);
+  const inquire = `../index.html?produkt=${encodeURIComponent(title)}#kontakt`;
+  return [
+    `data-gallery-title="${esc(title)}"`,
+    `data-gallery-price="${esc(priceFull)}"`,
+    `data-gallery-desc="${esc(c.short)}"`,
+    `data-gallery-material="${esc(copy.material)}"`,
+    `data-gallery-safety="${esc(copy.safety)}"`,
+    `data-gallery-care="${esc(copy.care)}"`,
+    `data-gallery-lead="${esc(copy.lead)}"`,
+    `data-gallery-inquire="${esc(inquire)}"`,
+  ].join("\n              ");
+}
+
 const cats = [
   {
     slug: "torebki",
@@ -222,6 +263,7 @@ function productCards(c, folderImages) {
       const fallbackMatch = media.match(/src="([^"]+)"/);
       const fallback = fallbackMatch ? fallbackMatch[1] : "";
       const galleryBase = `../assets/images/oferta/${c.slug}/${n}`;
+      const dataAttrs = galleryDataAttrs(c, p.name, priceFull);
       return `
           <article class="product-card">
             <button
@@ -230,8 +272,8 @@ function productCards(c, folderImages) {
               data-product-gallery
               data-gallery-base="${galleryBase}"
               data-gallery-fallback="${fallback}"
-              data-gallery-title="${p.name}"
-              aria-label="${p.name} — zobacz galerię"
+              ${dataAttrs}
+              aria-label="${esc(p.name)} — zobacz galerię"
             >
               <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/${c.slug}" data-image-index="${i + 1}" data-image-alt="${p.name}">
                 ${media}
@@ -244,8 +286,7 @@ function productCards(c, folderImages) {
               </div>
             </button>
             <div class="product-card__footer">
-              <a class="product-card__inquire" href="../index.html#kontakt">Wyślij zapytanie</a>
-              <p class="product-card__safety">${c.safety}</p>
+              <a class="product-card__inquire" href="../index.html?produkt=${encodeURIComponent(p.name)}#kontakt">Zapytaj o produkt</a>
             </div>
           </article>`;
     })
@@ -258,6 +299,7 @@ function extraImageCards(c, folderImages) {
     .map((img) => {
       const n = String(img.index).padStart(2, "0");
       const galleryBase = `../assets/images/oferta/${c.slug}/${n}`;
+      const dataAttrs = galleryDataAttrs(c, `Realizacja ${n}`, "wycena indywidualna");
       return `
           <article class="product-card">
             <button
@@ -266,7 +308,7 @@ function extraImageCards(c, folderImages) {
               data-product-gallery
               data-gallery-base="${galleryBase}"
               data-gallery-fallback="${img.src}"
-              data-gallery-title="Realizacja ${n}"
+              ${dataAttrs}
               aria-label="Realizacja ${n} — zobacz galerię"
             >
               <figure class="product-card__media media-slot">
@@ -278,12 +320,106 @@ function extraImageCards(c, folderImages) {
               </div>
             </button>
             <div class="product-card__footer">
-              <a class="product-card__inquire" href="../index.html#kontakt">Wyślij zapytanie</a>
-              <p class="product-card__safety">${c.safety}</p>
+              <a class="product-card__inquire" href="../index.html?produkt=${encodeURIComponent(`Realizacja ${n}`)}#kontakt">Zapytaj o produkt</a>
             </div>
           </article>`;
     })
     .join("");
+}
+
+function categoryGallery(c, folderImages) {
+  const imgs = folderImages.map((img) => ({
+    src: img.src,
+    alt: `${c.title} — realizacja ${String(img.index).padStart(2, "0")}`,
+  }));
+  const fallbacks = {
+    torebki: "../assets/images/image-1.jpg",
+    plecaki: "../assets/images/cat-plecaki.jpg",
+    maskotki: "../assets/images/cat-maskotki.jpg",
+    kubeczki: "../assets/images/about-tworczyni.jpg",
+  };
+  if (!imgs.length && fallbacks[c.slug]) {
+    imgs.push({ src: fallbacks[c.slug], alt: c.title });
+  }
+  return imgs;
+}
+
+function fromPrice(c) {
+  const priced = c.products.find((p) => p.price && p.price !== "wycena");
+  return priced ? priced.price : "wycena indywidualna";
+}
+
+function pdpSection(c, folderImages) {
+  const copy = copyFor(c);
+  const gallery = categoryGallery(c, folderImages);
+  const main = gallery[0];
+  const thumbs = gallery
+    .map(
+      (img, i) => `
+            <button type="button" class="pdp__thumb${i === 0 ? " is-active" : ""}" data-pdp-thumb data-src="${img.src}" aria-label="Zdjęcie ${i + 1}" ${i === 0 ? 'aria-current="true"' : ""}>
+              <img src="${img.src}" alt="" width="72" height="72" />
+            </button>`
+    )
+    .join("");
+  const placeholder = `
+            <div class="media-slot__placeholder pdp__placeholder" style="aspect-ratio: 1 / 1;" role="img" aria-label="${esc(c.title)}">
+              <svg viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="1" height="1" fill="#E4D9CB"/></svg>
+              <span class="media-slot__label">${c.slug}/01.jpg</span>
+            </div>`;
+  const stage = main
+    ? `<img class="pdp__main" src="${main.src}" alt="${esc(main.alt)}" width="800" height="800" />`
+    : placeholder;
+
+  return `
+    <section class="pdp" aria-labelledby="page-title">
+      <div class="container pdp__grid">
+        <div class="pdp__gallery" data-pdp-gallery>
+          ${gallery.length > 1 ? `<div class="pdp__thumbs">${thumbs}</div>` : ""}
+          <figure class="pdp__stage">
+            ${stage}
+            ${
+              gallery.length > 1
+                ? `<button class="pdp__nav pdp__nav--prev" type="button" data-pdp-prev aria-label="Poprzednie zdjęcie"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
+            <button class="pdp__nav pdp__nav--next" type="button" data-pdp-next aria-label="Następne zdjęcie"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></button>`
+                : ""
+            }
+          </figure>
+        </div>
+        <div class="pdp__info">
+          <nav class="breadcrumbs" aria-label="Okruszki">
+            <a href="../index.html">Strona główna</a>
+            <span aria-hidden="true">/</span>
+            <a href="../index.html#oferta">Oferta</a>
+            <span aria-hidden="true">/</span>
+            <span aria-current="page">${c.title}</span>
+          </nav>
+          <h1 id="page-title" class="pdp__title">${c.title}</h1>
+          <p class="pdp__price">${fromPrice(c)}</p>
+          <p class="pdp__desc">${c.short}</p>
+          <div class="pdp__accordions">
+            <details class="faq__item pdp__accordion" open>
+              <summary class="faq__question">Skład</summary>
+              <div class="faq__answer"><p>${esc(copy.material)}</p></div>
+            </details>
+            <details class="faq__item pdp__accordion">
+              <summary class="faq__question">Bezpieczeństwo</summary>
+              <div class="faq__answer"><p>${esc(copy.safety)}</p></div>
+            </details>
+          </div>
+          <div class="pdp__actions">
+            <a class="btn btn--primary" href="../index.html?produkt=${encodeURIComponent(c.title)}#kontakt">Zapytaj o produkt</a>
+            <a class="btn btn--social" href="${FB}" target="_blank" rel="noopener noreferrer">
+              <img src="../assets/icons/facebook.svg" alt="" width="18" height="18" />
+              Facebook
+            </a>
+            <a class="btn btn--social" href="${IG}" target="_blank" rel="noopener noreferrer">
+              <img src="../assets/icons/instagram.svg" alt="" width="18" height="18" />
+              Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>`;
 }
 
 function socialBtns(className = "") {
@@ -302,27 +438,58 @@ function socialBtns(className = "") {
 
 function legalNavLinks(prefix = "../") {
   return `
-          <li><a class="nav__link" href="${prefix}regulamin.html">Regulamin</a></li>`;
+          <li><a class="nav__link" href="${prefix}regulamin.html" target="_blank" rel="noopener noreferrer">Regulamin</a></li>`;
 }
 
 function lightboxMarkup() {
   return `
-  <div class="lightbox" id="lightbox" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-label="Galeria produktu">
+  <div class="lightbox lightbox--product" id="lightbox" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-label="Podgląd produktu">
     <div class="lightbox__backdrop" data-lightbox-close></div>
-    <div class="lightbox__dialog">
+    <div class="lightbox__dialog lightbox__dialog--product">
       <button class="lightbox__close" type="button" data-lightbox-close aria-label="Zamknij">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
       </button>
-      <div class="lightbox__stage">
-        <button class="lightbox__nav lightbox__nav--prev" type="button" data-lightbox-prev aria-label="Poprzednie zdjęcie" hidden>
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
-        </button>
-        <img class="lightbox__img" src="" alt="" width="1200" height="1500" />
-        <button class="lightbox__nav lightbox__nav--next" type="button" data-lightbox-next aria-label="Następne zdjęcie" hidden>
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
-        </button>
+      <div class="lightbox__layout">
+        <div class="lightbox__gallery">
+          <div class="lightbox__thumbs" id="lightbox-thumbs" hidden></div>
+          <div class="lightbox__stage">
+            <button class="lightbox__nav lightbox__nav--prev" type="button" data-lightbox-prev aria-label="Poprzednie zdjęcie" hidden>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <img class="lightbox__img" src="" alt="" width="1200" height="1500" />
+            <button class="lightbox__nav lightbox__nav--next" type="button" data-lightbox-next aria-label="Następne zdjęcie" hidden>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="lightbox__info" id="lightbox-info">
+          <h2 class="lightbox__title" id="lightbox-title"></h2>
+          <p class="lightbox__price" id="lightbox-price"></p>
+          <p class="lightbox__desc" id="lightbox-desc"></p>
+          <div class="lightbox__accordions">
+            <details class="faq__item lightbox__accordion" open>
+              <summary class="faq__question">Skład</summary>
+              <div class="faq__answer" id="lightbox-material"></div>
+            </details>
+            <details class="faq__item lightbox__accordion">
+              <summary class="faq__question">Bezpieczeństwo</summary>
+              <div class="faq__answer" id="lightbox-safety"></div>
+            </details>
+          </div>
+          <div class="lightbox__actions">
+            <a class="btn btn--primary" id="lightbox-inquire" href="../index.html#kontakt">Zapytaj o produkt</a>
+            <a class="btn btn--social" href="${FB}" target="_blank" rel="noopener noreferrer">
+              <img src="../assets/icons/facebook.svg" alt="" width="18" height="18" />
+              Facebook
+            </a>
+            <a class="btn btn--social" href="${IG}" target="_blank" rel="noopener noreferrer">
+              <img src="../assets/icons/instagram.svg" alt="" width="18" height="18" />
+              Instagram
+            </a>
+          </div>
+        </div>
       </div>
-      <p class="lightbox__caption" id="lightbox-caption"></p>
+      <p class="lightbox__caption" id="lightbox-caption" hidden></p>
       <p class="lightbox__counter" id="lightbox-counter" hidden></p>
     </div>
   </div>`;
@@ -345,9 +512,9 @@ function page(c) {
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@400;500;600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/reset.css" />
-  <link rel="stylesheet" href="../css/tokens.css" />
-  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reset.css?v=20260813d" />
+  <link rel="stylesheet" href="../css/tokens.css?v=20260813d" />
+  <link rel="stylesheet" href="../css/styles.css?v=20260813d" />
 </head>
 <body class="page-category">
   <a class="skip-link" href="#main">Przejdź do treści</a>
@@ -388,17 +555,13 @@ ${legalNavLinks()}
   </div>
 
   <main id="main">
-    <section class="section product-gallery" aria-labelledby="page-title">
+${pdpSection(c, folderImages)}
+
+    <section class="section product-gallery" aria-labelledby="gallery-title">
       <div class="container">
         <header class="section-header">
-          <nav class="breadcrumbs" aria-label="Okruszki">
-            <a href="../index.html">Strona główna</a>
-            <span aria-hidden="true">/</span>
-            <a href="../index.html#oferta">Oferta</a>
-            <span aria-hidden="true">/</span>
-            <span aria-current="page">${c.title}</span>
-          </nav>
-          <h1 id="page-title" class="section-title">${c.title}</h1>
+          <p class="eyebrow">Realizacje</p>
+          <h2 id="gallery-title" class="section-title">Przykładowe modele</h2>
         </header>
         <div class="product-grid" data-auto-gallery="${c.slug}" data-gallery-base="../assets/images/oferta/${c.slug}" data-contact-href="../index.html#kontakt">
 ${productCards(c, folderImages)}${extraImageCards(c, folderImages)}
@@ -409,7 +572,7 @@ ${productCards(c, folderImages)}${extraImageCards(c, folderImages)}
     <section class="order-cta" aria-labelledby="order-cta-title">
       <div class="container order-cta__inner">
         <p class="eyebrow">Zapytanie</p>
-        <h2 id="order-cta-title" class="order-cta__title">Masz pomysł? Wyślij propozycję.</h2>
+        <h2 id="order-cta-title" class="order-cta__title">Gotowa na swoją realizację?</h2>
         <p class="order-cta__text">To nie sklep z koszykiem — napisz przez formularz albo na Facebooku / Instagramie. Razem ustalimy kolor, rozmiar i wycenę.</p>
         <div class="order-cta__actions">
           <a class="btn btn--primary" href="../index.html#kontakt">Wyślij zapytanie</a>
@@ -435,16 +598,16 @@ ${socialBtns()}
         ·
         <a href="${IG}" target="_blank" rel="noopener noreferrer">Instagram</a>
         ·
-        <a href="../regulamin.html">Regulamin i RODO</a>
+        <a href="../regulamin.html" target="_blank" rel="noopener noreferrer">Regulamin i RODO</a>
         ·
         <a href="../index.html#kontakt">Wyślij zapytanie</a>
       </p>
     </div>
   </footer>
 ${lightboxMarkup()}
-  <script type="module" src="../js/main.js"></script>
-  <script type="module" src="../js/media-loader.js"></script>
-  <script type="module" src="../js/animations.js"></script>
+  <script type="module" src="../js/main.js?v=20260813d"></script>
+  <script type="module" src="../js/media-loader.js?v=20260813d"></script>
+  <script type="module" src="../js/animations.js?v=20260813d"></script>
 </body>
 </html>
 `;

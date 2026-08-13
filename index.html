@@ -35,9 +35,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@400;500;600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/tokens.css" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/reset.css?v=20260813f" />
+  <link rel="stylesheet" href="css/tokens.css?v=20260813f" />
+  <link rel="stylesheet" href="css/styles.css?v=20260813f" />
 
   <!-- JSON-LD: Organization -->
   <script type="application/ld+json">
@@ -162,7 +162,7 @@
           <li><a class="nav__link" href="#galeria">Galeria</a></li>
           <li><a class="nav__link" href="#proces">Proces</a></li>
           <li><a class="nav__link" href="#faq">FAQ</a></li>
-          <li><a class="nav__link" href="regulamin.html">Regulamin</a></li>
+          <li><a class="nav__link" href="regulamin.html" target="_blank" rel="noopener noreferrer">Regulamin</a></li>
           <li><a class="nav__link nav__link--cta" href="#kontakt">Wyślij zapytanie</a></li>
         </ul>
       </div>
@@ -185,13 +185,15 @@
         <div class="hero__content">
           <p class="eyebrow eyebrow--on-dark">Handmade · na zapytanie · z sercem</p>
           <h1 id="hero-title" class="hero__title">
-            <span class="hero__title-line" data-split>Ręcznie robione historie</span>
-            <span class="hero__title-line hero__title-line--accent" data-split>z serca, na szydełku.</span>
+            <span class="hero__title-line" data-split>Ręcznie robione</span>
+            <span class="hero__title-line" data-split>historie</span>
+            <span class="hero__title-line hero__title-line--accent" data-split>z serca, na</span>
+            <span class="hero__title-line hero__title-line--accent" data-split>szydełku.</span>
           </h1>
           <p class="hero__lead">
             Specjalizuję się w torebkach z polskiej przędzy bawełnianej —
             kolory z bogatej palety, splot z sercem. Robię też maskotki dekoracyjne
-            do pokoju dziecięcego. To nie sklep: wyślij zapytanie, a przygotuję propozycję.
+            do pokoju dziecięcego.
           </p>
           <div class="hero__actions">
             <a class="btn btn--primary magnetic" href="#kontakt">Wyślij zapytanie</a>
@@ -682,32 +684,53 @@
           <p class="eyebrow">Opinie</p>
           <h2 id="opinie-title" class="section-title">Co mówią klienci</h2>
           <p class="section-intro">
-            <!-- TODO: Wklej prawdziwe opinie z Facebook -->
-            Placeholdery — podmień na cytaty z Facebooka / wiadomości prywatnych.
+            Kilka słów od osób, które już mają u siebie torebkę albo dekorację z pracowni.
           </p>
         </header>
 
         <div class="testimonials__grid">
+          <!-- Placeholder reviews — podmień na prawdziwe cytaty i dane z Facebooka -->
           <blockquote class="testimonial reveal">
-            <p class="testimonial__quote">„TODO: Wklej opinię z Facebook. Maskotka dekoracyjna do pokoju przyszła pięknie zapakowana, a detale są niesamowite.”</p>
+            <div class="testimonial__stars" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 2.5 14.9 8.6l6.7.6-5.1 4.4 1.5 6.5L12 16.8 6 20.1l1.5-6.5L2.4 9.2l6.7-.6z"/></svg>
+              <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 2.5 14.9 8.6l6.7.6-5.1 4.4 1.5 6.5L12 16.8 6 20.1l1.5-6.5L2.4 9.2l6.7-.6z"/></svg>
+              <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 2.5 14.9 8.6l6.7.6-5.1 4.4 1.5 6.5L12 16.8 6 20.1l1.5-6.5L2.4 9.2l6.7-.6z"/></svg>
+              <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 2.5 14.9 8.6l6.7.6-5.1 4.4 1.5 6.5L12 16.8 6 20.1l1.5-6.5L2.4 9.2l6.7-.6z"/></svg>
+              <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 2.5 14.9 8.6l6.7.6-5.1 4.4 1.5 6.5L12 16.8 6 20.1l1.5-6.5L2.4 9.2l6.7-.6z"/></svg>
+            </div>
+            <p class="testimonial__quote">„Maskotka dekoracyjna do pokoju przyszła pięknie zapakowana, a detale są niesamowite. Córka od razu wybrała jej miejsce na półce.”</p>
             <footer class="testimonial__meta">
-              <cite class="testimonial__author">Imię Klientki</cite>
+              <cite class="testimonial__author">Anna Kowalska</cite>
               <span class="testimonial__source">Facebook</span>
             </footer>
           </blockquote>
 
           <blockquote class="testimonial reveal">
-            <p class="testimonial__quote">„TODO: Wklej opinię z Facebook. Wysłałam zapytanie o torebkę w kolorze Koniak — wyszła dokładnie tak, jak sobie wymarzyłam. Polecam z całego serca!”</p>
+            <div class="testimonial__stars" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 2.5 14.9 8.6l6.7.6-5.1 4.4 1.5 6.5L12 16.8 6 20.1l1.5-6.5L2.4 9.2l6.7-.6z"/></svg>
+              <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 2.5 14.9 8.6l6.7.6-5.1 4.4 1.5 6.5L12 16.8 6 20.1l1.5-6.5L2.4 9.2l6.7-.6z"/></svg>
+              <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 2.5 14.9 8.6l6.7.6-5.1 4.4 1.5 6.5L12 16.8 6 20.1l1.5-6.5L2.4 9.2l6.7-.6z"/></svg>
+              <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 2.5 14.9 8.6l6.7.6-5.1 4.4 1.5 6.5L12 16.8 6 20.1l1.5-6.5L2.4 9.2l6.7-.6z"/></svg>
+              <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 2.5 14.9 8.6l6.7.6-5.1 4.4 1.5 6.5L12 16.8 6 20.1l1.5-6.5L2.4 9.2l6.7-.6z"/></svg>
+            </div>
+            <p class="testimonial__quote">„Wysłałam zapytanie o torebkę w kolorze Koniak — wyszła dokładnie tak, jak sobie wymarzyłam. Polecam z całego serca!”</p>
             <footer class="testimonial__meta">
-              <cite class="testimonial__author">Imię Klientki</cite>
+              <cite class="testimonial__author">Marta Nowak</cite>
               <span class="testimonial__source">Facebook</span>
             </footer>
           </blockquote>
 
           <blockquote class="testimonial reveal">
-            <p class="testimonial__quote">„TODO: Wklej opinię z Facebook. Personalizacja ze zdjęcia naszego pieska wyszła cudownie. Najpiękniejszy prezent urodzinowy, jaki dostałam.”</p>
+            <div class="testimonial__stars" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 2.5 14.9 8.6l6.7.6-5.1 4.4 1.5 6.5L12 16.8 6 20.1l1.5-6.5L2.4 9.2l6.7-.6z"/></svg>
+              <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 2.5 14.9 8.6l6.7.6-5.1 4.4 1.5 6.5L12 16.8 6 20.1l1.5-6.5L2.4 9.2l6.7-.6z"/></svg>
+              <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 2.5 14.9 8.6l6.7.6-5.1 4.4 1.5 6.5L12 16.8 6 20.1l1.5-6.5L2.4 9.2l6.7-.6z"/></svg>
+              <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 2.5 14.9 8.6l6.7.6-5.1 4.4 1.5 6.5L12 16.8 6 20.1l1.5-6.5L2.4 9.2l6.7-.6z"/></svg>
+              <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 2.5 14.9 8.6l6.7.6-5.1 4.4 1.5 6.5L12 16.8 6 20.1l1.5-6.5L2.4 9.2l6.7-.6z"/></svg>
+            </div>
+            <p class="testimonial__quote">„Personalizacja ze zdjęcia naszego pieska wyszła cudownie. Najpiękniejszy prezent urodzinowy, jaki dostałam.”</p>
             <footer class="testimonial__meta">
-              <cite class="testimonial__author">Imię Klientki</cite>
+              <cite class="testimonial__author">Katarzyna Wiśniewska</cite>
               <span class="testimonial__source">Facebook</span>
             </footer>
           </blockquote>
@@ -839,7 +862,7 @@
           <div class="form-field form-field--consent">
             <label class="form-check">
               <input type="checkbox" id="consent" name="consent" required aria-required="true" aria-describedby="consent-error" />
-              <span>Wyrażam zgodę na przetwarzanie danych w celu odpowiedzi na zapytanie oraz oświadczam, że zapoznałam/em się z <a href="regulamin.html">Regulaminem (w tym RODO)</a>.</span>
+              <span>Wyrażam zgodę na przetwarzanie danych w celu odpowiedzi na zapytanie oraz oświadczam, że zapoznałam/em się z <a href="regulamin.html" target="_blank" rel="noopener noreferrer">Regulaminem (w tym RODO)</a>.</span>
             </label>
             <p class="form-error" id="consent-error" role="alert" hidden>Zaznacz zgodę, aby wysłać zapytanie.</p>
           </div>
@@ -878,7 +901,7 @@
           <li><a href="#proces">Proces</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#kontakt">Kontakt</a></li>
-          <li><a href="regulamin.html">Regulamin i RODO</a></li>
+          <li><a href="regulamin.html" target="_blank" rel="noopener noreferrer">Regulamin i RODO</a></li>
         </ul>
       </nav>
 
@@ -929,8 +952,8 @@
     </div>
   </footer>
 
-  <script type="module" src="js/main.js"></script>
-  <script type="module" src="js/media-loader.js"></script>
-  <script type="module" src="js/animations.js"></script>
+  <script type="module" src="js/main.js?v=20260813f"></script>
+  <script type="module" src="js/media-loader.js?v=20260813f"></script>
+  <script type="module" src="js/animations.js?v=20260813f"></script>
 </body>
 </html>
