@@ -21,19 +21,37 @@ jobs:
       - name: Zainstaluj lftp
         run: sudo apt-get update && sudo apt-get install -y lftp
 
+      - name: Sprawdź konfigurację
+        env:
+          FTP_HOST: ${{ secrets.LH_FTP_HOST }}
+          FTP_USER: ${{ secrets.LH_FTP_USER }}
+        run: |
+          if [ -z "$FTP_HOST" ]; then
+            echo "BRAK LH_FTP_HOST"
+            exit 1
+          fi
+
+          if [ -z "$FTP_USER" ]; then
+            echo "BRAK LH_FTP_USER"
+            exit 1
+          fi
+
+          echo "FTP host jest ustawiony"
+          echo "FTP user jest ustawiony"
+
       - name: Deploy na LH.pl
         env:
           FTP_HOST: ${{ secrets.LH_FTP_HOST }}
           FTP_USER: ${{ secrets.LH_FTP_USER }}
           FTP_PASSWORD: ${{ secrets.LH_FTP_PASSWORD }}
         run: |
-          lftp -c "
-            open ftp://$FTP_HOST;
-            user \"$FTP_USER\" \"$FTP_PASSWORD\";
+          lftp -u "$FTP_USER","$FTP_PASSWORD" "ftp://$FTP_HOST" -e "
+            set ftp:passive-mode true;
             mirror --reverse \
               --delete \
               --verbose \
               --exclude .git/ \
               --exclude .github/ \
               ./ /;
+            bye;
           "
