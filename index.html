@@ -35,9 +35,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@400;500;600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="css/reset.css?v=20260813f" />
-  <link rel="stylesheet" href="css/tokens.css?v=20260813f" />
-  <link rel="stylesheet" href="css/styles.css?v=20260813f" />
+  <link rel="stylesheet" href="css/reset.css?v=20260813h" />
+  <link rel="stylesheet" href="css/tokens.css?v=20260813h" />
+  <link rel="stylesheet" href="css/styles.css?v=20260813h" />
 
   <!-- JSON-LD: Organization -->
   <script type="application/ld+json">
@@ -118,7 +118,7 @@
         "name": "Jak wysłać zapytanie?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Przez formularz na stronie albo Facebook / Instagram. Opisz pomysł, dołącz zdjęcie inspiracji jeśli masz – odezwę się z propozycją i wyceną."
+          "text": "Przez formularz na stronie albo Facebook / Instagram. Opisz pomysł – jeśli masz zdjęcie inspiracji, wyślij je na Facebooku lub Instagramie. Odezwę się z propozycją i wyceną."
         }
       }
     ]
@@ -287,7 +287,7 @@
               <img src="assets/images/image-1.jpg" alt="Szydełkowane torebki z polskiej przędzy bawełnianej" width="800" height="600" loading="lazy" />
             </figure>
             <div class="category-card__body">
-              <p class="category-card__eyebrow">Główna oferta</p>
+              <!-- <p class="category-card__eyebrow">Główna oferta</p> -->
               <h3 class="category-card__title">Torebki</h3>
               <p>Handmade z polskiej przędzy bawełnianej — 45+ kolorów, rozmiar i detal według Twojego zapytania.</p>
               <span class="text-link">Zobacz więcej <span aria-hidden="true">→</span></span>
@@ -413,101 +413,76 @@
         </header>
 
         <div class="gallery__grid" data-gallery>
-          <!-- 12 slots — replace placeholders with real images -->
-          <button class="gallery__item reveal" type="button" data-lightbox-src="assets/images/gallery-01.jpg" data-lightbox-alt="Maskotka dekoracyjna do pokoju dziecięcego — miś w koralowej pidżamce" data-title="Miś w koralowej pidżamce" data-year="2024">
-            <div class="media-slot__placeholder gallery__placeholder" style="aspect-ratio: 3 / 4;" aria-hidden="true">
-              <svg viewBox="0 0 3 4" xmlns="http://www.w3.org/2000/svg"><rect width="3" height="4" fill="#E8DFD3"/></svg>
-            </div>
-            <span class="gallery__overlay"><span class="gallery__caption">Miś w koralowej pidżamce · 2024</span></span>
-            <span class="visually-hidden">Otwórz: Miś w koralowej pidżamce</span>
+          <button class="gallery__item reveal" type="button" data-lightbox-src="assets/images/gallery-01.png" data-lightbox-alt="Kremowa szydełkowana torebka z uchwytem, trzymana na zewnątrz" data-title="Torebka kremowa">
+            <img src="assets/images/gallery-01.png" alt="Kremowa szydełkowana torebka z uchwytem, trzymana na zewnątrz" width="800" height="800" loading="lazy" decoding="async" />
+            <span class="gallery__overlay"><span class="gallery__caption">Torebka kremowa</span></span>
+            <span class="visually-hidden">Otwórz: Torebka kremowa</span>
           </button>
 
-          <button class="gallery__item reveal" type="button" data-lightbox-src="assets/images/gallery-02.jpg" data-lightbox-alt="Szydełkowy królik amigurumi z polskiej bawełny" data-title="Królik w szortach" data-year="2024">
-            <div class="media-slot__placeholder gallery__placeholder" style="aspect-ratio: 4 / 5;" aria-hidden="true">
-              <svg viewBox="0 0 4 5" xmlns="http://www.w3.org/2000/svg"><rect width="4" height="5" fill="#E8DFD3"/></svg>
-            </div>
-            <span class="gallery__overlay"><span class="gallery__caption">Królik w szortach · 2024</span></span>
-            <span class="visually-hidden">Otwórz: Królik w szortach</span>
+          <button class="gallery__item reveal" type="button" data-lightbox-src="assets/images/gallery-02.png" data-lightbox-alt="Oliwkowa szydełkowana torebka z motywem serca i złotym zapięciem" data-title="Torebka oliwkowa z sercem">
+            <img src="assets/images/gallery-02.png" alt="Oliwkowa szydełkowana torebka z motywem serca i złotym zapięciem" width="800" height="1000" loading="lazy" decoding="async" />
+            <span class="gallery__overlay"><span class="gallery__caption">Torebka oliwkowa z sercem</span></span>
+            <span class="visually-hidden">Otwórz: Torebka oliwkowa z sercem</span>
           </button>
 
-          <button class="gallery__item reveal" type="button" data-lightbox-src="assets/images/gallery-03.jpg" data-lightbox-alt="Torebka na szydełku z bawełnianej przędzy — kolor dusty rose" data-title="Torebka Dusty Rose" data-year="2025">
-            <div class="media-slot__placeholder gallery__placeholder" style="aspect-ratio: 1 / 1;" aria-hidden="true">
-              <svg viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="1" fill="#E8DFD3"/></svg>
-            </div>
-            <span class="gallery__overlay"><span class="gallery__caption">Torebka Dusty Rose · 2025</span></span>
-            <span class="visually-hidden">Otwórz: Torebka Dusty Rose</span>
+          <button class="gallery__item reveal" type="button" data-lightbox-src="assets/images/gallery-03.png" data-lightbox-alt="Zestaw dla noworodka Leon — miś, buciki i grzechotka w pudełku" data-title="Zestaw dla noworodka">
+            <img src="assets/images/gallery-03.png" alt="Zestaw dla noworodka Leon — miś, buciki i grzechotka w pudełku" width="800" height="800" loading="lazy" decoding="async" />
+            <span class="gallery__overlay"><span class="gallery__caption">Zestaw dla noworodka</span></span>
+            <span class="visually-hidden">Otwórz: Zestaw dla noworodka</span>
           </button>
 
-          <button class="gallery__item reveal" type="button" data-lightbox-src="assets/images/gallery-04.jpg" data-lightbox-alt="Laleczka Elisabeth — amigurumi handmade" data-title="Laleczka Elisabeth" data-year="2024">
-            <div class="media-slot__placeholder gallery__placeholder" style="aspect-ratio: 3 / 4;" aria-hidden="true">
-              <svg viewBox="0 0 3 4" xmlns="http://www.w3.org/2000/svg"><rect width="3" height="4" fill="#E8DFD3"/></svg>
-            </div>
-            <span class="gallery__overlay"><span class="gallery__caption">Laleczka Elisabeth · 2024</span></span>
-            <span class="visually-hidden">Otwórz: Laleczka Elisabeth</span>
+          <button class="gallery__item reveal" type="button" data-lightbox-src="assets/images/gallery-04.png" data-lightbox-alt="Szary kotek bawiący się miętową szydełkową meduzą" data-title="Meduza dla kota">
+            <img src="assets/images/gallery-04.png" alt="Szary kotek bawiący się miętową szydełkową meduzą" width="800" height="800" loading="lazy" decoding="async" />
+            <span class="gallery__overlay"><span class="gallery__caption">Meduza dla kota</span></span>
+            <span class="visually-hidden">Otwórz: Meduza dla kota</span>
           </button>
 
-          <button class="gallery__item reveal" type="button" data-lightbox-src="assets/images/gallery-05.jpg" data-lightbox-alt="Opaska na głowę z warkoczem — kolor szałwia" data-title="Opaska Szałwia" data-year="2025">
-            <div class="media-slot__placeholder gallery__placeholder" style="aspect-ratio: 5 / 4;" aria-hidden="true">
-              <svg viewBox="0 0 5 4" xmlns="http://www.w3.org/2000/svg"><rect width="5" height="4" fill="#E8DFD3"/></svg>
-            </div>
-            <span class="gallery__overlay"><span class="gallery__caption">Opaska Szałwia · 2025</span></span>
-            <span class="visually-hidden">Otwórz: Opaska Szałwia</span>
+          <button class="gallery__item reveal" type="button" data-lightbox-src="assets/images/gallery-05.png" data-lightbox-alt="Fuksjowy szydełkowany plecak ze złotym zapięciem" data-title="Plecak fuksja">
+            <img src="assets/images/gallery-05.png" alt="Fuksjowy szydełkowany plecak ze złotym zapięciem" width="800" height="800" loading="lazy" decoding="async" />
+            <span class="gallery__overlay"><span class="gallery__caption">Plecak fuksja</span></span>
+            <span class="visually-hidden">Otwórz: Plecak fuksja</span>
           </button>
 
-          <button class="gallery__item reveal" type="button" data-lightbox-src="assets/images/gallery-06.jpg" data-lightbox-alt="Słoniczka Ava — maskotka dekoracyjna do pokoju dziecięcego" data-title="Słoniczka Ava" data-year="2023">
-            <div class="media-slot__placeholder gallery__placeholder" style="aspect-ratio: 4 / 5;" aria-hidden="true">
-              <svg viewBox="0 0 4 5" xmlns="http://www.w3.org/2000/svg"><rect width="4" height="5" fill="#E8DFD3"/></svg>
-            </div>
-            <span class="gallery__overlay"><span class="gallery__caption">Słoniczka Ava · 2023</span></span>
-            <span class="visually-hidden">Otwórz: Słoniczka Ava</span>
+          <button class="gallery__item reveal" type="button" data-lightbox-src="assets/images/gallery-06.png" data-lightbox-alt="Beżowa szydełkowana torebka z białymi kwiatowymi motywami" data-title="Torebka z kwiatami">
+            <img src="assets/images/gallery-06.png" alt="Beżowa szydełkowana torebka z białymi kwiatowymi motywami" width="800" height="1000" loading="lazy" decoding="async" />
+            <span class="gallery__overlay"><span class="gallery__caption">Torebka z kwiatami</span></span>
+            <span class="visually-hidden">Otwórz: Torebka z kwiatami</span>
           </button>
 
-          <button class="gallery__item reveal" type="button" data-lightbox-src="assets/images/gallery-07.jpg" data-lightbox-alt="Miś Adaś — maskotka dekoracyjna do pokoju dziecięcego" data-title="Miś Adaś" data-year="2024">
-            <div class="media-slot__placeholder gallery__placeholder" style="aspect-ratio: 1 / 1;" aria-hidden="true">
-              <svg viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="1" fill="#E8DFD3"/></svg>
-            </div>
-            <span class="gallery__overlay"><span class="gallery__caption">Miś Adaś · 2024</span></span>
-            <span class="visually-hidden">Otwórz: Miś Adaś</span>
+          <button class="gallery__item reveal" type="button" data-lightbox-src="assets/images/gallery-07.png" data-lightbox-alt="Różowa i czarna szydełkowana torebka z kwiatami i perełkami" data-title="Torebki z perełkami">
+            <img src="assets/images/gallery-07.png" alt="Różowa i czarna szydełkowana torebka z kwiatami i perełkami" width="800" height="800" loading="lazy" decoding="async" />
+            <span class="gallery__overlay"><span class="gallery__caption">Torebki z perełkami</span></span>
+            <span class="visually-hidden">Otwórz: Torebki z perełkami</span>
           </button>
 
-          <button class="gallery__item reveal" type="button" data-lightbox-src="assets/images/gallery-08.jpg" data-lightbox-alt="Breloczek amigurumi — mini królik na kluczach" data-title="Breloczek mini-królik" data-year="2025">
-            <div class="media-slot__placeholder gallery__placeholder" style="aspect-ratio: 3 / 4;" aria-hidden="true">
-              <svg viewBox="0 0 3 4" xmlns="http://www.w3.org/2000/svg"><rect width="3" height="4" fill="#E8DFD3"/></svg>
-            </div>
-            <span class="gallery__overlay"><span class="gallery__caption">Breloczek mini-królik · 2025</span></span>
-            <span class="visually-hidden">Otwórz: Breloczek mini-królik</span>
+          <button class="gallery__item reveal" type="button" data-lightbox-src="assets/images/gallery-08.png" data-lightbox-alt="Fioletowa szydełkowana torebka z dużą różą 3D i skórzanymi uchwytami" data-title="Torebka z różą">
+            <img src="assets/images/gallery-08.png" alt="Fioletowa szydełkowana torebka z dużą różą 3D i skórzanymi uchwytami" width="800" height="1000" loading="lazy" decoding="async" />
+            <span class="gallery__overlay"><span class="gallery__caption">Torebka z różą</span></span>
+            <span class="visually-hidden">Otwórz: Torebka z różą</span>
           </button>
 
-          <button class="gallery__item reveal" type="button" data-lightbox-src="assets/images/gallery-09.jpg" data-lightbox-alt="Wilczek — maskotka dekoracyjna do pokoju dziecięcego" data-title="Wilczek" data-year="2024">
-            <div class="media-slot__placeholder gallery__placeholder" style="aspect-ratio: 4 / 5;" aria-hidden="true">
-              <svg viewBox="0 0 4 5" xmlns="http://www.w3.org/2000/svg"><rect width="4" height="5" fill="#E8DFD3"/></svg>
-            </div>
-            <span class="gallery__overlay"><span class="gallery__caption">Wilczek · 2024</span></span>
-            <span class="visually-hidden">Otwórz: Wilczek</span>
+          <button class="gallery__item reveal" type="button" data-lightbox-src="assets/images/gallery-09.png" data-lightbox-alt="Szydełkowa myszka w ogrodniczkach i pasująca grzechotka" data-title="Myszka i grzechotka">
+            <img src="assets/images/gallery-09.png" alt="Szydełkowa myszka w ogrodniczkach i pasująca grzechotka" width="800" height="1000" loading="lazy" decoding="async" />
+            <span class="gallery__overlay"><span class="gallery__caption">Myszka i grzechotka</span></span>
+            <span class="visually-hidden">Otwórz: Myszka i grzechotka</span>
           </button>
 
-          <button class="gallery__item reveal" type="button" data-lightbox-src="assets/images/gallery-10.jpg" data-lightbox-alt="Fioletowy miś amigurumi z polskiej bawełny" data-title="Fioletowy miś" data-year="2023">
-            <div class="media-slot__placeholder gallery__placeholder" style="aspect-ratio: 5 / 4;" aria-hidden="true">
-              <svg viewBox="0 0 5 4" xmlns="http://www.w3.org/2000/svg"><rect width="5" height="4" fill="#E8DFD3"/></svg>
-            </div>
-            <span class="gallery__overlay"><span class="gallery__caption">Fioletowy miś · 2023</span></span>
-            <span class="visually-hidden">Otwórz: Fioletowy miś</span>
+          <button class="gallery__item reveal" type="button" data-lightbox-src="assets/images/gallery-10.png" data-lightbox-alt="Zielone szydełkowe ocieplacze na kubki z czerwonymi rękawiczkami" data-title="Ocieplacze na kubki">
+            <img src="assets/images/gallery-10.png" alt="Zielone szydełkowe ocieplacze na kubki z czerwonymi rękawiczkami" width="800" height="1000" loading="lazy" decoding="async" />
+            <span class="gallery__overlay"><span class="gallery__caption">Ocieplacze na kubki</span></span>
+            <span class="visually-hidden">Otwórz: Ocieplacze na kubki</span>
           </button>
 
-          <button class="gallery__item reveal" type="button" data-lightbox-src="assets/images/gallery-11.jpg" data-lightbox-alt="Przywieszka do smoczka — handmade szydełko" data-title="Przywieszka do smoczka" data-year="2025">
-            <div class="media-slot__placeholder gallery__placeholder" style="aspect-ratio: 1 / 1;" aria-hidden="true">
-              <svg viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="1" fill="#E8DFD3"/></svg>
-            </div>
-            <span class="gallery__overlay"><span class="gallery__caption">Przywieszka do smoczka · 2025</span></span>
-            <span class="visually-hidden">Otwórz: Przywieszka do smoczka</span>
+          <button class="gallery__item reveal" type="button" data-lightbox-src="assets/images/gallery-11.png" data-lightbox-alt="Musztardowa szydełkowana torebka ze skórzaną klapką i złotym łańcuszkiem" data-title="Torebka musztardowa">
+            <img src="assets/images/gallery-11.png" alt="Musztardowa szydełkowana torebka ze skórzaną klapką i złotym łańcuszkiem" width="800" height="800" loading="lazy" decoding="async" />
+            <span class="gallery__overlay"><span class="gallery__caption">Torebka musztardowa</span></span>
+            <span class="visually-hidden">Otwórz: Torebka musztardowa</span>
           </button>
 
-          <button class="gallery__item reveal" type="button" data-lightbox-src="assets/images/gallery-12.jpg" data-lightbox-alt="Lama — maskotka dekoracyjna do pokoju dziecięcego" data-title="Lama" data-year="2024">
-            <div class="media-slot__placeholder gallery__placeholder" style="aspect-ratio: 3 / 4;" aria-hidden="true">
-              <svg viewBox="0 0 3 4" xmlns="http://www.w3.org/2000/svg"><rect width="3" height="4" fill="#E8DFD3"/></svg>
-            </div>
-            <span class="gallery__overlay"><span class="gallery__caption">Lama · 2024</span></span>
-            <span class="visually-hidden">Otwórz: Lama</span>
+          <button class="gallery__item reveal" type="button" data-lightbox-src="assets/images/gallery-12.png" data-lightbox-alt="Pastelowe szydełkowane koszyczki z twarzyczkami zajączków" data-title="Koszyczki zajączki">
+            <img src="assets/images/gallery-12.png" alt="Pastelowe szydełkowane koszyczki z twarzyczkami zajączków" width="800" height="800" loading="lazy" decoding="async" />
+            <span class="gallery__overlay"><span class="gallery__caption">Koszyczki zajączki</span></span>
+            <span class="visually-hidden">Otwórz: Koszyczki zajączki</span>
           </button>
         </div>
       </div>
@@ -620,7 +595,7 @@
               <span class="process__num" aria-hidden="true">01</span>
               <div>
                 <h3 class="process__title">Wyślij zapytanie</h3>
-                <p>Formularz na stronie, Facebook albo Instagram. Opisz pomysł — albo dołącz zdjęcie inspiracji.</p>
+                <p>Formularz na stronie, Facebook albo Instagram. Opisz pomysł — zdjęcie inspiracji możesz wysłać na Facebooku lub Instagramie.</p>
               </div>
             </li>
             <li class="process__step reveal">
@@ -792,7 +767,7 @@
           <details class="faq__item">
             <summary class="faq__question">Jak wysłać zapytanie? Czy to sklep?</summary>
             <div class="faq__answer">
-              <p>Nie — to nie sklep internetowy. Napisz przez <a href="#kontakt">formularz</a> albo Facebook / Instagram. Opisz pomysł, dołącz zdjęcie inspiracji jeśli masz — odezwę się z propozycją i wyceną. Nie ma przycisku „Kup teraz”.</p>
+              <p>Nie — to nie sklep internetowy. Napisz przez <a href="#kontakt">formularz</a> albo Facebook / Instagram. Opisz pomysł — jeśli masz zdjęcie inspiracji, wyślij je na Facebooku lub Instagramie. Odezwę się z propozycją i wyceną. Nie ma przycisku „Kup teraz”.</p>
             </div>
           </details>
         </div>
@@ -851,12 +826,6 @@
             <label class="form-label" for="message">Opisz swój pomysł <span class="required" aria-hidden="true">*</span></label>
             <textarea class="form-input form-textarea" id="message" name="message" rows="5" required aria-required="true" aria-describedby="message-error" placeholder="Np. torebka miejska, kolor Koniak, na co dzień…"></textarea>
             <p class="form-error" id="message-error" role="alert" hidden>Opisz krótko swoją propozycję.</p>
-          </div>
-
-          <div class="form-field">
-            <label class="form-label" for="inspiration">Zdjęcie inspiracji <span class="form-optional">(opcjonalnie)</span></label>
-            <input class="form-input form-file" type="file" id="inspiration" name="inspiration" accept="image/*" aria-describedby="file-hint" />
-            <p class="form-hint" id="file-hint">JPG, PNG lub WEBP — max 5 MB.</p>
           </div>
 
           <div class="form-field form-field--consent">
@@ -952,8 +921,8 @@
     </div>
   </footer>
 
-  <script type="module" src="js/main.js?v=20260813f"></script>
-  <script type="module" src="js/media-loader.js?v=20260813f"></script>
-  <script type="module" src="js/animations.js?v=20260813f"></script>
+  <script type="module" src="js/main.js?v=20260813h"></script>
+  <script type="module" src="js/media-loader.js?v=20260813h"></script>
+  <script type="module" src="js/animations.js?v=20260813h"></script>
 </body>
 </html>

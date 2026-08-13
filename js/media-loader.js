@@ -93,6 +93,7 @@ const hydrateGalleryItems = async () => {
   const items = document.querySelectorAll("[data-gallery] .gallery__item[data-lightbox-src]");
   await Promise.all(
     [...items].map(async (btn) => {
+      if (btn.querySelector("img")) return;
       const src = btn.getAttribute("data-lightbox-src");
       if (!src || src === "#") return;
       const ok = await probeImage(src);
