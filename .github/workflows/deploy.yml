@@ -12,6 +12,7 @@ permissions:
 
 jobs:
   deploy:
+    name: Deploy
     runs-on: ubuntu-latest
 
     steps:
@@ -19,12 +20,15 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Zainstaluj lftp
-        run: sudo apt-get update && sudo apt-get install -y lftp
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y lftp
 
-      - name: Sprawdź konfigurację
+      - name: Sprawdz konfiguracje
         env:
           FTP_HOST: ${{ secrets.LH_FTP_HOST }}
           FTP_USER: ${{ secrets.LH_FTP_USER }}
+          FTP_PASSWORD: ${{ secrets.LH_FTP_PASSWORD }}
         run: |
           if [ -z "$FTP_HOST" ]; then
             echo "BRAK LH_FTP_HOST"
@@ -36,8 +40,12 @@ jobs:
             exit 1
           fi
 
-          echo "FTP host jest ustawiony"
-          echo "FTP user jest ustawiony"
+          if [ -z "$FTP_PASSWORD" ]; then
+            echo "BRAK LH_FTP_PASSWORD"
+            exit 1
+          fi
+
+          echo "Wszystkie sekrety sa ustawione"
 
       - name: Deploy na LH.pl
         env:
@@ -47,11 +55,16 @@ jobs:
         run: |
           lftp -u "$FTP_USER","$FTP_PASSWORD" "ftp://$FTP_HOST" -e "
             set ftp:passive-mode true;
+            set net:max-retries 3;
+            set net:timeout 20;
+
             mirror --reverse \
               --delete \
               --verbose \
-              --exclude .git/ \
-              --exclude .github/ \
+              --exclude-glob .git/ \
+              --exclude-glob .github/ \
+              --exclude-glob README.md \
               ./ /;
+
             bye;
           "
