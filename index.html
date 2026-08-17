@@ -35,9 +35,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@400;500;600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="css/reset.css?v=20260817t" />
-  <link rel="stylesheet" href="css/tokens.css?v=20260817t" />
-  <link rel="stylesheet" href="css/styles.css?v=20260817t" />
+  <link rel="stylesheet" href="css/reset.css?v=20260817w" />
+  <link rel="stylesheet" href="css/tokens.css?v=20260817w" />
+  <link rel="stylesheet" href="css/styles.css?v=20260817w" />
 
   <!-- JSON-LD: Organization -->
   <script type="application/ld+json">
@@ -145,7 +145,7 @@
 
   <header class="site-header" id="top">
     <nav class="nav" aria-label="Główna nawigacja">
-      <a class="nav__logo" href="#top">
+      <a class="nav__logo" href="#hero">
         <img class="nav__logo-img" src="assets/logo.png" alt="" width="44" height="44" />
         <span class="nav__logo-text">Szydełkomania<span class="nav__logo-accent">_amigurumi</span></span>
       </a>
@@ -171,7 +171,7 @@
 
   <main id="main">
     <!-- 1. HERO -->
-    <section class="hero" aria-labelledby="hero-title">
+    <section class="hero" id="hero" aria-labelledby="hero-title">
       <figure class="hero__media">
         <img
           src="assets/images/image-1.jpg"
@@ -811,8 +811,9 @@
           </ul>
         </div>
 
-        <form class="contact-form reveal" id="contact-form" action="#" method="POST" novalidate>
-          <!-- TODO: ustaw action na endpoint Formspree / Getform -->
+        <form class="contact-form reveal" id="contact-form" action="https://formspree.io/f/xyegnayz" method="POST" novalidate>
+          <input type="hidden" name="_subject" value="Zapytanie ze strony Szydełkomania_amigurumi" />
+          <input type="text" name="_gotcha" class="visually-hidden" tabindex="-1" autocomplete="off" aria-hidden="true" />
           <div class="form-field">
             <label class="form-label" for="name">Imię <span class="required" aria-hidden="true">*</span></label>
             <input class="form-input" type="text" id="name" name="name" autocomplete="given-name" required aria-required="true" aria-describedby="name-error" />
@@ -860,7 +861,7 @@
   <footer class="footer">
     <div class="container footer__grid">
       <div class="footer__brand">
-        <a class="footer__logo" href="#top">
+        <a class="footer__logo" href="#hero">
           <img class="footer__logo-img" src="assets/logo.png" alt="" width="48" height="48" />
           <span>Szydełkomania<span>_amigurumi</span></span>
         </a>
@@ -929,8 +930,8 @@
     </div>
   </footer>
 
-  <script type="module" src="js/main.js?v=20260817t"></script>
-  <script type="module" src="js/media-loader.js?v=20260817t"></script>
-  <script type="module" src="js/animations.js?v=20260817t"></script>
+  <script type="module" src="js/main.js?v=20260817w"></script>
+  <script type="module" src="js/media-loader.js?v=20260817w"></script>
+  <script type="module" src="js/animations.js?v=20260817w"></script>
 </body>
 </html>

@@ -42,7 +42,7 @@ function esc(s) {
     .replace(/>/g, "&gt;");
 }
 
-const CACHE = "20260817t";
+const CACHE = "20260817v";
 
 function productSlug(name) {
   return String(name)
@@ -190,23 +190,12 @@ const cats = [
       "Przemyślane zestawy stworzone z myślą o wyjątkowych chwilach i bliskich osobach.",
     safety: SAFETY_DECOR_MASCOT,
     products: [
-      { name: "Zestaw 01", price: "od 220 zł" },
-      { name: "Zestaw 02", price: "od 220 zł" },
-      { name: "Zestaw 03", price: "od 220 zł" },
-      { name: "Zestaw 04", price: "od 220 zł" },
-      { name: "Zestaw 05", price: "od 220 zł" },
-      { name: "Zestaw 06", price: "od 220 zł" },
-      { name: "Zestaw 07", price: "od 220 zł" },
-      { name: "Zestaw 08", price: "od 220 zł" },
-      { name: "Zestaw 09", price: "od 220 zł" },
-      { name: "Zestaw 10", price: "od 220 zł" },
-      { name: "Zestaw 11", price: "od 220 zł" },
-      { name: "Zestaw 12", price: "od 220 zł" },
-      { name: "Zestaw 13", price: "od 220 zł" },
-      { name: "Zestaw 14", price: "od 220 zł" },
-      { name: "Zestaw 15", price: "od 220 zł" },
-      { name: "Zestaw 16", price: "od 220 zł" },
-      { name: "Zestaw 17", price: "od 220 zł" },
+      { name: "Zestaw 01", price: "od 220 zł", folder: 1 },
+      { name: "Zestaw 02", price: "od 220 zł", folder: 5 },
+      { name: "Zestaw 03", price: "od 220 zł", folder: 8 },
+      { name: "Zestaw 04", price: "od 220 zł", folder: 11 },
+      { name: "Zestaw 05", price: "od 220 zł", folder: 14 },
+      { name: "Zestaw 06", price: "od 220 zł", folder: 17 },
     ],
   },
   {
@@ -262,21 +251,15 @@ const cats = [
     short: "Ceramiczne kubeczki w ręcznie wykonanych sweterkach. 70+ kolorów do wyboru.",
     safety: SAFETY_GENERAL,
     products: [
-      { name: "Kubeczek 01", price: "od 60 zł" },
-      { name: "Kubeczek 02", price: "od 60 zł" },
-      { name: "Kubeczek 03", price: "od 60 zł" },
-      { name: "Kubeczek 04", price: "od 60 zł" },
-      { name: "Kubeczek 05", price: "od 60 zł" },
-      { name: "Kubeczek 06", price: "od 60 zł" },
-      { name: "Kubeczek 07", price: "od 60 zł" },
-      { name: "Kubeczek 08", price: "od 60 zł" },
-      { name: "Kubeczek 09", price: "od 60 zł" },
-      { name: "Kubeczek 10", price: "od 60 zł" },
-      { name: "Kubeczek 11", price: "od 60 zł" },
-      { name: "Kubeczek 12", price: "od 60 zł" },
-      { name: "Kubeczek 13", price: "od 60 zł" },
-      { name: "Kubeczek 14", price: "od 60 zł" },
-      { name: "Kubeczek 15", price: "od 60 zł" },
+      { name: "Kubeczek 01", price: "od 60 zł", folder: 1 },
+      { name: "Kubeczek 02", price: "od 60 zł", folder: 3 },
+      { name: "Kubeczek 03", price: "od 60 zł", folder: 4 },
+      { name: "Kubeczek 04", price: "od 60 zł", folder: 6 },
+      { name: "Kubeczek 05", price: "od 60 zł", folder: 7 },
+      { name: "Kubeczek 06", price: "od 60 zł", folder: 9 },
+      { name: "Kubeczek 07", price: "od 60 zł", folder: 13 },
+      { name: "Kubeczek 08", price: "od 60 zł", folder: 14 },
+      { name: "Kubeczek 09", price: "od 60 zł", folder: 15 },
     ],
   },
   {
@@ -295,13 +278,17 @@ const cats = [
 const root = path.join(__dirname, "..");
 const imagesRoot = path.join(root, "assets", "images", "oferta");
 
+function productFolder(product, index) {
+  return product.folder || index + 1;
+}
+
 function ensureCategoryFolders() {
   fs.mkdirSync(imagesRoot, { recursive: true });
   for (const c of cats) {
     const catDir = path.join(imagesRoot, c.slug);
     fs.mkdirSync(catDir, { recursive: true });
-    c.products.forEach((_, i) => {
-      const n = String(i + 1).padStart(2, "0");
+    c.products.forEach((p, i) => {
+      const n = String(productFolder(p, i)).padStart(2, "0");
       fs.mkdirSync(path.join(catDir, n), { recursive: true });
     });
   }
@@ -346,14 +333,14 @@ const CAT_FALLBACKS = {
 };
 
 function productGalleryImages(c, product, index) {
-  const n = String(index + 1).padStart(2, "0");
+  const n = String(productFolder(product, index)).padStart(2, "0");
   const files = listNumberedFiles(path.join(imagesRoot, c.slug, n));
   let imgs = files.map(({ file }) => ({
     src: `../assets/images/oferta/${c.slug}/${n}/${file}`,
     alt: product.name,
   }));
   if (!imgs.length) {
-    const thumb = listCategoryImages(c.slug).find((img) => img.index === index + 1);
+    const thumb = listCategoryImages(c.slug).find((img) => img.index === productFolder(product, index));
     if (thumb) imgs = [{ src: thumb.src, alt: product.name }];
   }
   if (!imgs.length && index === 0 && CAT_FALLBACKS[c.slug]) {
@@ -365,8 +352,8 @@ function productGalleryImages(c, product, index) {
 }
 
 function mediaForProduct(c, p, i, folderImages) {
-  const n = String(i + 1).padStart(2, "0");
-  const fromFolder = folderImages.find((img) => img.index === i + 1);
+  const n = String(productFolder(p, i)).padStart(2, "0");
+  const fromFolder = folderImages.find((img) => img.index === productFolder(p, i));
   if (fromFolder) {
     return `<img src="${fromFolder.src}" alt="${p.name}" width="600" height="600" loading="lazy" />`;
   }
@@ -420,7 +407,7 @@ function productCards(c, folderImages) {
               href="${href}"
               aria-label="${esc(p.name)} — zobacz produkt"
             >
-              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/${c.slug}" data-image-index="${i + 1}" data-image-alt="${p.name}">
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/${c.slug}" data-image-index="${productFolder(p, i)}" data-image-alt="${p.name}">
                 ${media}
                 <span class="product-card__price-badge">${priceLabel}</span>
               </figure>
@@ -439,7 +426,8 @@ function productCards(c, folderImages) {
 }
 
 function extraImageCards(c, folderImages) {
-  const extras = folderImages.filter((img) => img.index > c.products.length);
+  const used = new Set(c.products.map((p, i) => productFolder(p, i)));
+  const extras = folderImages.filter((img) => !used.has(img.index));
   return extras
     .map((img) => {
       const n = String(img.index).padStart(2, "0");
@@ -732,7 +720,7 @@ function page(c) {
 
   <header class="site-header site-header--solid" id="top">
     <nav class="nav" aria-label="Główna nawigacja">
-      <a class="nav__logo" href="../index.html">
+      <a class="nav__logo" href="../index.html#hero">
         <img class="nav__logo-img" src="../assets/logo.png" alt="" width="44" height="44" />
         <span class="nav__logo-text">Szydełkomania<span class="nav__logo-accent">_amigurumi</span></span>
       </a>
@@ -859,7 +847,7 @@ function productPage(c, product, index) {
 
   <header class="site-header site-header--solid" id="top">
     <nav class="nav" aria-label="Główna nawigacja">
-      <a class="nav__logo" href="../index.html">
+      <a class="nav__logo" href="../index.html#hero">
         <img class="nav__logo-img" src="../assets/logo.png" alt="" width="44" height="44" />
         <span class="nav__logo-text">Szydełkomania<span class="nav__logo-accent">_amigurumi</span></span>
       </a>

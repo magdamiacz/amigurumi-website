@@ -84,6 +84,7 @@
 
   /* Z-index */
   --z-nav: 100;
+  --z-cookie: 900;
   --z-lightbox: 1000;
   --z-toast: 1100;
 

@@ -1,7 +1,9 @@
 /**
  * Szydełkomania_amigurumi — main interactions
- * Nav, mobile menu, form validation, lightbox, FAQ, year
+ * Nav, mobile menu, form validation, lightbox, FAQ, year, cookies
  */
+
+import { initCookies } from "./cookies.js";
 
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 if (prefersReducedMotion) {
@@ -107,6 +109,28 @@ if (toggle && menu) {
     if (e.key === "Escape") closeMenu();
   });
 }
+
+const isHomePage = () => {
+  const file = location.pathname.replace(/\\/g, "/").split("/").pop();
+  return file === "" || file === "index.html";
+};
+
+const scrollToHero = (e) => {
+  if (!isHomePage()) return;
+  e.preventDefault();
+  closeMenu();
+  window.scrollTo({
+    top: 0,
+    behavior: prefersReducedMotion ? "auto" : "smooth",
+  });
+  if (location.hash) {
+    history.replaceState(null, "", `${location.pathname}${location.search}`);
+  }
+};
+
+document.querySelectorAll(".nav__logo, .footer__logo").forEach((logo) => {
+  logo.addEventListener("click", scrollToHero);
+});
 
 /* ---------- Lightbox (single + product gallery) ---------- */
 const lightbox = document.getElementById("lightbox");
@@ -440,33 +464,28 @@ if (form) {
       submitBtn.textContent = "Wysyłanie…";
     }
 
-    // Placeholder handler — replace with Formspree fetch when action is set
-    const action = form.getAttribute("action");
-    const isPlaceholder = !action || action === "#" || action === "";
-
     try {
-      if (isPlaceholder) {
-        // Demo mode
-        await new Promise((r) => setTimeout(r, 600));
-        console.log("Form data (placeholder):", Object.fromEntries(new FormData(form)));
-        if (statusEl) {
-          statusEl.textContent = "Dzięki za zapytanie! Odezwę się z propozycją w 24h. (tryb demo — podmień action formularza)";
-          statusEl.className = "form-status is-success";
-        }
-        form.reset();
-      } else {
-        const res = await fetch(action, {
-          method: "POST",
-          body: new FormData(form),
-          headers: { Accept: "application/json" },
-        });
-        if (!res.ok) throw new Error("Network error");
+      const honeypot = form.querySelector("[name='_gotcha']");
+      if (honeypot?.value) {
         if (statusEl) {
           statusEl.textContent = "Dzięki za zapytanie! Odezwę się z propozycją w 24h.";
           statusEl.className = "form-status is-success";
         }
         form.reset();
+        return;
       }
+
+      const res = await fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" },
+      });
+      if (!res.ok) throw new Error("Network error");
+      if (statusEl) {
+        statusEl.textContent = "Dzięki za zapytanie! Odezwę się z propozycją w 24h.";
+        statusEl.className = "form-status is-success";
+      }
+      form.reset();
     } catch {
       if (statusEl) {
         statusEl.textContent = "Coś poszło nie tak. Napisz proszę przez Facebook lub Instagram.";
@@ -546,3 +565,5 @@ document.querySelectorAll(".faq__item").forEach((details) => {
     void e;
   });
 });
+
+initCookies();
