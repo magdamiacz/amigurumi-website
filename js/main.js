@@ -4,6 +4,7 @@
  */
 
 import { initCookies } from "./cookies.js";
+import { CONTACT_INBOX } from "./contact-config.js?v=20260817aa";
 
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 if (prefersReducedMotion) {
@@ -432,6 +433,40 @@ const validateField = (id) => {
   return ok;
 };
 
+const sendInquiry = async ({ name, email, phone, message, honey }) => {
+  if (honey) return;
+
+  const payload = {
+    Imię: name,
+    Email: email,
+    Telefon: phone || "—",
+    Wiadomość: message,
+    _subject: "Zapytanie ze strony Szydełkomania_amigurumi",
+    _template: "table",
+    _captcha: "false",
+    _replyto: email,
+  };
+
+  if (CONTACT_INBOX) {
+    const res = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(CONTACT_INBOX)}`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(payload),
+    });
+    const data = await res.json().catch(() => ({}));
+    const messageText = String(data.message || "");
+    const needsActivation = /activat/i.test(messageText);
+    const ok = data.success === true || data.success === "true" || needsActivation;
+    if (!res.ok || !ok) throw new Error(messageText || "FormSubmit error");
+    return { needsActivation };
+  }
+
+  throw new Error("Brak adresu skrzynki w contact-config.js");
+};
+
 if (form) {
   ["name", "email", "message"].forEach((id) => {
     const input = document.getElementById(id);
@@ -465,30 +500,33 @@ if (form) {
     }
 
     try {
-      const honeypot = form.querySelector("[name='_gotcha']");
-      if (honeypot?.value) {
-        if (statusEl) {
+      const name = document.getElementById("name")?.value.trim() || "";
+      const email = document.getElementById("email")?.value.trim() || "";
+      const phone = document.getElementById("phone")?.value.trim() || "";
+      const message = document.getElementById("message")?.value.trim() || "";
+      const honey = form.querySelector("[name='_gotcha']")?.value || "";
+
+      const result = (await sendInquiry({ name, email, phone, message, honey })) || {};
+
+      if (statusEl) {
+        if (result.needsActivation) {
+          statusEl.textContent =
+            "Sprawdź Gmail (także Spam) i kliknij link „Activate Form” od FormSubmit. Potem wyślij zapytanie jeszcze raz.";
+          statusEl.className = "form-status is-success";
+        } else {
           statusEl.textContent = "Dzięki za zapytanie! Odezwę się z propozycją w 24h.";
           statusEl.className = "form-status is-success";
+          form.reset();
         }
+      } else {
         form.reset();
-        return;
       }
-
-      const res = await fetch(form.action, {
-        method: "POST",
-        body: new FormData(form),
-        headers: { Accept: "application/json" },
-      });
-      if (!res.ok) throw new Error("Network error");
+    } catch (err) {
       if (statusEl) {
-        statusEl.textContent = "Dzięki za zapytanie! Odezwę się z propozycją w 24h.";
-        statusEl.className = "form-status is-success";
-      }
-      form.reset();
-    } catch {
-      if (statusEl) {
-        statusEl.textContent = "Coś poszło nie tak. Napisz proszę przez Facebook lub Instagram.";
+        const msg = String(err?.message || "");
+        statusEl.textContent = /web server|HTML files/i.test(msg)
+          ? "Otwórz stronę przez http://localhost:8080/ (nie jako plik HTML) i spróbuj ponownie."
+          : "Coś poszło nie tak. Napisz proszę przez Facebook lub Instagram.";
         statusEl.className = "form-status is-error";
       }
     } finally {

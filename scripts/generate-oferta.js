@@ -42,7 +42,7 @@ function esc(s) {
     .replace(/>/g, "&gt;");
 }
 
-const CACHE = "20260817v";
+const CACHE = "20260817aa";
 
 function productSlug(name) {
   return String(name)
@@ -254,12 +254,11 @@ const cats = [
       { name: "Kubeczek 01", price: "od 60 zł", folder: 1 },
       { name: "Kubeczek 02", price: "od 60 zł", folder: 3 },
       { name: "Kubeczek 03", price: "od 60 zł", folder: 4 },
-      { name: "Kubeczek 04", price: "od 60 zł", folder: 6 },
-      { name: "Kubeczek 05", price: "od 60 zł", folder: 7 },
-      { name: "Kubeczek 06", price: "od 60 zł", folder: 9 },
-      { name: "Kubeczek 07", price: "od 60 zł", folder: 13 },
-      { name: "Kubeczek 08", price: "od 60 zł", folder: 14 },
-      { name: "Kubeczek 09", price: "od 60 zł", folder: 15 },
+      { name: "Kubeczek 04", price: "od 60 zł", folder: 7 },
+      { name: "Kubeczek 05", price: "od 60 zł", folder: 9 },
+      { name: "Kubeczek 06", price: "od 60 zł", folder: 13 },
+      { name: "Kubeczek 07", price: "od 60 zł", folder: 14 },
+      { name: "Kubeczek 08", price: "od 60 zł", folder: 15 },
     ],
   },
   {
