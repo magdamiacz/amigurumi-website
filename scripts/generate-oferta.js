@@ -60,7 +60,7 @@ const cats = [
     slug: "torebki",
     title: "Torebki",
     short:
-      "Handmade torebki z polskiej przędzy bawełnianej — kolory do wyboru z palety 45+, rozmiar i detal na Twoją propozycję.",
+      "Oryginalne formy, staranne wykonanie i kolory dopasowane do Twojego stylu.",
     safety: SAFETY_BAG,
     products: [
       { name: "Torebka mini", price: "od 140 zł" },
@@ -74,7 +74,7 @@ const cats = [
   {
     slug: "plecaki",
     title: "Plecaki",
-    short: "Szydełkowe plecaki z polskiej przędzy bawełnianej — wygodne, miękkie i personalizowane.",
+    short: "Ręcznie tworzone z polskiej przędzy bawełnianej, wygodne i wyjątkowe.",
     safety: SAFETY_BAG,
     products: [
       { name: "Plecak do pokoju dziecięcego", price: "od 190 zł" },
@@ -89,7 +89,7 @@ const cats = [
     slug: "maskotki",
     title: "Maskotki dekoracyjne",
     short:
-      "Maskotki dekoracyjne do pokoju dziecięcego — unikatowe amigurumi z polskiej bawełny, na Twoją propozycję.",
+      "Ręcznie robione maskotki, które mogą stać się częścią wyjątkowego wnętrza.",
     safety: SAFETY_DECOR_MASCOT,
     products: [
       { name: "Miś dekoracyjny", price: "od 120 zł" },
@@ -102,9 +102,9 @@ const cats = [
   },
   {
     slug: "zestawy-dla-dzieci",
-    title: "Zestawy do pokoju dziecięcego",
+    title: "Zestawy prezentowe",
     short:
-      "Kompletne zestawy dekoracyjne do pokoju dziecięcego — spójne kolorystycznie, z polskiej przędzy bawełnianej.",
+      "Przemyślane zestawy stworzone z myślą o wyjątkowych chwilach i bliskich osobach.",
     safety: SAFETY_DECOR_MASCOT,
     products: [
       { name: "Zestaw roczek (dekoracyjny)", price: "od 220 zł" },
@@ -133,7 +133,7 @@ const cats = [
     slug: "personalizowane-zwierzaki",
     title: "Personalizowane zwierzaki",
     short:
-      "Dekoracyjne amigurumi pupila ze zdjęcia — pamiątka z charakterem, z polskiej bawełny.",
+      "Wyjątkowe maskotki i breloczki inspirowane Twoim ukochanym pupilem.",
     safety: SAFETY_DECOR_MASCOT,
     products: [
       { name: "Piesek ze zdjęcia", price: "od 180 zł" },
@@ -147,7 +147,7 @@ const cats = [
   {
     slug: "zabawki-dla-zwierzat",
     title: "Zabawki dla zwierząt",
-    short: "Szydełkowe zabawki dla psów i kotów — handmade z polskiej przędzy bawełnianej.",
+    short: "Ręcznie wykonane zabawki stworzone z myślą o małych i dużych pupilach.",
     safety: SAFETY_PET,
     products: [
       { name: "Piłka dla kota", price: "od 40 zł" },
@@ -161,7 +161,7 @@ const cats = [
   {
     slug: "dekoracje",
     title: "Dekoracje",
-    short: "Szydełkowe dekoracje do domu — unikatowe ozdoby z polskiej przędzy bawełnianej.",
+    short: "Ręcznie tworzone dodatki do domu i wyjątkowe prezenty na każdą okazję.",
     safety: SAFETY_GENERAL,
     products: [
       { name: "Girlanda kwiatowa", price: "od 90 zł" },
@@ -175,7 +175,7 @@ const cats = [
   {
     slug: "kubeczki",
     title: "Kubeczki",
-    short: "Szydełkowe ocieplacze i akcesoria do kubków — z polskiej przędzy bawełnianej.",
+    short: "Ceramiczne kubeczki w ręcznie wykonanych sweterkach na każdą porę roku.",
     safety: SAFETY_GENERAL,
     products: [
       { name: "Ocieplacz klasyczny", price: "od 45 zł" },
@@ -184,6 +184,20 @@ const cats = [
       { name: "Para ocieplaczy", price: "od 80 zł" },
       { name: "Ocieplacz personalizowany", price: "od 60 zł" },
       { name: "Na zamówienie", price: "wycena" },
+    ],
+  },
+  {
+    slug: "dywany",
+    title: "Dywany",
+    short: "Dywany i taborety w kształcie zwierzątek.",
+    safety: SAFETY_GENERAL,
+    products: [
+      { name: "Dywan zwierzątko", price: "od 280 zł" },
+      { name: "Taboret zwierzątko", price: "od 190 zł" },
+      { name: "Dywan krokodyl", price: "od 320 zł" },
+      { name: "Zestaw dywan i taboret", price: "od 450 zł" },
+      { name: "Dywan na zamówienie", price: "wycena" },
+      { name: "Taboret na zamówienie", price: "wycena" },
     ],
   },
 ];
@@ -234,16 +248,31 @@ function mediaForProduct(c, p, i, folderImages) {
   }
 
   if (c.slug === "torebki" && i === 0) {
-    return `<img src="../assets/images/image-1.jpg" alt="${p.name}" width="600" height="600" loading="lazy" />`;
+    return `<img src="../assets/images/cat-torebki.png" alt="${p.name}" width="600" height="600" loading="lazy" />`;
   }
   if (c.slug === "plecaki" && i === 0) {
-    return `<img src="../assets/images/cat-plecaki.jpg" alt="${p.name}" width="600" height="600" loading="lazy" />`;
+    return `<img src="../assets/images/cat-plecaki.png" alt="${p.name}" width="600" height="600" loading="lazy" />`;
   }
   if (c.slug === "maskotki" && i === 0) {
-    return `<img src="../assets/images/cat-maskotki.jpg" alt="${p.name}" width="600" height="600" loading="lazy" />`;
+    return `<img src="../assets/images/cat-maskotki.png" alt="${p.name}" width="600" height="600" loading="lazy" />`;
   }
   if (c.slug === "kubeczki" && i === 0) {
-    return `<img src="../assets/images/about-tworczyni.jpg" alt="${p.name}" width="600" height="600" loading="lazy" />`;
+    return `<img src="../assets/images/cat-kubeczki.png" alt="${p.name}" width="600" height="600" loading="lazy" />`;
+  }
+  if (c.slug === "zestawy-dla-dzieci" && i === 0) {
+    return `<img src="../assets/images/cat-zestawy.png" alt="${p.name}" width="600" height="600" loading="lazy" />`;
+  }
+  if (c.slug === "personalizowane-zwierzaki" && i === 0) {
+    return `<img src="../assets/images/cat-zwierzaki.png" alt="${p.name}" width="600" height="600" loading="lazy" />`;
+  }
+  if (c.slug === "zabawki-dla-zwierzat" && i === 0) {
+    return `<img src="../assets/images/cat-zabawki.png" alt="${p.name}" width="600" height="600" loading="lazy" />`;
+  }
+  if (c.slug === "dekoracje" && i === 0) {
+    return `<img src="../assets/images/cat-dekoracje.png" alt="${p.name}" width="600" height="600" loading="lazy" />`;
+  }
+  if (c.slug === "dywany" && i === 0) {
+    return `<img src="../assets/images/cat-dywany.png" alt="${p.name}" width="600" height="600" loading="lazy" />`;
   }
 
   return `
@@ -333,10 +362,15 @@ function categoryGallery(c, folderImages) {
     alt: `${c.title} — realizacja ${String(img.index).padStart(2, "0")}`,
   }));
   const fallbacks = {
-    torebki: "../assets/images/image-1.jpg",
-    plecaki: "../assets/images/cat-plecaki.jpg",
-    maskotki: "../assets/images/cat-maskotki.jpg",
-    kubeczki: "../assets/images/about-tworczyni.jpg",
+    torebki: "../assets/images/cat-torebki.png",
+    plecaki: "../assets/images/cat-plecaki.png",
+    maskotki: "../assets/images/cat-maskotki.png",
+    "zestawy-dla-dzieci": "../assets/images/cat-zestawy.png",
+    "personalizowane-zwierzaki": "../assets/images/cat-zwierzaki.png",
+    "zabawki-dla-zwierzat": "../assets/images/cat-zabawki.png",
+    dekoracje: "../assets/images/cat-dekoracje.png",
+    kubeczki: "../assets/images/cat-kubeczki.png",
+    dywany: "../assets/images/cat-dywany.png",
   };
   if (!imgs.length && fallbacks[c.slug]) {
     imgs.push({ src: fallbacks[c.slug], alt: c.title });
@@ -512,9 +546,9 @@ function page(c) {
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@400;500;600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/reset.css?v=20260813d" />
-  <link rel="stylesheet" href="../css/tokens.css?v=20260813d" />
-  <link rel="stylesheet" href="../css/styles.css?v=20260813d" />
+  <link rel="stylesheet" href="../css/reset.css?v=20260817d" />
+  <link rel="stylesheet" href="../css/tokens.css?v=20260817d" />
+  <link rel="stylesheet" href="../css/styles.css?v=20260817d" />
 </head>
 <body class="page-category">
   <a class="skip-link" href="#main">Przejdź do treści</a>
@@ -605,9 +639,9 @@ ${socialBtns()}
     </div>
   </footer>
 ${lightboxMarkup()}
-  <script type="module" src="../js/main.js?v=20260813d"></script>
-  <script type="module" src="../js/media-loader.js?v=20260813d"></script>
-  <script type="module" src="../js/animations.js?v=20260813d"></script>
+  <script type="module" src="../js/main.js?v=20260817d"></script>
+  <script type="module" src="../js/media-loader.js?v=20260817d"></script>
+  <script type="module" src="../js/animations.js?v=20260817d"></script>
 </body>
 </html>
 `;
