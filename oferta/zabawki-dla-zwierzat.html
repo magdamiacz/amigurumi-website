@@ -12,9 +12,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@400;500;600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/reset.css?v=20260817d" />
-  <link rel="stylesheet" href="../css/tokens.css?v=20260817d" />
-  <link rel="stylesheet" href="../css/styles.css?v=20260817d" />
+  <link rel="stylesheet" href="../css/reset.css?v=20260817t" />
+  <link rel="stylesheet" href="../css/tokens.css?v=20260817t" />
+  <link rel="stylesheet" href="../css/styles.css?v=20260817t" />
 </head>
 <body class="page-category">
   <a class="skip-link" href="#main">Przejdź do treści</a>
@@ -56,264 +56,62 @@
   </div>
 
   <main id="main">
-
-    <section class="pdp" aria-labelledby="page-title">
-      <div class="container pdp__grid">
-        <div class="pdp__gallery" data-pdp-gallery>
-          
-          <figure class="pdp__stage">
-            <img class="pdp__main" src="../assets/images/cat-zabawki.png" alt="Zabawki dla zwierząt" width="800" height="800" />
-            
-          </figure>
-        </div>
-        <div class="pdp__info">
-          <nav class="breadcrumbs" aria-label="Okruszki">
-            <a href="../index.html">Strona główna</a>
-            <span aria-hidden="true">/</span>
-            <a href="../index.html#oferta">Oferta</a>
-            <span aria-hidden="true">/</span>
-            <span aria-current="page">Zabawki dla zwierząt</span>
-          </nav>
-          <h1 id="page-title" class="pdp__title">Zabawki dla zwierząt</h1>
-          <p class="pdp__price">od 40 zł</p>
-          <p class="pdp__desc">Ręcznie wykonane zabawki stworzone z myślą o małych i dużych pupilach.</p>
-          <div class="pdp__accordions">
-            <details class="faq__item pdp__accordion" open>
-              <summary class="faq__question">Skład</summary>
-              <div class="faq__answer"><p>Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać.</p></div>
-            </details>
-            <details class="faq__item pdp__accordion">
-              <summary class="faq__question">Bezpieczeństwo</summary>
-              <div class="faq__answer"><p>Bezpieczeństwo: zabawka dla zwierząt — używaj pod nadzorem. Usuń przy uszkodzeniu (ryzyko połknięcia włóczki). Nie dla dzieci.</p></div>
-            </details>
-          </div>
-          <div class="pdp__actions">
-            <a class="btn btn--primary" href="../index.html?produkt=Zabawki%20dla%20zwierz%C4%85t#kontakt">Zapytaj o produkt</a>
-            <a class="btn btn--social" href="https://www.facebook.com/szydelkomania.amigurumi/" target="_blank" rel="noopener noreferrer">
-              <img src="../assets/icons/facebook.svg" alt="" width="18" height="18" />
-              Facebook
-            </a>
-            <a class="btn btn--social" href="https://www.instagram.com/szydelkomania_amigurumi/" target="_blank" rel="noopener noreferrer">
-              <img src="../assets/icons/instagram.svg" alt="" width="18" height="18" />
-              Instagram
-            </a>
-          </div>
-        </div>
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container page-hero__inner">
+        <nav class="breadcrumbs" aria-label="Okruszki">
+          <a href="../index.html">Strona główna</a>
+          <span aria-hidden="true">/</span>
+          <a href="../index.html#oferta">Oferta</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">Zabawki dla zwierząt</span>
+        </nav>
+        <h1 id="page-title" class="section-title">Zabawki dla zwierząt</h1>
+        <p class="section-intro">Ręcznie wykonane zabawki stworzone z myślą o małych i dużych pupilach.</p>
       </div>
     </section>
 
-    <section class="section product-gallery" aria-labelledby="gallery-title">
+    <section class="section product-gallery" aria-label="Modele: Zabawki dla zwierząt">
       <div class="container">
-        <header class="section-header">
-          <p class="eyebrow">Realizacje</p>
-          <h2 id="gallery-title" class="section-title">Przykładowe modele</h2>
-        </header>
-        <div class="product-grid" data-auto-gallery="zabawki-dla-zwierzat" data-gallery-base="../assets/images/oferta/zabawki-dla-zwierzat" data-contact-href="../index.html#kontakt">
+        <div class="product-grid">
 
           <article class="product-card">
-            <button
-              type="button"
+            <a
               class="product-card__link"
-              data-product-gallery
-              data-gallery-base="../assets/images/oferta/zabawki-dla-zwierzat/01"
-              data-gallery-fallback="../assets/images/cat-zabawki.png"
-              data-gallery-title="Piłka dla kota"
-              data-gallery-price="od 40 zł"
-              data-gallery-desc="Ręcznie wykonane zabawki stworzone z myślą o małych i dużych pupilach."
-              data-gallery-material="Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać."
-              data-gallery-safety="Bezpieczeństwo: zabawka dla zwierząt — używaj pod nadzorem. Usuń przy uszkodzeniu (ryzyko połknięcia włóczki). Nie dla dzieci."
-              data-gallery-care="Po zabawie sprawdź splot. Przy uszkodzeniu odłóż zabawkę — luźna włóczka nie powinna trafić do żołądka pupila. Czyść na sucho lub delikatnie ręcznie."
-              data-gallery-lead="Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie."
-              data-gallery-inquire="../index.html?produkt=Pi%C5%82ka%20dla%20kota#kontakt"
-              aria-label="Piłka dla kota — zobacz galerię"
+              href="zabawki-dla-kotow.html"
+              aria-label="Zabawki dla kotów — zobacz produkt"
             >
-              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/zabawki-dla-zwierzat" data-image-index="1" data-image-alt="Piłka dla kota">
-                <img src="../assets/images/cat-zabawki.png" alt="Piłka dla kota" width="600" height="600" loading="lazy" />
-                <span class="product-card__price-badge">od 40 zł</span>
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/zabawki-dla-zwierzat" data-image-index="1" data-image-alt="Zabawki dla kotów">
+                <img src="../assets/images/oferta/zabawki-dla-zwierzat/01.jpg" alt="Zabawki dla kotów" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 70 zł</span>
               </figure>
               <div class="product-card__body">
-                <h3 class="product-card__title">Piłka dla kota</h3>
-                <p class="product-card__price">od 40 zł</p>
-                <span class="product-card__cta">Zobacz galerię <span aria-hidden="true">→</span></span>
+                <h3 class="product-card__title">Zabawki dla kotów</h3>
+                <p class="product-card__price">od 70 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
               </div>
-            </button>
+            </a>
             <div class="product-card__footer">
-              <a class="product-card__inquire" href="../index.html?produkt=Pi%C5%82ka%20dla%20kota#kontakt">Zapytaj o produkt</a>
+              <a class="product-card__inquire" href="../index.html?produkt=Zabawki%20dla%20kot%C3%B3w#kontakt">Zapytaj o produkt</a>
             </div>
           </article>
           <article class="product-card">
-            <button
-              type="button"
+            <a
               class="product-card__link"
-              data-product-gallery
-              data-gallery-base="../assets/images/oferta/zabawki-dla-zwierzat/02"
-              data-gallery-fallback=""
-              data-gallery-title="Myszka szydełkowa"
-              data-gallery-price="od 45 zł"
-              data-gallery-desc="Ręcznie wykonane zabawki stworzone z myślą o małych i dużych pupilach."
-              data-gallery-material="Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać."
-              data-gallery-safety="Bezpieczeństwo: zabawka dla zwierząt — używaj pod nadzorem. Usuń przy uszkodzeniu (ryzyko połknięcia włóczki). Nie dla dzieci."
-              data-gallery-care="Po zabawie sprawdź splot. Przy uszkodzeniu odłóż zabawkę — luźna włóczka nie powinna trafić do żołądka pupila. Czyść na sucho lub delikatnie ręcznie."
-              data-gallery-lead="Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie."
-              data-gallery-inquire="../index.html?produkt=Myszka%20szyde%C5%82kowa#kontakt"
-              aria-label="Myszka szydełkowa — zobacz galerię"
+              href="zabawki-dla-pieskow.html"
+              aria-label="Zabawki dla piesków — zobacz produkt"
             >
-              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/zabawki-dla-zwierzat" data-image-index="2" data-image-alt="Myszka szydełkowa">
-                
-                <div class="media-slot__placeholder" style="aspect-ratio: 1 / 1;" role="img" aria-label="Myszka szydełkowa">
-                  <svg viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="1" height="1" fill="#E4D9CB"/></svg>
-                  <span class="media-slot__label">zabawki-dla-zwierzat/02.jpg</span>
-                </div>
-                <span class="product-card__price-badge">od 45 zł</span>
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/zabawki-dla-zwierzat" data-image-index="2" data-image-alt="Zabawki dla piesków">
+                <img src="../assets/images/oferta/zabawki-dla-zwierzat/02.jpg" alt="Zabawki dla piesków" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 35 zł</span>
               </figure>
               <div class="product-card__body">
-                <h3 class="product-card__title">Myszka szydełkowa</h3>
-                <p class="product-card__price">od 45 zł</p>
-                <span class="product-card__cta">Zobacz galerię <span aria-hidden="true">→</span></span>
+                <h3 class="product-card__title">Zabawki dla piesków</h3>
+                <p class="product-card__price">od 35 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
               </div>
-            </button>
+            </a>
             <div class="product-card__footer">
-              <a class="product-card__inquire" href="../index.html?produkt=Myszka%20szyde%C5%82kowa#kontakt">Zapytaj o produkt</a>
-            </div>
-          </article>
-          <article class="product-card">
-            <button
-              type="button"
-              class="product-card__link"
-              data-product-gallery
-              data-gallery-base="../assets/images/oferta/zabawki-dla-zwierzat/03"
-              data-gallery-fallback=""
-              data-gallery-title="Szarpak dla psa"
-              data-gallery-price="od 60 zł"
-              data-gallery-desc="Ręcznie wykonane zabawki stworzone z myślą o małych i dużych pupilach."
-              data-gallery-material="Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać."
-              data-gallery-safety="Bezpieczeństwo: zabawka dla zwierząt — używaj pod nadzorem. Usuń przy uszkodzeniu (ryzyko połknięcia włóczki). Nie dla dzieci."
-              data-gallery-care="Po zabawie sprawdź splot. Przy uszkodzeniu odłóż zabawkę — luźna włóczka nie powinna trafić do żołądka pupila. Czyść na sucho lub delikatnie ręcznie."
-              data-gallery-lead="Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie."
-              data-gallery-inquire="../index.html?produkt=Szarpak%20dla%20psa#kontakt"
-              aria-label="Szarpak dla psa — zobacz galerię"
-            >
-              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/zabawki-dla-zwierzat" data-image-index="3" data-image-alt="Szarpak dla psa">
-                
-                <div class="media-slot__placeholder" style="aspect-ratio: 1 / 1;" role="img" aria-label="Szarpak dla psa">
-                  <svg viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="1" height="1" fill="#E4D9CB"/></svg>
-                  <span class="media-slot__label">zabawki-dla-zwierzat/03.jpg</span>
-                </div>
-                <span class="product-card__price-badge">od 60 zł</span>
-              </figure>
-              <div class="product-card__body">
-                <h3 class="product-card__title">Szarpak dla psa</h3>
-                <p class="product-card__price">od 60 zł</p>
-                <span class="product-card__cta">Zobacz galerię <span aria-hidden="true">→</span></span>
-              </div>
-            </button>
-            <div class="product-card__footer">
-              <a class="product-card__inquire" href="../index.html?produkt=Szarpak%20dla%20psa#kontakt">Zapytaj o produkt</a>
-            </div>
-          </article>
-          <article class="product-card">
-            <button
-              type="button"
-              class="product-card__link"
-              data-product-gallery
-              data-gallery-base="../assets/images/oferta/zabawki-dla-zwierzat/04"
-              data-gallery-fallback=""
-              data-gallery-title="Pierścień gryzak"
-              data-gallery-price="od 55 zł"
-              data-gallery-desc="Ręcznie wykonane zabawki stworzone z myślą o małych i dużych pupilach."
-              data-gallery-material="Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać."
-              data-gallery-safety="Bezpieczeństwo: zabawka dla zwierząt — używaj pod nadzorem. Usuń przy uszkodzeniu (ryzyko połknięcia włóczki). Nie dla dzieci."
-              data-gallery-care="Po zabawie sprawdź splot. Przy uszkodzeniu odłóż zabawkę — luźna włóczka nie powinna trafić do żołądka pupila. Czyść na sucho lub delikatnie ręcznie."
-              data-gallery-lead="Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie."
-              data-gallery-inquire="../index.html?produkt=Pier%C5%9Bcie%C5%84%20gryzak#kontakt"
-              aria-label="Pierścień gryzak — zobacz galerię"
-            >
-              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/zabawki-dla-zwierzat" data-image-index="4" data-image-alt="Pierścień gryzak">
-                
-                <div class="media-slot__placeholder" style="aspect-ratio: 1 / 1;" role="img" aria-label="Pierścień gryzak">
-                  <svg viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="1" height="1" fill="#E4D9CB"/></svg>
-                  <span class="media-slot__label">zabawki-dla-zwierzat/04.jpg</span>
-                </div>
-                <span class="product-card__price-badge">od 55 zł</span>
-              </figure>
-              <div class="product-card__body">
-                <h3 class="product-card__title">Pierścień gryzak</h3>
-                <p class="product-card__price">od 55 zł</p>
-                <span class="product-card__cta">Zobacz galerię <span aria-hidden="true">→</span></span>
-              </div>
-            </button>
-            <div class="product-card__footer">
-              <a class="product-card__inquire" href="../index.html?produkt=Pier%C5%9Bcie%C5%84%20gryzak#kontakt">Zapytaj o produkt</a>
-            </div>
-          </article>
-          <article class="product-card">
-            <button
-              type="button"
-              class="product-card__link"
-              data-product-gallery
-              data-gallery-base="../assets/images/oferta/zabawki-dla-zwierzat/05"
-              data-gallery-fallback=""
-              data-gallery-title="Zestaw 3 zabawek"
-              data-gallery-price="od 110 zł"
-              data-gallery-desc="Ręcznie wykonane zabawki stworzone z myślą o małych i dużych pupilach."
-              data-gallery-material="Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać."
-              data-gallery-safety="Bezpieczeństwo: zabawka dla zwierząt — używaj pod nadzorem. Usuń przy uszkodzeniu (ryzyko połknięcia włóczki). Nie dla dzieci."
-              data-gallery-care="Po zabawie sprawdź splot. Przy uszkodzeniu odłóż zabawkę — luźna włóczka nie powinna trafić do żołądka pupila. Czyść na sucho lub delikatnie ręcznie."
-              data-gallery-lead="Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie."
-              data-gallery-inquire="../index.html?produkt=Zestaw%203%20zabawek#kontakt"
-              aria-label="Zestaw 3 zabawek — zobacz galerię"
-            >
-              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/zabawki-dla-zwierzat" data-image-index="5" data-image-alt="Zestaw 3 zabawek">
-                
-                <div class="media-slot__placeholder" style="aspect-ratio: 1 / 1;" role="img" aria-label="Zestaw 3 zabawek">
-                  <svg viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="1" height="1" fill="#E4D9CB"/></svg>
-                  <span class="media-slot__label">zabawki-dla-zwierzat/05.jpg</span>
-                </div>
-                <span class="product-card__price-badge">od 110 zł</span>
-              </figure>
-              <div class="product-card__body">
-                <h3 class="product-card__title">Zestaw 3 zabawek</h3>
-                <p class="product-card__price">od 110 zł</p>
-                <span class="product-card__cta">Zobacz galerię <span aria-hidden="true">→</span></span>
-              </div>
-            </button>
-            <div class="product-card__footer">
-              <a class="product-card__inquire" href="../index.html?produkt=Zestaw%203%20zabawek#kontakt">Zapytaj o produkt</a>
-            </div>
-          </article>
-          <article class="product-card">
-            <button
-              type="button"
-              class="product-card__link"
-              data-product-gallery
-              data-gallery-base="../assets/images/oferta/zabawki-dla-zwierzat/06"
-              data-gallery-fallback=""
-              data-gallery-title="Zabawka na zamówienie"
-              data-gallery-price="wycena indywidualna"
-              data-gallery-desc="Ręcznie wykonane zabawki stworzone z myślą o małych i dużych pupilach."
-              data-gallery-material="Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać."
-              data-gallery-safety="Bezpieczeństwo: zabawka dla zwierząt — używaj pod nadzorem. Usuń przy uszkodzeniu (ryzyko połknięcia włóczki). Nie dla dzieci."
-              data-gallery-care="Po zabawie sprawdź splot. Przy uszkodzeniu odłóż zabawkę — luźna włóczka nie powinna trafić do żołądka pupila. Czyść na sucho lub delikatnie ręcznie."
-              data-gallery-lead="Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie."
-              data-gallery-inquire="../index.html?produkt=Zabawka%20na%20zam%C3%B3wienie#kontakt"
-              aria-label="Zabawka na zamówienie — zobacz galerię"
-            >
-              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/zabawki-dla-zwierzat" data-image-index="6" data-image-alt="Zabawka na zamówienie">
-                
-                <div class="media-slot__placeholder" style="aspect-ratio: 1 / 1;" role="img" aria-label="Zabawka na zamówienie">
-                  <svg viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="1" height="1" fill="#E4D9CB"/></svg>
-                  <span class="media-slot__label">zabawki-dla-zwierzat/06.jpg</span>
-                </div>
-                <span class="product-card__price-badge">wycena</span>
-              </figure>
-              <div class="product-card__body">
-                <h3 class="product-card__title">Zabawka na zamówienie</h3>
-                <p class="product-card__price">wycena indywidualna</p>
-                <span class="product-card__cta">Zobacz galerię <span aria-hidden="true">→</span></span>
-              </div>
-            </button>
-            <div class="product-card__footer">
-              <a class="product-card__inquire" href="../index.html?produkt=Zabawka%20na%20zam%C3%B3wienie#kontakt">Zapytaj o produkt</a>
+              <a class="product-card__inquire" href="../index.html?produkt=Zabawki%20dla%20piesk%C3%B3w#kontakt">Zapytaj o produkt</a>
             </div>
           </article>
         </div>
@@ -416,8 +214,8 @@
       <p class="lightbox__counter" id="lightbox-counter" hidden></p>
     </div>
   </div>
-  <script type="module" src="../js/main.js?v=20260817d"></script>
-  <script type="module" src="../js/media-loader.js?v=20260817d"></script>
-  <script type="module" src="../js/animations.js?v=20260817d"></script>
+  <script type="module" src="../js/main.js?v=20260817t"></script>
+  <script type="module" src="../js/media-loader.js?v=20260817t"></script>
+  <script type="module" src="../js/animations.js?v=20260817t"></script>
 </body>
 </html>

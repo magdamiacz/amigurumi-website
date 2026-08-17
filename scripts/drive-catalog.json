@@ -1,0 +1,365 @@
+{
+  "plecaki": [
+    {
+      "name": "Plecak Króliczek",
+      "price": "wycena",
+      "photos": 4
+    },
+    {
+      "name": "Plecak Maskotka",
+      "price": "wycena",
+      "photos": 8
+    },
+    {
+      "name": "Plecak Rozmiar L",
+      "price": "wycena",
+      "photos": 8
+    },
+    {
+      "name": "Plecak Rozmiar M",
+      "price": "wycena",
+      "photos": 4
+    }
+  ],
+  "maskotki": [
+    {
+      "name": "Bałwanki",
+      "price": "wycena",
+      "photos": 4
+    },
+    {
+      "name": "Dinozaur",
+      "price": "wycena",
+      "photos": 2
+    },
+    {
+      "name": "Jednorożec",
+      "price": "wycena",
+      "photos": 3
+    },
+    {
+      "name": "Kaczuszki",
+      "price": "wycena",
+      "photos": 1
+    },
+    {
+      "name": "Kolekcja leśna",
+      "price": "wycena",
+      "photos": 8
+    },
+    {
+      "name": "Królik",
+      "price": "wycena",
+      "photos": 3
+    },
+    {
+      "name": "Królik długouszny",
+      "price": "wycena",
+      "photos": 1
+    },
+    {
+      "name": "Królik w sukience",
+      "price": "wycena",
+      "photos": 2
+    },
+    {
+      "name": "Misie",
+      "price": "wycena",
+      "photos": 8
+    },
+    {
+      "name": "Myszki",
+      "price": "wycena",
+      "photos": 6
+    },
+    {
+      "name": "Myszki świąteczne",
+      "price": "wycena",
+      "photos": 2
+    },
+    {
+      "name": "Pszczółka",
+      "price": "wycena",
+      "photos": 1
+    },
+    {
+      "name": "Reniferki",
+      "price": "wycena",
+      "photos": 1
+    },
+    {
+      "name": "Zajączki w ogrodniczkach",
+      "price": "wycena",
+      "photos": 7
+    },
+    {
+      "name": "Świnka",
+      "price": "wycena",
+      "photos": 3
+    },
+    {
+      "name": "Żabka",
+      "price": "wycena",
+      "photos": 2
+    }
+  ],
+  "zestawy-dla-dzieci": [
+    {
+      "name": "Zestaw 01",
+      "price": "wycena",
+      "photos": 1
+    },
+    {
+      "name": "Zestaw 02",
+      "price": "wycena",
+      "photos": 1
+    },
+    {
+      "name": "Zestaw 03",
+      "price": "wycena",
+      "photos": 1
+    },
+    {
+      "name": "Zestaw 04",
+      "price": "wycena",
+      "photos": 1
+    },
+    {
+      "name": "Zestaw 05",
+      "price": "wycena",
+      "photos": 1
+    },
+    {
+      "name": "Zestaw 06",
+      "price": "wycena",
+      "photos": 1
+    },
+    {
+      "name": "Zestaw 07",
+      "price": "wycena",
+      "photos": 1
+    },
+    {
+      "name": "Zestaw 08",
+      "price": "wycena",
+      "photos": 1
+    },
+    {
+      "name": "Zestaw 09",
+      "price": "wycena",
+      "photos": 1
+    },
+    {
+      "name": "Zestaw 10",
+      "price": "wycena",
+      "photos": 1
+    },
+    {
+      "name": "Zestaw 11",
+      "price": "wycena",
+      "photos": 1
+    },
+    {
+      "name": "Zestaw 12",
+      "price": "wycena",
+      "photos": 1
+    },
+    {
+      "name": "Zestaw 13",
+      "price": "wycena",
+      "photos": 1
+    },
+    {
+      "name": "Zestaw 14",
+      "price": "wycena",
+      "photos": 1
+    },
+    {
+      "name": "Zestaw 15",
+      "price": "wycena",
+      "photos": 1
+    },
+    {
+      "name": "Zestaw 16",
+      "price": "wycena",
+      "photos": 1
+    },
+    {
+      "name": "Zestaw 17",
+      "price": "wycena",
+      "photos": 1
+    }
+  ],
+  "dodatki": [
+    {
+      "name": "Kapcie",
+      "price": "wycena",
+      "photos": 1
+    },
+    {
+      "name": "Opaski",
+      "price": "wycena",
+      "photos": 7
+    },
+    {
+      "name": "Skarpetki",
+      "price": "wycena",
+      "photos": 6
+    }
+  ],
+  "personalizowane-zwierzaki": [
+    {
+      "name": "Koniki",
+      "price": "wycena",
+      "photos": 8
+    },
+    {
+      "name": "Kotki",
+      "price": "wycena",
+      "photos": 8
+    },
+    {
+      "name": "Pieski",
+      "price": "wycena",
+      "photos": 5
+    }
+  ],
+  "zabawki-dla-zwierzat": [
+    {
+      "name": "Zabawki dla kotów",
+      "price": "wycena",
+      "photos": 7
+    },
+    {
+      "name": "Zabawki dla piesków",
+      "price": "wycena",
+      "photos": 7
+    }
+  ],
+  "dekoracje": [
+    {
+      "name": "Koszyczki",
+      "price": "wycena",
+      "photos": 8
+    },
+    {
+      "name": "Koszyczki zwierzaki",
+      "price": "wycena",
+      "photos": 8
+    },
+    {
+      "name": "Kwiaty",
+      "price": "wycena",
+      "photos": 8
+    },
+    {
+      "name": "Na choinkę",
+      "price": "wycena",
+      "photos": 7
+    },
+    {
+      "name": "Poduszki",
+      "price": "wycena",
+      "photos": 7
+    },
+    {
+      "name": "Prezent dla nowożeńców",
+      "price": "wycena",
+      "photos": 4
+    }
+  ],
+  "kubeczki": [
+    {
+      "name": "Kubeczek 01",
+      "price": "wycena",
+      "photos": 1
+    },
+    {
+      "name": "Kubeczek 02",
+      "price": "wycena",
+      "photos": 1
+    },
+    {
+      "name": "Kubeczek 03",
+      "price": "wycena",
+      "photos": 1
+    },
+    {
+      "name": "Kubeczek 04",
+      "price": "wycena",
+      "photos": 1
+    },
+    {
+      "name": "Kubeczek 05",
+      "price": "wycena",
+      "photos": 1
+    },
+    {
+      "name": "Kubeczek 06",
+      "price": "wycena",
+      "photos": 1
+    },
+    {
+      "name": "Kubeczek 07",
+      "price": "wycena",
+      "photos": 1
+    },
+    {
+      "name": "Kubeczek 08",
+      "price": "wycena",
+      "photos": 1
+    },
+    {
+      "name": "Kubeczek 09",
+      "price": "wycena",
+      "photos": 1
+    },
+    {
+      "name": "Kubeczek 10",
+      "price": "wycena",
+      "photos": 1
+    },
+    {
+      "name": "Kubeczek 11",
+      "price": "wycena",
+      "photos": 1
+    },
+    {
+      "name": "Kubeczek 12",
+      "price": "wycena",
+      "photos": 1
+    },
+    {
+      "name": "Kubeczek 13",
+      "price": "wycena",
+      "photos": 1
+    },
+    {
+      "name": "Kubeczek 14",
+      "price": "wycena",
+      "photos": 1
+    },
+    {
+      "name": "Kubeczek 15",
+      "price": "wycena",
+      "photos": 1
+    }
+  ],
+  "dywany": [
+    {
+      "name": "Krokodyl",
+      "price": "wycena",
+      "photos": 4
+    },
+    {
+      "name": "Lisek",
+      "price": "wycena",
+      "photos": 5
+    },
+    {
+      "name": "Piłka",
+      "price": "wycena",
+      "photos": 3
+    }
+  ]
+}

@@ -314,9 +314,17 @@ const openProductGallery = async (trigger) => {
     trigger.querySelector(".product-card__media img")?.getAttribute("src") ||
     "";
 
+  const extras = (trigger.getAttribute("data-gallery-extras") || "")
+    .split("|")
+    .map((src) => src.trim())
+    .filter(Boolean);
+
   let items = [];
   if (base) items = await collectGalleryImages(base);
   if (!items.length && fallback) items = [fallback];
+  if (extras.length) {
+    items = items.length ? [...items, ...extras] : extras;
+  }
   if (!items.length) return;
 
   const meta = {
@@ -489,6 +497,7 @@ document.querySelectorAll("[data-pdp-gallery]").forEach((gallery) => {
     if (!sources.length) return;
     index = (next + sources.length) % sources.length;
     main.src = sources[index];
+    main.classList.toggle("pdp__main--contain", sources[index].includes("/kolory/"));
     thumbs.forEach((btn, i) => {
       btn.classList.toggle("is-active", i === index);
       btn.setAttribute("aria-current", i === index ? "true" : "false");
@@ -500,6 +509,30 @@ document.querySelectorAll("[data-pdp-gallery]").forEach((gallery) => {
   });
   gallery.querySelector("[data-pdp-prev]")?.addEventListener("click", () => show(index - 1));
   gallery.querySelector("[data-pdp-next]")?.addEventListener("click", () => show(index + 1));
+  main.style.cursor = "zoom-in";
+  main.addEventListener("click", () => {
+    openLightboxGallery(sources, main.getAttribute("alt") || "", index);
+  });
+});
+
+document.querySelectorAll("[data-pdp-variants]").forEach((root) => {
+  const priceEl = document.querySelector("[data-pdp-price]");
+  const inquire = document.querySelector("[data-pdp-inquire]");
+  const buttons = [...root.querySelectorAll("[data-variant-name]")];
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      buttons.forEach((other) => {
+        const on = other === btn;
+        other.classList.toggle("is-selected", on);
+        other.setAttribute("aria-pressed", on ? "true" : "false");
+      });
+      if (priceEl) priceEl.textContent = btn.getAttribute("data-variant-price") || "";
+      const name = btn.getAttribute("data-variant-name") || "";
+      if (inquire && name) {
+        inquire.href = `../index.html?produkt=${encodeURIComponent(name)}#kontakt`;
+      }
+    });
+  });
 });
 
 /* ---------- FAQ smooth open (progressive enhancement) ---------- */

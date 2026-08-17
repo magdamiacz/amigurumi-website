@@ -887,9 +887,12 @@ a.category-card:focus-within .category-card__media img {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  max-height: min(640px, 80vh);
+  overflow-y: auto;
 }
 
 .pdp__thumb {
+  flex: 0 0 auto;
   width: 72px;
   height: 72px;
   padding: 0;
@@ -926,6 +929,10 @@ a.category-card:focus-within .category-card__media img {
   height: 100%;
   object-fit: cover;
   filter: none;
+}
+
+.pdp__main--contain {
+  object-fit: contain;
 }
 
 .pdp__nav {
@@ -977,6 +984,42 @@ a.category-card:focus-within .category-card__media img {
   max-width: 36rem;
 }
 
+.pdp__variants {
+  margin: 0 0 var(--space-5);
+}
+
+.pdp__variant-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pdp__variant {
+  min-height: 44px;
+  padding: 0.45rem 0.9rem;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid var(--border);
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 0.88rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background var(--dur-fast) var(--ease-out),
+    color var(--dur-fast) var(--ease-out),
+    border-color var(--dur-fast) var(--ease-out);
+}
+
+.pdp__variant:hover {
+  border-color: var(--rose);
+  color: var(--rose-deep);
+}
+
+.pdp__variant.is-selected {
+  background: var(--rose);
+  border-color: var(--rose);
+  color: var(--cream);
+}
+
 .pdp__accordions {
   display: flex;
   flex-direction: column;
@@ -1011,7 +1054,9 @@ a.category-card:focus-within .category-card__media img {
 
   .pdp__thumbs {
     flex-direction: row;
+    max-height: none;
     overflow-x: auto;
+    overflow-y: hidden;
   }
 }
 
@@ -1562,8 +1607,8 @@ button.product-card__link {
 .lightbox__dialog {
   position: relative;
   z-index: 1;
-  max-width: min(900px, 100%);
-  max-height: 90dvh;
+  max-width: min(96vw, 1600px);
+  max-height: 96dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1576,12 +1621,15 @@ button.product-card__link {
   align-items: center;
   justify-content: center;
   width: 100%;
+  min-width: 0;
 }
 
 .lightbox__img {
-  max-height: 75dvh;
+  display: block;
   width: auto;
-  max-width: 100%;
+  height: auto;
+  max-width: 96vw;
+  max-height: 90dvh;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-lg);
   background: var(--placeholder);
@@ -1679,12 +1727,20 @@ button.product-card__link {
   max-height: calc(90dvh - 2.5rem);
 }
 
+.lightbox__layout:not(:has(.lightbox__info:not([hidden]))) {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .lightbox__gallery {
   display: grid;
   grid-template-columns: 72px minmax(0, 1fr);
   gap: var(--space-3);
   min-height: 0;
   align-items: start;
+}
+
+.lightbox__gallery:not(:has(.lightbox__thumbs:not([hidden]))) {
+  grid-template-columns: minmax(0, 1fr);
 }
 
 .lightbox__thumbs {
@@ -1727,13 +1783,14 @@ button.product-card__link {
 .lightbox--product .lightbox__stage {
   background: #f3ece3;
   border-radius: var(--radius-md);
-  min-height: 280px;
-  aspect-ratio: 1 / 1;
+  min-height: min(70dvh, 640px);
+  height: min(78dvh, 860px);
+  max-height: 78dvh;
   overflow: hidden;
 }
 
 .lightbox--product .lightbox__img {
-  max-height: none;
+  max-height: 78dvh;
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -1827,8 +1884,9 @@ button.product-card__link {
   }
 
   .lightbox--product .lightbox__stage {
-    aspect-ratio: 1 / 1;
-    max-height: 52dvh;
+    height: min(70dvh, 720px);
+    max-height: 70dvh;
+    min-height: 240px;
   }
 }
 
@@ -1838,11 +1896,23 @@ button.product-card__link {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
   gap: var(--space-3);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.swatch-grid > li {
+  min-width: 0;
 }
 
 .swatch {
   position: relative;
+  display: block;
+  width: 100%;
+  min-height: 44px;
   aspect-ratio: 1;
+  padding: 0;
+  border: none;
   border-radius: var(--radius-md);
   background: var(--swatch);
   box-shadow: inset 0 0 0 1px rgba(42, 31, 23, 0.08);
@@ -1851,9 +1921,14 @@ button.product-card__link {
 }
 
 .swatch:hover,
-.swatch:focus-within {
+.swatch:focus-visible {
   transform: scale(1.08);
-  z-index: 1;
+  z-index: 2;
+}
+
+.swatch:focus-visible {
+  outline: 2px solid var(--rose);
+  outline-offset: 3px;
 }
 
 .swatch__name {
@@ -1874,7 +1949,7 @@ button.product-card__link {
 }
 
 .swatch:hover .swatch__name,
-.swatch:focus-within .swatch__name {
+.swatch:focus-visible .swatch__name {
   opacity: 1;
 }
 
@@ -2003,10 +2078,10 @@ button.product-card__link {
 
 .testimonial__quote {
   font-family: var(--font-display);
-  font-size: clamp(1.05rem, 1.5vw, 1.2rem);
+  font-size: clamp(1rem, 1.4vw, 1.12rem);
   font-style: italic;
   font-weight: 400;
-  line-height: 1.45;
+  line-height: 1.5;
   color: var(--ink);
   flex: 1;
 }
@@ -2527,6 +2602,10 @@ button.product-card__link {
 
   .gallery__grid {
     columns: 2;
+  }
+
+  .testimonials__grid {
+    grid-template-columns: 1fr;
   }
 
   .footer__grid {

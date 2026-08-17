@@ -161,6 +161,7 @@ const hydrateAutoGalleries = async () => {
           data-gallery-care="${inherit("data-gallery-care")}"
           data-gallery-lead="${inherit("data-gallery-lead")}"
           data-gallery-inquire="${inquire}"
+          ${inherit("data-gallery-extras") ? `data-gallery-extras="${inherit("data-gallery-extras")}"` : ""}
           aria-label="${title} — zobacz galerię"
         >
           <figure class="product-card__media media-slot">

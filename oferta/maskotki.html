@@ -12,9 +12,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@400;500;600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/reset.css?v=20260817d" />
-  <link rel="stylesheet" href="../css/tokens.css?v=20260817d" />
-  <link rel="stylesheet" href="../css/styles.css?v=20260817d" />
+  <link rel="stylesheet" href="../css/reset.css?v=20260817t" />
+  <link rel="stylesheet" href="../css/tokens.css?v=20260817t" />
+  <link rel="stylesheet" href="../css/styles.css?v=20260817t" />
 </head>
 <body class="page-category">
   <a class="skip-link" href="#main">Przejdź do treści</a>
@@ -56,264 +56,342 @@
   </div>
 
   <main id="main">
-
-    <section class="pdp" aria-labelledby="page-title">
-      <div class="container pdp__grid">
-        <div class="pdp__gallery" data-pdp-gallery>
-          
-          <figure class="pdp__stage">
-            <img class="pdp__main" src="../assets/images/cat-maskotki.png" alt="Maskotki dekoracyjne" width="800" height="800" />
-            
-          </figure>
-        </div>
-        <div class="pdp__info">
-          <nav class="breadcrumbs" aria-label="Okruszki">
-            <a href="../index.html">Strona główna</a>
-            <span aria-hidden="true">/</span>
-            <a href="../index.html#oferta">Oferta</a>
-            <span aria-hidden="true">/</span>
-            <span aria-current="page">Maskotki dekoracyjne</span>
-          </nav>
-          <h1 id="page-title" class="pdp__title">Maskotki dekoracyjne</h1>
-          <p class="pdp__price">od 120 zł</p>
-          <p class="pdp__desc">Ręcznie robione maskotki, które mogą stać się częścią wyjątkowego wnętrza.</p>
-          <div class="pdp__accordions">
-            <details class="faq__item pdp__accordion" open>
-              <summary class="faq__question">Skład</summary>
-              <div class="faq__answer"><p>Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać.</p></div>
-            </details>
-            <details class="faq__item pdp__accordion">
-              <summary class="faq__question">Bezpieczeństwo</summary>
-              <div class="faq__answer"><p>Bezpieczeństwo: maskotka dekoracyjna do pokoju dziecięcego (nie zabawka do intensywnej zabawy). Oczy i detale są trwale mocowane; poniżej 3. r.ż. tylko pod nadzorem dorosłych.</p></div>
-            </details>
-          </div>
-          <div class="pdp__actions">
-            <a class="btn btn--primary" href="../index.html?produkt=Maskotki%20dekoracyjne#kontakt">Zapytaj o produkt</a>
-            <a class="btn btn--social" href="https://www.facebook.com/szydelkomania.amigurumi/" target="_blank" rel="noopener noreferrer">
-              <img src="../assets/icons/facebook.svg" alt="" width="18" height="18" />
-              Facebook
-            </a>
-            <a class="btn btn--social" href="https://www.instagram.com/szydelkomania_amigurumi/" target="_blank" rel="noopener noreferrer">
-              <img src="../assets/icons/instagram.svg" alt="" width="18" height="18" />
-              Instagram
-            </a>
-          </div>
-        </div>
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container page-hero__inner">
+        <nav class="breadcrumbs" aria-label="Okruszki">
+          <a href="../index.html">Strona główna</a>
+          <span aria-hidden="true">/</span>
+          <a href="../index.html#oferta">Oferta</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">Maskotki dekoracyjne</span>
+        </nav>
+        <h1 id="page-title" class="section-title">Maskotki dekoracyjne</h1>
+        <p class="section-intro">Ręcznie robione maskotki, które mogą stać się częścią wyjątkowego wnętrza.</p>
       </div>
     </section>
 
-    <section class="section product-gallery" aria-labelledby="gallery-title">
+    <section class="section product-gallery" aria-label="Modele: Maskotki dekoracyjne">
       <div class="container">
-        <header class="section-header">
-          <p class="eyebrow">Realizacje</p>
-          <h2 id="gallery-title" class="section-title">Przykładowe modele</h2>
-        </header>
-        <div class="product-grid" data-auto-gallery="maskotki" data-gallery-base="../assets/images/oferta/maskotki" data-contact-href="../index.html#kontakt">
+        <div class="product-grid">
 
           <article class="product-card">
-            <button
-              type="button"
+            <a
               class="product-card__link"
-              data-product-gallery
-              data-gallery-base="../assets/images/oferta/maskotki/01"
-              data-gallery-fallback="../assets/images/cat-maskotki.png"
-              data-gallery-title="Miś dekoracyjny"
-              data-gallery-price="od 120 zł"
-              data-gallery-desc="Ręcznie robione maskotki, które mogą stać się częścią wyjątkowego wnętrza."
-              data-gallery-material="Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać."
-              data-gallery-safety="Bezpieczeństwo: maskotka dekoracyjna do pokoju dziecięcego (nie zabawka do intensywnej zabawy). Oczy i detale są trwale mocowane; poniżej 3. r.ż. tylko pod nadzorem dorosłych."
-              data-gallery-care="Pranie ręczne w letniej wodzie, bez wybielaczy. Suszyć na płasko, z dala od grzejnika. Nie prasować na wysokiej temperaturze."
-              data-gallery-lead="Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie."
-              data-gallery-inquire="../index.html?produkt=Mi%C5%9B%20dekoracyjny#kontakt"
-              aria-label="Miś dekoracyjny — zobacz galerię"
+              href="balwanki.html"
+              aria-label="Bałwanki — zobacz produkt"
             >
-              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/maskotki" data-image-index="1" data-image-alt="Miś dekoracyjny">
-                <img src="../assets/images/cat-maskotki.png" alt="Miś dekoracyjny" width="600" height="600" loading="lazy" />
-                <span class="product-card__price-badge">od 120 zł</span>
-              </figure>
-              <div class="product-card__body">
-                <h3 class="product-card__title">Miś dekoracyjny</h3>
-                <p class="product-card__price">od 120 zł</p>
-                <span class="product-card__cta">Zobacz galerię <span aria-hidden="true">→</span></span>
-              </div>
-            </button>
-            <div class="product-card__footer">
-              <a class="product-card__inquire" href="../index.html?produkt=Mi%C5%9B%20dekoracyjny#kontakt">Zapytaj o produkt</a>
-            </div>
-          </article>
-          <article class="product-card">
-            <button
-              type="button"
-              class="product-card__link"
-              data-product-gallery
-              data-gallery-base="../assets/images/oferta/maskotki/02"
-              data-gallery-fallback=""
-              data-gallery-title="Królik w ubranku"
-              data-gallery-price="od 140 zł"
-              data-gallery-desc="Ręcznie robione maskotki, które mogą stać się częścią wyjątkowego wnętrza."
-              data-gallery-material="Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać."
-              data-gallery-safety="Bezpieczeństwo: maskotka dekoracyjna do pokoju dziecięcego (nie zabawka do intensywnej zabawy). Oczy i detale są trwale mocowane; poniżej 3. r.ż. tylko pod nadzorem dorosłych."
-              data-gallery-care="Pranie ręczne w letniej wodzie, bez wybielaczy. Suszyć na płasko, z dala od grzejnika. Nie prasować na wysokiej temperaturze."
-              data-gallery-lead="Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie."
-              data-gallery-inquire="../index.html?produkt=Kr%C3%B3lik%20w%20ubranku#kontakt"
-              aria-label="Królik w ubranku — zobacz galerię"
-            >
-              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/maskotki" data-image-index="2" data-image-alt="Królik w ubranku">
-                
-                <div class="media-slot__placeholder" style="aspect-ratio: 1 / 1;" role="img" aria-label="Królik w ubranku">
-                  <svg viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="1" height="1" fill="#E4D9CB"/></svg>
-                  <span class="media-slot__label">maskotki/02.jpg</span>
-                </div>
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/maskotki" data-image-index="1" data-image-alt="Bałwanki">
+                <img src="../assets/images/oferta/maskotki/01.jpg" alt="Bałwanki" width="600" height="600" loading="lazy" />
                 <span class="product-card__price-badge">od 140 zł</span>
               </figure>
               <div class="product-card__body">
-                <h3 class="product-card__title">Królik w ubranku</h3>
+                <h3 class="product-card__title">Bałwanki</h3>
                 <p class="product-card__price">od 140 zł</p>
-                <span class="product-card__cta">Zobacz galerię <span aria-hidden="true">→</span></span>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
               </div>
-            </button>
+            </a>
             <div class="product-card__footer">
-              <a class="product-card__inquire" href="../index.html?produkt=Kr%C3%B3lik%20w%20ubranku#kontakt">Zapytaj o produkt</a>
+              <a class="product-card__inquire" href="../index.html?produkt=Ba%C5%82wanki#kontakt">Zapytaj o produkt</a>
             </div>
           </article>
           <article class="product-card">
-            <button
-              type="button"
+            <a
               class="product-card__link"
-              data-product-gallery
-              data-gallery-base="../assets/images/oferta/maskotki/03"
-              data-gallery-fallback=""
-              data-gallery-title="Laleczka dekoracyjna"
-              data-gallery-price="od 150 zł"
-              data-gallery-desc="Ręcznie robione maskotki, które mogą stać się częścią wyjątkowego wnętrza."
-              data-gallery-material="Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać."
-              data-gallery-safety="Bezpieczeństwo: maskotka dekoracyjna do pokoju dziecięcego (nie zabawka do intensywnej zabawy). Oczy i detale są trwale mocowane; poniżej 3. r.ż. tylko pod nadzorem dorosłych."
-              data-gallery-care="Pranie ręczne w letniej wodzie, bez wybielaczy. Suszyć na płasko, z dala od grzejnika. Nie prasować na wysokiej temperaturze."
-              data-gallery-lead="Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie."
-              data-gallery-inquire="../index.html?produkt=Laleczka%20dekoracyjna#kontakt"
-              aria-label="Laleczka dekoracyjna — zobacz galerię"
+              href="dinozaur.html"
+              aria-label="Dinozaur — zobacz produkt"
             >
-              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/maskotki" data-image-index="3" data-image-alt="Laleczka dekoracyjna">
-                
-                <div class="media-slot__placeholder" style="aspect-ratio: 1 / 1;" role="img" aria-label="Laleczka dekoracyjna">
-                  <svg viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="1" height="1" fill="#E4D9CB"/></svg>
-                  <span class="media-slot__label">maskotki/03.jpg</span>
-                </div>
-                <span class="product-card__price-badge">od 150 zł</span>
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/maskotki" data-image-index="2" data-image-alt="Dinozaur">
+                <img src="../assets/images/oferta/maskotki/02.jpg" alt="Dinozaur" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 100 zł</span>
               </figure>
               <div class="product-card__body">
-                <h3 class="product-card__title">Laleczka dekoracyjna</h3>
-                <p class="product-card__price">od 150 zł</p>
-                <span class="product-card__cta">Zobacz galerię <span aria-hidden="true">→</span></span>
+                <h3 class="product-card__title">Dinozaur</h3>
+                <p class="product-card__price">od 100 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
               </div>
-            </button>
+            </a>
             <div class="product-card__footer">
-              <a class="product-card__inquire" href="../index.html?produkt=Laleczka%20dekoracyjna#kontakt">Zapytaj o produkt</a>
+              <a class="product-card__inquire" href="../index.html?produkt=Dinozaur#kontakt">Zapytaj o produkt</a>
             </div>
           </article>
           <article class="product-card">
-            <button
-              type="button"
+            <a
               class="product-card__link"
-              data-product-gallery
-              data-gallery-base="../assets/images/oferta/maskotki/04"
-              data-gallery-fallback=""
-              data-gallery-title="Słonik"
-              data-gallery-price="od 130 zł"
-              data-gallery-desc="Ręcznie robione maskotki, które mogą stać się częścią wyjątkowego wnętrza."
-              data-gallery-material="Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać."
-              data-gallery-safety="Bezpieczeństwo: maskotka dekoracyjna do pokoju dziecięcego (nie zabawka do intensywnej zabawy). Oczy i detale są trwale mocowane; poniżej 3. r.ż. tylko pod nadzorem dorosłych."
-              data-gallery-care="Pranie ręczne w letniej wodzie, bez wybielaczy. Suszyć na płasko, z dala od grzejnika. Nie prasować na wysokiej temperaturze."
-              data-gallery-lead="Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie."
-              data-gallery-inquire="../index.html?produkt=S%C5%82onik#kontakt"
-              aria-label="Słonik — zobacz galerię"
+              href="jednorozec.html"
+              aria-label="Jednorożec — zobacz produkt"
             >
-              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/maskotki" data-image-index="4" data-image-alt="Słonik">
-                
-                <div class="media-slot__placeholder" style="aspect-ratio: 1 / 1;" role="img" aria-label="Słonik">
-                  <svg viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="1" height="1" fill="#E4D9CB"/></svg>
-                  <span class="media-slot__label">maskotki/04.jpg</span>
-                </div>
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/maskotki" data-image-index="3" data-image-alt="Jednorożec">
+                <img src="../assets/images/oferta/maskotki/03.jpg" alt="Jednorożec" width="600" height="600" loading="lazy" />
                 <span class="product-card__price-badge">od 130 zł</span>
               </figure>
               <div class="product-card__body">
-                <h3 class="product-card__title">Słonik</h3>
+                <h3 class="product-card__title">Jednorożec</h3>
                 <p class="product-card__price">od 130 zł</p>
-                <span class="product-card__cta">Zobacz galerię <span aria-hidden="true">→</span></span>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
               </div>
-            </button>
+            </a>
             <div class="product-card__footer">
-              <a class="product-card__inquire" href="../index.html?produkt=S%C5%82onik#kontakt">Zapytaj o produkt</a>
+              <a class="product-card__inquire" href="../index.html?produkt=Jednoro%C5%BCec#kontakt">Zapytaj o produkt</a>
             </div>
           </article>
           <article class="product-card">
-            <button
-              type="button"
+            <a
               class="product-card__link"
-              data-product-gallery
-              data-gallery-base="../assets/images/oferta/maskotki/05"
-              data-gallery-fallback=""
-              data-gallery-title="Wilczek"
-              data-gallery-price="od 145 zł"
-              data-gallery-desc="Ręcznie robione maskotki, które mogą stać się częścią wyjątkowego wnętrza."
-              data-gallery-material="Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać."
-              data-gallery-safety="Bezpieczeństwo: maskotka dekoracyjna do pokoju dziecięcego (nie zabawka do intensywnej zabawy). Oczy i detale są trwale mocowane; poniżej 3. r.ż. tylko pod nadzorem dorosłych."
-              data-gallery-care="Pranie ręczne w letniej wodzie, bez wybielaczy. Suszyć na płasko, z dala od grzejnika. Nie prasować na wysokiej temperaturze."
-              data-gallery-lead="Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie."
-              data-gallery-inquire="../index.html?produkt=Wilczek#kontakt"
-              aria-label="Wilczek — zobacz galerię"
+              href="kaczuszki.html"
+              aria-label="Kaczuszki — zobacz produkt"
             >
-              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/maskotki" data-image-index="5" data-image-alt="Wilczek">
-                
-                <div class="media-slot__placeholder" style="aspect-ratio: 1 / 1;" role="img" aria-label="Wilczek">
-                  <svg viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="1" height="1" fill="#E4D9CB"/></svg>
-                  <span class="media-slot__label">maskotki/05.jpg</span>
-                </div>
-                <span class="product-card__price-badge">od 145 zł</span>
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/maskotki" data-image-index="4" data-image-alt="Kaczuszki">
+                <img src="../assets/images/oferta/maskotki/04.jpg" alt="Kaczuszki" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 90 zł</span>
               </figure>
               <div class="product-card__body">
-                <h3 class="product-card__title">Wilczek</h3>
-                <p class="product-card__price">od 145 zł</p>
-                <span class="product-card__cta">Zobacz galerię <span aria-hidden="true">→</span></span>
+                <h3 class="product-card__title">Kaczuszki</h3>
+                <p class="product-card__price">od 90 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
               </div>
-            </button>
+            </a>
             <div class="product-card__footer">
-              <a class="product-card__inquire" href="../index.html?produkt=Wilczek#kontakt">Zapytaj o produkt</a>
+              <a class="product-card__inquire" href="../index.html?produkt=Kaczuszki#kontakt">Zapytaj o produkt</a>
             </div>
           </article>
           <article class="product-card">
-            <button
-              type="button"
+            <a
               class="product-card__link"
-              data-product-gallery
-              data-gallery-base="../assets/images/oferta/maskotki/06"
-              data-gallery-fallback=""
-              data-gallery-title="Maskotka dekoracyjna na zamówienie"
-              data-gallery-price="wycena indywidualna"
-              data-gallery-desc="Ręcznie robione maskotki, które mogą stać się częścią wyjątkowego wnętrza."
-              data-gallery-material="Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać."
-              data-gallery-safety="Bezpieczeństwo: maskotka dekoracyjna do pokoju dziecięcego (nie zabawka do intensywnej zabawy). Oczy i detale są trwale mocowane; poniżej 3. r.ż. tylko pod nadzorem dorosłych."
-              data-gallery-care="Pranie ręczne w letniej wodzie, bez wybielaczy. Suszyć na płasko, z dala od grzejnika. Nie prasować na wysokiej temperaturze."
-              data-gallery-lead="Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie."
-              data-gallery-inquire="../index.html?produkt=Maskotka%20dekoracyjna%20na%20zam%C3%B3wienie#kontakt"
-              aria-label="Maskotka dekoracyjna na zamówienie — zobacz galerię"
+              href="kolekcja-lesna.html"
+              aria-label="Kolekcja leśna — zobacz produkt"
             >
-              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/maskotki" data-image-index="6" data-image-alt="Maskotka dekoracyjna na zamówienie">
-                
-                <div class="media-slot__placeholder" style="aspect-ratio: 1 / 1;" role="img" aria-label="Maskotka dekoracyjna na zamówienie">
-                  <svg viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="1" height="1" fill="#E4D9CB"/></svg>
-                  <span class="media-slot__label">maskotki/06.jpg</span>
-                </div>
-                <span class="product-card__price-badge">wycena</span>
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/maskotki" data-image-index="5" data-image-alt="Kolekcja leśna">
+                <img src="../assets/images/oferta/maskotki/05.jpg" alt="Kolekcja leśna" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 80 zł</span>
               </figure>
               <div class="product-card__body">
-                <h3 class="product-card__title">Maskotka dekoracyjna na zamówienie</h3>
-                <p class="product-card__price">wycena indywidualna</p>
-                <span class="product-card__cta">Zobacz galerię <span aria-hidden="true">→</span></span>
+                <h3 class="product-card__title">Kolekcja leśna</h3>
+                <p class="product-card__price">od 80 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
               </div>
-            </button>
+            </a>
             <div class="product-card__footer">
-              <a class="product-card__inquire" href="../index.html?produkt=Maskotka%20dekoracyjna%20na%20zam%C3%B3wienie#kontakt">Zapytaj o produkt</a>
+              <a class="product-card__inquire" href="../index.html?produkt=Kolekcja%20le%C5%9Bna#kontakt">Zapytaj o produkt</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a
+              class="product-card__link"
+              href="krolik.html"
+              aria-label="Królik — zobacz produkt"
+            >
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/maskotki" data-image-index="6" data-image-alt="Królik">
+                <img src="../assets/images/oferta/maskotki/06.jpg" alt="Królik" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 120 zł</span>
+              </figure>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Królik</h3>
+                <p class="product-card__price">od 120 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+            <div class="product-card__footer">
+              <a class="product-card__inquire" href="../index.html?produkt=Kr%C3%B3lik#kontakt">Zapytaj o produkt</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a
+              class="product-card__link"
+              href="krolik-dlugouszny.html"
+              aria-label="Królik długouszny — zobacz produkt"
+            >
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/maskotki" data-image-index="7" data-image-alt="Królik długouszny">
+                <img src="../assets/images/oferta/maskotki/07.jpg" alt="Królik długouszny" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 100 zł</span>
+              </figure>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Królik długouszny</h3>
+                <p class="product-card__price">od 100 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+            <div class="product-card__footer">
+              <a class="product-card__inquire" href="../index.html?produkt=Kr%C3%B3lik%20d%C5%82ugouszny#kontakt">Zapytaj o produkt</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a
+              class="product-card__link"
+              href="krolik-w-sukience.html"
+              aria-label="Królik w sukience — zobacz produkt"
+            >
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/maskotki" data-image-index="8" data-image-alt="Królik w sukience">
+                <img src="../assets/images/oferta/maskotki/08.jpg" alt="Królik w sukience" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 120 zł</span>
+              </figure>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Królik w sukience</h3>
+                <p class="product-card__price">od 120 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+            <div class="product-card__footer">
+              <a class="product-card__inquire" href="../index.html?produkt=Kr%C3%B3lik%20w%20sukience#kontakt">Zapytaj o produkt</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a
+              class="product-card__link"
+              href="misie.html"
+              aria-label="Misie — zobacz produkt"
+            >
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/maskotki" data-image-index="9" data-image-alt="Misie">
+                <img src="../assets/images/oferta/maskotki/09.jpg" alt="Misie" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 160 zł</span>
+              </figure>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Misie</h3>
+                <p class="product-card__price">od 160 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+            <div class="product-card__footer">
+              <a class="product-card__inquire" href="../index.html?produkt=Misie#kontakt">Zapytaj o produkt</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a
+              class="product-card__link"
+              href="myszki.html"
+              aria-label="Myszki — zobacz produkt"
+            >
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/maskotki" data-image-index="10" data-image-alt="Myszki">
+                <img src="../assets/images/oferta/maskotki/10.jpg" alt="Myszki" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 130 zł</span>
+              </figure>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Myszki</h3>
+                <p class="product-card__price">od 130 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+            <div class="product-card__footer">
+              <a class="product-card__inquire" href="../index.html?produkt=Myszki#kontakt">Zapytaj o produkt</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a
+              class="product-card__link"
+              href="myszki-swiateczne.html"
+              aria-label="Myszki świąteczne — zobacz produkt"
+            >
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/maskotki" data-image-index="11" data-image-alt="Myszki świąteczne">
+                <img src="../assets/images/oferta/maskotki/11.jpg" alt="Myszki świąteczne" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 80 zł</span>
+              </figure>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Myszki świąteczne</h3>
+                <p class="product-card__price">od 80 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+            <div class="product-card__footer">
+              <a class="product-card__inquire" href="../index.html?produkt=Myszki%20%C5%9Bwi%C4%85teczne#kontakt">Zapytaj o produkt</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a
+              class="product-card__link"
+              href="pszczolka.html"
+              aria-label="Pszczółka — zobacz produkt"
+            >
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/maskotki" data-image-index="12" data-image-alt="Pszczółka">
+                <img src="../assets/images/oferta/maskotki/12.jpg" alt="Pszczółka" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 80 zł</span>
+              </figure>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Pszczółka</h3>
+                <p class="product-card__price">od 80 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+            <div class="product-card__footer">
+              <a class="product-card__inquire" href="../index.html?produkt=Pszcz%C3%B3%C5%82ka#kontakt">Zapytaj o produkt</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a
+              class="product-card__link"
+              href="reniferki.html"
+              aria-label="Reniferki — zobacz produkt"
+            >
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/maskotki" data-image-index="13" data-image-alt="Reniferki">
+                <img src="../assets/images/oferta/maskotki/13.jpg" alt="Reniferki" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 100 zł</span>
+              </figure>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Reniferki</h3>
+                <p class="product-card__price">od 100 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+            <div class="product-card__footer">
+              <a class="product-card__inquire" href="../index.html?produkt=Reniferki#kontakt">Zapytaj o produkt</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a
+              class="product-card__link"
+              href="zajaczki-w-ogrodniczkach.html"
+              aria-label="Zajączki w ogrodniczkach — zobacz produkt"
+            >
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/maskotki" data-image-index="14" data-image-alt="Zajączki w ogrodniczkach">
+                <img src="../assets/images/oferta/maskotki/14.jpg" alt="Zajączki w ogrodniczkach" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 150 zł</span>
+              </figure>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Zajączki w ogrodniczkach</h3>
+                <p class="product-card__price">od 150 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+            <div class="product-card__footer">
+              <a class="product-card__inquire" href="../index.html?produkt=Zaj%C4%85czki%20w%20ogrodniczkach#kontakt">Zapytaj o produkt</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a
+              class="product-card__link"
+              href="swinka.html"
+              aria-label="Świnka — zobacz produkt"
+            >
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/maskotki" data-image-index="15" data-image-alt="Świnka">
+                <img src="../assets/images/oferta/maskotki/15.jpg" alt="Świnka" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 100 zł</span>
+              </figure>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Świnka</h3>
+                <p class="product-card__price">od 100 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+            <div class="product-card__footer">
+              <a class="product-card__inquire" href="../index.html?produkt=%C5%9Awinka#kontakt">Zapytaj o produkt</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a
+              class="product-card__link"
+              href="zabka.html"
+              aria-label="Żabka — zobacz produkt"
+            >
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/maskotki" data-image-index="16" data-image-alt="Żabka">
+                <img src="../assets/images/oferta/maskotki/16.jpg" alt="Żabka" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 110 zł</span>
+              </figure>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Żabka</h3>
+                <p class="product-card__price">od 110 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+            <div class="product-card__footer">
+              <a class="product-card__inquire" href="../index.html?produkt=%C5%BBabka#kontakt">Zapytaj o produkt</a>
             </div>
           </article>
         </div>
@@ -416,8 +494,8 @@
       <p class="lightbox__counter" id="lightbox-counter" hidden></p>
     </div>
   </div>
-  <script type="module" src="../js/main.js?v=20260817d"></script>
-  <script type="module" src="../js/media-loader.js?v=20260817d"></script>
-  <script type="module" src="../js/animations.js?v=20260817d"></script>
+  <script type="module" src="../js/main.js?v=20260817t"></script>
+  <script type="module" src="../js/media-loader.js?v=20260817t"></script>
+  <script type="module" src="../js/animations.js?v=20260817t"></script>
 </body>
 </html>

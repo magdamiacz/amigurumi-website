@@ -12,9 +12,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@400;500;600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/reset.css?v=20260817d" />
-  <link rel="stylesheet" href="../css/tokens.css?v=20260817d" />
-  <link rel="stylesheet" href="../css/styles.css?v=20260817d" />
+  <link rel="stylesheet" href="../css/reset.css?v=20260817t" />
+  <link rel="stylesheet" href="../css/tokens.css?v=20260817t" />
+  <link rel="stylesheet" href="../css/styles.css?v=20260817t" />
 </head>
 <body class="page-category">
   <a class="skip-link" href="#main">Przejdź do treści</a>
@@ -56,264 +56,362 @@
   </div>
 
   <main id="main">
-
-    <section class="pdp" aria-labelledby="page-title">
-      <div class="container pdp__grid">
-        <div class="pdp__gallery" data-pdp-gallery>
-          
-          <figure class="pdp__stage">
-            <img class="pdp__main" src="../assets/images/cat-zestawy.png" alt="Zestawy prezentowe" width="800" height="800" />
-            
-          </figure>
-        </div>
-        <div class="pdp__info">
-          <nav class="breadcrumbs" aria-label="Okruszki">
-            <a href="../index.html">Strona główna</a>
-            <span aria-hidden="true">/</span>
-            <a href="../index.html#oferta">Oferta</a>
-            <span aria-hidden="true">/</span>
-            <span aria-current="page">Zestawy prezentowe</span>
-          </nav>
-          <h1 id="page-title" class="pdp__title">Zestawy prezentowe</h1>
-          <p class="pdp__price">od 220 zł</p>
-          <p class="pdp__desc">Przemyślane zestawy stworzone z myślą o wyjątkowych chwilach i bliskich osobach.</p>
-          <div class="pdp__accordions">
-            <details class="faq__item pdp__accordion" open>
-              <summary class="faq__question">Skład</summary>
-              <div class="faq__answer"><p>Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać.</p></div>
-            </details>
-            <details class="faq__item pdp__accordion">
-              <summary class="faq__question">Bezpieczeństwo</summary>
-              <div class="faq__answer"><p>Bezpieczeństwo: maskotka dekoracyjna do pokoju dziecięcego (nie zabawka do intensywnej zabawy). Oczy i detale są trwale mocowane; poniżej 3. r.ż. tylko pod nadzorem dorosłych.</p></div>
-            </details>
-          </div>
-          <div class="pdp__actions">
-            <a class="btn btn--primary" href="../index.html?produkt=Zestawy%20prezentowe#kontakt">Zapytaj o produkt</a>
-            <a class="btn btn--social" href="https://www.facebook.com/szydelkomania.amigurumi/" target="_blank" rel="noopener noreferrer">
-              <img src="../assets/icons/facebook.svg" alt="" width="18" height="18" />
-              Facebook
-            </a>
-            <a class="btn btn--social" href="https://www.instagram.com/szydelkomania_amigurumi/" target="_blank" rel="noopener noreferrer">
-              <img src="../assets/icons/instagram.svg" alt="" width="18" height="18" />
-              Instagram
-            </a>
-          </div>
-        </div>
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container page-hero__inner">
+        <nav class="breadcrumbs" aria-label="Okruszki">
+          <a href="../index.html">Strona główna</a>
+          <span aria-hidden="true">/</span>
+          <a href="../index.html#oferta">Oferta</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">Zestawy prezentowe</span>
+        </nav>
+        <h1 id="page-title" class="section-title">Zestawy prezentowe</h1>
+        <p class="section-intro">Przemyślane zestawy stworzone z myślą o wyjątkowych chwilach i bliskich osobach.</p>
       </div>
     </section>
 
-    <section class="section product-gallery" aria-labelledby="gallery-title">
+    <section class="section product-gallery" aria-label="Modele: Zestawy prezentowe">
       <div class="container">
-        <header class="section-header">
-          <p class="eyebrow">Realizacje</p>
-          <h2 id="gallery-title" class="section-title">Przykładowe modele</h2>
-        </header>
-        <div class="product-grid" data-auto-gallery="zestawy-dla-dzieci" data-gallery-base="../assets/images/oferta/zestawy-dla-dzieci" data-contact-href="../index.html#kontakt">
+        <div class="product-grid">
 
           <article class="product-card">
-            <button
-              type="button"
+            <a
               class="product-card__link"
-              data-product-gallery
-              data-gallery-base="../assets/images/oferta/zestawy-dla-dzieci/01"
-              data-gallery-fallback="../assets/images/cat-zestawy.png"
-              data-gallery-title="Zestaw roczek (dekoracyjny)"
-              data-gallery-price="od 220 zł"
-              data-gallery-desc="Przemyślane zestawy stworzone z myślą o wyjątkowych chwilach i bliskich osobach."
-              data-gallery-material="Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać."
-              data-gallery-safety="Bezpieczeństwo: maskotka dekoracyjna do pokoju dziecięcego (nie zabawka do intensywnej zabawy). Oczy i detale są trwale mocowane; poniżej 3. r.ż. tylko pod nadzorem dorosłych."
-              data-gallery-care="Pranie ręczne w letniej wodzie, bez wybielaczy. Suszyć na płasko, z dala od grzejnika. Nie prasować na wysokiej temperaturze."
-              data-gallery-lead="Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie."
-              data-gallery-inquire="../index.html?produkt=Zestaw%20roczek%20(dekoracyjny)#kontakt"
-              aria-label="Zestaw roczek (dekoracyjny) — zobacz galerię"
+              href="zestaw-01.html"
+              aria-label="Zestaw 01 — zobacz produkt"
             >
-              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/zestawy-dla-dzieci" data-image-index="1" data-image-alt="Zestaw roczek (dekoracyjny)">
-                <img src="../assets/images/cat-zestawy.png" alt="Zestaw roczek (dekoracyjny)" width="600" height="600" loading="lazy" />
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/zestawy-dla-dzieci" data-image-index="1" data-image-alt="Zestaw 01">
+                <img src="../assets/images/oferta/zestawy-dla-dzieci/01.jpg" alt="Zestaw 01" width="600" height="600" loading="lazy" />
                 <span class="product-card__price-badge">od 220 zł</span>
               </figure>
               <div class="product-card__body">
-                <h3 class="product-card__title">Zestaw roczek (dekoracyjny)</h3>
+                <h3 class="product-card__title">Zestaw 01</h3>
                 <p class="product-card__price">od 220 zł</p>
-                <span class="product-card__cta">Zobacz galerię <span aria-hidden="true">→</span></span>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
               </div>
-            </button>
+            </a>
             <div class="product-card__footer">
-              <a class="product-card__inquire" href="../index.html?produkt=Zestaw%20roczek%20(dekoracyjny)#kontakt">Zapytaj o produkt</a>
+              <a class="product-card__inquire" href="../index.html?produkt=Zestaw%2001#kontakt">Zapytaj o produkt</a>
             </div>
           </article>
           <article class="product-card">
-            <button
-              type="button"
+            <a
               class="product-card__link"
-              data-product-gallery
-              data-gallery-base="../assets/images/oferta/zestawy-dla-dzieci/02"
-              data-gallery-fallback=""
-              data-gallery-title="Zestaw chrzest (dekoracyjny)"
-              data-gallery-price="od 240 zł"
-              data-gallery-desc="Przemyślane zestawy stworzone z myślą o wyjątkowych chwilach i bliskich osobach."
-              data-gallery-material="Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać."
-              data-gallery-safety="Bezpieczeństwo: maskotka dekoracyjna do pokoju dziecięcego (nie zabawka do intensywnej zabawy). Oczy i detale są trwale mocowane; poniżej 3. r.ż. tylko pod nadzorem dorosłych."
-              data-gallery-care="Pranie ręczne w letniej wodzie, bez wybielaczy. Suszyć na płasko, z dala od grzejnika. Nie prasować na wysokiej temperaturze."
-              data-gallery-lead="Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie."
-              data-gallery-inquire="../index.html?produkt=Zestaw%20chrzest%20(dekoracyjny)#kontakt"
-              aria-label="Zestaw chrzest (dekoracyjny) — zobacz galerię"
+              href="zestaw-02.html"
+              aria-label="Zestaw 02 — zobacz produkt"
             >
-              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/zestawy-dla-dzieci" data-image-index="2" data-image-alt="Zestaw chrzest (dekoracyjny)">
-                
-                <div class="media-slot__placeholder" style="aspect-ratio: 1 / 1;" role="img" aria-label="Zestaw chrzest (dekoracyjny)">
-                  <svg viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="1" height="1" fill="#E4D9CB"/></svg>
-                  <span class="media-slot__label">zestawy-dla-dzieci/02.jpg</span>
-                </div>
-                <span class="product-card__price-badge">od 240 zł</span>
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/zestawy-dla-dzieci" data-image-index="2" data-image-alt="Zestaw 02">
+                <img src="../assets/images/oferta/zestawy-dla-dzieci/02.jpg" alt="Zestaw 02" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 220 zł</span>
               </figure>
               <div class="product-card__body">
-                <h3 class="product-card__title">Zestaw chrzest (dekoracyjny)</h3>
-                <p class="product-card__price">od 240 zł</p>
-                <span class="product-card__cta">Zobacz galerię <span aria-hidden="true">→</span></span>
+                <h3 class="product-card__title">Zestaw 02</h3>
+                <p class="product-card__price">od 220 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
               </div>
-            </button>
+            </a>
             <div class="product-card__footer">
-              <a class="product-card__inquire" href="../index.html?produkt=Zestaw%20chrzest%20(dekoracyjny)#kontakt">Zapytaj o produkt</a>
+              <a class="product-card__inquire" href="../index.html?produkt=Zestaw%2002#kontakt">Zapytaj o produkt</a>
             </div>
           </article>
           <article class="product-card">
-            <button
-              type="button"
+            <a
               class="product-card__link"
-              data-product-gallery
-              data-gallery-base="../assets/images/oferta/zestawy-dla-dzieci/03"
-              data-gallery-fallback=""
-              data-gallery-title="Zestaw urodzinowy"
-              data-gallery-price="od 200 zł"
-              data-gallery-desc="Przemyślane zestawy stworzone z myślą o wyjątkowych chwilach i bliskich osobach."
-              data-gallery-material="Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać."
-              data-gallery-safety="Bezpieczeństwo: maskotka dekoracyjna do pokoju dziecięcego (nie zabawka do intensywnej zabawy). Oczy i detale są trwale mocowane; poniżej 3. r.ż. tylko pod nadzorem dorosłych."
-              data-gallery-care="Pranie ręczne w letniej wodzie, bez wybielaczy. Suszyć na płasko, z dala od grzejnika. Nie prasować na wysokiej temperaturze."
-              data-gallery-lead="Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie."
-              data-gallery-inquire="../index.html?produkt=Zestaw%20urodzinowy#kontakt"
-              aria-label="Zestaw urodzinowy — zobacz galerię"
+              href="zestaw-03.html"
+              aria-label="Zestaw 03 — zobacz produkt"
             >
-              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/zestawy-dla-dzieci" data-image-index="3" data-image-alt="Zestaw urodzinowy">
-                
-                <div class="media-slot__placeholder" style="aspect-ratio: 1 / 1;" role="img" aria-label="Zestaw urodzinowy">
-                  <svg viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="1" height="1" fill="#E4D9CB"/></svg>
-                  <span class="media-slot__label">zestawy-dla-dzieci/03.jpg</span>
-                </div>
-                <span class="product-card__price-badge">od 200 zł</span>
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/zestawy-dla-dzieci" data-image-index="3" data-image-alt="Zestaw 03">
+                <img src="../assets/images/oferta/zestawy-dla-dzieci/03.jpg" alt="Zestaw 03" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 220 zł</span>
               </figure>
               <div class="product-card__body">
-                <h3 class="product-card__title">Zestaw urodzinowy</h3>
-                <p class="product-card__price">od 200 zł</p>
-                <span class="product-card__cta">Zobacz galerię <span aria-hidden="true">→</span></span>
+                <h3 class="product-card__title">Zestaw 03</h3>
+                <p class="product-card__price">od 220 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
               </div>
-            </button>
+            </a>
             <div class="product-card__footer">
-              <a class="product-card__inquire" href="../index.html?produkt=Zestaw%20urodzinowy#kontakt">Zapytaj o produkt</a>
+              <a class="product-card__inquire" href="../index.html?produkt=Zestaw%2003#kontakt">Zapytaj o produkt</a>
             </div>
           </article>
           <article class="product-card">
-            <button
-              type="button"
+            <a
               class="product-card__link"
-              data-product-gallery
-              data-gallery-base="../assets/images/oferta/zestawy-dla-dzieci/04"
-              data-gallery-fallback=""
-              data-gallery-title="Zestaw baby shower"
-              data-gallery-price="od 210 zł"
-              data-gallery-desc="Przemyślane zestawy stworzone z myślą o wyjątkowych chwilach i bliskich osobach."
-              data-gallery-material="Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać."
-              data-gallery-safety="Bezpieczeństwo: maskotka dekoracyjna do pokoju dziecięcego (nie zabawka do intensywnej zabawy). Oczy i detale są trwale mocowane; poniżej 3. r.ż. tylko pod nadzorem dorosłych."
-              data-gallery-care="Pranie ręczne w letniej wodzie, bez wybielaczy. Suszyć na płasko, z dala od grzejnika. Nie prasować na wysokiej temperaturze."
-              data-gallery-lead="Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie."
-              data-gallery-inquire="../index.html?produkt=Zestaw%20baby%20shower#kontakt"
-              aria-label="Zestaw baby shower — zobacz galerię"
+              href="zestaw-04.html"
+              aria-label="Zestaw 04 — zobacz produkt"
             >
-              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/zestawy-dla-dzieci" data-image-index="4" data-image-alt="Zestaw baby shower">
-                
-                <div class="media-slot__placeholder" style="aspect-ratio: 1 / 1;" role="img" aria-label="Zestaw baby shower">
-                  <svg viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="1" height="1" fill="#E4D9CB"/></svg>
-                  <span class="media-slot__label">zestawy-dla-dzieci/04.jpg</span>
-                </div>
-                <span class="product-card__price-badge">od 210 zł</span>
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/zestawy-dla-dzieci" data-image-index="4" data-image-alt="Zestaw 04">
+                <img src="../assets/images/oferta/zestawy-dla-dzieci/04.jpg" alt="Zestaw 04" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 220 zł</span>
               </figure>
               <div class="product-card__body">
-                <h3 class="product-card__title">Zestaw baby shower</h3>
-                <p class="product-card__price">od 210 zł</p>
-                <span class="product-card__cta">Zobacz galerię <span aria-hidden="true">→</span></span>
+                <h3 class="product-card__title">Zestaw 04</h3>
+                <p class="product-card__price">od 220 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
               </div>
-            </button>
+            </a>
             <div class="product-card__footer">
-              <a class="product-card__inquire" href="../index.html?produkt=Zestaw%20baby%20shower#kontakt">Zapytaj o produkt</a>
+              <a class="product-card__inquire" href="../index.html?produkt=Zestaw%2004#kontakt">Zapytaj o produkt</a>
             </div>
           </article>
           <article class="product-card">
-            <button
-              type="button"
+            <a
               class="product-card__link"
-              data-product-gallery
-              data-gallery-base="../assets/images/oferta/zestawy-dla-dzieci/05"
-              data-gallery-fallback=""
-              data-gallery-title="Zestaw pastelowy"
-              data-gallery-price="od 230 zł"
-              data-gallery-desc="Przemyślane zestawy stworzone z myślą o wyjątkowych chwilach i bliskich osobach."
-              data-gallery-material="Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać."
-              data-gallery-safety="Bezpieczeństwo: maskotka dekoracyjna do pokoju dziecięcego (nie zabawka do intensywnej zabawy). Oczy i detale są trwale mocowane; poniżej 3. r.ż. tylko pod nadzorem dorosłych."
-              data-gallery-care="Pranie ręczne w letniej wodzie, bez wybielaczy. Suszyć na płasko, z dala od grzejnika. Nie prasować na wysokiej temperaturze."
-              data-gallery-lead="Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie."
-              data-gallery-inquire="../index.html?produkt=Zestaw%20pastelowy#kontakt"
-              aria-label="Zestaw pastelowy — zobacz galerię"
+              href="zestaw-05.html"
+              aria-label="Zestaw 05 — zobacz produkt"
             >
-              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/zestawy-dla-dzieci" data-image-index="5" data-image-alt="Zestaw pastelowy">
-                
-                <div class="media-slot__placeholder" style="aspect-ratio: 1 / 1;" role="img" aria-label="Zestaw pastelowy">
-                  <svg viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="1" height="1" fill="#E4D9CB"/></svg>
-                  <span class="media-slot__label">zestawy-dla-dzieci/05.jpg</span>
-                </div>
-                <span class="product-card__price-badge">od 230 zł</span>
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/zestawy-dla-dzieci" data-image-index="5" data-image-alt="Zestaw 05">
+                <img src="../assets/images/oferta/zestawy-dla-dzieci/05.jpg" alt="Zestaw 05" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 220 zł</span>
               </figure>
               <div class="product-card__body">
-                <h3 class="product-card__title">Zestaw pastelowy</h3>
-                <p class="product-card__price">od 230 zł</p>
-                <span class="product-card__cta">Zobacz galerię <span aria-hidden="true">→</span></span>
+                <h3 class="product-card__title">Zestaw 05</h3>
+                <p class="product-card__price">od 220 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
               </div>
-            </button>
+            </a>
             <div class="product-card__footer">
-              <a class="product-card__inquire" href="../index.html?produkt=Zestaw%20pastelowy#kontakt">Zapytaj o produkt</a>
+              <a class="product-card__inquire" href="../index.html?produkt=Zestaw%2005#kontakt">Zapytaj o produkt</a>
             </div>
           </article>
           <article class="product-card">
-            <button
-              type="button"
+            <a
               class="product-card__link"
-              data-product-gallery
-              data-gallery-base="../assets/images/oferta/zestawy-dla-dzieci/06"
-              data-gallery-fallback=""
-              data-gallery-title="Zestaw na zamówienie"
-              data-gallery-price="wycena indywidualna"
-              data-gallery-desc="Przemyślane zestawy stworzone z myślą o wyjątkowych chwilach i bliskich osobach."
-              data-gallery-material="Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać."
-              data-gallery-safety="Bezpieczeństwo: maskotka dekoracyjna do pokoju dziecięcego (nie zabawka do intensywnej zabawy). Oczy i detale są trwale mocowane; poniżej 3. r.ż. tylko pod nadzorem dorosłych."
-              data-gallery-care="Pranie ręczne w letniej wodzie, bez wybielaczy. Suszyć na płasko, z dala od grzejnika. Nie prasować na wysokiej temperaturze."
-              data-gallery-lead="Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie."
-              data-gallery-inquire="../index.html?produkt=Zestaw%20na%20zam%C3%B3wienie#kontakt"
-              aria-label="Zestaw na zamówienie — zobacz galerię"
+              href="zestaw-06.html"
+              aria-label="Zestaw 06 — zobacz produkt"
             >
-              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/zestawy-dla-dzieci" data-image-index="6" data-image-alt="Zestaw na zamówienie">
-                
-                <div class="media-slot__placeholder" style="aspect-ratio: 1 / 1;" role="img" aria-label="Zestaw na zamówienie">
-                  <svg viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="1" height="1" fill="#E4D9CB"/></svg>
-                  <span class="media-slot__label">zestawy-dla-dzieci/06.jpg</span>
-                </div>
-                <span class="product-card__price-badge">wycena</span>
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/zestawy-dla-dzieci" data-image-index="6" data-image-alt="Zestaw 06">
+                <img src="../assets/images/oferta/zestawy-dla-dzieci/06.jpg" alt="Zestaw 06" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 220 zł</span>
               </figure>
               <div class="product-card__body">
-                <h3 class="product-card__title">Zestaw na zamówienie</h3>
-                <p class="product-card__price">wycena indywidualna</p>
-                <span class="product-card__cta">Zobacz galerię <span aria-hidden="true">→</span></span>
+                <h3 class="product-card__title">Zestaw 06</h3>
+                <p class="product-card__price">od 220 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
               </div>
-            </button>
+            </a>
             <div class="product-card__footer">
-              <a class="product-card__inquire" href="../index.html?produkt=Zestaw%20na%20zam%C3%B3wienie#kontakt">Zapytaj o produkt</a>
+              <a class="product-card__inquire" href="../index.html?produkt=Zestaw%2006#kontakt">Zapytaj o produkt</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a
+              class="product-card__link"
+              href="zestaw-07.html"
+              aria-label="Zestaw 07 — zobacz produkt"
+            >
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/zestawy-dla-dzieci" data-image-index="7" data-image-alt="Zestaw 07">
+                <img src="../assets/images/oferta/zestawy-dla-dzieci/07.jpg" alt="Zestaw 07" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 220 zł</span>
+              </figure>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Zestaw 07</h3>
+                <p class="product-card__price">od 220 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+            <div class="product-card__footer">
+              <a class="product-card__inquire" href="../index.html?produkt=Zestaw%2007#kontakt">Zapytaj o produkt</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a
+              class="product-card__link"
+              href="zestaw-08.html"
+              aria-label="Zestaw 08 — zobacz produkt"
+            >
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/zestawy-dla-dzieci" data-image-index="8" data-image-alt="Zestaw 08">
+                <img src="../assets/images/oferta/zestawy-dla-dzieci/08.jpg" alt="Zestaw 08" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 220 zł</span>
+              </figure>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Zestaw 08</h3>
+                <p class="product-card__price">od 220 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+            <div class="product-card__footer">
+              <a class="product-card__inquire" href="../index.html?produkt=Zestaw%2008#kontakt">Zapytaj o produkt</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a
+              class="product-card__link"
+              href="zestaw-09.html"
+              aria-label="Zestaw 09 — zobacz produkt"
+            >
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/zestawy-dla-dzieci" data-image-index="9" data-image-alt="Zestaw 09">
+                <img src="../assets/images/oferta/zestawy-dla-dzieci/09.jpg" alt="Zestaw 09" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 220 zł</span>
+              </figure>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Zestaw 09</h3>
+                <p class="product-card__price">od 220 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+            <div class="product-card__footer">
+              <a class="product-card__inquire" href="../index.html?produkt=Zestaw%2009#kontakt">Zapytaj o produkt</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a
+              class="product-card__link"
+              href="zestaw-10.html"
+              aria-label="Zestaw 10 — zobacz produkt"
+            >
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/zestawy-dla-dzieci" data-image-index="10" data-image-alt="Zestaw 10">
+                <img src="../assets/images/oferta/zestawy-dla-dzieci/10.jpg" alt="Zestaw 10" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 220 zł</span>
+              </figure>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Zestaw 10</h3>
+                <p class="product-card__price">od 220 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+            <div class="product-card__footer">
+              <a class="product-card__inquire" href="../index.html?produkt=Zestaw%2010#kontakt">Zapytaj o produkt</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a
+              class="product-card__link"
+              href="zestaw-11.html"
+              aria-label="Zestaw 11 — zobacz produkt"
+            >
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/zestawy-dla-dzieci" data-image-index="11" data-image-alt="Zestaw 11">
+                <img src="../assets/images/oferta/zestawy-dla-dzieci/11.jpg" alt="Zestaw 11" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 220 zł</span>
+              </figure>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Zestaw 11</h3>
+                <p class="product-card__price">od 220 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+            <div class="product-card__footer">
+              <a class="product-card__inquire" href="../index.html?produkt=Zestaw%2011#kontakt">Zapytaj o produkt</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a
+              class="product-card__link"
+              href="zestaw-12.html"
+              aria-label="Zestaw 12 — zobacz produkt"
+            >
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/zestawy-dla-dzieci" data-image-index="12" data-image-alt="Zestaw 12">
+                <img src="../assets/images/oferta/zestawy-dla-dzieci/12.jpg" alt="Zestaw 12" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 220 zł</span>
+              </figure>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Zestaw 12</h3>
+                <p class="product-card__price">od 220 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+            <div class="product-card__footer">
+              <a class="product-card__inquire" href="../index.html?produkt=Zestaw%2012#kontakt">Zapytaj o produkt</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a
+              class="product-card__link"
+              href="zestaw-13.html"
+              aria-label="Zestaw 13 — zobacz produkt"
+            >
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/zestawy-dla-dzieci" data-image-index="13" data-image-alt="Zestaw 13">
+                <img src="../assets/images/oferta/zestawy-dla-dzieci/13.jpg" alt="Zestaw 13" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 220 zł</span>
+              </figure>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Zestaw 13</h3>
+                <p class="product-card__price">od 220 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+            <div class="product-card__footer">
+              <a class="product-card__inquire" href="../index.html?produkt=Zestaw%2013#kontakt">Zapytaj o produkt</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a
+              class="product-card__link"
+              href="zestaw-14.html"
+              aria-label="Zestaw 14 — zobacz produkt"
+            >
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/zestawy-dla-dzieci" data-image-index="14" data-image-alt="Zestaw 14">
+                <img src="../assets/images/oferta/zestawy-dla-dzieci/14.jpg" alt="Zestaw 14" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 220 zł</span>
+              </figure>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Zestaw 14</h3>
+                <p class="product-card__price">od 220 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+            <div class="product-card__footer">
+              <a class="product-card__inquire" href="../index.html?produkt=Zestaw%2014#kontakt">Zapytaj o produkt</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a
+              class="product-card__link"
+              href="zestaw-15.html"
+              aria-label="Zestaw 15 — zobacz produkt"
+            >
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/zestawy-dla-dzieci" data-image-index="15" data-image-alt="Zestaw 15">
+                <img src="../assets/images/oferta/zestawy-dla-dzieci/15.jpg" alt="Zestaw 15" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 220 zł</span>
+              </figure>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Zestaw 15</h3>
+                <p class="product-card__price">od 220 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+            <div class="product-card__footer">
+              <a class="product-card__inquire" href="../index.html?produkt=Zestaw%2015#kontakt">Zapytaj o produkt</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a
+              class="product-card__link"
+              href="zestaw-16.html"
+              aria-label="Zestaw 16 — zobacz produkt"
+            >
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/zestawy-dla-dzieci" data-image-index="16" data-image-alt="Zestaw 16">
+                <img src="../assets/images/oferta/zestawy-dla-dzieci/16.jpg" alt="Zestaw 16" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 220 zł</span>
+              </figure>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Zestaw 16</h3>
+                <p class="product-card__price">od 220 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+            <div class="product-card__footer">
+              <a class="product-card__inquire" href="../index.html?produkt=Zestaw%2016#kontakt">Zapytaj o produkt</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a
+              class="product-card__link"
+              href="zestaw-17.html"
+              aria-label="Zestaw 17 — zobacz produkt"
+            >
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/zestawy-dla-dzieci" data-image-index="17" data-image-alt="Zestaw 17">
+                <img src="../assets/images/oferta/zestawy-dla-dzieci/17.jpg" alt="Zestaw 17" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 220 zł</span>
+              </figure>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Zestaw 17</h3>
+                <p class="product-card__price">od 220 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+            <div class="product-card__footer">
+              <a class="product-card__inquire" href="../index.html?produkt=Zestaw%2017#kontakt">Zapytaj o produkt</a>
             </div>
           </article>
         </div>
@@ -416,8 +514,8 @@
       <p class="lightbox__counter" id="lightbox-counter" hidden></p>
     </div>
   </div>
-  <script type="module" src="../js/main.js?v=20260817d"></script>
-  <script type="module" src="../js/media-loader.js?v=20260817d"></script>
-  <script type="module" src="../js/animations.js?v=20260817d"></script>
+  <script type="module" src="../js/main.js?v=20260817t"></script>
+  <script type="module" src="../js/media-loader.js?v=20260817t"></script>
+  <script type="module" src="../js/animations.js?v=20260817t"></script>
 </body>
 </html>

@@ -12,9 +12,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@400;500;600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/reset.css?v=20260817d" />
-  <link rel="stylesheet" href="../css/tokens.css?v=20260817d" />
-  <link rel="stylesheet" href="../css/styles.css?v=20260817d" />
+  <link rel="stylesheet" href="../css/reset.css?v=20260817t" />
+  <link rel="stylesheet" href="../css/tokens.css?v=20260817t" />
+  <link rel="stylesheet" href="../css/styles.css?v=20260817t" />
 </head>
 <body class="page-category">
   <a class="skip-link" href="#main">Przejdź do treści</a>
@@ -56,264 +56,82 @@
   </div>
 
   <main id="main">
-
-    <section class="pdp" aria-labelledby="page-title">
-      <div class="container pdp__grid">
-        <div class="pdp__gallery" data-pdp-gallery>
-          
-          <figure class="pdp__stage">
-            <img class="pdp__main" src="../assets/images/cat-dywany.png" alt="Dywany" width="800" height="800" />
-            
-          </figure>
-        </div>
-        <div class="pdp__info">
-          <nav class="breadcrumbs" aria-label="Okruszki">
-            <a href="../index.html">Strona główna</a>
-            <span aria-hidden="true">/</span>
-            <a href="../index.html#oferta">Oferta</a>
-            <span aria-hidden="true">/</span>
-            <span aria-current="page">Dywany</span>
-          </nav>
-          <h1 id="page-title" class="pdp__title">Dywany</h1>
-          <p class="pdp__price">od 280 zł</p>
-          <p class="pdp__desc">Dywany i taborety w kształcie zwierzątek.</p>
-          <div class="pdp__accordions">
-            <details class="faq__item pdp__accordion" open>
-              <summary class="faq__question">Skład</summary>
-              <div class="faq__answer"><p>Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać.</p></div>
-            </details>
-            <details class="faq__item pdp__accordion">
-              <summary class="faq__question">Bezpieczeństwo</summary>
-              <div class="faq__answer"><p>Bezpieczeństwo: rękodzieło z polskiej przędzy bawełnianej. Sprawdzaj mocowanie detali. Nie jest zabawką przeznaczoną dla niemowląt bez nadzoru.</p></div>
-            </details>
-          </div>
-          <div class="pdp__actions">
-            <a class="btn btn--primary" href="../index.html?produkt=Dywany#kontakt">Zapytaj o produkt</a>
-            <a class="btn btn--social" href="https://www.facebook.com/szydelkomania.amigurumi/" target="_blank" rel="noopener noreferrer">
-              <img src="../assets/icons/facebook.svg" alt="" width="18" height="18" />
-              Facebook
-            </a>
-            <a class="btn btn--social" href="https://www.instagram.com/szydelkomania_amigurumi/" target="_blank" rel="noopener noreferrer">
-              <img src="../assets/icons/instagram.svg" alt="" width="18" height="18" />
-              Instagram
-            </a>
-          </div>
-        </div>
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container page-hero__inner">
+        <nav class="breadcrumbs" aria-label="Okruszki">
+          <a href="../index.html">Strona główna</a>
+          <span aria-hidden="true">/</span>
+          <a href="../index.html#oferta">Oferta</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">Dywany</span>
+        </nav>
+        <h1 id="page-title" class="section-title">Dywany</h1>
+        <p class="section-intro">Dywany i taborety w kształcie zwierzątek.</p>
       </div>
     </section>
 
-    <section class="section product-gallery" aria-labelledby="gallery-title">
+    <section class="section product-gallery" aria-label="Modele: Dywany">
       <div class="container">
-        <header class="section-header">
-          <p class="eyebrow">Realizacje</p>
-          <h2 id="gallery-title" class="section-title">Przykładowe modele</h2>
-        </header>
-        <div class="product-grid" data-auto-gallery="dywany" data-gallery-base="../assets/images/oferta/dywany" data-contact-href="../index.html#kontakt">
+        <div class="product-grid">
 
           <article class="product-card">
-            <button
-              type="button"
+            <a
               class="product-card__link"
-              data-product-gallery
-              data-gallery-base="../assets/images/oferta/dywany/01"
-              data-gallery-fallback="../assets/images/cat-dywany.png"
-              data-gallery-title="Dywan zwierzątko"
-              data-gallery-price="od 280 zł"
-              data-gallery-desc="Dywany i taborety w kształcie zwierzątek."
-              data-gallery-material="Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać."
-              data-gallery-safety="Bezpieczeństwo: rękodzieło z polskiej przędzy bawełnianej. Sprawdzaj mocowanie detali. Nie jest zabawką przeznaczoną dla niemowląt bez nadzoru."
-              data-gallery-care="Pranie ręczne w letniej wodzie, bez wybielaczy. Suszyć na płasko, z dala od grzejnika. Nie prasować na wysokiej temperaturze."
-              data-gallery-lead="Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie."
-              data-gallery-inquire="../index.html?produkt=Dywan%20zwierz%C4%85tko#kontakt"
-              aria-label="Dywan zwierzątko — zobacz galerię"
+              href="dywan-krokodyl.html"
+              aria-label="Dywan krokodyl — zobacz produkt"
             >
-              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/dywany" data-image-index="1" data-image-alt="Dywan zwierzątko">
-                <img src="../assets/images/cat-dywany.png" alt="Dywan zwierzątko" width="600" height="600" loading="lazy" />
-                <span class="product-card__price-badge">od 280 zł</span>
-              </figure>
-              <div class="product-card__body">
-                <h3 class="product-card__title">Dywan zwierzątko</h3>
-                <p class="product-card__price">od 280 zł</p>
-                <span class="product-card__cta">Zobacz galerię <span aria-hidden="true">→</span></span>
-              </div>
-            </button>
-            <div class="product-card__footer">
-              <a class="product-card__inquire" href="../index.html?produkt=Dywan%20zwierz%C4%85tko#kontakt">Zapytaj o produkt</a>
-            </div>
-          </article>
-          <article class="product-card">
-            <button
-              type="button"
-              class="product-card__link"
-              data-product-gallery
-              data-gallery-base="../assets/images/oferta/dywany/02"
-              data-gallery-fallback=""
-              data-gallery-title="Taboret zwierzątko"
-              data-gallery-price="od 190 zł"
-              data-gallery-desc="Dywany i taborety w kształcie zwierzątek."
-              data-gallery-material="Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać."
-              data-gallery-safety="Bezpieczeństwo: rękodzieło z polskiej przędzy bawełnianej. Sprawdzaj mocowanie detali. Nie jest zabawką przeznaczoną dla niemowląt bez nadzoru."
-              data-gallery-care="Pranie ręczne w letniej wodzie, bez wybielaczy. Suszyć na płasko, z dala od grzejnika. Nie prasować na wysokiej temperaturze."
-              data-gallery-lead="Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie."
-              data-gallery-inquire="../index.html?produkt=Taboret%20zwierz%C4%85tko#kontakt"
-              aria-label="Taboret zwierzątko — zobacz galerię"
-            >
-              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/dywany" data-image-index="2" data-image-alt="Taboret zwierzątko">
-                
-                <div class="media-slot__placeholder" style="aspect-ratio: 1 / 1;" role="img" aria-label="Taboret zwierzątko">
-                  <svg viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="1" height="1" fill="#E4D9CB"/></svg>
-                  <span class="media-slot__label">dywany/02.jpg</span>
-                </div>
-                <span class="product-card__price-badge">od 190 zł</span>
-              </figure>
-              <div class="product-card__body">
-                <h3 class="product-card__title">Taboret zwierzątko</h3>
-                <p class="product-card__price">od 190 zł</p>
-                <span class="product-card__cta">Zobacz galerię <span aria-hidden="true">→</span></span>
-              </div>
-            </button>
-            <div class="product-card__footer">
-              <a class="product-card__inquire" href="../index.html?produkt=Taboret%20zwierz%C4%85tko#kontakt">Zapytaj o produkt</a>
-            </div>
-          </article>
-          <article class="product-card">
-            <button
-              type="button"
-              class="product-card__link"
-              data-product-gallery
-              data-gallery-base="../assets/images/oferta/dywany/03"
-              data-gallery-fallback=""
-              data-gallery-title="Dywan krokodyl"
-              data-gallery-price="od 320 zł"
-              data-gallery-desc="Dywany i taborety w kształcie zwierzątek."
-              data-gallery-material="Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać."
-              data-gallery-safety="Bezpieczeństwo: rękodzieło z polskiej przędzy bawełnianej. Sprawdzaj mocowanie detali. Nie jest zabawką przeznaczoną dla niemowląt bez nadzoru."
-              data-gallery-care="Pranie ręczne w letniej wodzie, bez wybielaczy. Suszyć na płasko, z dala od grzejnika. Nie prasować na wysokiej temperaturze."
-              data-gallery-lead="Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie."
-              data-gallery-inquire="../index.html?produkt=Dywan%20krokodyl#kontakt"
-              aria-label="Dywan krokodyl — zobacz galerię"
-            >
-              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/dywany" data-image-index="3" data-image-alt="Dywan krokodyl">
-                
-                <div class="media-slot__placeholder" style="aspect-ratio: 1 / 1;" role="img" aria-label="Dywan krokodyl">
-                  <svg viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="1" height="1" fill="#E4D9CB"/></svg>
-                  <span class="media-slot__label">dywany/03.jpg</span>
-                </div>
-                <span class="product-card__price-badge">od 320 zł</span>
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/dywany" data-image-index="1" data-image-alt="Dywan krokodyl">
+                <img src="../assets/images/oferta/dywany/01.png" alt="Dywan krokodyl" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 400 zł</span>
               </figure>
               <div class="product-card__body">
                 <h3 class="product-card__title">Dywan krokodyl</h3>
-                <p class="product-card__price">od 320 zł</p>
-                <span class="product-card__cta">Zobacz galerię <span aria-hidden="true">→</span></span>
+                <p class="product-card__price">od 400 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
               </div>
-            </button>
+            </a>
             <div class="product-card__footer">
               <a class="product-card__inquire" href="../index.html?produkt=Dywan%20krokodyl#kontakt">Zapytaj o produkt</a>
             </div>
           </article>
           <article class="product-card">
-            <button
-              type="button"
+            <a
               class="product-card__link"
-              data-product-gallery
-              data-gallery-base="../assets/images/oferta/dywany/04"
-              data-gallery-fallback=""
-              data-gallery-title="Zestaw dywan i taboret"
-              data-gallery-price="od 450 zł"
-              data-gallery-desc="Dywany i taborety w kształcie zwierzątek."
-              data-gallery-material="Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać."
-              data-gallery-safety="Bezpieczeństwo: rękodzieło z polskiej przędzy bawełnianej. Sprawdzaj mocowanie detali. Nie jest zabawką przeznaczoną dla niemowląt bez nadzoru."
-              data-gallery-care="Pranie ręczne w letniej wodzie, bez wybielaczy. Suszyć na płasko, z dala od grzejnika. Nie prasować na wysokiej temperaturze."
-              data-gallery-lead="Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie."
-              data-gallery-inquire="../index.html?produkt=Zestaw%20dywan%20i%20taboret#kontakt"
-              aria-label="Zestaw dywan i taboret — zobacz galerię"
+              href="dywan-lisek.html"
+              aria-label="Dywan lisek — zobacz produkt"
             >
-              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/dywany" data-image-index="4" data-image-alt="Zestaw dywan i taboret">
-                
-                <div class="media-slot__placeholder" style="aspect-ratio: 1 / 1;" role="img" aria-label="Zestaw dywan i taboret">
-                  <svg viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="1" height="1" fill="#E4D9CB"/></svg>
-                  <span class="media-slot__label">dywany/04.jpg</span>
-                </div>
-                <span class="product-card__price-badge">od 450 zł</span>
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/dywany" data-image-index="2" data-image-alt="Dywan lisek">
+                <img src="../assets/images/oferta/dywany/02.jpg" alt="Dywan lisek" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 400 zł</span>
               </figure>
               <div class="product-card__body">
-                <h3 class="product-card__title">Zestaw dywan i taboret</h3>
-                <p class="product-card__price">od 450 zł</p>
-                <span class="product-card__cta">Zobacz galerię <span aria-hidden="true">→</span></span>
+                <h3 class="product-card__title">Dywan lisek</h3>
+                <p class="product-card__price">od 400 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
               </div>
-            </button>
+            </a>
             <div class="product-card__footer">
-              <a class="product-card__inquire" href="../index.html?produkt=Zestaw%20dywan%20i%20taboret#kontakt">Zapytaj o produkt</a>
+              <a class="product-card__inquire" href="../index.html?produkt=Dywan%20lisek#kontakt">Zapytaj o produkt</a>
             </div>
           </article>
           <article class="product-card">
-            <button
-              type="button"
+            <a
               class="product-card__link"
-              data-product-gallery
-              data-gallery-base="../assets/images/oferta/dywany/05"
-              data-gallery-fallback=""
-              data-gallery-title="Dywan na zamówienie"
-              data-gallery-price="wycena indywidualna"
-              data-gallery-desc="Dywany i taborety w kształcie zwierzątek."
-              data-gallery-material="Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać."
-              data-gallery-safety="Bezpieczeństwo: rękodzieło z polskiej przędzy bawełnianej. Sprawdzaj mocowanie detali. Nie jest zabawką przeznaczoną dla niemowląt bez nadzoru."
-              data-gallery-care="Pranie ręczne w letniej wodzie, bez wybielaczy. Suszyć na płasko, z dala od grzejnika. Nie prasować na wysokiej temperaturze."
-              data-gallery-lead="Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie."
-              data-gallery-inquire="../index.html?produkt=Dywan%20na%20zam%C3%B3wienie#kontakt"
-              aria-label="Dywan na zamówienie — zobacz galerię"
+              href="dywan-pilka.html"
+              aria-label="Dywan piłka — zobacz produkt"
             >
-              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/dywany" data-image-index="5" data-image-alt="Dywan na zamówienie">
-                
-                <div class="media-slot__placeholder" style="aspect-ratio: 1 / 1;" role="img" aria-label="Dywan na zamówienie">
-                  <svg viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="1" height="1" fill="#E4D9CB"/></svg>
-                  <span class="media-slot__label">dywany/05.jpg</span>
-                </div>
-                <span class="product-card__price-badge">wycena</span>
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/dywany" data-image-index="3" data-image-alt="Dywan piłka">
+                <img src="../assets/images/oferta/dywany/03.jpg" alt="Dywan piłka" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 520 zł</span>
               </figure>
               <div class="product-card__body">
-                <h3 class="product-card__title">Dywan na zamówienie</h3>
-                <p class="product-card__price">wycena indywidualna</p>
-                <span class="product-card__cta">Zobacz galerię <span aria-hidden="true">→</span></span>
+                <h3 class="product-card__title">Dywan piłka</h3>
+                <p class="product-card__price">od 520 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
               </div>
-            </button>
+            </a>
             <div class="product-card__footer">
-              <a class="product-card__inquire" href="../index.html?produkt=Dywan%20na%20zam%C3%B3wienie#kontakt">Zapytaj o produkt</a>
-            </div>
-          </article>
-          <article class="product-card">
-            <button
-              type="button"
-              class="product-card__link"
-              data-product-gallery
-              data-gallery-base="../assets/images/oferta/dywany/06"
-              data-gallery-fallback=""
-              data-gallery-title="Taboret na zamówienie"
-              data-gallery-price="wycena indywidualna"
-              data-gallery-desc="Dywany i taborety w kształcie zwierzątek."
-              data-gallery-material="Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać."
-              data-gallery-safety="Bezpieczeństwo: rękodzieło z polskiej przędzy bawełnianej. Sprawdzaj mocowanie detali. Nie jest zabawką przeznaczoną dla niemowląt bez nadzoru."
-              data-gallery-care="Pranie ręczne w letniej wodzie, bez wybielaczy. Suszyć na płasko, z dala od grzejnika. Nie prasować na wysokiej temperaturze."
-              data-gallery-lead="Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie."
-              data-gallery-inquire="../index.html?produkt=Taboret%20na%20zam%C3%B3wienie#kontakt"
-              aria-label="Taboret na zamówienie — zobacz galerię"
-            >
-              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/dywany" data-image-index="6" data-image-alt="Taboret na zamówienie">
-                
-                <div class="media-slot__placeholder" style="aspect-ratio: 1 / 1;" role="img" aria-label="Taboret na zamówienie">
-                  <svg viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="1" height="1" fill="#E4D9CB"/></svg>
-                  <span class="media-slot__label">dywany/06.jpg</span>
-                </div>
-                <span class="product-card__price-badge">wycena</span>
-              </figure>
-              <div class="product-card__body">
-                <h3 class="product-card__title">Taboret na zamówienie</h3>
-                <p class="product-card__price">wycena indywidualna</p>
-                <span class="product-card__cta">Zobacz galerię <span aria-hidden="true">→</span></span>
-              </div>
-            </button>
-            <div class="product-card__footer">
-              <a class="product-card__inquire" href="../index.html?produkt=Taboret%20na%20zam%C3%B3wienie#kontakt">Zapytaj o produkt</a>
+              <a class="product-card__inquire" href="../index.html?produkt=Dywan%20pi%C5%82ka#kontakt">Zapytaj o produkt</a>
             </div>
           </article>
         </div>
@@ -416,8 +234,8 @@
       <p class="lightbox__counter" id="lightbox-counter" hidden></p>
     </div>
   </div>
-  <script type="module" src="../js/main.js?v=20260817d"></script>
-  <script type="module" src="../js/media-loader.js?v=20260817d"></script>
-  <script type="module" src="../js/animations.js?v=20260817d"></script>
+  <script type="module" src="../js/main.js?v=20260817t"></script>
+  <script type="module" src="../js/media-loader.js?v=20260817t"></script>
+  <script type="module" src="../js/animations.js?v=20260817t"></script>
 </body>
 </html>

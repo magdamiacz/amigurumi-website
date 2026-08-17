@@ -12,9 +12,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@400;500;600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/reset.css?v=20260817d" />
-  <link rel="stylesheet" href="../css/tokens.css?v=20260817d" />
-  <link rel="stylesheet" href="../css/styles.css?v=20260817d" />
+  <link rel="stylesheet" href="../css/reset.css?v=20260817t" />
+  <link rel="stylesheet" href="../css/tokens.css?v=20260817t" />
+  <link rel="stylesheet" href="../css/styles.css?v=20260817t" />
 </head>
 <body class="page-category">
   <a class="skip-link" href="#main">Przejdź do treści</a>
@@ -56,264 +56,142 @@
   </div>
 
   <main id="main">
-
-    <section class="pdp" aria-labelledby="page-title">
-      <div class="container pdp__grid">
-        <div class="pdp__gallery" data-pdp-gallery>
-          
-          <figure class="pdp__stage">
-            <img class="pdp__main" src="../assets/images/cat-dekoracje.png" alt="Dekoracje" width="800" height="800" />
-            
-          </figure>
-        </div>
-        <div class="pdp__info">
-          <nav class="breadcrumbs" aria-label="Okruszki">
-            <a href="../index.html">Strona główna</a>
-            <span aria-hidden="true">/</span>
-            <a href="../index.html#oferta">Oferta</a>
-            <span aria-hidden="true">/</span>
-            <span aria-current="page">Dekoracje</span>
-          </nav>
-          <h1 id="page-title" class="pdp__title">Dekoracje</h1>
-          <p class="pdp__price">od 90 zł</p>
-          <p class="pdp__desc">Ręcznie tworzone dodatki do domu i wyjątkowe prezenty na każdą okazję.</p>
-          <div class="pdp__accordions">
-            <details class="faq__item pdp__accordion" open>
-              <summary class="faq__question">Skład</summary>
-              <div class="faq__answer"><p>Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać.</p></div>
-            </details>
-            <details class="faq__item pdp__accordion">
-              <summary class="faq__question">Bezpieczeństwo</summary>
-              <div class="faq__answer"><p>Bezpieczeństwo: rękodzieło z polskiej przędzy bawełnianej. Sprawdzaj mocowanie detali. Nie jest zabawką przeznaczoną dla niemowląt bez nadzoru.</p></div>
-            </details>
-          </div>
-          <div class="pdp__actions">
-            <a class="btn btn--primary" href="../index.html?produkt=Dekoracje#kontakt">Zapytaj o produkt</a>
-            <a class="btn btn--social" href="https://www.facebook.com/szydelkomania.amigurumi/" target="_blank" rel="noopener noreferrer">
-              <img src="../assets/icons/facebook.svg" alt="" width="18" height="18" />
-              Facebook
-            </a>
-            <a class="btn btn--social" href="https://www.instagram.com/szydelkomania_amigurumi/" target="_blank" rel="noopener noreferrer">
-              <img src="../assets/icons/instagram.svg" alt="" width="18" height="18" />
-              Instagram
-            </a>
-          </div>
-        </div>
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container page-hero__inner">
+        <nav class="breadcrumbs" aria-label="Okruszki">
+          <a href="../index.html">Strona główna</a>
+          <span aria-hidden="true">/</span>
+          <a href="../index.html#oferta">Oferta</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">Dekoracje</span>
+        </nav>
+        <h1 id="page-title" class="section-title">Dekoracje</h1>
+        <p class="section-intro">Ręcznie tworzone dodatki do domu i wyjątkowe prezenty na każdą okazję.</p>
       </div>
     </section>
 
-    <section class="section product-gallery" aria-labelledby="gallery-title">
+    <section class="section product-gallery" aria-label="Modele: Dekoracje">
       <div class="container">
-        <header class="section-header">
-          <p class="eyebrow">Realizacje</p>
-          <h2 id="gallery-title" class="section-title">Przykładowe modele</h2>
-        </header>
-        <div class="product-grid" data-auto-gallery="dekoracje" data-gallery-base="../assets/images/oferta/dekoracje" data-contact-href="../index.html#kontakt">
+        <div class="product-grid">
 
           <article class="product-card">
-            <button
-              type="button"
+            <a
               class="product-card__link"
-              data-product-gallery
-              data-gallery-base="../assets/images/oferta/dekoracje/01"
-              data-gallery-fallback="../assets/images/cat-dekoracje.png"
-              data-gallery-title="Girlanda kwiatowa"
-              data-gallery-price="od 90 zł"
-              data-gallery-desc="Ręcznie tworzone dodatki do domu i wyjątkowe prezenty na każdą okazję."
-              data-gallery-material="Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać."
-              data-gallery-safety="Bezpieczeństwo: rękodzieło z polskiej przędzy bawełnianej. Sprawdzaj mocowanie detali. Nie jest zabawką przeznaczoną dla niemowląt bez nadzoru."
-              data-gallery-care="Pranie ręczne w letniej wodzie, bez wybielaczy. Suszyć na płasko, z dala od grzejnika. Nie prasować na wysokiej temperaturze."
-              data-gallery-lead="Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie."
-              data-gallery-inquire="../index.html?produkt=Girlanda%20kwiatowa#kontakt"
-              aria-label="Girlanda kwiatowa — zobacz galerię"
+              href="koszyczki.html"
+              aria-label="Koszyczki — zobacz produkt"
             >
-              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/dekoracje" data-image-index="1" data-image-alt="Girlanda kwiatowa">
-                <img src="../assets/images/cat-dekoracje.png" alt="Girlanda kwiatowa" width="600" height="600" loading="lazy" />
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/dekoracje" data-image-index="1" data-image-alt="Koszyczki">
+                <img src="../assets/images/oferta/dekoracje/01.jpg" alt="Koszyczki" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 85 zł</span>
+              </figure>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Koszyczki</h3>
+                <p class="product-card__price">od 85 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+            <div class="product-card__footer">
+              <a class="product-card__inquire" href="../index.html?produkt=Koszyczki#kontakt">Zapytaj o produkt</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <a
+              class="product-card__link"
+              href="koszyczki-zwierzaki.html"
+              aria-label="Koszyczki zwierzaki — zobacz produkt"
+            >
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/dekoracje" data-image-index="2" data-image-alt="Koszyczki zwierzaki">
+                <img src="../assets/images/oferta/dekoracje/02.jpg" alt="Koszyczki zwierzaki" width="600" height="600" loading="lazy" />
                 <span class="product-card__price-badge">od 90 zł</span>
               </figure>
               <div class="product-card__body">
-                <h3 class="product-card__title">Girlanda kwiatowa</h3>
+                <h3 class="product-card__title">Koszyczki zwierzaki</h3>
                 <p class="product-card__price">od 90 zł</p>
-                <span class="product-card__cta">Zobacz galerię <span aria-hidden="true">→</span></span>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
               </div>
-            </button>
+            </a>
             <div class="product-card__footer">
-              <a class="product-card__inquire" href="../index.html?produkt=Girlanda%20kwiatowa#kontakt">Zapytaj o produkt</a>
+              <a class="product-card__inquire" href="../index.html?produkt=Koszyczki%20zwierzaki#kontakt">Zapytaj o produkt</a>
             </div>
           </article>
           <article class="product-card">
-            <button
-              type="button"
+            <a
               class="product-card__link"
-              data-product-gallery
-              data-gallery-base="../assets/images/oferta/dekoracje/02"
-              data-gallery-fallback=""
-              data-gallery-title="Zawieszka sezonowa"
-              data-gallery-price="od 45 zł"
-              data-gallery-desc="Ręcznie tworzone dodatki do domu i wyjątkowe prezenty na każdą okazję."
-              data-gallery-material="Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać."
-              data-gallery-safety="Bezpieczeństwo: rękodzieło z polskiej przędzy bawełnianej. Sprawdzaj mocowanie detali. Nie jest zabawką przeznaczoną dla niemowląt bez nadzoru."
-              data-gallery-care="Pranie ręczne w letniej wodzie, bez wybielaczy. Suszyć na płasko, z dala od grzejnika. Nie prasować na wysokiej temperaturze."
-              data-gallery-lead="Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie."
-              data-gallery-inquire="../index.html?produkt=Zawieszka%20sezonowa#kontakt"
-              aria-label="Zawieszka sezonowa — zobacz galerię"
+              href="kwiaty.html"
+              aria-label="Kwiaty — zobacz produkt"
             >
-              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/dekoracje" data-image-index="2" data-image-alt="Zawieszka sezonowa">
-                
-                <div class="media-slot__placeholder" style="aspect-ratio: 1 / 1;" role="img" aria-label="Zawieszka sezonowa">
-                  <svg viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="1" height="1" fill="#E4D9CB"/></svg>
-                  <span class="media-slot__label">dekoracje/02.jpg</span>
-                </div>
-                <span class="product-card__price-badge">od 45 zł</span>
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/dekoracje" data-image-index="3" data-image-alt="Kwiaty">
+                <img src="../assets/images/oferta/dekoracje/03.jpg" alt="Kwiaty" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 50 zł</span>
               </figure>
               <div class="product-card__body">
-                <h3 class="product-card__title">Zawieszka sezonowa</h3>
-                <p class="product-card__price">od 45 zł</p>
-                <span class="product-card__cta">Zobacz galerię <span aria-hidden="true">→</span></span>
+                <h3 class="product-card__title">Kwiaty</h3>
+                <p class="product-card__price">od 50 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
               </div>
-            </button>
+            </a>
             <div class="product-card__footer">
-              <a class="product-card__inquire" href="../index.html?produkt=Zawieszka%20sezonowa#kontakt">Zapytaj o produkt</a>
+              <a class="product-card__inquire" href="../index.html?produkt=Kwiaty#kontakt">Zapytaj o produkt</a>
             </div>
           </article>
           <article class="product-card">
-            <button
-              type="button"
+            <a
               class="product-card__link"
-              data-product-gallery
-              data-gallery-base="../assets/images/oferta/dekoracje/03"
-              data-gallery-fallback=""
-              data-gallery-title="Ozdoba stołu"
-              data-gallery-price="od 70 zł"
-              data-gallery-desc="Ręcznie tworzone dodatki do domu i wyjątkowe prezenty na każdą okazję."
-              data-gallery-material="Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać."
-              data-gallery-safety="Bezpieczeństwo: rękodzieło z polskiej przędzy bawełnianej. Sprawdzaj mocowanie detali. Nie jest zabawką przeznaczoną dla niemowląt bez nadzoru."
-              data-gallery-care="Pranie ręczne w letniej wodzie, bez wybielaczy. Suszyć na płasko, z dala od grzejnika. Nie prasować na wysokiej temperaturze."
-              data-gallery-lead="Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie."
-              data-gallery-inquire="../index.html?produkt=Ozdoba%20sto%C5%82u#kontakt"
-              aria-label="Ozdoba stołu — zobacz galerię"
+              href="na-choinke.html"
+              aria-label="Na choinkę — zobacz produkt"
             >
-              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/dekoracje" data-image-index="3" data-image-alt="Ozdoba stołu">
-                
-                <div class="media-slot__placeholder" style="aspect-ratio: 1 / 1;" role="img" aria-label="Ozdoba stołu">
-                  <svg viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="1" height="1" fill="#E4D9CB"/></svg>
-                  <span class="media-slot__label">dekoracje/03.jpg</span>
-                </div>
-                <span class="product-card__price-badge">od 70 zł</span>
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/dekoracje" data-image-index="4" data-image-alt="Na choinkę">
+                <img src="../assets/images/oferta/dekoracje/04.jpg" alt="Na choinkę" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 40 zł</span>
               </figure>
               <div class="product-card__body">
-                <h3 class="product-card__title">Ozdoba stołu</h3>
-                <p class="product-card__price">od 70 zł</p>
-                <span class="product-card__cta">Zobacz galerię <span aria-hidden="true">→</span></span>
+                <h3 class="product-card__title">Na choinkę</h3>
+                <p class="product-card__price">od 40 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
               </div>
-            </button>
+            </a>
             <div class="product-card__footer">
-              <a class="product-card__inquire" href="../index.html?produkt=Ozdoba%20sto%C5%82u#kontakt">Zapytaj o produkt</a>
+              <a class="product-card__inquire" href="../index.html?produkt=Na%20choink%C4%99#kontakt">Zapytaj o produkt</a>
             </div>
           </article>
           <article class="product-card">
-            <button
-              type="button"
+            <a
               class="product-card__link"
-              data-product-gallery
-              data-gallery-base="../assets/images/oferta/dekoracje/04"
-              data-gallery-fallback=""
-              data-gallery-title="Makrama mini"
-              data-gallery-price="od 80 zł"
-              data-gallery-desc="Ręcznie tworzone dodatki do domu i wyjątkowe prezenty na każdą okazję."
-              data-gallery-material="Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać."
-              data-gallery-safety="Bezpieczeństwo: rękodzieło z polskiej przędzy bawełnianej. Sprawdzaj mocowanie detali. Nie jest zabawką przeznaczoną dla niemowląt bez nadzoru."
-              data-gallery-care="Pranie ręczne w letniej wodzie, bez wybielaczy. Suszyć na płasko, z dala od grzejnika. Nie prasować na wysokiej temperaturze."
-              data-gallery-lead="Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie."
-              data-gallery-inquire="../index.html?produkt=Makrama%20mini#kontakt"
-              aria-label="Makrama mini — zobacz galerię"
+              href="poduszki.html"
+              aria-label="Poduszki — zobacz produkt"
             >
-              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/dekoracje" data-image-index="4" data-image-alt="Makrama mini">
-                
-                <div class="media-slot__placeholder" style="aspect-ratio: 1 / 1;" role="img" aria-label="Makrama mini">
-                  <svg viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="1" height="1" fill="#E4D9CB"/></svg>
-                  <span class="media-slot__label">dekoracje/04.jpg</span>
-                </div>
-                <span class="product-card__price-badge">od 80 zł</span>
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/dekoracje" data-image-index="5" data-image-alt="Poduszki">
+                <img src="../assets/images/oferta/dekoracje/05.jpg" alt="Poduszki" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 210 zł</span>
               </figure>
               <div class="product-card__body">
-                <h3 class="product-card__title">Makrama mini</h3>
-                <p class="product-card__price">od 80 zł</p>
-                <span class="product-card__cta">Zobacz galerię <span aria-hidden="true">→</span></span>
+                <h3 class="product-card__title">Poduszki</h3>
+                <p class="product-card__price">od 210 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
               </div>
-            </button>
+            </a>
             <div class="product-card__footer">
-              <a class="product-card__inquire" href="../index.html?produkt=Makrama%20mini#kontakt">Zapytaj o produkt</a>
+              <a class="product-card__inquire" href="../index.html?produkt=Poduszki#kontakt">Zapytaj o produkt</a>
             </div>
           </article>
           <article class="product-card">
-            <button
-              type="button"
+            <a
               class="product-card__link"
-              data-product-gallery
-              data-gallery-base="../assets/images/oferta/dekoracje/05"
-              data-gallery-fallback=""
-              data-gallery-title="Zestaw dekoracji"
-              data-gallery-price="od 150 zł"
-              data-gallery-desc="Ręcznie tworzone dodatki do domu i wyjątkowe prezenty na każdą okazję."
-              data-gallery-material="Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać."
-              data-gallery-safety="Bezpieczeństwo: rękodzieło z polskiej przędzy bawełnianej. Sprawdzaj mocowanie detali. Nie jest zabawką przeznaczoną dla niemowląt bez nadzoru."
-              data-gallery-care="Pranie ręczne w letniej wodzie, bez wybielaczy. Suszyć na płasko, z dala od grzejnika. Nie prasować na wysokiej temperaturze."
-              data-gallery-lead="Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie."
-              data-gallery-inquire="../index.html?produkt=Zestaw%20dekoracji#kontakt"
-              aria-label="Zestaw dekoracji — zobacz galerię"
+              href="prezent-dla-nowozencow.html"
+              aria-label="Prezent dla nowożeńców — zobacz produkt"
             >
-              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/dekoracje" data-image-index="5" data-image-alt="Zestaw dekoracji">
-                
-                <div class="media-slot__placeholder" style="aspect-ratio: 1 / 1;" role="img" aria-label="Zestaw dekoracji">
-                  <svg viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="1" height="1" fill="#E4D9CB"/></svg>
-                  <span class="media-slot__label">dekoracje/05.jpg</span>
-                </div>
-                <span class="product-card__price-badge">od 150 zł</span>
+              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/dekoracje" data-image-index="6" data-image-alt="Prezent dla nowożeńców">
+                <img src="../assets/images/oferta/dekoracje/06.jpg" alt="Prezent dla nowożeńców" width="600" height="600" loading="lazy" />
+                <span class="product-card__price-badge">od 300 zł</span>
               </figure>
               <div class="product-card__body">
-                <h3 class="product-card__title">Zestaw dekoracji</h3>
-                <p class="product-card__price">od 150 zł</p>
-                <span class="product-card__cta">Zobacz galerię <span aria-hidden="true">→</span></span>
+                <h3 class="product-card__title">Prezent dla nowożeńców</h3>
+                <p class="product-card__price">od 300 zł</p>
+                <span class="product-card__cta">Zobacz model <span aria-hidden="true">→</span></span>
               </div>
-            </button>
+            </a>
             <div class="product-card__footer">
-              <a class="product-card__inquire" href="../index.html?produkt=Zestaw%20dekoracji#kontakt">Zapytaj o produkt</a>
-            </div>
-          </article>
-          <article class="product-card">
-            <button
-              type="button"
-              class="product-card__link"
-              data-product-gallery
-              data-gallery-base="../assets/images/oferta/dekoracje/06"
-              data-gallery-fallback=""
-              data-gallery-title="Dekoracja na zamówienie"
-              data-gallery-price="wycena indywidualna"
-              data-gallery-desc="Ręcznie tworzone dodatki do domu i wyjątkowe prezenty na każdą okazję."
-              data-gallery-material="Polska przędza bawełniana premium. Kolor dobieram z palety 45+ odcieni — napisz, jaki efekt chcesz uzyskać."
-              data-gallery-safety="Bezpieczeństwo: rękodzieło z polskiej przędzy bawełnianej. Sprawdzaj mocowanie detali. Nie jest zabawką przeznaczoną dla niemowląt bez nadzoru."
-              data-gallery-care="Pranie ręczne w letniej wodzie, bez wybielaczy. Suszyć na płasko, z dala od grzejnika. Nie prasować na wysokiej temperaturze."
-              data-gallery-lead="Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie."
-              data-gallery-inquire="../index.html?produkt=Dekoracja%20na%20zam%C3%B3wienie#kontakt"
-              aria-label="Dekoracja na zamówienie — zobacz galerię"
-            >
-              <figure class="product-card__media media-slot" data-image-base="../assets/images/oferta/dekoracje" data-image-index="6" data-image-alt="Dekoracja na zamówienie">
-                
-                <div class="media-slot__placeholder" style="aspect-ratio: 1 / 1;" role="img" aria-label="Dekoracja na zamówienie">
-                  <svg viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="1" height="1" fill="#E4D9CB"/></svg>
-                  <span class="media-slot__label">dekoracje/06.jpg</span>
-                </div>
-                <span class="product-card__price-badge">wycena</span>
-              </figure>
-              <div class="product-card__body">
-                <h3 class="product-card__title">Dekoracja na zamówienie</h3>
-                <p class="product-card__price">wycena indywidualna</p>
-                <span class="product-card__cta">Zobacz galerię <span aria-hidden="true">→</span></span>
-              </div>
-            </button>
-            <div class="product-card__footer">
-              <a class="product-card__inquire" href="../index.html?produkt=Dekoracja%20na%20zam%C3%B3wienie#kontakt">Zapytaj o produkt</a>
+              <a class="product-card__inquire" href="../index.html?produkt=Prezent%20dla%20nowo%C5%BCe%C5%84c%C3%B3w#kontakt">Zapytaj o produkt</a>
             </div>
           </article>
         </div>
@@ -416,8 +294,8 @@
       <p class="lightbox__counter" id="lightbox-counter" hidden></p>
     </div>
   </div>
-  <script type="module" src="../js/main.js?v=20260817d"></script>
-  <script type="module" src="../js/media-loader.js?v=20260817d"></script>
-  <script type="module" src="../js/animations.js?v=20260817d"></script>
+  <script type="module" src="../js/main.js?v=20260817t"></script>
+  <script type="module" src="../js/media-loader.js?v=20260817t"></script>
+  <script type="module" src="../js/animations.js?v=20260817t"></script>
 </body>
 </html>
