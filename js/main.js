@@ -4,7 +4,7 @@
  */
 
 import { initCookies } from "./cookies.js";
-import { CONTACT_INBOX } from "./contact-config.js?v=20260817aa";
+import { CONTACT_INBOX } from "./contact-config.js?v=20260818a";
 
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 if (prefersReducedMotion) {

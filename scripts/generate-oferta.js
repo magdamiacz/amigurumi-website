@@ -3,6 +3,7 @@ const path = require("path");
 
 const FB = "https://www.facebook.com/szydelkomania.amigurumi/";
 const IG = "https://www.instagram.com/szydelkomania_amigurumi/";
+const EMAIL = "szydelkomania.amigurumi@gmail.com";
 const IMAGE_EXTS = new Set([".jpg", ".jpeg", ".webp", ".png"]);
 
 const SAFETY_BAG =
@@ -804,6 +805,8 @@ ${socialBtns()}
         ·
         <a href="${IG}" target="_blank" rel="noopener noreferrer">Instagram</a>
         ·
+        <a href="mailto:${EMAIL}">E-mail</a>
+        ·
         <a href="../regulamin.html" target="_blank" rel="noopener noreferrer">Regulamin i RODO</a>
         ·
         <a href="../index.html#kontakt">Wyślij zapytanie</a>
@@ -910,6 +913,8 @@ ${socialBtns()}
         <a href="${FB}" target="_blank" rel="noopener noreferrer">Facebook</a>
         ·
         <a href="${IG}" target="_blank" rel="noopener noreferrer">Instagram</a>
+        ·
+        <a href="mailto:${EMAIL}">E-mail</a>
         ·
         <a href="../regulamin.html" target="_blank" rel="noopener noreferrer">Regulamin i RODO</a>
         ·

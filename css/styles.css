@@ -2233,7 +2233,16 @@ button.product-card__link {
 .contact__channel img {
   width: 18px;
   height: 18px;
+  flex-shrink: 0;
   filter: brightness(0) invert(0.92) sepia(0.15);
+}
+
+.contact__channel--mail {
+  max-width: 100%;
+}
+
+.contact__channel--mail span {
+  overflow-wrap: anywhere;
 }
 
 /* Form */
@@ -2446,7 +2455,13 @@ button.product-card__link {
 .footer__social img {
   width: 18px;
   height: 18px;
+  flex-shrink: 0;
   opacity: 0.7;
+}
+
+.footer__email {
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .footer__bottom {
