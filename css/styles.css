@@ -1046,6 +1046,51 @@ a.category-card:focus-within .category-card__media img {
   flex-wrap: wrap;
   gap: var(--space-3);
   align-items: center;
+  margin: 0 0 var(--space-5);
+}
+
+.pdp__option-group + .pdp__option-group {
+  margin-top: var(--space-4);
+}
+
+.pdp__option-label {
+  font-size: var(--text-small);
+  font-weight: 600;
+  margin: 0 0 var(--space-2);
+  color: var(--ink);
+}
+
+.pdp__desc--rich {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.pdp__desc--rich p,
+.pdp__desc--rich ul {
+  margin: 0;
+}
+
+.pdp__desc--rich ul {
+  padding-left: 1.15rem;
+}
+
+.pdp__safety h3 {
+  font-size: 0.95rem;
+  margin: 1rem 0 0.4rem;
+}
+
+.pdp__safety h3:first-child {
+  margin-top: 0;
+}
+
+.pdp__safety ul {
+  margin: 0 0 0.75rem;
+  padding-left: 1.15rem;
+}
+
+.pdp__safety p {
+  margin: 0 0 0.75rem;
 }
 
 .pdp__actions .btn {

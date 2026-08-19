@@ -145,10 +145,7 @@ const lightboxInfo = document.getElementById("lightbox-info");
 const lightboxTitleEl = document.getElementById("lightbox-title");
 const lightboxPriceEl = document.getElementById("lightbox-price");
 const lightboxDescEl = document.getElementById("lightbox-desc");
-const lightboxMaterialEl = document.getElementById("lightbox-material");
 const lightboxSafetyEl = document.getElementById("lightbox-safety");
-const lightboxCareEl = document.getElementById("lightbox-care");
-const lightboxLeadEl = document.getElementById("lightbox-lead");
 const lightboxInquire = document.getElementById("lightbox-inquire");
 const IMAGE_EXTS = ["jpg", "jpeg", "webp", "png"];
 
@@ -223,10 +220,14 @@ const fillProductInfo = (meta) => {
   setText(lightboxTitleEl, meta.title);
   setText(lightboxPriceEl, meta.price);
   setText(lightboxDescEl, meta.desc);
-  setText(lightboxMaterialEl, meta.material);
-  setText(lightboxSafetyEl, meta.safety);
-  setText(lightboxCareEl, meta.care);
-  setText(lightboxLeadEl, meta.lead);
+  const safetyTpl = document.getElementById("page-safety-html");
+  if (lightboxSafetyEl) {
+    if (safetyTpl) {
+      lightboxSafetyEl.innerHTML = safetyTpl.innerHTML;
+    } else {
+      lightboxSafetyEl.textContent = meta.safety || "";
+    }
+  }
   if (lightboxInquire && meta.inquire) {
     lightboxInquire.href = meta.inquire;
   }
@@ -570,6 +571,51 @@ document.querySelectorAll("[data-pdp-gallery]").forEach((gallery) => {
   main.addEventListener("click", () => {
     openLightboxGallery(sources, main.getAttribute("alt") || "", index);
   });
+});
+
+document.querySelectorAll("[data-pdp-options]").forEach((root) => {
+  const priceEl = document.querySelector("[data-pdp-price]");
+  let matrix = [];
+  try {
+    matrix = JSON.parse(root.getAttribute("data-price-matrix") || "[]");
+  } catch {
+    matrix = [];
+  }
+  const groups = [...root.querySelectorAll("[data-option-group]")];
+
+  const selectedIds = () =>
+    groups.map((group) => {
+      const on = group.querySelector(".is-selected");
+      return Number(on?.getAttribute("data-option-id"));
+    });
+
+  const formatPrice = (n) => `${n} zł`;
+
+  const update = () => {
+    const ids = selectedIds();
+    const match = matrix.find((item) => {
+      const sel = item.selections || [];
+      return sel.length === ids.length && sel.every((id, i) => Number(id) === ids[i]);
+    });
+    if (match && priceEl && typeof match.price === "number") {
+      priceEl.textContent = formatPrice(match.price);
+    }
+  };
+
+  groups.forEach((group) => {
+    const buttons = [...group.querySelectorAll("[data-option-id]")];
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        buttons.forEach((other) => {
+          const on = other === btn;
+          other.classList.toggle("is-selected", on);
+          other.setAttribute("aria-pressed", on ? "true" : "false");
+        });
+        update();
+      });
+    });
+  });
+  update();
 });
 
 document.querySelectorAll("[data-pdp-variants]").forEach((root) => {

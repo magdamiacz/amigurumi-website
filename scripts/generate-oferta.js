@@ -4,6 +4,9 @@ const path = require("path");
 const FB = "https://www.facebook.com/szydelkomania.amigurumi/";
 const IG = "https://www.instagram.com/szydelkomania_amigurumi/";
 const EMAIL = "szydelkomania.amigurumi@gmail.com";
+const { safetyHtml, safetyPlain } = require("./safety-html");
+const wixCatalog = require("./wix-catalog.json");
+
 const IMAGE_EXTS = new Set([".jpg", ".jpeg", ".webp", ".png"]);
 
 const SAFETY_BAG =
@@ -26,12 +29,15 @@ const CARE_PET =
 const LEAD_TIME_GENERAL =
   "Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie.";
 
+const CACHE = "20260818c";
+
 function copyFor(c) {
   return {
     material: c.material || MATERIAL_COTTON,
-    care: c.care || (c.safety === SAFETY_PET ? CARE_PET : CARE_GENERAL),
+    care: c.care || (c.slug === "zabawki-dla-zwierzat" ? CARE_PET : CARE_GENERAL),
     lead: c.lead || LEAD_TIME_GENERAL,
-    safety: c.safety,
+    safety: c.safetyPlain || c.safety,
+    safetyHtml: c.safetyHtml || "",
   };
 }
 
@@ -43,7 +49,15 @@ function esc(s) {
     .replace(/>/g, "&gt;");
 }
 
-const CACHE = "20260817aa";
+function sanitizeHtml(html) {
+  return String(html || "")
+    .replace(/<script[\s\S]*?<\/script>/gi, "")
+    .replace(/\son\w+="[^"]*"/gi, "")
+    .replace(/\shref="(?!mailto:|https?:|#)[^"]*"/gi, "")
+    .replace(/<(?!\/?(p|ul|ol|li|strong|em|b|br|h3|h4|a)\b)[^>]+>/gi, "")
+    .replace(/<p>(?:\s|&nbsp;)*<\/p>/gi, "")
+    .trim();
+}
 
 function productSlug(name) {
   return String(name)
@@ -61,59 +75,168 @@ function productSlug(name) {
     .replace(/^-+|-+$/g, "");
 }
 
-const BAG_COLOR_CHARTS = [
-  {
-    label: "Kolory torebki",
+const COLOR_CHARTS = {
+  przedza: {
+    label: "Kolory przędzy",
     src: "../assets/images/kolory/przedza.png",
     alt: "Kolory przędzy do wyboru",
   },
-  {
+  "przedza-wzory": {
+    label: "Kolory przędzy — wzory",
+    src: "../assets/images/kolory/przedza-wzory.png",
+    alt: "Kolory przędzy do wyboru — wzory",
+  },
+  skorki: {
     label: "Kolor skórki",
     src: "../assets/images/kolory/skorki.png",
     alt: "Kolory skórek do wyboru",
   },
-  {
+  paski: {
     label: "Kolory pasków",
     src: "../assets/images/kolory/paski.png",
     alt: "Kolory pasków do wyboru",
   },
-  {
+  sznurka: {
     label: "Kolory sznurka",
     src: "../assets/images/kolory/sznurka.png",
     alt: "Kolory sznurka do wyboru",
   },
-  {
-    label: "Przędza we wzory",
-    src: "../assets/images/kolory/przedza-wzory.png",
-    alt: "Kolory przędzy we wzory do wyboru",
-  },
-];
+};
 
-function galleryExtrasAttr(c) {
-  if (!c.colorCharts?.length) return "";
-  return `\n              data-gallery-extras="${esc(c.colorCharts.map((chart) => chart.src).join("|"))}"`;
+const PRODUCT_CHARTS = {
+  "Torebka Diana": ["sznurka", "skorki"],
+  "Torebka Concordia": ["sznurka", "skorki"],
+  "Torebka Flora": ["sznurka"],
+  "Torebka Feronia": ["sznurka", "skorki"],
+  "Torebka Westa": ["sznurka", "skorki"],
+  "Torebka Wenus": ["przedza", "przedza-wzory"],
+  "Torebka Mellona": ["sznurka", "skorki"],
+  "Torebka Luna": [],
+  "Torebka Junona": ["przedza", "przedza-wzory", "skorki"],
+  "Torebka Febris": ["sznurka"],
+  "Torebka Izyda": ["przedza", "przedza-wzory"],
+  "Torebka Carmenta": [],
+  "Torebka Ceres": ["przedza", "przedza-wzory"],
+  "Torebka Bellona": ["przedza", "przedza-wzory"],
+  "Torebka Aurora": ["sznurka"],
+  "Plecak królik rozmiar S": ["przedza", "przedza-wzory", "paski", "skorki"],
+  "Plecak z maskotką": ["przedza", "przedza-wzory", "paski", "skorki"],
+  "Plecak rozmiar L": ["przedza", "przedza-wzory", "paski", "skorki"],
+  "Plecak rozmiar M": ["przedza", "przedza-wzory", "paski", "skorki"],
+  Opaski: ["przedza"],
+};
+
+const WIX_NAME = {
+  "Plecak królik rozmiar S": "Plecak królik rozmiar S",
+  "Plecak z maskotką": "Plecak z maskotką",
+  "Plecak rozmiar L": "Szydełkowy plecak rozmiar L",
+  "Plecak rozmiar M": "Plecaczek rozmiar M",
+  Królik: "Króliczek siedzący",
+  "Królik długouszny": "Królik z długimi uszami",
+  Misie: "Misie w ubrankach",
+  Myszki: "Myszki w ubrankach",
+  "Myszki świąteczne": "Myszka świąteczna",
+  "Zajączki w ogrodniczkach": "Zajączek w ogrodniczkach",
+  Kapcie: "Kapcie z falbanami",
+  Opaski: "Opaski z warkoczem",
+  Skarpetki: "Skapetki z pluszowej włóczki",
+  Koszyczki: "Koszyczki żołędzie",
+  "Koszyczki zwierzaki": "Koszyczek królik lub owca",
+  Kwiaty: "Kwiaty w doniczkach",
+  "Na choinkę": "Dekoracje na choinkę",
+  Poduszki: "Komplet poduszek mała+duża",
+  "Prezent dla nowożeńców": "Prezent na ślub",
+  "Dywan krokodyl": "Dywan + taborecik krokodyl",
+  "Dywan lisek": "Dywan + taborecik lisek",
+  "Dywan piłka": "Dywan piłka",
+};
+
+function findWix(localName) {
+  const target = WIX_NAME[localName] || localName;
+  return (
+    wixCatalog.find((p) => p.name === target) ||
+    wixCatalog.find((p) => p.name === localName) ||
+    null
+  );
+}
+
+function chartsFor(name) {
+  return (PRODUCT_CHARTS[name] || []).map((key) => COLOR_CHARTS[key]).filter(Boolean);
+}
+
+function parsePriceNumber(price) {
+  const n = Number(String(price || "").replace(/[^\d]/g, ""));
+  return Number.isFinite(n) && n > 0 ? n : null;
+}
+
+function useWixProduct(name) {
+  return !/^Zestaw \d/i.test(name) && !/^Kubeczek \d/i.test(name);
+}
+
+function polishOptionValue(value) {
+  return String(value || "").replace(/dwie róża/gi, "dwie róże");
+}
+
+function polishOptions(options) {
+  return (options || []).map((opt) => ({
+    ...opt,
+    selections: (opt.selections || []).map((sel) => ({
+      ...sel,
+      value: polishOptionValue(sel.value),
+    })),
+  }));
+}
+
+function enrichCatalog(categories) {
+  for (const c of categories) {
+    c.safetyHtml = safetyHtml(c.slug);
+    c.safetyPlain = safetyPlain(c.slug);
+    delete c.colorCharts;
+    c.products = c.products.map((p) => {
+      const wix = useWixProduct(p.name) ? findWix(p.name) : null;
+      const minPrice = wix?.minPrice ?? parsePriceNumber(p.price);
+      const hasOptions = Boolean(wix?.hasOptions && wix.options?.length);
+      return {
+        ...p,
+        minPrice,
+        hasOptions,
+        options: hasOptions ? polishOptions(wix.options) : [],
+        items: hasOptions ? wix.items : [],
+        descHtml: wix?.descriptionHtml || "",
+        desc: wix?.description || p.desc || c.short,
+        price: hasOptions ? `od ${minPrice} zł` : minPrice ? `${minPrice} zł` : p.price,
+        colorCharts: chartsFor(p.name),
+      };
+    });
+  }
+}
+
+function galleryExtrasAttr(charts) {
+  if (!charts?.length) return "";
+  return `\n              data-gallery-extras="${esc(charts.map((chart) => chart.src).join("|"))}"`;
 }
 
 function galleryDataAttrs(c, title, priceFull) {
   const copy = copyFor(c);
   const inquire = `../index.html?produkt=${encodeURIComponent(title)}#kontakt`;
+  const safetyShort = String(copy.safety || "").slice(0, 280);
   return [
     `data-gallery-title="${esc(title)}"`,
     `data-gallery-price="${esc(priceFull)}"`,
     `data-gallery-desc="${esc(c.short)}"`,
     `data-gallery-material="${esc(copy.material)}"`,
-    `data-gallery-safety="${esc(copy.safety)}"`,
+    `data-gallery-safety="${esc(safetyShort)}"`,
     `data-gallery-care="${esc(copy.care)}"`,
     `data-gallery-lead="${esc(copy.lead)}"`,
     `data-gallery-inquire="${esc(inquire)}"`,
   ].join("\n              ");
 }
 
-function withColorCharts(imgs, c) {
-  if (!c.colorCharts?.length) return imgs;
-  const charts = c.colorCharts.map((chart) => ({ src: chart.src, alt: chart.alt }));
-  if (!imgs.length) return charts;
-  return [...imgs, ...charts];
+function withColorCharts(imgs, charts) {
+  if (!charts?.length) return imgs;
+  const extra = charts.map((chart) => ({ src: chart.src, alt: chart.alt }));
+  if (!imgs.length) return extra;
+  return [...imgs, ...extra];
 }
 
 const cats = [
@@ -141,7 +264,6 @@ const cats = [
       { name: "Torebka Bellona", price: "od 165 zł" },
       { name: "Torebka Aurora", price: "od 160 zł" },
     ],
-    colorCharts: BAG_COLOR_CHARTS,
   },
   {
     slug: "plecaki",
@@ -150,14 +272,11 @@ const cats = [
     safety: SAFETY_BAG,
     material: MATERIAL_BAG,
     products: [
-      { name: "Plecak króliczek", price: "od 190 zł" },
-      { name: "Plecak maskotka", price: "od 180 zł" },
+      { name: "Plecak królik rozmiar S", price: "od 190 zł" },
+      { name: "Plecak z maskotką", price: "od 180 zł" },
       { name: "Plecak rozmiar L", price: "od 280 zł" },
       { name: "Plecak rozmiar M", price: "od 220 zł" },
     ],
-    colorCharts: BAG_COLOR_CHARTS.map((chart, i) =>
-      i === 0 ? { ...chart, label: "Kolory plecaka" } : chart
-    ),
   },
   {
     slug: "maskotki",
@@ -275,6 +394,8 @@ const cats = [
   },
 ];
 
+enrichCatalog(cats);
+
 const root = path.join(__dirname, "..");
 const imagesRoot = path.join(root, "assets", "images", "oferta");
 
@@ -346,7 +467,7 @@ function productGalleryImages(c, product, index) {
   if (!imgs.length && index === 0 && CAT_FALLBACKS[c.slug]) {
     imgs = [{ src: CAT_FALLBACKS[c.slug], alt: product.name }];
   }
-  return withColorCharts(imgs, c).map((img, i) =>
+  return withColorCharts(imgs, product.colorCharts).map((img, i) =>
     i === 0 || img.alt ? img : { ...img, alt: product.name }
   );
 }
@@ -441,7 +562,7 @@ function extraImageCards(c, folderImages) {
               data-product-gallery
               data-gallery-base="${galleryBase}"
               data-gallery-fallback="${img.src}"
-              ${dataAttrs}${galleryExtrasAttr(c)}
+              ${dataAttrs}${galleryExtrasAttr([])}
               aria-label="Realizacja ${n} — zobacz galerię"
             >
               <figure class="product-card__media media-slot">
@@ -465,10 +586,9 @@ function categoryGallery(c, folderImages) {
     src: img.src,
     alt: `${c.title} — realizacja ${String(img.index).padStart(2, "0")}`,
   }));
-  const fallbacks = CAT_FALLBACKS;
-  const imgs = c.colorCharts?.length ? all.slice(0, 1) : all;
-  if (!imgs.length && fallbacks[c.slug]) {
-    imgs.push({ src: fallbacks[c.slug], alt: c.title });
+  const imgs = [...all];
+  if (!imgs.length && CAT_FALLBACKS[c.slug]) {
+    imgs.push({ src: CAT_FALLBACKS[c.slug], alt: c.title });
   }
   return imgs;
 }
@@ -482,22 +602,69 @@ function displayPrice(price) {
   return !price || price === "wycena" ? "wycena indywidualna" : price;
 }
 
-function variantsBlock(c) {
-  if (!c.products?.length) return "";
-  const buttons = c.products
-    .map((p, i) => {
-      const price = displayPrice(p.price);
-      const selected = i === 0 ? " is-selected" : "";
-      const aria = i === 0 ? ' aria-pressed="true"' : ' aria-pressed="false"';
+function variantsBlock(product) {
+  if (!product?.hasOptions || !product.options?.length) return "";
+  const groups = product.options
+    .map((opt, groupIndex) => {
+      const buttons = (opt.selections || [])
+        .map((sel, i) => {
+          const selected = i === 0 ? " is-selected" : "";
+          const aria = i === 0 ? ' aria-pressed="true"' : ' aria-pressed="false"';
+          return `
+              <button class="pdp__variant${selected}" type="button" data-option-id="${esc(sel.id)}"${aria}>${esc(sel.value)}</button>`;
+        })
+        .join("");
       return `
-            <button class="pdp__variant${selected}" type="button" data-variant-name="${esc(p.name)}" data-variant-price="${esc(price)}"${aria}>${esc(p.name)}</button>`;
+            <div class="pdp__option-group" data-option-group="${groupIndex}">
+              <p class="pdp__option-label">${esc(opt.title)}</p>
+              <div class="pdp__variant-list" role="group" aria-label="${esc(opt.title)}">${buttons}
+              </div>
+            </div>`;
     })
     .join("");
+  const matrix = esc(JSON.stringify(product.items || []));
   return `
-          <div class="pdp__variants" data-pdp-variants>
-            <div class="pdp__variant-list" role="group" aria-label="Model">${buttons}
-            </div>
+          <div class="pdp__variants" data-pdp-options data-price-matrix="${matrix}">
+            ${groups}
           </div>`;
+}
+
+function pdpActions(inquireName) {
+  return `
+          <div class="pdp__actions">
+            <a class="btn btn--primary" data-pdp-inquire href="../index.html?produkt=${encodeURIComponent(inquireName)}#kontakt">Zapytaj o produkt</a>
+            <a class="btn btn--social" href="${FB}" target="_blank" rel="noopener noreferrer">
+              <img src="../assets/icons/facebook.svg" alt="" width="18" height="18" />
+              Facebook
+            </a>
+            <a class="btn btn--social" href="${IG}" target="_blank" rel="noopener noreferrer">
+              <img src="../assets/icons/instagram.svg" alt="" width="18" height="18" />
+              Instagram
+            </a>
+          </div>`;
+}
+
+function pdpInfoHtml({ crumbs, title, desc, descHtml, variants, price, copy, inquireName }) {
+  const descBlock = descHtml
+    ? `<div class="pdp__desc pdp__desc--rich">${sanitizeHtml(descHtml)}</div>`
+    : `<p class="pdp__desc">${esc(desc)}</p>`;
+  return `
+        <div class="pdp__info">
+          <nav class="breadcrumbs" aria-label="Okruszki">
+            ${crumbs}
+          </nav>
+          <h1 id="page-title" class="pdp__title">${esc(title)}</h1>
+          ${pdpActions(inquireName)}
+          ${variants || ""}
+          <p class="pdp__price" data-pdp-price>${esc(price)}</p>
+          ${descBlock}
+          <div class="pdp__accordions">
+            <details class="faq__item pdp__accordion">
+              <summary class="faq__question">Bezpieczeństwo</summary>
+              <div class="faq__answer pdp__safety">${copy.safetyHtml ? sanitizeHtml(copy.safetyHtml) : `<p>${esc(copy.safety)}</p>`}</div>
+            </details>
+          </div>
+        </div>`;
 }
 
 function pdpGalleryHtml(gallery) {
@@ -533,43 +700,9 @@ function pdpGalleryHtml(gallery) {
         </div>`;
 }
 
-function pdpInfoHtml({ crumbs, title, desc, variants, price, copy, inquireName }) {
-  return `
-        <div class="pdp__info">
-          <nav class="breadcrumbs" aria-label="Okruszki">
-            ${crumbs}
-          </nav>
-          <h1 id="page-title" class="pdp__title">${esc(title)}</h1>
-          <p class="pdp__desc">${desc}</p>
-          ${variants || ""}
-          <p class="pdp__price" data-pdp-price>${esc(price)}</p>
-          <div class="pdp__accordions">
-            <details class="faq__item pdp__accordion" open>
-              <summary class="faq__question">Skład</summary>
-              <div class="faq__answer"><p>${esc(copy.material)}</p></div>
-            </details>
-            <details class="faq__item pdp__accordion">
-              <summary class="faq__question">Bezpieczeństwo</summary>
-              <div class="faq__answer"><p>${esc(copy.safety)}</p></div>
-            </details>
-          </div>
-          <div class="pdp__actions">
-            <a class="btn btn--primary" data-pdp-inquire href="../index.html?produkt=${encodeURIComponent(inquireName)}#kontakt">Zapytaj o produkt</a>
-            <a class="btn btn--social" href="${FB}" target="_blank" rel="noopener noreferrer">
-              <img src="../assets/icons/facebook.svg" alt="" width="18" height="18" />
-              Facebook
-            </a>
-            <a class="btn btn--social" href="${IG}" target="_blank" rel="noopener noreferrer">
-              <img src="../assets/icons/instagram.svg" alt="" width="18" height="18" />
-              Instagram
-            </a>
-          </div>
-        </div>`;
-}
-
 function pdpSection(c, folderImages) {
   const copy = copyFor(c);
-  const gallery = withColorCharts(categoryGallery(c, folderImages), c);
+  const gallery = withColorCharts(categoryGallery(c, folderImages), []);
   const crumbs = `<a href="../index.html">Strona główna</a>
             <span aria-hidden="true">/</span>
             <a href="../index.html#oferta">Oferta</a>
@@ -584,7 +717,7 @@ function pdpSection(c, folderImages) {
           crumbs,
           title: c.title,
           desc: c.short,
-          variants: variantsBlock(c),
+          variants: "",
           price: displayPrice(c.products[0]?.price || fromPrice(c)),
           copy,
           inquireName: c.products[0]?.name || c.title,
@@ -612,7 +745,8 @@ function productPdpSection(c, product, index) {
           crumbs,
           title: product.name,
           desc: product.desc || c.short,
-          variants: "",
+          descHtml: product.descHtml || "",
+          variants: variantsBlock(product),
           price: displayPrice(product.price),
           copy,
           inquireName: product.name,
@@ -640,7 +774,8 @@ function legalNavLinks(prefix = "../") {
           <li><a class="nav__link" href="${prefix}regulamin.html" target="_blank" rel="noopener noreferrer">Regulamin</a></li>`;
 }
 
-function lightboxMarkup() {
+function lightboxMarkup(c) {
+  const safety = c ? sanitizeHtml(copyFor(c).safetyHtml) : "";
   return `
   <div class="lightbox lightbox--product" id="lightbox" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-label="Podgląd produktu">
     <div class="lightbox__backdrop" data-lightbox-close></div>
@@ -666,13 +801,9 @@ function lightboxMarkup() {
           <p class="lightbox__price" id="lightbox-price"></p>
           <p class="lightbox__desc" id="lightbox-desc"></p>
           <div class="lightbox__accordions">
-            <details class="faq__item lightbox__accordion" open>
-              <summary class="faq__question">Skład</summary>
-              <div class="faq__answer" id="lightbox-material"></div>
-            </details>
             <details class="faq__item lightbox__accordion">
               <summary class="faq__question">Bezpieczeństwo</summary>
-              <div class="faq__answer" id="lightbox-safety"></div>
+              <div class="faq__answer pdp__safety" id="lightbox-safety"></div>
             </details>
           </div>
           <div class="lightbox__actions">
@@ -691,7 +822,8 @@ function lightboxMarkup() {
       <p class="lightbox__caption" id="lightbox-caption" hidden></p>
       <p class="lightbox__counter" id="lightbox-counter" hidden></p>
     </div>
-  </div>`;
+  </div>
+  <template id="page-safety-html">${safety}</template>`;
 }
 
 function page(c) {
@@ -813,7 +945,7 @@ ${socialBtns()}
       </p>
     </div>
   </footer>
-${lightboxMarkup()}
+${lightboxMarkup(c)}
   <script type="module" src="../js/main.js?v=${CACHE}"></script>
   <script type="module" src="../js/media-loader.js?v=${CACHE}"></script>
   <script type="module" src="../js/animations.js?v=${CACHE}"></script>
@@ -922,7 +1054,7 @@ ${socialBtns()}
       </p>
     </div>
   </footer>
-${lightboxMarkup()}
+${lightboxMarkup(c)}
   <script type="module" src="../js/main.js?v=${CACHE}"></script>
   <script type="module" src="../js/media-loader.js?v=${CACHE}"></script>
   <script type="module" src="../js/animations.js?v=${CACHE}"></script>
@@ -931,32 +1063,48 @@ ${lightboxMarkup()}
 `;
 }
 
-ensureCategoryFolders();
-const dir = path.join(root, "oferta");
-fs.mkdirSync(dir, { recursive: true });
-const usedSlugs = new Set(cats.map((c) => c.slug));
-for (const c of cats) {
-  fs.writeFileSync(path.join(dir, `${c.slug}.html`), page(c), "utf8");
-  const count = listCategoryImages(c.slug).length;
-  console.log("wrote", c.slug, count ? `(${count} zdjęć)` : "(brak zdjęć w folderze)");
-  for (const [i, product] of c.products.entries()) {
-    const slug = productSlug(product.name);
-    if (usedSlugs.has(slug)) {
-      throw new Error(`Zduplikowany slug produktu: ${slug}`);
+function writePages() {
+  ensureCategoryFolders();
+  const dir = path.join(root, "oferta");
+  fs.mkdirSync(dir, { recursive: true });
+  const usedSlugs = new Set(cats.map((c) => c.slug));
+  for (const c of cats) {
+    fs.writeFileSync(path.join(dir, `${c.slug}.html`), page(c), "utf8");
+    const count = listCategoryImages(c.slug).length;
+    console.log("wrote", c.slug, count ? `(${count} zdjęć)` : "(brak zdjęć w folderze)");
+    for (const [i, product] of c.products.entries()) {
+      const slug = productSlug(product.name);
+      if (usedSlugs.has(slug)) {
+        throw new Error(`Zduplikowany slug produktu: ${slug}`);
+      }
+      usedSlugs.add(slug);
+      fs.writeFileSync(path.join(dir, `${slug}.html`), productPage(c, product, i), "utf8");
+      console.log("  wrote", slug);
     }
-    usedSlugs.add(slug);
-    fs.writeFileSync(path.join(dir, `${slug}.html`), productPage(c, product, i), "utf8");
-    console.log("  wrote", slug);
   }
-}
-for (const file of fs.readdirSync(dir)) {
-  if (!file.endsWith(".html")) continue;
-  const slug = file.replace(/\.html$/, "");
-  if (!usedSlugs.has(slug)) {
-    fs.unlinkSync(path.join(dir, file));
-    console.log("removed stale", file);
+  for (const file of fs.readdirSync(dir)) {
+    if (!file.endsWith(".html")) continue;
+    const slug = file.replace(/\.html$/, "");
+    if (!usedSlugs.has(slug)) {
+      fs.unlinkSync(path.join(dir, file));
+      console.log("removed stale", file);
+    }
   }
+  console.log("done", cats.length);
+  console.log("Miniatury produktów: assets/images/oferta/{kategoria}/01.jpg …");
+  console.log("Galeria produktu: assets/images/oferta/{kategoria}/01/01.jpg, 02.jpg …");
 }
-console.log("done", cats.length);
-console.log("Miniatury produktów: assets/images/oferta/{kategoria}/01.jpg …");
-console.log("Galeria produktu: assets/images/oferta/{kategoria}/01/01.jpg, 02.jpg …");
+
+if (require.main === module) {
+  writePages();
+}
+
+module.exports = {
+  cats,
+  productFolder,
+  listNumberedFiles,
+  imagesRoot,
+  IMAGE_EXTS,
+  findWix,
+  useWixProduct,
+};

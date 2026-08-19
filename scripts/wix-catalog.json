@@ -1,0 +1,1348 @@
+[
+  {
+    "name": "BabyBox dla chłopca",
+    "slug": "babybox-dla-chłopca",
+    "price": 220,
+    "minPrice": 150,
+    "maxPrice": 220,
+    "hasOptions": true,
+    "descriptionHtml": "<p><strong>BabyBox dla chłopca</strong></p><p>&nbsp;</p><p>To idealny prezent dla maluszka – na <strong>chrzest, powitanie dziecka</strong> lub <strong>baby shower</strong>. Zestaw stworzony został z myślą o dzieciach w wieku <strong>0–3 miesięcy</strong> i łączy w sobie praktyczność z urokiem ręcznie wykonanych elementów.</p><p>Zestaw zawiera:</p><ul>\t<li>\t<p><strong>spodenki-ogrodniczki na szelkach</strong>, zapinane na guziczki,</p>\t</li>\t<li>\t<p><strong>dużą maskotkę</strong>,</p>\t</li>\t<li>\t<p><strong>maskotkę na drewnianym kółeczku</strong>,</p>\t</li>\t<li>\t<p><strong>wywijane buciki</strong>.</p>\t</li></ul><p>Kolory elementów można wybrać dowolnie, a dla dodatkowej wyjątkowości istnieje opcja <strong>opakowania w ozdobne pudełeczko z okienkiem</strong> oraz dodania <strong>imienia dziecka pod spodem</strong>.</p><p>&nbsp;</p><p><strong>Dlaczego BabyBox?</strong></p><ul>\t<li>\t<p>idealny jako prezent powitalny, na chrzest lub baby shower</p>\t</li>\t<li>\t<p>starannie dobrany komplet dla maluszka 0–3 miesiące</p>\t</li>\t<li>\t<p>ręcznie wykonane, miękkie i bezpieczne elementy</p>\t</li>\t<li>\t<p>możliwość indywidualnego doboru kolorów</p>\t</li>\t<li>\t<p>opcja eleganckiego opakowania z imieniem dziecka</p>\t</li></ul>",
+    "description": "BabyBox dla chłopca\n\nTo idealny prezent dla maluszka – na chrzest, powitanie dziecka lub baby shower. Zestaw stworzony został z myślą o dzieciach w wieku 0–3 miesięcy i łączy w sobie praktyczność z urokiem ręcznie wykonanych elementów.\n\nZestaw zawiera:\n\n\t• \tspodenki-ogrodniczki na szelkach, zapinane na guziczki,\n\n\t• \tdużą maskotkę,\n\n\t• \tmaskotkę na drewnianym kółeczku,\n\n\t• \twywijane buciki.\n\nKolory elementów można wybrać dowolnie, a dla dodatkowej wyjątkowości istnieje opcja opakowania w ozdobne pudełeczko z okienkiem oraz dodania imienia dziecka pod spodem.\n\nDlaczego BabyBox?\n\n\t• \tidealny jako prezent powitalny, na chrzest lub baby shower\n\n\t• \tstarannie dobrany komplet dla maluszka 0–3 miesiące\n\n\t• \tręcznie wykonane, miękkie i bezpieczne elementy\n\n\t• \tmożliwość indywidualnego doboru kolorów\n\n\t• \topcja eleganckiego opakowania z imieniem dziecka",
+    "options": [
+      {
+        "title": "Produkt:",
+        "selections": [
+          {
+            "id": 1,
+            "value": "Cały zestaw"
+          },
+          {
+            "id": 2,
+            "value": "Ubranko + buciki+ mała zabawka"
+          },
+          {
+            "id": 3,
+            "value": "ubranko + buciki"
+          }
+        ]
+      }
+    ],
+    "items": [
+      {
+        "price": 220,
+        "selections": [
+          1
+        ],
+        "surcharge": 0
+      },
+      {
+        "price": 180,
+        "selections": [
+          2
+        ],
+        "surcharge": -40
+      },
+      {
+        "price": 150,
+        "selections": [
+          3
+        ],
+        "surcharge": -70
+      }
+    ]
+  },
+  {
+    "name": "BabyBox dla dziewczynki",
+    "slug": "babybox-dla-dziewczynki",
+    "price": 220,
+    "minPrice": 150,
+    "maxPrice": 220,
+    "hasOptions": true,
+    "descriptionHtml": "<p><strong>BabyBox dla dziewczynki</strong></p><p>&nbsp;</p><p>To idealny prezent dla maluszka – na <strong>chrzest, powitanie dziecka</strong> lub <strong>baby shower</strong>. Zestaw stworzony został z myślą o dzieciach w wieku <strong>0–3 miesięcy</strong> i łączy w sobie praktyczność z urokiem ręcznie wykonanych elementów.</p><p>Zestaw zawiera:</p><ul>\t<li>\t<p><strong>sukienkę</strong> zapinaną na dole na guziczki,</p>\t</li>\t<li>\t<p><strong>dużą maskotkę</strong>,</p>\t</li>\t<li>\t<p><strong>maskotkę na drewnianym kółeczku</strong>,</p>\t</li>\t<li>\t<p><strong>buciki z kokardką</strong>.</p>\t</li></ul><p>Kolory elementów można wybrać dowolnie, a dla dodatkowej wyjątkowości istnieje opcja <strong>opakowania w ozdobne pudełeczko z okienkiem</strong> oraz dodania <strong>imienia dziecka pod spodem</strong>.</p><p>&nbsp;</p><p><strong>Dlaczego BabyBox?</strong></p><ul>\t<li>\t<p>idealny jako prezent powitalny, na chrzest lub baby shower</p>\t</li>\t<li>\t<p>starannie dobrany komplet dla maluszka 0–3 miesiące</p>\t</li>\t<li>\t<p>ręcznie wykonane, miękkie i bezpieczne elementy</p>\t</li>\t<li>\t<p>możliwość indywidualnego doboru kolorów</p>\t</li>\t<li>\t<p>opcja eleganckiego opakowania z imieniem dziecka</p>\t</li></ul>",
+    "description": "BabyBox dla dziewczynki\n\n \n\nTo idealny prezent dla maluszka – na chrzest, powitanie dziecka lub baby shower. Zestaw stworzony został z myślą o dzieciach w wieku 0–3 miesięcy i łączy w sobie praktyczność z urokiem ręcznie wykonanych elementów.\n\nZestaw zawiera:\n\n\t• \tsukienkę zapinaną na dole na guziczki,\n\n\t\n\t• \tdużą maskotkę,\n\n\t\n\t• \tmaskotkę na drewnianym kółeczku,\n\n\t\n\t• \tbuciki z kokardką.\n\n\t\nKolory elementów można wybrać dowolnie, a dla dodatkowej wyjątkowości istnieje opcja opakowania w ozdobne pudełeczko z okienkiem oraz dodania imienia dziecka pod spodem.\n\n \n\nDlaczego BabyBox?\n\n\t• \tidealny jako prezent powitalny, na chrzest lub baby shower\n\n\t\n\t• \tstarannie dobrany komplet dla maluszka 0–3 miesiące\n\n\t\n\t• \tręcznie wykonane, miękkie i bezpieczne elementy\n\n\t\n\t• \tmożliwość indywidualnego doboru kolorów\n\n\t\n\t• \topcja eleganckiego opakowania z imieniem dziecka",
+    "options": [
+      {
+        "title": "Produkt:",
+        "selections": [
+          {
+            "id": 1,
+            "value": "Cały zestaw"
+          },
+          {
+            "id": 2,
+            "value": "Ubranko + buciki+ mała zabawka"
+          },
+          {
+            "id": 3,
+            "value": "ubranko + buciki"
+          }
+        ]
+      }
+    ],
+    "items": [
+      {
+        "price": 220,
+        "selections": [
+          1
+        ],
+        "surcharge": 0
+      },
+      {
+        "price": 180,
+        "selections": [
+          2
+        ],
+        "surcharge": -40
+      },
+      {
+        "price": 150,
+        "selections": [
+          3
+        ],
+        "surcharge": -70
+      }
+    ]
+  },
+  {
+    "name": "Bałwanki",
+    "slug": "bałwanki",
+    "price": 140,
+    "minPrice": 140,
+    "maxPrice": 140,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Szydełkowy bałwanek</strong></p><p>&nbsp;</p><p>Ręcznie wykonany szydełkowy bałwanek to urocza maskotka w zimowym stylu. Ma około <strong>35 cm</strong> i ubrany jest w spodenki na szelkach z guziczkami oraz śnieżynką, czapkę z pomponem, szalik, buciki i rękawiczki. Charakterystyczny marchewkowy nosek oraz <strong>starannie wykonane detale</strong> nadają mu wyjątkowego uroku.</p><p>Bałwanek posiada <strong>oczka zapinane od wewnętrznej strony</strong>, a jego wnętrze wypełnione jest miękką, <strong>hipoalergiczną kulką silikonową</strong>, dzięki czemu w razie potrzeby można go prać.</p><p>&nbsp;</p><p><strong>Dlaczego warto?</strong></p><p>• ręcznie wykonana maskotka handmade<br>• miękkie, hipoalergiczne wypełnienie – możliwość prania<br>• zimowy charakter i dopracowane detale stroju<br>• staranne wykonanie z dbałością o każdy szczegół&nbsp;</p><p>&nbsp;</p><p><strong>Urocza maskotka, która wprowadzi do wnętrza przytulny, zimowy klimat.</strong></p>",
+    "description": "Szydełkowy bałwanek\n\nRęcznie wykonany szydełkowy bałwanek to urocza maskotka w zimowym stylu. Ma około 35 cm i ubrany jest w spodenki na szelkach z guziczkami oraz śnieżynką, czapkę z pomponem, szalik, buciki i rękawiczki. Charakterystyczny marchewkowy nosek oraz starannie wykonane detale nadają mu wyjątkowego uroku.\n\nBałwanek posiada oczka zapinane od wewnętrznej strony, a jego wnętrze wypełnione jest miękką, hipoalergiczną kulką silikonową, dzięki czemu w razie potrzeby można go prać.\n\nDlaczego warto?\n\n• ręcznie wykonana maskotka handmade\n• miękkie, hipoalergiczne wypełnienie – możliwość prania\n• zimowy charakter i dopracowane detale stroju\n• staranne wykonanie z dbałością o każdy szczegół\n\nUrocza maskotka, która wprowadzi do wnętrza przytulny, zimowy klimat.",
+    "options": [],
+    "items": [
+      {
+        "price": 140,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Dekoracje na choinkę",
+    "slug": "dekoracje-na-choinkę",
+    "price": 40,
+    "minPrice": 40,
+    "maxPrice": 40,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Szydełkowe dekoracje choinkowe – bombki z charakterem</strong></p><p>Ręcznie robione, urocze i pełne świątecznej magii</p><p>W tym roku stwórz na swojej choince klimat jak z bajki! <strong>Szydełkowe bombki</strong> to nietuzinkowe, ręcznie wykonane dekoracje, które przyciągają wzrok i serce. Każda z nich została wydziergana z miękkiej włóczki i dopracowana w najmniejszych detalach – od koralików po haftowane akcenty. W kolekcji znajdziesz:&nbsp;<strong>lizaka, świątecznego,&nbsp;</strong><strong>babeczkę,&nbsp;</strong><strong>precelka,&nbsp;</strong><strong>muchomorka,&nbsp;</strong><strong>prawdziwka i</strong><strong>piernikowe serce</strong></p><p>&nbsp;</p><p><strong>Dlaczego pokochasz te ozdoby?</strong></p><ul>\t<li>W 100% ręcznie wykonane – każda bombka jest wyjątkowa</li>\t<li>Miękka włóczka, lekka forma – nie obciąża gałązek</li>\t<li>Trwałe i wielorazowe – nie stłuką się i przetrwają lata</li>\t<li>Ciepły, rustykalny styl – idealny do wnętrz naturalnych i tradycyjnych</li>\t<li>Świąteczne wzory z nutką słodyczy i nostalgii</li></ul><p>&nbsp;</p><p><strong>Dodaj magii swojej choince – wybierz bombki, które opowiadają świąteczne historie.</strong></p>",
+    "description": "Szydełkowe dekoracje choinkowe – bombki z charakterem\n\nRęcznie robione, urocze i pełne świątecznej magii\n\nW tym roku stwórz na swojej choince klimat jak z bajki! Szydełkowe bombki to nietuzinkowe, ręcznie wykonane dekoracje, które przyciągają wzrok i serce. Każda z nich została wydziergana z miękkiej włóczki i dopracowana w najmniejszych detalach – od koralików po haftowane akcenty. W kolekcji znajdziesz: lizaka, świątecznego, babeczkę, precelka, muchomorka, prawdziwka ipiernikowe serce\n\nDlaczego pokochasz te ozdoby?\n\n\t• W 100% ręcznie wykonane – każda bombka jest wyjątkowa\n\t• Miękka włóczka, lekka forma – nie obciąża gałązek\n\t• Trwałe i wielorazowe – nie stłuką się i przetrwają lata\n\t• Ciepły, rustykalny styl – idealny do wnętrz naturalnych i tradycyjnych\n\t• Świąteczne wzory z nutką słodyczy i nostalgii\n\nDodaj magii swojej choince – wybierz bombki, które opowiadają świąteczne historie.",
+    "options": [],
+    "items": [
+      {
+        "price": 40,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Dinozaur",
+    "slug": "dinozaur",
+    "price": 100,
+    "minPrice": 100,
+    "maxPrice": 100,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Szydełkowy dinozaur</strong></p><p>&nbsp;</p><p>Ręcznie wykonany szydełkowy dinozaur to urocza maskotka handmade, która zachwyca starannym wykonaniem i miękką formą. <strong>Ma około 25 cm, oczka zapinane od wewnętrznej strony oraz wypełnienie z hipoalergicznej kulki silikonowej</strong>, dzięki czemu w razie potrzeby można go prać.</p><p>&nbsp;</p><p><strong>Dlaczego warto?</strong></p><p>&nbsp;</p><p>• ręcznie wykonana maskotka handmade<br>• miękkie, hipoalergiczne wypełnienie – możliwość prania<br>• staranne wykonanie i dopracowane detale<br>• wyjątkowy element dekoracyjny</p><p>&nbsp;</p><p><strong>Urocza maskotka, która będzie pięknym dodatkiem i dekoracją do pokoju dziecięcego.</strong></p>",
+    "description": "Szydełkowy dinozaur\n\n \n\nRęcznie wykonany szydełkowy dinozaur to urocza maskotka handmade, która zachwyca starannym wykonaniem i miękką formą. Ma około 25 cm, oczka zapinane od wewnętrznej strony oraz wypełnienie z hipoalergicznej kulki silikonowej, dzięki czemu w razie potrzeby można go prać.\n\n \n\nDlaczego warto?\n\n \n\n• ręcznie wykonana maskotka handmade\n• miękkie, hipoalergiczne wypełnienie – możliwość prania\n• staranne wykonanie i dopracowane detale\n• wyjątkowy element dekoracyjny\n\n \n\nUrocza maskotka, która będzie pięknym dodatkiem i dekoracją do pokoju dziecięcego.",
+    "options": [],
+    "items": [
+      {
+        "price": 100,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Dywan + taborecik krokodyl",
+    "slug": "dywan-taborecik-krokodyl",
+    "price": 400,
+    "minPrice": 400,
+    "maxPrice": 880,
+    "hasOptions": true,
+    "descriptionHtml": "<p><strong>Komplet „Krokodyl” – dywanik + taborecik</strong></p><p>&nbsp;</p><p><strong>Wyjątkowa dekoracja i funkcjonalna zabawa w jednym!</strong></p><p>Ten zestaw sprawi, że pokój dziecka zamieni się w prawdziwą przygodę. <strong>Ręcznie wykonany z miękkiej włóczki dywanik w kształcie krokodyla</strong> ma uroczą głowę, łapki, długi ogon z wypustkami i całość, która może służyć jako <strong>dywan, kocyk lub mata do zabawy</strong>. Wypustki na ogonie działają jak <strong>zabawka sensoryczna</strong>, rozwijając ciekawość i dotyk malucha.</p><ul>\t<li>\t<p>średnica części okrągłej: <strong>75 cm</strong></p>\t</li>\t<li>\t<p>długość całkowita: <strong>160 cm</strong></p>\t</li></ul><p>Do kompletu można dodać&nbsp;<strong>taborecik w krokodylim przebraniu</strong> – z głową, ogonem i nakładkami na nóżki. Pokrowiec również został wykonany ręcznie, a w cenę zestawu wliczony jest <strong>dopasowany, drewniany, lakierowany taboret o średnicy 32 cm</strong>.</p><p>Całość można bez problemu <strong>prać</strong>, więc komplet nie tylko cieszy oko, ale też jest praktyczny i łatwy w utrzymaniu czystości.</p><p>&nbsp;</p><p><strong>Dlaczego warto?</strong></p><ul>\t<li>unikalny komplet – dywan, mata i taboret w krokodylim stylu</li>\t<li>ręczne wykonanie z miękkiej, przyjemnej włóczki</li>\t<li>sensoryczne wypustki na ogonie – zabawa i rozwój w jednym</li>\t<li>w cenie dopasowany taboret z litego drewna</li>\t<li>łatwy w praniu i pielęgnacji</li></ul><p>&nbsp;</p><p><strong>Idealny prezent, który połączy funkcję dekoracyjną, użytkową i edukacyjną.</strong></p>",
+    "description": "Komplet „Krokodyl” – dywanik + taborecik\n\n \n\nWyjątkowa dekoracja i funkcjonalna zabawa w jednym!\n\nTen zestaw sprawi, że pokój dziecka zamieni się w prawdziwą przygodę. Ręcznie wykonany z miękkiej włóczki dywanik w kształcie krokodyla ma uroczą głowę, łapki, długi ogon z wypustkami i całość, która może służyć jako dywan, kocyk lub mata do zabawy. Wypustki na ogonie działają jak zabawka sensoryczna, rozwijając ciekawość i dotyk malucha.\n\n\t• \tśrednica części okrągłej: 75 cm\n\n\t\n\t• \tdługość całkowita: 160 cm\n\n\t\nDo kompletu można dodać taborecik w krokodylim przebraniu – z głową, ogonem i nakładkami na nóżki. Pokrowiec również został wykonany ręcznie, a w cenę zestawu wliczony jest dopasowany, drewniany, lakierowany taboret o średnicy 32 cm.\n\nCałość można bez problemu prać, więc komplet nie tylko cieszy oko, ale też jest praktyczny i łatwy w utrzymaniu czystości.\n\n \n\nDlaczego warto?\n\n\t• unikalny komplet – dywan, mata i taboret w krokodylim stylu\n\t• ręczne wykonanie z miękkiej, przyjemnej włóczki\n\t• sensoryczne wypustki na ogonie – zabawa i rozwój w jednym\n\t• w cenie dopasowany taboret z litego drewna\n\t• łatwy w praniu i pielęgnacji\n \n\nIdealny prezent, który połączy funkcję dekoracyjną, użytkową i edukacyjną.",
+    "options": [
+      {
+        "title": "Produkt:",
+        "selections": [
+          {
+            "id": 1,
+            "value": "Komplet"
+          },
+          {
+            "id": 2,
+            "value": "Dywan"
+          },
+          {
+            "id": 3,
+            "value": "Taborecik"
+          }
+        ]
+      }
+    ],
+    "items": [
+      {
+        "price": 880,
+        "selections": [
+          1
+        ],
+        "surcharge": 480
+      },
+      {
+        "price": 500,
+        "selections": [
+          2
+        ],
+        "surcharge": 100
+      },
+      {
+        "price": 400,
+        "selections": [
+          3
+        ],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Dywan + taborecik lisek",
+    "slug": "dywan-taborecik-lisek",
+    "price": 400,
+    "minPrice": 400,
+    "maxPrice": 880,
+    "hasOptions": true,
+    "descriptionHtml": "<p><strong>Komplet „Liski” – dywanik + taborecik</strong></p><p>&nbsp;</p><p><strong>Uroczy i funkcjonalny dodatek do pokoju dziecka</strong></p><p>Ten zestaw przeniesie pokój malucha w bajkowy świat lisich przyjaciół. <strong>Ręcznie wykonany dywanik w kształcie lisa</strong> ma uroczą głowę, łapki i długi ogon, a całość może pełnić funkcję <strong>dywanu, kocyka lub maty do zabawy</strong>.</p><ul>\t<li>\t<p>średnica części okrągłej: <strong>75 cm</strong></p>\t</li></ul><p>Do kompletu dołączony jest <strong>taborecik w lisim przebraniu</strong> – z głową, ogonem i nakładkami na nóżki. Pokrowiec również jest ręcznie wykonany, a w cenę zestawu wliczony jest <strong>dopasowany, drewniany, lakierowany taboret o średnicy 32 cm</strong>.</p><p>Całość można <strong>prać</strong>, co sprawia, że zestaw jest zarówno piękny, jak i praktyczny.</p><p>&nbsp;</p><p><strong>Dlaczego warto?</strong></p><ul>\t<li>unikalny komplet – dywan, mata i taboret w lisim stylu</li>\t<li>ręczne wykonanie z miękkiej włóczki</li>\t<li>w cenie dopasowany taboret z litego drewna</li>\t<li>łatwy w praniu i utrzymaniu czystości</li></ul><p>&nbsp;</p><p><strong>Świetny prezent łączący dekorację z funkcją użytkową i zabawą dla dziecka.</strong></p>",
+    "description": "Komplet „Liski” – dywanik + taborecik\n\n \n\nUroczy i funkcjonalny dodatek do pokoju dziecka\n\nTen zestaw przeniesie pokój malucha w bajkowy świat lisich przyjaciół. Ręcznie wykonany dywanik w kształcie lisa ma uroczą głowę, łapki i długi ogon, a całość może pełnić funkcję dywanu, kocyka lub maty do zabawy.\n\n\t• \tśrednica części okrągłej: 75 cm\n\n\t\nDo kompletu dołączony jest taborecik w lisim przebraniu – z głową, ogonem i nakładkami na nóżki. Pokrowiec również jest ręcznie wykonany, a w cenę zestawu wliczony jest dopasowany, drewniany, lakierowany taboret o średnicy 32 cm.\n\nCałość można prać, co sprawia, że zestaw jest zarówno piękny, jak i praktyczny.\n\n \n\nDlaczego warto?\n\n\t• unikalny komplet – dywan, mata i taboret w lisim stylu\n\t• ręczne wykonanie z miękkiej włóczki\n\t• w cenie dopasowany taboret z litego drewna\n\t• łatwy w praniu i utrzymaniu czystości\n \n\nŚwietny prezent łączący dekorację z funkcją użytkową i zabawą dla dziecka.",
+    "options": [
+      {
+        "title": "Produkt:",
+        "selections": [
+          {
+            "id": 1,
+            "value": "Komplet"
+          },
+          {
+            "id": 2,
+            "value": "Dywan"
+          },
+          {
+            "id": 3,
+            "value": "Taborecik"
+          }
+        ]
+      }
+    ],
+    "items": [
+      {
+        "price": 880,
+        "selections": [
+          1
+        ],
+        "surcharge": 480
+      },
+      {
+        "price": 500,
+        "selections": [
+          2
+        ],
+        "surcharge": 100
+      },
+      {
+        "price": 400,
+        "selections": [
+          3
+        ],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Dywan piłka",
+    "slug": "dywan-piłka",
+    "price": 520,
+    "minPrice": 520,
+    "maxPrice": 520,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Szydełkowy dywan „piłka”</strong></p><p>&nbsp;</p><p><strong>Dla małych i dużych fanów futbolu!</strong></p><p>Ten wyjątkowy dywan w kształcie piłki nożnej ma <strong>średnicę aż 100 cm</strong> i został wykonany ręcznie z <strong>grubej, miękkiej włóczki</strong>, dzięki czemu jest przyjemny w dotyku i trwały. Może pełnić funkcję <strong>dywanu</strong> w pokoju dziecięcym, młodzieżowym czy salonie, ale równie dobrze sprawdzi się jako <strong>lekki kocyk lub mata do zabawy</strong>.</p><p>Jest <strong>łatwy w pielęgnacji – można go prać</strong>, co czyni go praktycznym dodatkiem na co dzień. To nie tylko dekoracja, ale też funkcjonalny element, który ucieszy każdego miłośnika piłki nożnej.</p><p>&nbsp;</p><p><strong>Dlaczego warto?</strong></p><ul>\t<li>ręcznie wykonany z grubej, miękkiej włóczki</li>\t<li>średnica 100 cm – idealny rozmiar do pokoju dziecka i nie tylko</li>\t<li>praktyczny – dywan, kocyk lub mata w jednym</li>\t<li>łatwy w praniu i pielęgnacji</li>\t<li>oryginalny pomysł na prezent dla fana futbolu</li></ul><p>&nbsp;</p><p><strong>Idealny do pokoju dziecka, na prezent lub jako niebanalna ozdoba wnętrza.</strong></p>",
+    "description": "Szydełkowy dywan „piłka”\n\nDla małych i dużych fanów futbolu!\n\nTen wyjątkowy dywan w kształcie piłki nożnej ma średnicę aż 100 cm i został wykonany ręcznie z grubej, miękkiej włóczki, dzięki czemu jest przyjemny w dotyku i trwały. Może pełnić funkcję dywanu w pokoju dziecięcym, młodzieżowym czy salonie, ale równie dobrze sprawdzi się jako lekki kocyk lub mata do zabawy.\n\nJest łatwy w pielęgnacji – można go prać, co czyni go praktycznym dodatkiem na co dzień. To nie tylko dekoracja, ale też funkcjonalny element, który ucieszy każdego miłośnika piłki nożnej.\n\nDlaczego warto?\n\n\t• ręcznie wykonany z grubej, miękkiej włóczki\n\t• średnica 100 cm – idealny rozmiar do pokoju dziecka i nie tylko\n\t• praktyczny – dywan, kocyk lub mata w jednym\n\t• łatwy w praniu i pielęgnacji\n\t• oryginalny pomysł na prezent dla fana futbolu\n\nIdealny do pokoju dziecka, na prezent lub jako niebanalna ozdoba wnętrza.",
+    "options": [],
+    "items": [
+      {
+        "price": 520,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Jednorożec",
+    "slug": "jednorożec",
+    "price": 130,
+    "minPrice": 130,
+    "maxPrice": 130,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Szydełkowy jednorożec</strong></p><p>&nbsp;</p><p>Ręcznie wykonany szydełkowy jednorożec to wyjątkowa maskotka handmade o bajkowym charakterze. Ma około <strong>30 cm</strong>, charakterystyczny róg, grzywę i ogon, które nadają mu magicznego wyglądu. Całość została wykonana z dużą <strong>dbałością o detale.</strong></p><p>Jednorożec posiada <strong>oczka zapinane od wewnętrznej strony,</strong> a jego wnętrze wypełnione jest miękką, <strong>hipoalergiczną kulką silikonową</strong>, dzięki czemu w razie potrzeby można go prać.</p><p>&nbsp;</p><p><strong>Dlaczego warto?</strong></p><p>• ręcznie wykonana maskotka handmade<br>• miękkie, hipoalergiczne wypełnienie – możliwość prania<br>• bajkowy wygląd z charakterystycznym rogiem, grzywą i ogonem<br>• staranne wykonanie i dopracowane detale&nbsp;</p><p>&nbsp;</p><p><strong>Urocza maskotka, która przyciąga uwagę swoim magicznym wyglądem i ręcznym wykonaniem.</strong></p>",
+    "description": "Szydełkowy jednorożec\n\nRęcznie wykonany szydełkowy jednorożec to wyjątkowa maskotka handmade o bajkowym charakterze. Ma około 30 cm, charakterystyczny róg, grzywę i ogon, które nadają mu magicznego wyglądu. Całość została wykonana z dużą dbałością o detale.\n\nJednorożec posiada oczka zapinane od wewnętrznej strony, a jego wnętrze wypełnione jest miękką, hipoalergiczną kulką silikonową, dzięki czemu w razie potrzeby można go prać.\n\nDlaczego warto?\n\n• ręcznie wykonana maskotka handmade\n• miękkie, hipoalergiczne wypełnienie – możliwość prania\n• bajkowy wygląd z charakterystycznym rogiem, grzywą i ogonem\n• staranne wykonanie i dopracowane detale\n\nUrocza maskotka, która przyciąga uwagę swoim magicznym wyglądem i ręcznym wykonaniem.",
+    "options": [],
+    "items": [
+      {
+        "price": 130,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Kaczuszki",
+    "slug": "kaczuszki",
+    "price": 90,
+    "minPrice": 90,
+    "maxPrice": 90,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Szydełkowa kaczka</strong></p><p>&nbsp;</p><p>Ręcznie wykonana szydełkowa kaczka to miękka maskotka handmade o przyjemnej w dotyku pluszowej fakturze. Ma około <strong>25 cm</strong>, oczka zapinane od wewnętrznej strony, a jej wnętrze wypełnione jest <strong>hipoalergiczną kulką silikonową</strong>, dzięki czemu w razie potrzeby można ją prać.</p><p>&nbsp;</p><p><strong>Dlaczego warto?</strong></p><p>• ręcznie wykonana maskotka handmade<br>• miękka, hipoalergiczna i możliwość prania<br>• starannie wykonane detale, przyjemna w dotyku</p><p>&nbsp;</p><p><strong>Urocza maskotka, która może pełnić funkcję wyjątkowej dekoracji lub kolekcjonerskiego pluszaka.</strong></p>",
+    "description": "Szydełkowa kaczka\n\n \n\nRęcznie wykonana szydełkowa kaczka to miękka maskotka handmade o przyjemnej w dotyku pluszowej fakturze. Ma około 25 cm, oczka zapinane od wewnętrznej strony, a jej wnętrze wypełnione jest hipoalergiczną kulką silikonową, dzięki czemu w razie potrzeby można ją prać.\n\n \n\nDlaczego warto?\n\n• ręcznie wykonana maskotka handmade\n• miękka, hipoalergiczna i możliwość prania\n• starannie wykonane detale, przyjemna w dotyku\n\n \n\nUrocza maskotka, która może pełnić funkcję wyjątkowej dekoracji lub kolekcjonerskiego pluszaka.",
+    "options": [],
+    "items": [
+      {
+        "price": 90,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Kapcie z falbanami",
+    "slug": "kapcie",
+    "price": 160,
+    "minPrice": 160,
+    "maxPrice": 160,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Szydełkowe kapcie z falbanką – rękodzieło dopasowane do Ciebie</strong></p><p>&nbsp;</p><p>Wygoda, styl i ręczna robota w jednym! Kapcie powstają ze <strong>100% polskiej przędzy T-shirt yarn</strong>, która jest miękka, trwała i pięknie się prezentuje. Każda para wykonywana jest na zamówienie – <strong>dopasowana do rozmiaru Twojej stopy</strong> i wykończona <strong>elastyczną gumową podeszwą</strong>, dzięki której możesz je nosić codziennie z pełnym komfortem.</p><p>Urocza <strong>falbanka z przędzy</strong> dodaje im wyjątkowego charakteru, a możliwość wyboru spośród <strong>ponad 70 kolorów</strong> sprawia, że stworzysz swoją wymarzoną parę – jednolitą lub dwukolorową.</p><p>&nbsp;</p><p><strong>Dlaczego warto?</strong></p><ul>\t<li>ręcznie szydełkowane z dbałością o detale</li>\t<li>miękka i wytrzymała przędza produkowana w Polsce</li>\t<li>personalizacja – rozmiar i kolory według Twoich potrzeb</li>\t<li>gumowa podeszwa zapewniająca wygodę i trwałość</li>\t<li>ozdobne falbanki, które dodają uroku</li></ul><p>&nbsp;</p><p><strong>Idealne jako prezent lub przytulny dodatek dla siebie – bo domowa wygoda też może wyglądać pięknie.</strong></p>",
+    "description": "Szydełkowe kapcie z falbanką – rękodzieło dopasowane do Ciebie\n\n \n\nWygoda, styl i ręczna robota w jednym! Kapcie powstają ze 100% polskiej przędzy T-shirt yarn, która jest miękka, trwała i pięknie się prezentuje. Każda para wykonywana jest na zamówienie – dopasowana do rozmiaru Twojej stopy i wykończona elastyczną gumową podeszwą, dzięki której możesz je nosić codziennie z pełnym komfortem.\n\nUrocza falbanka z przędzy dodaje im wyjątkowego charakteru, a możliwość wyboru spośród ponad 70 kolorów sprawia, że stworzysz swoją wymarzoną parę – jednolitą lub dwukolorową.\n\n \n\nDlaczego warto?\n\n\t• ręcznie szydełkowane z dbałością o detale\n\t• miękka i wytrzymała przędza produkowana w Polsce\n\t• personalizacja – rozmiar i kolory według Twoich potrzeb\n\t• gumowa podeszwa zapewniająca wygodę i trwałość\n\t• ozdobne falbanki, które dodają uroku\n \n\nIdealne jako prezent lub przytulny dodatek dla siebie – bo domowa wygoda też może wyglądać pięknie.",
+    "options": [],
+    "items": [
+      {
+        "price": 160,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Kolekcja leśna",
+    "slug": "kolekcja-leśna",
+    "price": 80,
+    "minPrice": 50,
+    "maxPrice": 120,
+    "hasOptions": true,
+    "descriptionHtml": "<p><strong>Kolekcja leśnych szydełkowych zwierzaków</strong></p><p>&nbsp;</p><p>Stwórz wyjątkowy, leśny klimat dzięki ręcznie wykonanym szydełkowym zwierzakom: <strong>lisowi, jeżykowi, sowie, wiewiórce, zajączkowi i bosukowi</strong>. Każdy z nich ma oczka zapinane od wewnętrznej strony, a wnętrze wypełnione jest <strong>hipoalergiczną kulką silikonową</strong>, co pozwala na pranie i zachowanie miękkości maskotek.</p><p>Dla jeszcze większej różnorodności, można zamówić również zwierzątko na drewnianym kółeczku, które stanowi uroczy dodatek do kolekcji.</p><p>&nbsp;</p><p><strong>Dlaczego warto?</strong></p><p>• ręcznie wykonane maskotki handmade<br>• miękkie, hipoalergiczne wypełnienie – możliwość prania<br>• starannie wykonane detale, dopracowane kształty<br>• wyjątkowy leśny charakter, idealny dla kolekcjonerów i miłośników rękodzieła</p><p>&nbsp;</p><p><strong>Urocze maskotki, które wprowadzają magiczny, leśny klimat i mogą pełnić funkcję dekoracyjną lub kolekcjonerską.</strong></p>",
+    "description": "Kolekcja leśnych szydełkowych zwierzaków\n\nStwórz wyjątkowy, leśny klimat dzięki ręcznie wykonanym szydełkowym zwierzakom: lisowi, jeżykowi, sowie, wiewiórce, zajączkowi i bosukowi. Każdy z nich ma oczka zapinane od wewnętrznej strony, a wnętrze wypełnione jest hipoalergiczną kulką silikonową, co pozwala na pranie i zachowanie miękkości maskotek.\n\nDla jeszcze większej różnorodności, można zamówić również zwierzątko na drewnianym kółeczku, które stanowi uroczy dodatek do kolekcji.\n\nDlaczego warto?\n\n• ręcznie wykonane maskotki handmade\n• miękkie, hipoalergiczne wypełnienie – możliwość prania\n• starannie wykonane detale, dopracowane kształty\n• wyjątkowy leśny charakter, idealny dla kolekcjonerów i miłośników rękodzieła\n\nUrocze maskotki, które wprowadzają magiczny, leśny klimat i mogą pełnić funkcję dekoracyjną lub kolekcjonerską.",
+    "options": [
+      {
+        "title": "Produkt:",
+        "selections": [
+          {
+            "id": 3,
+            "value": "Sowa"
+          },
+          {
+            "id": 4,
+            "value": "Wiewiórka"
+          },
+          {
+            "id": 5,
+            "value": "Lisek maskotka"
+          },
+          {
+            "id": 6,
+            "value": "Lisek na kółeczku"
+          },
+          {
+            "id": 7,
+            "value": "Borsuk maskotka"
+          },
+          {
+            "id": 8,
+            "value": "Królik maskotka"
+          },
+          {
+            "id": 9,
+            "value": "Jeż siedzący"
+          },
+          {
+            "id": 10,
+            "value": "Jeż mały"
+          }
+        ]
+      }
+    ],
+    "items": [
+      {
+        "price": 80,
+        "selections": [
+          3
+        ],
+        "surcharge": 0
+      },
+      {
+        "price": 90,
+        "selections": [
+          4
+        ],
+        "surcharge": 10
+      },
+      {
+        "price": 100,
+        "selections": [
+          5
+        ],
+        "surcharge": 20
+      },
+      {
+        "price": 50,
+        "selections": [
+          6
+        ],
+        "surcharge": -30
+      },
+      {
+        "price": 100,
+        "selections": [
+          7
+        ],
+        "surcharge": 20
+      },
+      {
+        "price": 100,
+        "selections": [
+          8
+        ],
+        "surcharge": 20
+      },
+      {
+        "price": 120,
+        "selections": [
+          9
+        ],
+        "surcharge": 40
+      },
+      {
+        "price": 80,
+        "selections": [
+          10
+        ],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Komplet poduszek mała+duża",
+    "slug": "zestaw-poduszek",
+    "price": 210,
+    "minPrice": 210,
+    "maxPrice": 210,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Szydełkowe poduszki dekoracyjne – zwierzątka lub grzybki (komplet 2 sztuki)</strong></p><p>&nbsp;</p><p>Pozwól, by do Twojego domu wprowadziły się szydełkowe przytulanki w formie poduszek – <strong>ręcznie wykonane, miękkie i pełne charakteru.</strong> Do wyboru masz okrągłe poduszki w kształcie główek <strong>liska, niedźwiedzia, wilka lub kota</strong>, albo&nbsp;<strong>grzybki</strong>, które wyglądają jak z bajki. Idealne do pokoju dziecięcego, salonu, a nawet sypialni – wszędzie tam, gdzie liczy się klimat i wygoda.</p><p>Każdy zestaw zawiera <strong>dwie poduszki – jedną większą i jedną mniejszą</strong>, tworzące harmonijną, uroczą parę. Wypełnienie to <strong>hipoalergiczna kulka silikonowa</strong>, bezpieczna dla dzieci i alergików – a co najważniejsze, <strong>można je prać</strong>, więc bez obaw możesz je zabrać nawet do dziecięcego łóżeczka czy na drzemkę na kanapie.</p><p>&nbsp;</p><p><strong>Dlaczego warto?</strong></p><ul>\t<li>Ręcznie szydełkowane – każda poduszka to małe dzieło sztuki</li>\t<li>Wypełnione hipoalergicznym wypełnieniem – bezpieczne i wygodne</li>\t<li>Łatwe w pielęgnacji – można je prać (najlepiej ręcznie lub w pralce w 30 stopniach)</li>\t<li>Komplet 2 rozmiarów – większa i mniejsza tworzą spójną całość</li>\t<li>Dekoracyjne i funkcjonalne – ozdobią, przytulą i zachwycą</li></ul><p>&nbsp;</p><p><strong>Idealny prezent dla dziecka, dekor dla miłośnika przytulnych wnętrz lub po prostu coś, co sprawi Ci radość.</strong></p>",
+    "description": "Szydełkowe poduszki dekoracyjne – zwierzątka lub grzybki (komplet 2 sztuki)\n\n \n\nPozwól, by do Twojego domu wprowadziły się szydełkowe przytulanki w formie poduszek – ręcznie wykonane, miękkie i pełne charakteru. Do wyboru masz okrągłe poduszki w kształcie główek liska, niedźwiedzia, wilka lub kota, albo grzybki, które wyglądają jak z bajki. Idealne do pokoju dziecięcego, salonu, a nawet sypialni – wszędzie tam, gdzie liczy się klimat i wygoda.\n\nKażdy zestaw zawiera dwie poduszki – jedną większą i jedną mniejszą, tworzące harmonijną, uroczą parę. Wypełnienie to hipoalergiczna kulka silikonowa, bezpieczna dla dzieci i alergików – a co najważniejsze, można je prać, więc bez obaw możesz je zabrać nawet do dziecięcego łóżeczka czy na drzemkę na kanapie.\n\n \n\nDlaczego warto?\n\n\t• Ręcznie szydełkowane – każda poduszka to małe dzieło sztuki\n\t• Wypełnione hipoalergicznym wypełnieniem – bezpieczne i wygodne\n\t• Łatwe w pielęgnacji – można je prać (najlepiej ręcznie lub w pralce w 30 stopniach)\n\t• Komplet 2 rozmiarów – większa i mniejsza tworzą spójną całość\n\t• Dekoracyjne i funkcjonalne – ozdobią, przytulą i zachwycą\n \n\nIdealny prezent dla dziecka, dekor dla miłośnika przytulnych wnętrz lub po prostu coś, co sprawi Ci radość.",
+    "options": [],
+    "items": [
+      {
+        "price": 210,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Koszyczek królik lub owca",
+    "slug": "koszyczki-króliki-i-owce",
+    "price": 90,
+    "minPrice": 90,
+    "maxPrice": 90,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Wielkanocny koszyczek&nbsp;– króliczek lub owieczka</strong></p><p>&nbsp;</p><p>Ten uroczy, ręcznie wykonany koszyczek to idealny wybór na wielkanocną święconkę dla najmłodszych. Występuje w dwóch wersjach: <strong>króliczek</strong>&nbsp;lub <strong>owieczka</strong>&nbsp;– każda z doszytą główką, łapkami i ogonkiem, które wywołują uśmiech nie tylko u dzieci, ale i u dorosłych.</p><p>Koszyczek ma ok. <strong>15 cm średnicy</strong>, solidne, sztywne dno i wykonany jest z miękkiego, bawełnianego sznurka. Stabilny, bezpieczny i trwały – idealnie nada się do przenoszenia święconki, a po świętach może stać się ozdobą dziecięcego pokoju lub służyć do przechowywania drobiazgów.</p><p>&nbsp;</p><p><strong>Dlaczego warto?</strong></p><ul>\t<li>Wersja idealna dla dzieci – poręczna, lekka i bajecznie urocza</li>\t<li>Do wyboru <strong>króliczek</strong> lub <strong>owieczka</strong> – z miękkimi uszkami, łapkami i ogonkiem</li>\t<li>Wiele kolorów do wyboru – dobierz swój ulubiony!</li>\t<li>Ręczne wykonanie z dbałością o każdy detal</li>\t<li>Praktyczny, trwały i wielorazowego użytku</li></ul><p>&nbsp;</p><p><strong>Święconka może być tradycyjna i… absolutnie wyjątkowa!</strong></p>",
+    "description": "Wielkanocny koszyczek – króliczek lub owieczka\n\nTen uroczy, ręcznie wykonany koszyczek to idealny wybór na wielkanocną święconkę dla najmłodszych. Występuje w dwóch wersjach: króliczek lub owieczka – każda z doszytą główką, łapkami i ogonkiem, które wywołują uśmiech nie tylko u dzieci, ale i u dorosłych.\n\nKoszyczek ma ok. 15 cm średnicy, solidne, sztywne dno i wykonany jest z miękkiego, bawełnianego sznurka. Stabilny, bezpieczny i trwały – idealnie nada się do przenoszenia święconki, a po świętach może stać się ozdobą dziecięcego pokoju lub służyć do przechowywania drobiazgów.\n\nDlaczego warto?\n\n\t• Wersja idealna dla dzieci – poręczna, lekka i bajecznie urocza\n\t• Do wyboru króliczek lub owieczka – z miękkimi uszkami, łapkami i ogonkiem\n\t• Wiele kolorów do wyboru – dobierz swój ulubiony!\n\t• Ręczne wykonanie z dbałością o każdy detal\n\t• Praktyczny, trwały i wielorazowego użytku\n\nŚwięconka może być tradycyjna i… absolutnie wyjątkowa!",
+    "options": [],
+    "items": [
+      {
+        "price": 90,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Koszyczki żołędzie",
+    "slug": "koszyczki-żołędzie",
+    "price": 85,
+    "minPrice": 85,
+    "maxPrice": 85,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Szydełkowe koszyczki w kształcie żołędzi</strong></p><p>&nbsp;</p><p>Urocze, ręcznie wykonane koszyczki w <strong>kształcie żołędzi</strong>&nbsp;łączą&nbsp;w sobie funkcjonalność i dekoracyjny urok. Każdy koszyczek posiada <strong>listki u góry</strong> oraz kokardkę ozdobioną małymi <strong>dewninymi koalikami</strong>, co dodaje mu wyjątkowego charakteru.</p><p>Wykonane z wysokiej jakości sznurka bawełnianego, miękkiego w dotyku, wykonane starannie i ścisło dzięki czemu koszyczki dobrze utrzymują kształt. Mogą pełnić funkcję praktycznego pojemnika lub dekoracji.</p><p>&nbsp;</p><p><strong>Dlaczego warto?</strong></p><ul>\t<li>\t<p>ręcznie wykonane, starannie wykończone detale</p>\t</li>\t<li>\t<p>miękkie, przyjemne w dotyku, stabilne dno</p>\t</li>\t<li>\t<p>unikatowy design z listkami i kokardką z koalikami</p>\t</li>\t<li>\t<p>możliwość wykorzystania jako dekoracja lub organizer</p>\t</li></ul><p>&nbsp;</p><p><strong>Wyjątkowy element dekoracyjny, który zachwyca urokiem i funkcjonalnością.</strong></p><p>&nbsp;</p><p><strong>Cena dotyczy jednej sztuki!</strong></p>",
+    "description": "Szydełkowe koszyczki w kształcie żołędzi\n\nUrocze, ręcznie wykonane koszyczki w kształcie żołędzi łączą w sobie funkcjonalność i dekoracyjny urok. Każdy koszyczek posiada listki u góry oraz kokardkę ozdobioną małymi dewninymi koalikami, co dodaje mu wyjątkowego charakteru.\n\nWykonane z wysokiej jakości sznurka bawełnianego, miękkiego w dotyku, wykonane starannie i ścisło dzięki czemu koszyczki dobrze utrzymują kształt. Mogą pełnić funkcję praktycznego pojemnika lub dekoracji.\n\nDlaczego warto?\n\n\t• \tręcznie wykonane, starannie wykończone detale\n\n\t• \tmiękkie, przyjemne w dotyku, stabilne dno\n\n\t• \tunikatowy design z listkami i kokardką z koalikami\n\n\t• \tmożliwość wykorzystania jako dekoracja lub organizer\n\nWyjątkowy element dekoracyjny, który zachwyca urokiem i funkcjonalnością.\n\nCena dotyczy jednej sztuki!",
+    "options": [],
+    "items": [
+      {
+        "price": 85,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Króliczek siedzący",
+    "slug": "króliczek-siedzący",
+    "price": 120,
+    "minPrice": 120,
+    "maxPrice": 120,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Szydełkowy siedzący króliczek</strong></p><p>&nbsp;</p><p>Ręcznie wykonany szydełkowy <strong>siedzący króliczek</strong> to miękka maskotka handmade, wykonana z pluszowej włóczki, która nadaje mu przyjemną w dotyku fakturę. Ma oczka zapinane od wewnętrznej strony, a jego wnętrze wypełnione jest <strong>hipoalergiczną kulką silikonową</strong>, dzięki czemu można go prać.</p><p>&nbsp;</p><p><strong>Dlaczego warto?</strong></p><p>• ręcznie wykonana maskotka handmade<br>• miękkie, hipoalergiczne wypełnienie – możliwość prania<br>• przyjemna w dotyku, starannie wykonane detale<br>• urocza i uniwersalna maskotka do kolekcji</p><p>&nbsp;</p><p><strong>Wyjątkowy króliczek, który zachwyca jako dekoracja i oryginalny dodatek do kolekcji.</strong></p>",
+    "description": "Szydełkowy siedzący króliczek\n\nRęcznie wykonany szydełkowy siedzący króliczek to miękka maskotka handmade, wykonana z pluszowej włóczki, która nadaje mu przyjemną w dotyku fakturę. Ma oczka zapinane od wewnętrznej strony, a jego wnętrze wypełnione jest hipoalergiczną kulką silikonową, dzięki czemu można go prać.\n\nDlaczego warto?\n\n• ręcznie wykonana maskotka handmade\n• miękkie, hipoalergiczne wypełnienie – możliwość prania\n• przyjemna w dotyku, starannie wykonane detale\n• urocza i uniwersalna maskotka do kolekcji\n\nWyjątkowy króliczek, który zachwyca jako dekoracja i oryginalny dodatek do kolekcji.",
+    "options": [],
+    "items": [
+      {
+        "price": 120,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Królik w sukience",
+    "slug": "królik-w-sukience",
+    "price": 120,
+    "minPrice": 120,
+    "maxPrice": 120,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Szydełkowy królik w sukience</strong></p><p>&nbsp;</p><p>Ręcznie wykonany szydełkowy królik w sukience z falbanką to urocza maskotka handmade o miękkiej, przyjemnej w dotyku fakturze. Ma około <strong>30 cm</strong>, oczka zapinane <strong>od wewnętrznej strony</strong>, a wnętrze wypełnione jest <strong>hipoalergiczną kulką silikonową</strong>, dzięki czemu można ją prać. Sukienka z falbanką dodaje wyjątkowego uroku, a kolory można dowolnie dopasować.</p><p>&nbsp;</p><p><strong>Dlaczego warto?</strong></p><p>• ręcznie wykonana maskotka handmade<br>• miękkie, hipoalergiczne wypełnienie – możliwość prania<br>• starannie wykonane detale, urocza sukienka z falbanką<br>• uniwersalny dodatek do kolekcji lub dekoracji</p><p>&nbsp;</p><p><strong>Wyjątkowy królik, który zachwyca wyglądem i precyzją wykonania, idealny jako prezent lub element kolekcji.</strong></p>",
+    "description": "Szydełkowy królik w sukience\n\nRęcznie wykonany szydełkowy królik w sukience z falbanką to urocza maskotka handmade o miękkiej, przyjemnej w dotyku fakturze. Ma około 30 cm, oczka zapinane od wewnętrznej strony, a wnętrze wypełnione jest hipoalergiczną kulką silikonową, dzięki czemu można ją prać. Sukienka z falbanką dodaje wyjątkowego uroku, a kolory można dowolnie dopasować.\n\nDlaczego warto?\n\n• ręcznie wykonana maskotka handmade\n• miękkie, hipoalergiczne wypełnienie – możliwość prania\n• starannie wykonane detale, urocza sukienka z falbanką\n• uniwersalny dodatek do kolekcji lub dekoracji\n\nWyjątkowy królik, który zachwyca wyglądem i precyzją wykonania, idealny jako prezent lub element kolekcji.",
+    "options": [],
+    "items": [
+      {
+        "price": 120,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Królik z długimi uszami",
+    "slug": "królik-z-długimi-uszami",
+    "price": 100,
+    "minPrice": 100,
+    "maxPrice": 100,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Szydełkowy królik z długimi uszami</strong></p><p>&nbsp;</p><p>Ręcznie wykonany szydełkowy królik z długimi uszami to miękka maskotka handmade o przyjemnej w dotyku fakturze. Ma około <strong>25 cm</strong>, oczka zapinane od wewnętrznej strony, a wnętrze wypełnione jest <strong>hipoalergiczną kulką silikonową</strong>, dzięki czemu w razie potrzeby można go prać.</p><p>&nbsp;</p><p><strong>Dlaczego warto?</strong></p><p>• ręcznie wykonana maskotka handmade<br>• miękkie, hipoalergiczne wypełnienie – możliwość prania<br>• starannie wykonane detale, przyjemna w dotyku<br>• uroczy i uniwersalny dodatek do kolekcji</p><p>&nbsp;</p><p><strong>Wyjątkowy królik, który sprawdzi się jako dekoracja lub oryginalny element kolekcji maskotek.</strong></p>",
+    "description": "Szydełkowy królik z długimi uszami\n\nRęcznie wykonany szydełkowy królik z długimi uszami to miękka maskotka handmade o przyjemnej w dotyku fakturze. Ma około 25 cm, oczka zapinane od wewnętrznej strony, a wnętrze wypełnione jest hipoalergiczną kulką silikonową, dzięki czemu w razie potrzeby można go prać.\n\nDlaczego warto?\n\n• ręcznie wykonana maskotka handmade\n• miękkie, hipoalergiczne wypełnienie – możliwość prania\n• starannie wykonane detale, przyjemna w dotyku\n• uroczy i uniwersalny dodatek do kolekcji\n\nWyjątkowy królik, który sprawdzi się jako dekoracja lub oryginalny element kolekcji maskotek.",
+    "options": [],
+    "items": [
+      {
+        "price": 100,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Kubeczek ze sweterkiem skrzat",
+    "slug": "kubeczek-ze-sweterkiem-skrzat",
+    "price": 60,
+    "minPrice": 60,
+    "maxPrice": 60,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Szydełkowy sweterek na kubek – skrzat</strong></p><p>&nbsp;</p><p>Dodaj magii swoim chwilom przy kawie lub herbacie dzięki ręcznie wykonanemu <strong>szydełkowemu sweterkowi w kształcie skrzata</strong>. Sweterek ma <strong>urocze rączki, złote guziczki i rękawiczki</strong>, a dzięki temu każdy kubek nabiera wyjątkowego charakteru.</p><p>Do zestawu dołączony jest <strong>biały kubek ceramiczny o pojemności 300 ml</strong>, tworząc gotowy komplet zarówno do codziennego użytku, jak i na prezent.</p><p>&nbsp;</p><p><strong>Dlaczego warto?</strong></p><ul>\t<li>ręcznie wykonany, dekoracyjny i praktyczny sweterek</li>\t<li>detale: rączki, złote guziczki i rękawiczki</li>\t<li>sweterek można zdjąć i prać</li>\t<li>gotowy zestaw z kubkiem ceramicznym</li></ul><p>&nbsp;</p><p><strong>Idealny prezent dla miłośników magii, rękodzieła i ciepłych napojów.</strong></p>",
+    "description": "Szydełkowy sweterek na kubek – skrzat\n\n \n\nDodaj magii swoim chwilom przy kawie lub herbacie dzięki ręcznie wykonanemu szydełkowemu sweterkowi w kształcie skrzata. Sweterek ma urocze rączki, złote guziczki i rękawiczki, a dzięki temu każdy kubek nabiera wyjątkowego charakteru.\n\nDo zestawu dołączony jest biały kubek ceramiczny o pojemności 300 ml, tworząc gotowy komplet zarówno do codziennego użytku, jak i na prezent.\n\n \n\nDlaczego warto?\n\n\t• ręcznie wykonany, dekoracyjny i praktyczny sweterek\n\t• detale: rączki, złote guziczki i rękawiczki\n\t• sweterek można zdjąć i prać\n\t• gotowy zestaw z kubkiem ceramicznym\n \n\nIdealny prezent dla miłośników magii, rękodzieła i ciepłych napojów.",
+    "options": [],
+    "items": [
+      {
+        "price": 60,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Kubeczki ze sweterkiem jesienne",
+    "slug": "kubeczki-ze-sweterkiem-jesienne",
+    "price": 60,
+    "minPrice": 60,
+    "maxPrice": 60,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Szydełkowy sweterek na kubek – z dynią lub muchomorkiem</strong></p><p>&nbsp;</p><p>Ociepl swoje chwile z ulubioną herbatą lub kawą dzięki ręcznie wykonanemu <strong>szydełkowemu sweterkowi na kubek</strong>. Sweterek ma uroczą <strong>dynię lub muchomorka&nbsp;i rączki z przodu</strong>&nbsp;i można go zdjąć, co ułatwia mycie kubka.</p><p>Do zestawu dołączony jest <strong>biały kubek ceramiczny o pojemności 300 ml</strong>, tworząc gotowy komplet do codziennego użytku lub na prezent.</p><p>&nbsp;</p><p><strong>Dlaczego warto?</strong></p><ul>\t<li>ręcznie wykonany sweterek – ciepły i dekoracyjny</li>\t<li>dowolny kolor przędzy do wyboru</li>\t<li>praktyczny – sweterek można zdjąć i prać</li>\t<li>gotowy zestaw z kubkiem ceramicznym</li></ul><p>&nbsp;</p><p><strong>Idealny prezent dla bliskiej osoby lub uroczy dodatek do własnej kuchni.</strong></p>",
+    "description": "Szydełkowy sweterek na kubek – z dynią lub muchomorkiem\n\n \n\nOciepl swoje chwile z ulubioną herbatą lub kawą dzięki ręcznie wykonanemu szydełkowemu sweterkowi na kubek. Sweterek ma uroczą dynię lub muchomorka i rączki z przodu i można go zdjąć, co ułatwia mycie kubka.\n\nDo zestawu dołączony jest biały kubek ceramiczny o pojemności 300 ml, tworząc gotowy komplet do codziennego użytku lub na prezent.\n\n \n\nDlaczego warto?\n\n\t• ręcznie wykonany sweterek – ciepły i dekoracyjny\n\t• dowolny kolor przędzy do wyboru\n\t• praktyczny – sweterek można zdjąć i prać\n\t• gotowy zestaw z kubkiem ceramicznym\n \n\nIdealny prezent dla bliskiej osoby lub uroczy dodatek do własnej kuchni.",
+    "options": [],
+    "items": [
+      {
+        "price": 60,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Kubeczki ze sweterkiem serce",
+    "slug": "kubeczki-ze-sweterkiem-serce",
+    "price": 60,
+    "minPrice": 60,
+    "maxPrice": 60,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Szydełkowy sweterek na kubek – z serduszkiem</strong></p><p>&nbsp;</p><p>Ociepl swoje chwile z ulubioną herbatą lub kawą dzięki ręcznie wykonanemu <strong>szydełkowemu sweterkowi na kubek</strong>. Sweterek ma urocze <strong>serduszko i rączki z przodu</strong> i można go zdjąć, co ułatwia mycie kubka.</p><p>Do zestawu dołączony jest <strong>biały kubek ceramiczny o pojemności 300 ml</strong>, tworząc gotowy komplet do codziennego użytku lub na prezent.</p><p>&nbsp;</p><p><strong>Dlaczego warto?</strong></p><ul>\t<li>ręcznie wykonany sweterek – ciepły i dekoracyjny</li>\t<li>dowolny kolor przędzy do wyboru</li>\t<li>praktyczny – sweterek można zdjąć i prać</li>\t<li>gotowy zestaw z kubkiem ceramicznym</li></ul><p>&nbsp;</p><p><strong>Idealny prezent dla bliskiej osoby lub uroczy dodatek do własnej kuchni.</strong></p>",
+    "description": "Szydełkowy sweterek na kubek – z serduszkiem\n\n \n\nOciepl swoje chwile z ulubioną herbatą lub kawą dzięki ręcznie wykonanemu szydełkowemu sweterkowi na kubek. Sweterek ma urocze serduszko i rączki z przodu i można go zdjąć, co ułatwia mycie kubka.\n\nDo zestawu dołączony jest biały kubek ceramiczny o pojemności 300 ml, tworząc gotowy komplet do codziennego użytku lub na prezent.\n\n \n\nDlaczego warto?\n\n\t• ręcznie wykonany sweterek – ciepły i dekoracyjny\n\t• dowolny kolor przędzy do wyboru\n\t• praktyczny – sweterek można zdjąć i prać\n\t• gotowy zestaw z kubkiem ceramicznym\n \n\nIdealny prezent dla bliskiej osoby lub uroczy dodatek do własnej kuchni.",
+    "options": [],
+    "items": [
+      {
+        "price": 60,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Kwiaty w doniczkach",
+    "slug": "kwiaty-w-doniczkach",
+    "price": 50,
+    "minPrice": 50,
+    "maxPrice": 60,
+    "hasOptions": true,
+    "descriptionHtml": "<p><strong>Szydełkowe kwiaty w doniczce – uśmiech, który nigdy nie zwiędnie</strong></p><p>&nbsp;</p><p><strong>Bratek, żonkil, narcyz, krokus, hiacynt czy tulipan – wybierz swój ulubiony!</strong></p><p>Poznaj roślinki, które nie potrzebują podlewania, a mimo to każdego dnia poprawiają humor! Te kolorowe, ręcznie wykonane <strong>szydełkowe kwiatki</strong> zachwycają nie tylko swoim wyglądem, ale i charakterem – bo każda z nich ma <strong>zieloną łodyżkę, korzonki z włóczki</strong> oraz… <strong>uśmiechniętą cebulkę z oczkami</strong>!&nbsp;</p><p>Osadzone są w <strong>prawdziwej ceramicznej doniczce z podstawką</strong>, dzięki czemu świetnie prezentują się na parapecie, biurku czy półce. Idealne jako prezent, dekoracja na wiosnę lub… całoroczny poprawiacz nastroju.</p><p>&nbsp;</p><p><strong>Dlaczego warto?</strong></p><ul>\t<li>Nie więdnie, nie wymaga podlewania – zawsze wygląda świetnie</li>\t<li>Ręczne wykonanie z dbałością o każdy detal</li>\t<li>Urocza „twarz” cebulki dodaje charakteru i humoru</li>\t<li>Ceramiczna doniczka w komplecie – gotowe do postawienia lub wręczenia w prezencie</li>\t<li>Idealne do biura, kuchni, pokoju dziecka – gdzie tylko chcesz wprowadzić radość</li></ul><p>&nbsp;</p><p><strong>Pomysłowy prezent na każdą okazję – bo kwiaty z uśmiechem są zawsze w dobrym guście!</strong></p>",
+    "description": "Szydełkowe kwiaty w doniczce – uśmiech, który nigdy nie zwiędnie\n\n \n\nBratek, żonkil, narcyz, krokus, hiacynt czy tulipan – wybierz swój ulubiony!\n\nPoznaj roślinki, które nie potrzebują podlewania, a mimo to każdego dnia poprawiają humor! Te kolorowe, ręcznie wykonane szydełkowe kwiatki zachwycają nie tylko swoim wyglądem, ale i charakterem – bo każda z nich ma zieloną łodyżkę, korzonki z włóczki oraz… uśmiechniętą cebulkę z oczkami! \n\nOsadzone są w prawdziwej ceramicznej doniczce z podstawką, dzięki czemu świetnie prezentują się na parapecie, biurku czy półce. Idealne jako prezent, dekoracja na wiosnę lub… całoroczny poprawiacz nastroju.\n\n \n\nDlaczego warto?\n\n\t• Nie więdnie, nie wymaga podlewania – zawsze wygląda świetnie\n\t• Ręczne wykonanie z dbałością o każdy detal\n\t• Urocza „twarz” cebulki dodaje charakteru i humoru\n\t• Ceramiczna doniczka w komplecie – gotowe do postawienia lub wręczenia w prezencie\n\t• Idealne do biura, kuchni, pokoju dziecka – gdzie tylko chcesz wprowadzić radość\n \n\nPomysłowy prezent na każdą okazję – bo kwiaty z uśmiechem są zawsze w dobrym guście!",
+    "options": [
+      {
+        "title": "Produkt:",
+        "selections": [
+          {
+            "id": 1,
+            "value": "Bratek"
+          },
+          {
+            "id": 2,
+            "value": "Żonkil/narcyz"
+          },
+          {
+            "id": 3,
+            "value": "Krokus"
+          },
+          {
+            "id": 4,
+            "value": "Hiacynt"
+          },
+          {
+            "id": 5,
+            "value": "Tulipan"
+          }
+        ]
+      }
+    ],
+    "items": [
+      {
+        "price": 55,
+        "selections": [
+          1
+        ],
+        "surcharge": 5
+      },
+      {
+        "price": 50,
+        "selections": [
+          2
+        ],
+        "surcharge": 0
+      },
+      {
+        "price": 50,
+        "selections": [
+          3
+        ],
+        "surcharge": 0
+      },
+      {
+        "price": 60,
+        "selections": [
+          4
+        ],
+        "surcharge": 10
+      },
+      {
+        "price": 55,
+        "selections": [
+          5
+        ],
+        "surcharge": 5
+      }
+    ]
+  },
+  {
+    "name": "Misie w ubrankach",
+    "slug": "misie",
+    "price": 160,
+    "minPrice": 160,
+    "maxPrice": 160,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Szydełkowe misie</strong></p><p>&nbsp;</p><p>Ręcznie wykonane <strong>szydełkowe misie</strong> mają <strong>około 35 cm </strong>i zachwycają swoim urokiem oraz starannym wykonaniem. Dostępne są w dowolnych kolorach, dzięki czemu można dopasować je do własnych upodobań lub wystroju wnętrza. Dziewczynki noszą <strong>sukienki na ramionkach z tiulowym dołem i opaskami z tiulu</strong>, a chłopcy <strong>spodenki na szelkach oraz bluzeczkę </strong>z kolorystycznie dopasowaną lamówką.</p><p>Misie mają <strong>bezpieczne oczka</strong> zapinane od wewnętrznej strony, a ich wnętrze wypełnione jest miękką, <strong>hipoalergiczną kulką silikonową, którą można prać.</strong></p><p>Dodatkowo istnieje możliwość wyszycia <strong>dowolnego imienia</strong> na maskotce, co sprawia, że każdy miś staje się wyjątkowy i spersonalizowany.</p><p>&nbsp;</p><p><strong>Dlaczego warto?</strong><br>• ręcznie wykonana maskotka handmade<br>• miękkie, hipoalergiczne wypełnienie – możliwość prania<br>• możliwość personalizacji imieniem</p><p>&nbsp;</p><p><strong>Urocza maskotka, która będzie wyjątkowym dodatkiem i piękną dekoracją do pokoju dziecięcego.</strong></p>",
+    "description": "Szydełkowe misie\n\n \n\nRęcznie wykonane szydełkowe misie mają około 35 cm i zachwycają swoim urokiem oraz starannym wykonaniem. Dostępne są w dowolnych kolorach, dzięki czemu można dopasować je do własnych upodobań lub wystroju wnętrza. Dziewczynki noszą sukienki na ramionkach z tiulowym dołem i opaskami z tiulu, a chłopcy spodenki na szelkach oraz bluzeczkę z kolorystycznie dopasowaną lamówką.\n\nMisie mają bezpieczne oczka zapinane od wewnętrznej strony, a ich wnętrze wypełnione jest miękką, hipoalergiczną kulką silikonową, którą można prać.\n\nDodatkowo istnieje możliwość wyszycia dowolnego imienia na maskotce, co sprawia, że każdy miś staje się wyjątkowy i spersonalizowany.\n\n \n\nDlaczego warto?\n• ręcznie wykonana maskotka handmade\n• miękkie, hipoalergiczne wypełnienie – możliwość prania\n• możliwość personalizacji imieniem\n\n \n\nUrocza maskotka, która będzie wyjątkowym dodatkiem i piękną dekoracją do pokoju dziecięcego.",
+    "options": [],
+    "items": [
+      {
+        "price": 160,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Myszka świąteczna",
+    "slug": "myszka-świąteczna",
+    "price": 80,
+    "minPrice": 80,
+    "maxPrice": 80,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Szydełkowa myszka świąteczna</strong></p><p>&nbsp;</p><p>Ręcznie wykonana szydełkowa myszka świąteczna ma około <strong>20 cm</strong> i ubrana jest w czapkę Mikołaja oraz czerwony szalik. Posiada oczka zapinane od wewnętrznej strony, a wnętrze wypełnione jest <strong>hipoalergiczną kulką silikonową</strong>, dzięki czemu można ją prać.</p><p>&nbsp;</p><p><strong>Dlaczego warto?</strong></p><p>• ręcznie wykonana maskotka handmade<br>• miękkie, hipoalergiczne wypełnienie – możliwość prania<br>• starannie wykonane detale, świąteczny charakter<br>• uniwersalny dodatek do kolekcji lub dekoracji</p><p>&nbsp;</p><p><strong>Urocza maskotka, która wprowadza świąteczny klimat i może pełnić funkcję dekoracyjną lub prezentową.</strong></p>",
+    "description": "Szydełkowa myszka świąteczna\n\nRęcznie wykonana szydełkowa myszka świąteczna ma około 20 cm i ubrana jest w czapkę Mikołaja oraz czerwony szalik. Posiada oczka zapinane od wewnętrznej strony, a wnętrze wypełnione jest hipoalergiczną kulką silikonową, dzięki czemu można ją prać.\n\nDlaczego warto?\n\n• ręcznie wykonana maskotka handmade\n• miękkie, hipoalergiczne wypełnienie – możliwość prania\n• starannie wykonane detale, świąteczny charakter\n• uniwersalny dodatek do kolekcji lub dekoracji\n\nUrocza maskotka, która wprowadza świąteczny klimat i może pełnić funkcję dekoracyjną lub prezentową.",
+    "options": [],
+    "items": [
+      {
+        "price": 80,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Myszki w ubrankach",
+    "slug": "myszki",
+    "price": 130,
+    "minPrice": 130,
+    "maxPrice": 130,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Szydełkowe myszki w ubrankach</strong></p><p>&nbsp;</p><p>Ręcznie wykonane szydełkowe myszki mają około <strong>35 cm</strong> i dostępne są w różnych kolorach. Dziewczynki mają <strong>sukienki z</strong> <strong>falbankami, baleriny i kokardkę</strong>, a chłopcy <strong>spodenki, koszulkę i trampki</strong>. Wszystkie myszki posiadają oczka zapinane od wewnętrznej strony, a wnętrze wypełnione jest <strong>hipoalergiczną kulką silikonową</strong>, dzięki czemu można je prać.</p><p>&nbsp;</p><p><strong>Dlaczego warto?</strong></p><p>• ręcznie wykonane maskotki handmade<br>• miękkie, hipoalergiczne wypełnienie – możliwość prania<br>• starannie wykonane detale, dopracowane ubranka<br>• uniwersalny dodatek do kolekcji lub dekoracji</p><p>&nbsp;</p><p><strong>Urocze myszki, które zachwycają wyglądem i precyzją wykonania, idealne jako prezent lub element kolekcji.</strong></p>",
+    "description": "Szydełkowe myszki w ubrankach\n\n \n\nRęcznie wykonane szydełkowe myszki mają około 35 cm i dostępne są w różnych kolorach. Dziewczynki mają sukienki z falbankami, baleriny i kokardkę, a chłopcy spodenki, koszulkę i trampki. Wszystkie myszki posiadają oczka zapinane od wewnętrznej strony, a wnętrze wypełnione jest hipoalergiczną kulką silikonową, dzięki czemu można je prać.\n\n \n\nDlaczego warto?\n\n• ręcznie wykonane maskotki handmade\n• miękkie, hipoalergiczne wypełnienie – możliwość prania\n• starannie wykonane detale, dopracowane ubranka\n• uniwersalny dodatek do kolekcji lub dekoracji\n\n \n\nUrocze myszki, które zachwycają wyglądem i precyzją wykonania, idealne jako prezent lub element kolekcji.",
+    "options": [],
+    "items": [
+      {
+        "price": 130,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Opaski z warkoczem",
+    "slug": "opaski",
+    "price": 40,
+    "minPrice": 40,
+    "maxPrice": 40,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Szydełkowe opaski na włosy – warkoczowe</strong></p><p>&nbsp;</p><p>Dodaj uroku swojej stylizacji dzięki wyjątkowym szydełkowym opaskom, wykonanym ręcznie na solidnej plastikowej bazie. Są wygodne w noszeniu, nie uciskają i świetnie trzymają się na głowie.</p><p>Do wyboru masz dwa modele:</p><ul>\t<li><strong>cieńsza opaska z grubym warkoczem</strong> – lekka i efektowna</li>\t<li><strong>grubsza opaska opleciona cieńszym warkoczem</strong> – elegancka i pełniejsza</li></ul><p>Powstają z wysokiej jakości <strong>bawełnianej przędzy produkowanej w Polsce</strong>, a paleta ponad <strong>70 kolorów</strong> pozwala dobrać idealny odcień – od neutralnych po odważne, energetyczne barwy.</p><p>&nbsp;</p><p><strong>Dlaczego warto?</strong></p><ul>\t<li>rękodzieło z dbałością o detale</li>\t<li>wygodna baza – komfort i stabilność</li>\t<li>ogromny wybór kolorów i dwa modele do wyboru</li></ul><p>&nbsp;</p><p><strong>Stylowy dodatek, który sprawdzi się zarówno na co dzień, jak i na wyjątkowe okazje.</strong></p>",
+    "description": "Szydełkowe opaski na włosy – warkoczowe\n\n \n\nDodaj uroku swojej stylizacji dzięki wyjątkowym szydełkowym opaskom, wykonanym ręcznie na solidnej plastikowej bazie. Są wygodne w noszeniu, nie uciskają i świetnie trzymają się na głowie.\n\nDo wyboru masz dwa modele:\n\n\t• cieńsza opaska z grubym warkoczem – lekka i efektowna\n\t• grubsza opaska opleciona cieńszym warkoczem – elegancka i pełniejsza\nPowstają z wysokiej jakości bawełnianej przędzy produkowanej w Polsce, a paleta ponad 70 kolorów pozwala dobrać idealny odcień – od neutralnych po odważne, energetyczne barwy.\n\n \n\nDlaczego warto?\n\n\t• rękodzieło z dbałością o detale\n\t• wygodna baza – komfort i stabilność\n\t• ogromny wybór kolorów i dwa modele do wyboru\n \n\nStylowy dodatek, który sprawdzi się zarówno na co dzień, jak i na wyjątkowe okazje.",
+    "options": [],
+    "items": [
+      {
+        "price": 40,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Plecaczek rozmiar M",
+    "slug": "plecaczek-rozmiar-m",
+    "price": 220,
+    "minPrice": 220,
+    "maxPrice": 220,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Szydełkowy plecaczek rozmiar M</strong></p><p>&nbsp;</p><p>Ręcznie wykonany&nbsp;<strong>szydełkowy&nbsp;plecaczek</strong>&nbsp;to idealne połączenie stylu i wygody. Sprawdzi&nbsp;się zarówno na wycieczki, piesze wędrówki, jak i jako modny dodatek do codziennej stylizacji.</p><p>Powstaje&nbsp;z <strong>najwyższej jakości bawełnianej przędzy produkowanej w Polsce</strong>, a do wyboru jest aż <strong>ponad 70 kolorów</strong> – dzięki temu każdy znajdzie coś dla siebie.</p><p>Plecaczek ma wymiary: <strong>podstawa 10&nbsp;× 23&nbsp;cm, wysokość ok. 24&nbsp;cm</strong>, co czyni go poręcznym i wygodnym w codziennym użytkowaniu.<br>Dodatki mogą być w odcieniach <strong>srebra lub złota</strong>, a szelki – regulowane, w kilku wariantach: <strong>parciane, łańcuszkowe, skórzane</strong> lub wykonane na <strong>szydełku</strong> (wtedy dostępna jest jedna długość).</p><p>&nbsp;</p><p><strong>Dlaczego warto?</strong></p><ul>\t<li>modny i praktyczny dodatek</li>\t<li>ręcznie wykonany z polskiej przędzy</li>\t<li>ponad 70 kolorów do wyboru</li>\t<li>regulowane szelki w różnych stylach</li></ul><p>&nbsp;</p><p><strong>Oryginalny, ręcznie wykonany plecaczek, który doda uroku każdej stylizacji.</strong></p><p><strong>Jeśli zastanawiasz się nad wyborem koloru, napisz śmiało – posiadam karty kolorystyczne obejmujące wszystkie dostępne odcienie i chętnie wyślę zdjęcie wybranego koloru lub zestawienie kilku opcji!</strong></p>",
+    "description": "Szydełkowy plecaczek rozmiar M\n\n \n\nRęcznie wykonany szydełkowy plecaczek to idealne połączenie stylu i wygody. Sprawdzi się zarówno na wycieczki, piesze wędrówki, jak i jako modny dodatek do codziennej stylizacji.\n\nPowstaje z najwyższej jakości bawełnianej przędzy produkowanej w Polsce, a do wyboru jest aż ponad 70 kolorów – dzięki temu każdy znajdzie coś dla siebie.\n\nPlecaczek ma wymiary: podstawa 10 × 23 cm, wysokość ok. 24 cm, co czyni go poręcznym i wygodnym w codziennym użytkowaniu.\nDodatki mogą być w odcieniach srebra lub złota, a szelki – regulowane, w kilku wariantach: parciane, łańcuszkowe, skórzane lub wykonane na szydełku (wtedy dostępna jest jedna długość).\n\n \n\nDlaczego warto?\n\n\t• modny i praktyczny dodatek\n\t• ręcznie wykonany z polskiej przędzy\n\t• ponad 70 kolorów do wyboru\n\t• regulowane szelki w różnych stylach\n \n\nOryginalny, ręcznie wykonany plecaczek, który doda uroku każdej stylizacji.\n\nJeśli zastanawiasz się nad wyborem koloru, napisz śmiało – posiadam karty kolorystyczne obejmujące wszystkie dostępne odcienie i chętnie wyślę zdjęcie wybranego koloru lub zestawienie kilku opcji!",
+    "options": [],
+    "items": [
+      {
+        "price": 220,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Plecak królik rozmiar S",
+    "slug": "plecak-królik",
+    "price": 190,
+    "minPrice": 190,
+    "maxPrice": 190,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Szydełkowy plecaczek-króliczek rozmiar S</strong></p><p>&nbsp;</p><p>Uroczy <strong>plecaczek-króliczek</strong> stworzony z myślą o najmłodszych. Wykonany ręcznie z <strong>najwyższej jakości bawełnianej przędzy produkowanej w Polsce</strong>, jest nie tylko praktyczny, ale i wyjątkowy. Do wyboru jest ponad <strong>70 kolorów</strong>, a dodatki mogą być w odcieniach <strong>srebra lub złota</strong>, dzięki czemu każdy plecaczek staje się jedyny w swoim rodzaju.</p><p>Plecaczek ma w zestawie <strong>parciane regulowane szelki</strong>, a jego największym urokiem są <strong>pluszowe uszka króliczka</strong> przyszyte do klapki oraz <strong>mięciutki ogonek</strong> umieszczony w dolnej części – dzieci go pokochają!&nbsp;</p><p><strong>Wymiary:</strong> podstawa 22 × 9 cm, wysokość ok. 20 cm</p><p>&nbsp;</p><p><strong>Dlaczego warto?</strong></p><ul>\t<li>uroczy design idealny dla dzieci</li>\t<li>ręcznie wykonany z bezpiecznej przędzy bawełnianej</li>\t<li>ponad 70 kolorów do wyboru</li>\t<li>regulowane, wygodne szelki</li></ul><p>&nbsp;</p><p><strong>Idealny prezent dla malucha – praktyczny i słodki jednocześnie!<br>Jeśli zastanawiasz się nad wyborem koloru, napisz śmiało – posiadam karty kolorystyczne obejmujące wszystkie dostępne odcienie i chętnie wyślę zdjęcie wybranego koloru lub zestawienie kilku opcji!</strong></p>",
+    "description": "Szydełkowy plecaczek-króliczek rozmiar S\n\nUroczy plecaczek-króliczek stworzony z myślą o najmłodszych. Wykonany ręcznie z najwyższej jakości bawełnianej przędzy produkowanej w Polsce, jest nie tylko praktyczny, ale i wyjątkowy. Do wyboru jest ponad 70 kolorów, a dodatki mogą być w odcieniach srebra lub złota, dzięki czemu każdy plecaczek staje się jedyny w swoim rodzaju.\n\nPlecaczek ma w zestawie parciane regulowane szelki, a jego największym urokiem są pluszowe uszka króliczka przyszyte do klapki oraz mięciutki ogonek umieszczony w dolnej części – dzieci go pokochają!\n\nWymiary: podstawa 22 × 9 cm, wysokość ok. 20 cm\n\nDlaczego warto?\n\n\t• uroczy design idealny dla dzieci\n\t• ręcznie wykonany z bezpiecznej przędzy bawełnianej\n\t• ponad 70 kolorów do wyboru\n\t• regulowane, wygodne szelki\n\nIdealny prezent dla malucha – praktyczny i słodki jednocześnie!\nJeśli zastanawiasz się nad wyborem koloru, napisz śmiało – posiadam karty kolorystyczne obejmujące wszystkie dostępne odcienie i chętnie wyślę zdjęcie wybranego koloru lub zestawienie kilku opcji!",
+    "options": [],
+    "items": [
+      {
+        "price": 190,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Plecak z maskotką",
+    "slug": "plecak-z-maskotką",
+    "price": 180,
+    "minPrice": 180,
+    "maxPrice": 180,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Zestaw: plecaczek + maskotka</strong></p><p>&nbsp;</p><p>Uroczy zestaw stworzony z myślą o najmłodszych! Plecaczek jest <strong>lekki, wygodny i idealnie dopasowany do małych plecków</strong>, świetnie sprawdzi się na spacer, do żłobka czy przedszkola. Mimo niewielkich rozmiarów jest zaskakująco <strong>pakowny</strong>, a jego dużym plusem jest <strong>wygodne zapinanie na zamek</strong> oraz <strong>regulowane szelki</strong>, które zapewniają komfort noszenia.</p><p>Z przodu plecaczka znajdują się <strong>słodkie spodenki na szelkach</strong>, w których wygodnie można nosić <strong>króliczka dołączonego do zestawu</strong>. Maskotka ma dodatkowo <strong>sukieneczkę na przebranie</strong>, dzięki czemu dziecko może bawić się nią jak zwykłą przytulanką. Na specjalne zamówienie można wykonać również innego zwierzaka, aby zestaw był jeszcze bardziej wyjątkowy.</p><p><strong>Wymiary:&nbsp;</strong>wysokość: 19 cm, szerokość: 17 cm, głębokość: 7 cm</p><p>&nbsp;</p><p><strong>Dlaczego warto?</strong></p><ul>\t<li>praktyczny plecaczek idealny dla dziecka</li>\t<li>regulowane szelki i łatwe zapinanie</li>\t<li>zestaw z maskotką i dodatkowym ubrankiem</li>\t<li>możliwość indywidualnego zamówienia</li></ul><p>&nbsp;</p><p><strong>Idealny prezent, który łączy praktyczność z zabawą!</strong></p>",
+    "description": "Zestaw: plecaczek + maskotka\n\nUroczy zestaw stworzony z myślą o najmłodszych! Plecaczek jest lekki, wygodny i idealnie dopasowany do małych plecków, świetnie sprawdzi się na spacer, do żłobka czy przedszkola. Mimo niewielkich rozmiarów jest zaskakująco pakowny, a jego dużym plusem jest wygodne zapinanie na zamek oraz regulowane szelki, które zapewniają komfort noszenia.\n\nZ przodu plecaczka znajdują się słodkie spodenki na szelkach, w których wygodnie można nosić króliczka dołączonego do zestawu. Maskotka ma dodatkowo sukieneczkę na przebranie, dzięki czemu dziecko może bawić się nią jak zwykłą przytulanką. Na specjalne zamówienie można wykonać również innego zwierzaka, aby zestaw był jeszcze bardziej wyjątkowy.\n\nWymiary: wysokość: 19 cm, szerokość: 17 cm, głębokość: 7 cm\n\nDlaczego warto?\n\n\t• praktyczny plecaczek idealny dla dziecka\n\t• regulowane szelki i łatwe zapinanie\n\t• zestaw z maskotką i dodatkowym ubrankiem\n\t• możliwość indywidualnego zamówienia\n\nIdealny prezent, który łączy praktyczność z zabawą!",
+    "options": [],
+    "items": [
+      {
+        "price": 180,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Prezent na ślub",
+    "slug": "prezent-na-ślub",
+    "price": 300,
+    "minPrice": 300,
+    "maxPrice": 300,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Szydełkowy tort ślubny z personalizacją – wyjątkowy prezent na ślub</strong></p><p>&nbsp;</p><p>Szukasz prezentu, który zachwyci nowożeńców i zostanie z nimi na lata? Ten uroczy, biały szydełkowy tort ślubny to coś więcej niż dekoracja – to rękodzielniczy symbol miłości, który podbije każde serce!</p><p>Na szczycie tortu dumnie stoi zakochana para misiów – ona w szydełkowej sukni ślubnej, on w eleganckim garniturze. Wokół tortu biegną szydełkowe serca, a z boku, na filcowej \"tabliczce\", wyhaftowane są imiona Młodej Pary oraz data ich wielkiego dnia.</p><p><strong>Tort można spersonalizować!</strong><br>Zamiast misiów mogą pojawić się inne zwierzaki – kotki, króliczki, liski… wybór należy do Ciebie. To Ty tworzysz historię!</p><p>&nbsp;</p><p><strong>Dlaczego warto?</strong></p><ul>\t<li>&nbsp;Wyjątkowa, ręcznie robiona pamiątka</li>\t<li>&nbsp;Personalizacja imion, daty i zwierzaków</li>\t<li>&nbsp;Idealna jako prezent od rodziców, świadków, przyjaciół</li>\t<li>&nbsp;Niezwykła dekoracja do domu, na półkę lub do sesji zdjęciowej</li>\t<li>Ten tort nie zniknie po uroczystości – zostanie z parą młodą na zawsze, przypominając o ich wyjątkowym dniu.</li></ul><p>&nbsp;</p><p><strong>Bo najpiękniejsze historie zasługują na ręcznie pisaną oprawę.</strong></p>",
+    "description": "Szydełkowy tort ślubny z personalizacją – wyjątkowy prezent na ślub\n\nSzukasz prezentu, który zachwyci nowożeńców i zostanie z nimi na lata? Ten uroczy, biały szydełkowy tort ślubny to coś więcej niż dekoracja – to rękodzielniczy symbol miłości, który podbije każde serce!\n\nNa szczycie tortu dumnie stoi zakochana para misiów – ona w szydełkowej sukni ślubnej, on w eleganckim garniturze. Wokół tortu biegną szydełkowe serca, a z boku, na filcowej \"tabliczce\", wyhaftowane są imiona Młodej Pary oraz data ich wielkiego dnia.\n\nTort można spersonalizować!\nZamiast misiów mogą pojawić się inne zwierzaki – kotki, króliczki, liski… wybór należy do Ciebie. To Ty tworzysz historię!\n\nDlaczego warto?\n\n\t•  Wyjątkowa, ręcznie robiona pamiątka\n\t•  Personalizacja imion, daty i zwierzaków\n\t•  Idealna jako prezent od rodziców, świadków, przyjaciół\n\t•  Niezwykła dekoracja do domu, na półkę lub do sesji zdjęciowej\n\t• Ten tort nie zniknie po uroczystości – zostanie z parą młodą na zawsze, przypominając o ich wyjątkowym dniu.\n\nBo najpiękniejsze historie zasługują na ręcznie pisaną oprawę.",
+    "options": [],
+    "items": [
+      {
+        "price": 300,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Pszczółka",
+    "slug": "pszczółka",
+    "price": 80,
+    "minPrice": 80,
+    "maxPrice": 80,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Szydełkowa pszczółka</strong></p><p>&nbsp;</p><p>Ręcznie wykonana szydełkowa pszczółka to urocza maskotka handmade o wyjątkowym charakterze. Ma <strong>około 20 cm</strong>, charakterystyczne żółto-czarne paski, skrzydełka oraz czułki, które nadają jej sympatyczny wygląd. Pszczółka posiada <strong>oczka zapinane od wewnętrznej strony</strong>, a jej wnętrze wypełnione jest miękką, <strong>hipoalergiczną kulką silikonową</strong>, dzięki czemu w razie potrzeby można ją prać.</p><p>&nbsp;</p><p><strong>Dlaczego warto?</strong></p><p>&nbsp;</p><p>• ręcznie wykonana maskotka handmade<br>• miękkie, hipoalergiczne wypełnienie – możliwość prania<br>• charakterystyczny, dopracowany wygląd z paskami, skrzydełkami i czułkami<br>• staranne wykonanie z dbałością o detale</p><p>&nbsp;</p><p><strong>Urocza maskotka, która z pewnością przyciąga uwagę swoim sympatycznym wyglądem i ręcznym wykonaniem.</strong></p>",
+    "description": "Szydełkowa pszczółka\n\nRęcznie wykonana szydełkowa pszczółka to urocza maskotka handmade o wyjątkowym charakterze. Ma około 20 cm, charakterystyczne żółto-czarne paski, skrzydełka oraz czułki, które nadają jej sympatyczny wygląd. Pszczółka posiada oczka zapinane od wewnętrznej strony, a jej wnętrze wypełnione jest miękką, hipoalergiczną kulką silikonową, dzięki czemu w razie potrzeby można ją prać.\n\nDlaczego warto?\n\n• ręcznie wykonana maskotka handmade\n• miękkie, hipoalergiczne wypełnienie – możliwość prania\n• charakterystyczny, dopracowany wygląd z paskami, skrzydełkami i czułkami\n• staranne wykonanie z dbałością o detale\n\nUrocza maskotka, która z pewnością przyciąga uwagę swoim sympatycznym wyglądem i ręcznym wykonaniem.",
+    "options": [],
+    "items": [
+      {
+        "price": 80,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Reniferki",
+    "slug": "reniferki",
+    "price": 100,
+    "minPrice": 100,
+    "maxPrice": 100,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Szydełkowe reniferki</strong></p><p>&nbsp;</p><p>Ręcznie wykonane szydełkowe reniferki mają około <strong>25 cm</strong> i ubrane są w bluzeczkę w paski, zielone spodenki na szelkach, czerwony nosek z pompona oraz czerwone buciki. Posiadają oczka zapinane od <strong>wewnętrznej strony</strong>, a wnętrze wypełnione jest <strong>hipoalergiczną kulką silikonową</strong>, dzięki czemu można je prać.</p><p>&nbsp;</p><p><strong>Dlaczego warto?</strong></p><p>• ręcznie wykonane maskotki handmade<br>• miękkie, hipoalergiczne wypełnienie – możliwość prania<br>• starannie wykonane detale, świąteczny charakter<br>• uniwersalny dodatek do kolekcji lub dekoracji</p><p>&nbsp;</p><p><strong>Urocze reniferki, które wprowadzają świąteczny nastrój i sprawdzą się jako prezent lub dekoracja.</strong></p>",
+    "description": "Szydełkowe reniferki\n\n \n\nRęcznie wykonane szydełkowe reniferki mają około 25 cm i ubrane są w bluzeczkę w paski, zielone spodenki na szelkach, czerwony nosek z pompona oraz czerwone buciki. Posiadają oczka zapinane od wewnętrznej strony, a wnętrze wypełnione jest hipoalergiczną kulką silikonową, dzięki czemu można je prać.\n\n \n\nDlaczego warto?\n\n• ręcznie wykonane maskotki handmade\n• miękkie, hipoalergiczne wypełnienie – możliwość prania\n• starannie wykonane detale, świąteczny charakter\n• uniwersalny dodatek do kolekcji lub dekoracji\n\n \n\nUrocze reniferki, które wprowadzają świąteczny nastrój i sprawdzą się jako prezent lub dekoracja.",
+    "options": [],
+    "items": [
+      {
+        "price": 100,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Skapetki z pluszowej włóczki",
+    "slug": "skapetki",
+    "price": 80,
+    "minPrice": 80,
+    "maxPrice": 120,
+    "hasOptions": true,
+    "descriptionHtml": "<p><strong>Szydełkowe skarpetki z pluszowej włóczki – mięciutkie, cieplutkie i tylko Twoje</strong></p><p>&nbsp;</p><p>Zanurz stopy w przytulności! Te ręcznie wykonane szydełkowe skarpetki powstają z <strong>miękkiej, pluszowej włóczki</strong>, która otula stopy jak chmurka. Są niezwykle <strong>ciepłe, wygodne i elastyczne</strong>, dzięki czemu idealnie sprawdzą się na chłodne wieczory, poranki i leniwe dni w domu.</p><p>Każda para wykonywana jest <strong>na indywidualny wymiar stopy</strong>, więc masz pewność, że będą pasować jak ulał. A kolory? Wybierasz samodzielnie – będą dokładnie w Twoim stylu.</p><p>&nbsp;</p><p><strong>Dlaczego warto?</strong></p><ul>\t<li>Ręcznie szydełkowane z pluszowej włóczki – mięciutkie i przyjazne dla skóry</li>\t<li>Bardzo ciepłe – idealne na jesień, zimę i wieczorne przytulanie</li>\t<li>Wykonywane na indywidualny wymiar – perfekcyjnie dopasowane</li>\t<li>Dowolny kolor – Ty decydujesz, jakie będą</li>\t<li>Idealne do chodzenia po domu lub jako prezent „od serca”</li></ul><p>&nbsp;</p><p><strong>Bo nic tak nie mówi „zadbałam o Ciebie”, jak para cieplutkich skarpet zrobionych specjalnie dla Ciebie.</strong></p>",
+    "description": "Szydełkowe skarpetki z pluszowej włóczki – mięciutkie, cieplutkie i tylko Twoje\n\n \n\nZanurz stopy w przytulności! Te ręcznie wykonane szydełkowe skarpetki powstają z miękkiej, pluszowej włóczki, która otula stopy jak chmurka. Są niezwykle ciepłe, wygodne i elastyczne, dzięki czemu idealnie sprawdzą się na chłodne wieczory, poranki i leniwe dni w domu.\n\nKażda para wykonywana jest na indywidualny wymiar stopy, więc masz pewność, że będą pasować jak ulał. A kolory? Wybierasz samodzielnie – będą dokładnie w Twoim stylu.\n\n \n\nDlaczego warto?\n\n\t• Ręcznie szydełkowane z pluszowej włóczki – mięciutkie i przyjazne dla skóry\n\t• Bardzo ciepłe – idealne na jesień, zimę i wieczorne przytulanie\n\t• Wykonywane na indywidualny wymiar – perfekcyjnie dopasowane\n\t• Dowolny kolor – Ty decydujesz, jakie będą\n\t• Idealne do chodzenia po domu lub jako prezent „od serca”\n \n\nBo nic tak nie mówi „zadbałam o Ciebie”, jak para cieplutkich skarpet zrobionych specjalnie dla Ciebie.",
+    "options": [
+      {
+        "title": "Produkt:",
+        "selections": [
+          {
+            "id": 2,
+            "value": "Dziecięce"
+          },
+          {
+            "id": 3,
+            "value": "Damskie/Męskie"
+          }
+        ]
+      }
+    ],
+    "items": [
+      {
+        "price": 80,
+        "selections": [
+          2
+        ],
+        "surcharge": 0
+      },
+      {
+        "price": 120,
+        "selections": [
+          3
+        ],
+        "surcharge": 40
+      }
+    ]
+  },
+  {
+    "name": "Szydełkowy plecak rozmiar L",
+    "slug": "szydełkowy-miś",
+    "price": 280,
+    "minPrice": 280,
+    "maxPrice": 280,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Szydełkowy plecaczek rozmiar L</strong></p><p>&nbsp;</p><p>Ręcznie wykonany&nbsp;<strong>szydełkowy&nbsp;plecaczek</strong>&nbsp;to idealne połączenie stylu i wygody. Sprawdzi&nbsp;się zarówno na wycieczki, piesze wędrówki, jak i jako modny dodatek do codziennej stylizacji.</p><p>Powstaje&nbsp;z <strong>najwyższej jakości bawełnianej przędzy produkowanej w Polsce</strong>, a do wyboru jest aż <strong>ponad 70 kolorów</strong> – dzięki temu każdy znajdzie coś dla siebie.</p><p>Plecaczek ma wymiary: <strong>podstawa 12 × 25 cm, wysokość ok. 27 cm</strong>, co czyni go poręcznym i wygodnym w codziennym użytkowaniu.<br>Dodatki mogą być w odcieniach <strong>srebra lub złota</strong>, a szelki – regulowane, w kilku wariantach: <strong>parciane, łańcuszkowe, skórzane</strong> lub wykonane na <strong>szydełku</strong> (wtedy dostępna jest jedna długość).</p><p>&nbsp;</p><p><strong>Dlaczego warto?</strong></p><ul>\t<li>modny i praktyczny dodatek</li>\t<li>ręcznie wykonany z polskiej przędzy</li>\t<li>ponad 70 kolorów do wyboru</li>\t<li>regulowane szelki w różnych stylach</li></ul><p>&nbsp;</p><p><strong>Oryginalny, ręcznie wykonany plecaczek, który doda uroku każdej stylizacji.</strong></p><p><strong>Jeśli zastanawiasz się nad wyborem koloru, napisz śmiało – posiadam karty kolorystyczne obejmujące wszystkie dostępne odcienie i chętnie wyślę zdjęcie wybranego koloru lub zestawienie kilku opcji!</strong></p>",
+    "description": "Szydełkowy plecaczek rozmiar L\n\nRęcznie wykonany szydełkowy plecaczek to idealne połączenie stylu i wygody. Sprawdzi się zarówno na wycieczki, piesze wędrówki, jak i jako modny dodatek do codziennej stylizacji.\n\nPowstaje z najwyższej jakości bawełnianej przędzy produkowanej w Polsce, a do wyboru jest aż ponad 70 kolorów – dzięki temu każdy znajdzie coś dla siebie.\n\nPlecaczek ma wymiary: podstawa 12 × 25 cm, wysokość ok. 27 cm, co czyni go poręcznym i wygodnym w codziennym użytkowaniu.\nDodatki mogą być w odcieniach srebra lub złota, a szelki – regulowane, w kilku wariantach: parciane, łańcuszkowe, skórzane lub wykonane na szydełku (wtedy dostępna jest jedna długość).\n\nDlaczego warto?\n\n\t• modny i praktyczny dodatek\n\t• ręcznie wykonany z polskiej przędzy\n\t• ponad 70 kolorów do wyboru\n\t• regulowane szelki w różnych stylach\n\nOryginalny, ręcznie wykonany plecaczek, który doda uroku każdej stylizacji.\n\nJeśli zastanawiasz się nad wyborem koloru, napisz śmiało – posiadam karty kolorystyczne obejmujące wszystkie dostępne odcienie i chętnie wyślę zdjęcie wybranego koloru lub zestawienie kilku opcji!",
+    "options": [],
+    "items": [
+      {
+        "price": 280,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Świnka",
+    "slug": "świnka",
+    "price": 100,
+    "minPrice": 100,
+    "maxPrice": 100,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Szydełkowa świnka</strong></p><p>Ręcznie wykonana szydełkowa świnka wiernie przypomina prawdziwego prosiaka. Posiada oczka zapinane od wewnętrznej strony, a wnętrze wypełnione jest <strong>hipoalergiczną kulką silikonową</strong>, dzięki czemu można ją prać.</p><p>&nbsp;</p><p><strong>Dlaczego warto?</strong></p><p>• ręcznie wykonana maskotka handmade<br>• miękkie, hipoalergiczne wypełnienie – możliwość prania<br>• starannie wykonane detale, realistyczny wygląd<br>• uniwersalny dodatek do kolekcji lub dekoracji</p><p>&nbsp;</p><p><strong>Urocza świnka, która zachwyca szczegółami i świetnie sprawdzi się jako prezent lub element kolekcji.</strong></p>",
+    "description": "Szydełkowa świnka\n\nRęcznie wykonana szydełkowa świnka wiernie przypomina prawdziwego prosiaka. Posiada oczka zapinane od wewnętrznej strony, a wnętrze wypełnione jest hipoalergiczną kulką silikonową, dzięki czemu można ją prać.\n\nDlaczego warto?\n\n• ręcznie wykonana maskotka handmade\n• miękkie, hipoalergiczne wypełnienie – możliwość prania\n• starannie wykonane detale, realistyczny wygląd\n• uniwersalny dodatek do kolekcji lub dekoracji\n\nUrocza świnka, która zachwyca szczegółami i świetnie sprawdzi się jako prezent lub element kolekcji.",
+    "options": [],
+    "items": [
+      {
+        "price": 100,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Torebka Aurora",
+    "slug": "torebka-aurora",
+    "price": 160,
+    "minPrice": 160,
+    "maxPrice": 175,
+    "hasOptions": true,
+    "descriptionHtml": "<p><strong>Torebka Aurora</strong></p><p>&nbsp;</p><p>To elegancka torebka do ręki, która łączy styl i funkcjonalność. Ma ciekawy kształt i pomieści wszystkie najpotrzebniejsze drobiazgi, dzięki czemu sprawdzi się zarówno na co dzień, jak i na wyjątkowe okazje.</p><p>Wykonana została z <strong>wysokiej jakości poliestrowej przędzy produkowanej w Polsce</strong>, dostępnej w aż <strong>70 kolorach</strong>, co pozwala dopasować torebkę do własnego stylu. Torebka zapinana jest na <strong>zamek</strong>, co zwiększa wygodę i bezpieczeństwo przechowywanych rzeczy.</p><p><strong>Wymiary: </strong>szerokość: 25cm, wysokość: 30cm, głębokość 8cm</p><p>&nbsp;</p><p><strong>Dlaczego Aurora?</strong></p><ul>\t<li>\t<p>elegancki i przemyślany kształt</p>\t</li>\t<li>\t<p>praktyczne zapięcie na zamek</p>\t</li>\t<li>\t<p>wykonana z trwałej, polskiej przędzy poliestrowej</p>\t</li>\t<li>\t<p>dostępna w aż 70 kolorach</p>\t</li>\t<li>\t<p>idealna na co dzień i na specjalne okazje</p>\t</li>\t<li>\t<p>pomieści najpotrzebniejsze drobiazgi</p>\t</li></ul><p>&nbsp;</p><p><strong>Jeśli zastanawiasz się nad wyborem koloru, napisz śmiało – posiadam karty kolorystyczne obejmujące wszystkie dostępne odcienie i chętnie wyślę zdjęcie wybranego koloru lub zestawienie kilku opcji!</strong></p>",
+    "description": "Torebka Aurora\n\n \n\nTo elegancka torebka do ręki, która łączy styl i funkcjonalność. Ma ciekawy kształt i pomieści wszystkie najpotrzebniejsze drobiazgi, dzięki czemu sprawdzi się zarówno na co dzień, jak i na wyjątkowe okazje.\n\nWykonana została z wysokiej jakości poliestrowej przędzy produkowanej w Polsce, dostępnej w aż 70 kolorach, co pozwala dopasować torebkę do własnego stylu. Torebka zapinana jest na zamek, co zwiększa wygodę i bezpieczeństwo przechowywanych rzeczy.\n\nWymiary: szerokość: 25cm, wysokość: 30cm, głębokość 8cm\n\n \n\nDlaczego Aurora?\n\n\t• \telegancki i przemyślany kształt\n\n\t\n\t• \tpraktyczne zapięcie na zamek\n\n\t\n\t• \twykonana z trwałej, polskiej przędzy poliestrowej\n\n\t\n\t• \tdostępna w aż 70 kolorach\n\n\t\n\t• \tidealna na co dzień i na specjalne okazje\n\n\t\n\t• \tpomieści najpotrzebniejsze drobiazgi\n\n\t\n \n\nJeśli zastanawiasz się nad wyborem koloru, napisz śmiało – posiadam karty kolorystyczne obejmujące wszystkie dostępne odcienie i chętnie wyślę zdjęcie wybranego koloru lub zestawienie kilku opcji!",
+    "options": [
+      {
+        "title": "Breloczek",
+        "selections": [
+          {
+            "id": 4,
+            "value": "chwost"
+          },
+          {
+            "id": 5,
+            "value": "jedna róża"
+          },
+          {
+            "id": 6,
+            "value": "dwie róże"
+          }
+        ]
+      }
+    ],
+    "items": [
+      {
+        "price": 160,
+        "selections": [
+          4
+        ],
+        "surcharge": 0
+      },
+      {
+        "price": 170,
+        "selections": [
+          5
+        ],
+        "surcharge": 10
+      },
+      {
+        "price": 175,
+        "selections": [
+          6
+        ],
+        "surcharge": 15
+      }
+    ]
+  },
+  {
+    "name": "Torebka Bellona",
+    "slug": "torebka-bellona",
+    "price": 165,
+    "minPrice": 165,
+    "maxPrice": 165,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Torebka Bellona</strong></p><p>&nbsp;</p><p>To szydełkowa torebka, która w subtelny, a jednocześnie oryginalny sposób uzupełni każdą stylizację. Wykonana została z najwyższej jakości <strong>bawełnianej przędzy produkowanej w Polsce.</strong> Do wyboru jest <strong>ponad 70 kolorów</strong>, a dodatki mogą być w odcieniach <strong>srebra lub złota.</strong></p><p>Torebka zawieszona jest na <strong>eleganckim łańcuszku</strong>, który – na życzenie – może być przepleciony przędzą w kolorze torebki. To model niewielki, ale wyjątkowo praktyczny i <strong>najczęściej wybierany przez klientki</strong>, co czyni go idealnym dodatkiem zarówno na co dzień, jak i na specjalne okazje.</p><p><strong>Wymiary:&nbsp;</strong>podstawa: 20cmx11cm, wysokość ok. 14cm</p><p>&nbsp;</p><p><strong>Dlaczego Bellona?</strong></p><ul>\t<li>\t<p>najmniejsza, a zarazem najczęściej wybierana torebka</p>\t</li>\t<li>\t<p>wykonana z najwyższej jakości bawełnianej przędzy</p>\t</li>\t<li>\t<p>elegancki łańcuszek z możliwością przeplecenia przędzą</p>\t</li>\t<li>\t<p>ponad 70 kolorów do wyboru</p>\t</li>\t<li>\t<p>dodatki w odcieniach srebra lub złota</p>\t</li>\t<li>\t<p>uniwersalna – pasuje zarówno do casualowych, jak i eleganckich stylizacji</p>\t</li></ul><p>&nbsp;</p><p><strong>Jeśli zastanawiasz się nad wyborem koloru, napisz śmiało – posiadam karty kolorystyczne obejmujące wszystkie dostępne odcienie i chętnie wyślę zdjęcie wybranego koloru lub zestawienie kilku opcji!</strong></p>",
+    "description": "Torebka Bellona\n\n \n\nTo szydełkowa torebka, która w subtelny, a jednocześnie oryginalny sposób uzupełni każdą stylizację. Wykonana została z najwyższej jakości bawełnianej przędzy produkowanej w Polsce. Do wyboru jest ponad 70 kolorów, a dodatki mogą być w odcieniach srebra lub złota.\n\nTorebka zawieszona jest na eleganckim łańcuszku, który – na życzenie – może być przepleciony przędzą w kolorze torebki. To model niewielki, ale wyjątkowo praktyczny i najczęściej wybierany przez klientki, co czyni go idealnym dodatkiem zarówno na co dzień, jak i na specjalne okazje.\n\nWymiary: podstawa: 20cmx11cm, wysokość ok. 14cm\n\n \n\nDlaczego Bellona?\n\n\t• \tnajmniejsza, a zarazem najczęściej wybierana torebka\n\n\t\n\t• \twykonana z najwyższej jakości bawełnianej przędzy\n\n\t\n\t• \telegancki łańcuszek z możliwością przeplecenia przędzą\n\n\t\n\t• \tponad 70 kolorów do wyboru\n\n\t\n\t• \tdodatki w odcieniach srebra lub złota\n\n\t\n\t• \tuniwersalna – pasuje zarówno do casualowych, jak i eleganckich stylizacji\n\n\t\n \n\nJeśli zastanawiasz się nad wyborem koloru, napisz śmiało – posiadam karty kolorystyczne obejmujące wszystkie dostępne odcienie i chętnie wyślę zdjęcie wybranego koloru lub zestawienie kilku opcji!",
+    "options": [],
+    "items": [
+      {
+        "price": 165,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Torebka Carmenta",
+    "slug": "torebka-carmenta",
+    "price": 210,
+    "minPrice": 210,
+    "maxPrice": 210,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Torebka Carmenta</strong></p><p>&nbsp;</p><p>To szydełkowa torebka wykonana z <strong>połączonych kwadratów z kwiatowym motywem</strong>. Łączy w sobie prostotę i oryginalny charakter – wzór kwiatowy nadaje jej subtelności, a klasyczny kształt sprawia, że jest praktyczna i wygodna.</p><p>W środku znajduje się <strong>lniana podszewka</strong>, dzięki czemu torebka jest w pełni zabudowana i jeszcze mocniejsza. Rączki mają odpowiednią długość, aby można ją było swobodnie nosić <strong>na ramieniu</strong>. Dodatkowym atutem jest możliwość wyboru dowolnych kolorów, co pozwala stworzyć model dopasowany do Twojego stylu.</p><p><strong>Wymiary:</strong> 31x32cm</p><p>&nbsp;</p><p><strong>Dlaczego Carmenta?</strong></p><ul>\t<li>\t<p>kwiatowy motyw w klasycznej formie kwadratów</p>\t</li>\t<li>\t<p>lekka, ale pojemna</p>\t</li>\t<li>\t<p>wnętrze z lnianą podszewką</p>\t</li>\t<li>\t<p>rączki wygodne do noszenia na ramieniu</p>\t</li>\t<li>\t<p>możliwość indywidualnego doboru kolorów</p>\t</li></ul>",
+    "description": "Torebka Carmenta\n\n \n\nTo szydełkowa torebka wykonana z połączonych kwadratów z kwiatowym motywem. Łączy w sobie prostotę i oryginalny charakter – wzór kwiatowy nadaje jej subtelności, a klasyczny kształt sprawia, że jest praktyczna i wygodna.\n\nW środku znajduje się lniana podszewka, dzięki czemu torebka jest w pełni zabudowana i jeszcze mocniejsza. Rączki mają odpowiednią długość, aby można ją było swobodnie nosić na ramieniu. Dodatkowym atutem jest możliwość wyboru dowolnych kolorów, co pozwala stworzyć model dopasowany do Twojego stylu.\n\nWymiary: 31x32cm\n\n \n\nDlaczego Carmenta?\n\n\t• \tkwiatowy motyw w klasycznej formie kwadratów\n\n\t\n\t• \tlekka, ale pojemna\n\n\t\n\t• \twnętrze z lnianą podszewką\n\n\t\n\t• \trączki wygodne do noszenia na ramieniu\n\n\t\n\t• \tmożliwość indywidualnego doboru kolorów",
+    "options": [],
+    "items": [
+      {
+        "price": 210,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Torebka Ceres",
+    "slug": "torebka-ceres",
+    "price": 220,
+    "minPrice": 220,
+    "maxPrice": 220,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Torebka Ceres</strong></p><p>&nbsp;</p><p>To <strong>okrągła</strong> szydełkowa torebka z uszkami, wykonana z wysokiej jakości <strong>przędzy bawełnianej produkowanej w Polsce</strong>. Jej kształt sprawia, że prezentuje się wyjątkowo, a jednocześnie pozostaje praktyczna i wygodna.</p><p>Do kompletu dołączony jest <strong>szydełkowy pasek</strong>, dzięki któremu torebkę można nosić także przez ramię. Całość uzupełnia <strong>chwost w kolorze torebki</strong>, który dodaje jej lekkości i charakteru. Do wyboru jest ponad 70 kolorów, co pozwala dopasować model do indywidualnych preferencji.</p><p><strong>Wymiary:</strong> średnica około. 31cm</p><p>&nbsp;</p><p><strong>Dlaczego Ceres?</strong></p><ul>\t<li>\t<p>oryginalny, okrągły kształt</p>\t</li>\t<li>\t<p>wygodne uszka + pasek do noszenia przez ramię</p>\t</li>\t<li>\t<p>ozdobny chwost w kolorze torebki</p>\t</li>\t<li>\t<p>wykonana z trwałej, bawełnianej przędzy</p>\t</li>\t<li>\t<p>ponad 70 kolorów do wyboru</p>\t</li>\t<li>\t<p>uniwersalna – pasuje zarówno do letnich, jak i codziennych stylizacji</p>\t</li></ul><p>&nbsp;</p><p><strong>Jeśli zastanawiasz się nad wyborem koloru, napisz śmiało – posiadam karty kolorystyczne obejmujące wszystkie dostępne odcienie i chętnie wyślę zdjęcie wybranego koloru lub zestawienie kilku opcji!</strong></p>",
+    "description": "Torebka Ceres\n\n \n\nTo okrągła szydełkowa torebka z uszkami, wykonana z wysokiej jakości przędzy bawełnianej produkowanej w Polsce. Jej kształt sprawia, że prezentuje się wyjątkowo, a jednocześnie pozostaje praktyczna i wygodna.\n\nDo kompletu dołączony jest szydełkowy pasek, dzięki któremu torebkę można nosić także przez ramię. Całość uzupełnia chwost w kolorze torebki, który dodaje jej lekkości i charakteru. Do wyboru jest ponad 70 kolorów, co pozwala dopasować model do indywidualnych preferencji.\n\nWymiary: średnica około. 31cm\n\n \n\nDlaczego Ceres?\n\n\t• \toryginalny, okrągły kształt\n\n\t\n\t• \twygodne uszka + pasek do noszenia przez ramię\n\n\t\n\t• \tozdobny chwost w kolorze torebki\n\n\t\n\t• \twykonana z trwałej, bawełnianej przędzy\n\n\t\n\t• \tponad 70 kolorów do wyboru\n\n\t\n\t• \tuniwersalna – pasuje zarówno do letnich, jak i codziennych stylizacji\n\n\t\n \n\nJeśli zastanawiasz się nad wyborem koloru, napisz śmiało – posiadam karty kolorystyczne obejmujące wszystkie dostępne odcienie i chętnie wyślę zdjęcie wybranego koloru lub zestawienie kilku opcji!",
+    "options": [],
+    "items": [
+      {
+        "price": 220,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Torebka Concordia",
+    "slug": "torebka-concordia",
+    "price": 320,
+    "minPrice": 320,
+    "maxPrice": 320,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Torebka</strong> <strong>Concordia</strong></p><p>&nbsp;</p><p>Styl i funkcjonalność w najlepszym wydaniu! Torebka <strong>Concordia</strong> została wykonana z wyjątkowo <strong>wytrzymałego sznurka poliestrowego</strong> produkowanego w Polsce, dostępnego w ponad <strong>70 modnych kolorach</strong>, dzięki czemu łatwo dopasujesz ją do swojego stylu.</p><p>Jej <strong>prostą formę</strong> zdobią trzy szydełkowe warkocze z przodu oraz <strong>ozdobna lamówka</strong> w górnej części, które nadają całości eleganckiego charakteru.</p><p>Dno i uszy wykonane są z <strong>naturalnej skóry wysokiej jakości</strong> (również polskiej produkcji), co zapewnia trwałość i komfort użytkowania. Wnętrze wykończone jest <strong>podszewką</strong>, która dodaje praktyczności i estetyki.</p><p>Torebka bez problemu <strong>mieści format A4</strong>, dlatego świetnie sprawdzi się zarówno na co dzień, jak i do pracy.</p><p><strong>Wymiary:</strong>&nbsp;podstawa: 12 × 32 cm, wysokość: 23 cm</p><p>&nbsp;</p><p><strong>Dlaczego Concordia?</strong></p><ul>\t<li>elegancki i ponadczasowy design</li>\t<li>połączenie wytrzymałego sznurka i naturalnej skóry</li>\t<li>mieści A4 – idealna do pracy i na co dzień</li>\t<li>dostępna w ponad 70 kolorach</li></ul><p>&nbsp;</p><p><strong>Jeśli zastanawiasz się nad wyborem koloru, napisz śmiało – posiadam karty kolorystyczne obejmujące wszystkie dostępne odcienie i chętnie wyślę zdjęcie wybranego koloru lub zestawienie kilku opcji!</strong></p>",
+    "description": "Torebka Concordia\n\n \n\nStyl i funkcjonalność w najlepszym wydaniu! Torebka Concordia została wykonana z wyjątkowo wytrzymałego sznurka poliestrowego produkowanego w Polsce, dostępnego w ponad 70 modnych kolorach, dzięki czemu łatwo dopasujesz ją do swojego stylu.\n\nJej prostą formę zdobią trzy szydełkowe warkocze z przodu oraz ozdobna lamówka w górnej części, które nadają całości eleganckiego charakteru.\n\nDno i uszy wykonane są z naturalnej skóry wysokiej jakości (również polskiej produkcji), co zapewnia trwałość i komfort użytkowania. Wnętrze wykończone jest podszewką, która dodaje praktyczności i estetyki.\n\nTorebka bez problemu mieści format A4, dlatego świetnie sprawdzi się zarówno na co dzień, jak i do pracy.\n\nWymiary: podstawa: 12 × 32 cm, wysokość: 23 cm\n\n \n\nDlaczego Concordia?\n\n\t• elegancki i ponadczasowy design\n\t• połączenie wytrzymałego sznurka i naturalnej skóry\n\t• mieści A4 – idealna do pracy i na co dzień\n\t• dostępna w ponad 70 kolorach\n \n\nJeśli zastanawiasz się nad wyborem koloru, napisz śmiało – posiadam karty kolorystyczne obejmujące wszystkie dostępne odcienie i chętnie wyślę zdjęcie wybranego koloru lub zestawienie kilku opcji!",
+    "options": [],
+    "items": [
+      {
+        "price": 320,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Torebka Diana",
+    "slug": "torebka-diana",
+    "price": 265,
+    "minPrice": 265,
+    "maxPrice": 265,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Torebka Diana</strong></p><p>&nbsp;</p><p>Elegancja i oryginalność w jednym! Torebka Diana powstała na <strong>diamentowej bazie z naturalnej skóry</strong>, wokół której wykonano unikatowy szydełkowy ścieg, nadający całości charakteru i lekkości. Model zapinany jest na magnes, a z przodu znajduje się ozdobny pasek podkreślający stylowy wygląd.</p><p>Torebka zawieszona jest na <strong>skórzanym pasku z klamerką</strong>, który można regulować, dopasowując długość do własnych potrzeb. Wykonana z wysokiej jakości materiałów, łączy funkcjonalność z eleganckim designem.</p><p><strong>Wymiary:</strong> szerokość: 27 cm, wysokość: 23 cm</p><p>&nbsp;</p><p><strong>Dlaczego Diana?</strong></p><ul>\t<li>\t<p>unikatowa konstrukcja: diamentowa baza + szydełkowy ścieg</p>\t</li>\t<li>\t<p>elegancki, stylowy wygląd z ozdobnym paskiem</p>\t</li>\t<li>\t<p>regulowany skórzany pasek dla wygody noszenia</p>\t</li>\t<li>\t<p>wysokiej jakości materiały, trwałość i komfort użytkowania</p>\t</li>\t<li>oryginalny model, który wyróżnia się spośród innych torebek</li></ul><p><br><strong>Jeśli zastanawiasz się nad wyborem koloru, napisz śmiało – posiadam karty kolorystyczne obejmujące wszystkie dostępne odcienie i chętnie wyślę zdjęcie wybranego koloru lub zestawienie kilku opcji!</strong></p>",
+    "description": "Torebka Diana\n\n \n\nElegancja i oryginalność w jednym! Torebka Diana powstała na diamentowej bazie z naturalnej skóry, wokół której wykonano unikatowy szydełkowy ścieg, nadający całości charakteru i lekkości. Model zapinany jest na magnes, a z przodu znajduje się ozdobny pasek podkreślający stylowy wygląd.\n\nTorebka zawieszona jest na skórzanym pasku z klamerką, który można regulować, dopasowując długość do własnych potrzeb. Wykonana z wysokiej jakości materiałów, łączy funkcjonalność z eleganckim designem.\n\nWymiary: szerokość: 27 cm, wysokość: 23 cm\n\n \n\nDlaczego Diana?\n\n\t• \tunikatowa konstrukcja: diamentowa baza + szydełkowy ścieg\n\n\t\n\t• \telegancki, stylowy wygląd z ozdobnym paskiem\n\n\t\n\t• \tregulowany skórzany pasek dla wygody noszenia\n\n\t\n\t• \twysokiej jakości materiały, trwałość i komfort użytkowania\n\n\t\n\t• oryginalny model, który wyróżnia się spośród innych torebek\n\nJeśli zastanawiasz się nad wyborem koloru, napisz śmiało – posiadam karty kolorystyczne obejmujące wszystkie dostępne odcienie i chętnie wyślę zdjęcie wybranego koloru lub zestawienie kilku opcji!",
+    "options": [],
+    "items": [
+      {
+        "price": 265,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Torebka Febris",
+    "slug": "torebka-febris",
+    "price": 180,
+    "minPrice": 180,
+    "maxPrice": 180,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Torebka Febris</strong></p><p>&nbsp;</p><p>To klasyczna listonoszka w <strong>nowoczesnym wydaniu</strong>. Kwadratowy kształt i efektowny <strong>jodełkowy ścieg</strong> sprawiają, że prezentuje się elegancko, a jednocześnie zachowuje ponadczasowy charakter.</p><p>Wykonana została ze <strong>sznurka poliestrowego produkowanego w Polsce</strong>, dostępnego w ponad <strong>70 kolorach</strong>, co pozwala stworzyć idealną wersję dopasowaną do Twojego stylu. Dodatki mogą być w odcieniach <strong>srebra lub złota</strong>, a wygodny sposób noszenia daje Ci wybór – <strong>w ręku </strong>(na odpinanej rączce) lub<strong> na ramieniu</strong>, dzięki praktycznemu łańcuszkowi.</p><p><strong>Wymiary:</strong> 28x28cm, bok 10cm</p><p>&nbsp;</p><p><strong>Dlaczego Febris?</strong></p><ul>\t<li>Elegancka forma w kształcie listonoszki</li>\t<li>Ozdobny jodełkowy ścieg nadający wyjątkowego charakteru</li>\t<li>Możliwość wyboru koloru sznurka i dodatków (srebro/złoto)</li>\t<li>Funkcjonalność – rączka odpinana + łańcuszek do noszenia przez ramię</li>\t<li>Ręczne, precyzyjne wykonanie z dbałością o szczegóły</li></ul><p>&nbsp;</p><p><strong>Jeśli zastanawiasz się nad wyborem koloru, napisz śmiało – posiadam karty kolorystyczne obejmujące wszystkie dostępne odcienie i chętnie wyślę zdjęcie wybranego koloru lub zestawienie kilku opcji!</strong></p>",
+    "description": "Torebka Febris\n\n \n\nTo klasyczna listonoszka w nowoczesnym wydaniu. Kwadratowy kształt i efektowny jodełkowy ścieg sprawiają, że prezentuje się elegancko, a jednocześnie zachowuje ponadczasowy charakter.\n\nWykonana została ze sznurka poliestrowego produkowanego w Polsce, dostępnego w ponad 70 kolorach, co pozwala stworzyć idealną wersję dopasowaną do Twojego stylu. Dodatki mogą być w odcieniach srebra lub złota, a wygodny sposób noszenia daje Ci wybór – w ręku (na odpinanej rączce) lub na ramieniu, dzięki praktycznemu łańcuszkowi.\n\nWymiary: 28x28cm, bok 10cm\n\n \n\nDlaczego Febris?\n\n\t• Elegancka forma w kształcie listonoszki\n\t• Ozdobny jodełkowy ścieg nadający wyjątkowego charakteru\n\t• Możliwość wyboru koloru sznurka i dodatków (srebro/złoto)\n\t• Funkcjonalność – rączka odpinana + łańcuszek do noszenia przez ramię\n\t• Ręczne, precyzyjne wykonanie z dbałością o szczegóły\n \n\nJeśli zastanawiasz się nad wyborem koloru, napisz śmiało – posiadam karty kolorystyczne obejmujące wszystkie dostępne odcienie i chętnie wyślę zdjęcie wybranego koloru lub zestawienie kilku opcji!",
+    "options": [],
+    "items": [
+      {
+        "price": 180,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Torebka Feronia",
+    "slug": "torebka-feronia",
+    "price": 395,
+    "minPrice": 395,
+    "maxPrice": 510,
+    "hasOptions": true,
+    "descriptionHtml": "<p><strong>Torebka Feronia</strong></p><p>&nbsp;</p><p>Róża, elegancja i funkcjonalność – to właśnie one tworzą szydełkową torebkę Feronia.</p><p>Wykonana ze <strong>sznurka poliestrowego produkowanego w Polsce</strong>, zdobiona <strong>unikatowym ściegiem jodełkowym</strong>, który nadaje jej wyjątkową strukturę. Na środku&nbsp;znajduje się <strong>duża, dekoracyjna róża z listkami</strong>, przyciągająca spojrzenia i nadająca całości kobiecego charakteru.</p><p>Torebka jest również niezwykle praktyczna – <strong>mieści format A4</strong>, dlatego świetnie sprawdzi się zarówno na co dzień, jak i w pracy. Dodatkowo można skorzystać z opcji dodatkowej jaką jest wszycie skórzanego panelu zamkowego dla jeszcze większego bezpieczeństwa (zdjęcie 9) Wnętrze wykończone zostało <strong>podszewką</strong>, a <strong>uszy i dno z naturalnej skóry</strong> gwarantują trwałość i wygodę noszenia.</p><p><strong>Wymiary:</strong> podstawa 12 × 32 cm, wysokość ok. 24 cm</p><p>&nbsp;</p><p><strong>Dlaczego Feronia?</strong></p><ul>\t<li>\t<p>unikatowy <strong>ściegiem jodełkowy</strong>, który wyróżnia torebkę,</p>\t</li>\t<li>\t<p>dekoracyjna <strong>róża z listkami</strong> jako elegancki akcent,</p>\t</li>\t<li>\t<p><strong>mieści format A4</strong> – idealna na co dzień i do pracy,</p>\t</li>\t<li>\t<p><strong>naturalna skóra</strong> w dnie i uchwytach zwiększa trwałość,</p>\t</li>\t<li>\t<p>ponad <strong>70 kolorów do wyboru w tym możliwość zamówienia torebki ombre (zdjęcie 2) z mieszanką do 5 wybranych kolorów</strong></p>\t</li></ul><p>&nbsp;</p><p><strong>Jeśli zastanawiasz się nad wyborem koloru, napisz śmiało – posiadam karty kolorystyczne obejmujące wszystkie dostępne odcienie i chętnie wyślę zdjęcie wybranego koloru lub zestawienie kilku opcji!</strong></p>",
+    "description": "Torebka Feronia\n\n \n\nRóża, elegancja i funkcjonalność – to właśnie one tworzą szydełkową torebkę Feronia.\n\nWykonana ze sznurka poliestrowego produkowanego w Polsce, zdobiona unikatowym ściegiem jodełkowym, który nadaje jej wyjątkową strukturę. Na środku znajduje się duża, dekoracyjna róża z listkami, przyciągająca spojrzenia i nadająca całości kobiecego charakteru.\n\nTorebka jest również niezwykle praktyczna – mieści format A4, dlatego świetnie sprawdzi się zarówno na co dzień, jak i w pracy. Dodatkowo można skorzystać z opcji dodatkowej jaką jest wszycie skórzanego panelu zamkowego dla jeszcze większego bezpieczeństwa (zdjęcie 9) Wnętrze wykończone zostało podszewką, a uszy i dno z naturalnej skóry gwarantują trwałość i wygodę noszenia.\n\nWymiary: podstawa 12 × 32 cm, wysokość ok. 24 cm\n\n \n\nDlaczego Feronia?\n\n\t• \tunikatowy ściegiem jodełkowy, który wyróżnia torebkę,\n\n\t\n\t• \tdekoracyjna róża z listkami jako elegancki akcent,\n\n\t\n\t• \tmieści format A4 – idealna na co dzień i do pracy,\n\n\t\n\t• \tnaturalna skóra w dnie i uchwytach zwiększa trwałość,\n\n\t\n\t• \tponad 70 kolorów do wyboru w tym możliwość zamówienia torebki ombre (zdjęcie 2) z mieszanką do 5 wybranych kolorów\n\n\t\n \n\nJeśli zastanawiasz się nad wyborem koloru, napisz śmiało – posiadam karty kolorystyczne obejmujące wszystkie dostępne odcienie i chętnie wyślę zdjęcie wybranego koloru lub zestawienie kilku opcji!",
+    "options": [
+      {
+        "title": "Zapięcie na zamek",
+        "selections": [
+          {
+            "id": 1,
+            "value": "brak"
+          },
+          {
+            "id": 2,
+            "value": "z panelem zamkowym"
+          }
+        ]
+      },
+      {
+        "title": "Kolor:",
+        "selections": [
+          {
+            "id": 3,
+            "value": "jeden kolor sznurka"
+          },
+          {
+            "id": 4,
+            "value": "sznurek ombre"
+          }
+        ]
+      }
+    ],
+    "items": [
+      {
+        "price": 395,
+        "selections": [
+          1,
+          3
+        ],
+        "surcharge": 0
+      },
+      {
+        "price": 465,
+        "selections": [
+          1,
+          4
+        ],
+        "surcharge": 70
+      },
+      {
+        "price": 455,
+        "selections": [
+          2,
+          3
+        ],
+        "surcharge": 60
+      },
+      {
+        "price": 510,
+        "selections": [
+          2,
+          4
+        ],
+        "surcharge": 115
+      }
+    ]
+  },
+  {
+    "name": "Torebka Flora",
+    "slug": "torebka-flora",
+    "price": 240,
+    "minPrice": 240,
+    "maxPrice": 240,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Torebka Flora</strong></p><p>&nbsp;</p><p><strong>Kwiaty, perły, elegancja i funkcjonalność</strong> – to właśnie esencja tej szydełkowej torebki.</p><p>Flora to <strong>kompaktowa torebka</strong> do ręki lub na ramię, która pomieści wszystkie niezbędne drobiazgi. Wykonana jest ze <strong>sznurka poliestrowego</strong> produkowanego w Polsce, dostępnego w ponad <strong>70 kolorach</strong>. Szydełkowana specjalnym <strong>dwustronnym ściegiem</strong>, dzięki czemu zachowuje <strong>sztywność i perfekcyjny kształt</strong>.</p><p>Największym atutem jest klapka ozdobiona <strong>ręcznie robionymi kwiatami z perełkami</strong> – subtelna dekoracja, która dodaje całości elegancji i wyjątkowego charakteru.</p><p>To <strong>uniwersalny model</strong> – sprawdzi się zarówno na co dzień, jak i jako efektowne uzupełnienie wieczorowej czy eleganckiej stylizacji.</p><p><strong>Wymiary:</strong>&nbsp;podstawa: 7 x 21cm, wysokość:&nbsp;16cm</p><p>&nbsp;</p><p><strong>Dlaczego Flora?</strong></p><ul>\t<li>piękne ręczne zdobienie z kwiatami i perełkami</li>\t<li>trwała forma dzięki wyjątkowemu splotowi</li>\t<li>kompaktowa, a jednocześnie pojemna</li>\t<li>ponad 70 kolorów do wyboru</li></ul><p>&nbsp;</p><p><strong>Jeśli zastanawiasz się nad wyborem koloru, napisz śmiało – posiadam karty kolorystyczne obejmujące wszystkie dostępne odcienie i chętnie wyślę zdjęcie wybranego koloru lub zestawienie kilku opcji!</strong></p>",
+    "description": "Torebka Flora\n\n \n\nKwiaty, perły, elegancja i funkcjonalność – to właśnie esencja tej szydełkowej torebki.\n\nFlora to kompaktowa torebka do ręki lub na ramię, która pomieści wszystkie niezbędne drobiazgi. Wykonana jest ze sznurka poliestrowego produkowanego w Polsce, dostępnego w ponad 70 kolorach. Szydełkowana specjalnym dwustronnym ściegiem, dzięki czemu zachowuje sztywność i perfekcyjny kształt.\n\nNajwiększym atutem jest klapka ozdobiona ręcznie robionymi kwiatami z perełkami – subtelna dekoracja, która dodaje całości elegancji i wyjątkowego charakteru.\n\nTo uniwersalny model – sprawdzi się zarówno na co dzień, jak i jako efektowne uzupełnienie wieczorowej czy eleganckiej stylizacji.\n\nWymiary: podstawa: 7 x 21cm, wysokość: 16cm\n\n \n\nDlaczego Flora?\n\n\t• piękne ręczne zdobienie z kwiatami i perełkami\n\t• trwała forma dzięki wyjątkowemu splotowi\n\t• kompaktowa, a jednocześnie pojemna\n\t• ponad 70 kolorów do wyboru\n \n\nJeśli zastanawiasz się nad wyborem koloru, napisz śmiało – posiadam karty kolorystyczne obejmujące wszystkie dostępne odcienie i chętnie wyślę zdjęcie wybranego koloru lub zestawienie kilku opcji!",
+    "options": [],
+    "items": [
+      {
+        "price": 240,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Torebka Izyda",
+    "slug": "torebka-izyda",
+    "price": 235,
+    "minPrice": 235,
+    "maxPrice": 235,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Torebka Izyda</strong>&nbsp;</p><p>&nbsp;</p><p>To połączenie wygody, funkcjonalności i unikatowego stylu. Wyróżnia się <strong>oryginalnym ściegiem</strong> oraz rączkami zakończonymi <strong>ozdobnymi frędzlami</strong>, które nadają jej wyjątkowego charakteru. Torebka zapinana jest <strong>na magnes</strong>, co sprawia, że jest jednocześnie praktyczna i szybka w codziennym użytkowaniu.</p><p>Możesz nosić ją w dłoni – <strong>za rączki</strong> – albo na ramieniu, dzięki dołączonemu <strong>łańcuszkowi</strong>. Wykonana została z wysokiej jakości bawełnianej <strong>przędzy produkowanej w Polsce</strong>, dostępnej <strong>w ponad 70 kolorach</strong>, co daje ogromne możliwości personalizacji.</p><p><strong>Wymiary: </strong>podstawa 7x25cm, wysokość 19cm</p><p>&nbsp;</p><p><strong>Dlaczego Izyda?</strong></p><ul>\t<li>Oryginalny ścieg podkreślający wyjątkowy charakter torebki</li>\t<li>Rączki wykończone ozdobnymi frędzlami</li>\t<li>Wygodne zapinanie na magnes</li>\t<li>Dwa sposoby noszenia: w dłoni lub na ramieniu</li>\t<li>Wykonana z naturalnej, polskiej przędzy bawełnianej</li>\t<li>Możliwość wyboru spośród ponad 70 kolorów</li></ul><p>&nbsp;</p><p><strong>Jeśli zastanawiasz się nad wyborem koloru, napisz śmiało – posiadam karty kolorystyczne obejmujące wszystkie dostępne odcienie i chętnie wyślę zdjęcie wybranego koloru lub zestawienie kilku opcji!</strong></p>",
+    "description": "Torebka Izyda \n\n \n\nTo połączenie wygody, funkcjonalności i unikatowego stylu. Wyróżnia się oryginalnym ściegiem oraz rączkami zakończonymi ozdobnymi frędzlami, które nadają jej wyjątkowego charakteru. Torebka zapinana jest na magnes, co sprawia, że jest jednocześnie praktyczna i szybka w codziennym użytkowaniu.\n\nMożesz nosić ją w dłoni – za rączki – albo na ramieniu, dzięki dołączonemu łańcuszkowi. Wykonana została z wysokiej jakości bawełnianej przędzy produkowanej w Polsce, dostępnej w ponad 70 kolorach, co daje ogromne możliwości personalizacji.\n\nWymiary: podstawa 7x25cm, wysokość 19cm\n\n \n\nDlaczego Izyda?\n\n\t• Oryginalny ścieg podkreślający wyjątkowy charakter torebki\n\t• Rączki wykończone ozdobnymi frędzlami\n\t• Wygodne zapinanie na magnes\n\t• Dwa sposoby noszenia: w dłoni lub na ramieniu\n\t• Wykonana z naturalnej, polskiej przędzy bawełnianej\n\t• Możliwość wyboru spośród ponad 70 kolorów\n \n\nJeśli zastanawiasz się nad wyborem koloru, napisz śmiało – posiadam karty kolorystyczne obejmujące wszystkie dostępne odcienie i chętnie wyślę zdjęcie wybranego koloru lub zestawienie kilku opcji!",
+    "options": [],
+    "items": [
+      {
+        "price": 235,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Torebka Junona",
+    "slug": "torebka-junona",
+    "price": 395,
+    "minPrice": 395,
+    "maxPrice": 395,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Torebka Junona</strong></p><p>&nbsp;</p><p>To największy model w mojej ofercie – idealna dla osób, które potrzebują pojemnej, a jednocześnie eleganckiej torebki na co dzień.</p><p>Wykonana została z <strong>przędzy&nbsp;bawełnianianej&nbsp;produkowanej&nbsp;w Polsce</strong>, co gwarantuje trwałość i piękny wygląd. Do wyboru jest ponad <strong>70 kolorów! </strong>Torebka posiada <strong>podszewkę</strong> oraz jest <strong>zapinana na zamek</strong>, dzięki czemu wszystkie drobiazgi są bezpieczne. W górnej części znajduje się <strong>ozdobny pas jodełkowego ściegu</strong>, który nadaje jej wyjątkowego charakteru. <strong>Dno i uszy wykonane są z naturalnej skóry</strong>, co podkreśla jakość i zwiększa wygodę użytkowania.</p><p><strong>Wymiary:</strong> podstawa 12 × 32 cm, wysokość ok. 43 cm.</p><p>&nbsp;</p><p><strong>Dlaczego Junona?</strong></p><ul>\t<li>\t<p>największy model w kolekcji – bardzo pojemny,</p>\t</li>\t<li>\t<p>elegancki pas jodełkowego ściegu,</p>\t</li>\t<li>\t<p>naturalna skóra w detalach,</p>\t</li>\t<li>\t<p>praktyczne zapięcie na zamek i podszewka.</p>\t</li></ul><p>&nbsp;</p><p><strong>Jeśli zastanawiasz się nad wyborem koloru, napisz śmiało – posiadam karty kolorystyczne obejmujące wszystkie dostępne odcienie i chętnie wyślę zdjęcie wybranego koloru lub zestawienie kilku opcji!</strong></p>",
+    "description": "Torebka Junona\n\n \n\nTo największy model w mojej ofercie – idealna dla osób, które potrzebują pojemnej, a jednocześnie eleganckiej torebki na co dzień.\n\nWykonana została z przędzy bawełnianianej produkowanej w Polsce, co gwarantuje trwałość i piękny wygląd. Do wyboru jest ponad 70 kolorów! Torebka posiada podszewkę oraz jest zapinana na zamek, dzięki czemu wszystkie drobiazgi są bezpieczne. W górnej części znajduje się ozdobny pas jodełkowego ściegu, który nadaje jej wyjątkowego charakteru. Dno i uszy wykonane są z naturalnej skóry, co podkreśla jakość i zwiększa wygodę użytkowania.\n\nWymiary: podstawa 12 × 32 cm, wysokość ok. 43 cm.\n\n \n\nDlaczego Junona?\n\n\t• \tnajwiększy model w kolekcji – bardzo pojemny,\n\n\t\n\t• \telegancki pas jodełkowego ściegu,\n\n\t\n\t• \tnaturalna skóra w detalach,\n\n\t\n\t• \tpraktyczne zapięcie na zamek i podszewka.\n\n\t\n \n\nJeśli zastanawiasz się nad wyborem koloru, napisz śmiało – posiadam karty kolorystyczne obejmujące wszystkie dostępne odcienie i chętnie wyślę zdjęcie wybranego koloru lub zestawienie kilku opcji!",
+    "options": [],
+    "items": [
+      {
+        "price": 395,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Torebka Luna",
+    "slug": "torebka-luna",
+    "price": 265,
+    "minPrice": 265,
+    "maxPrice": 265,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Torebka Luna</strong></p><p>&nbsp;</p><p>To model stworzony z myślą o lekkich, letnich stylizacjach. Naturalna, subtelna i niezwykle kobieca – doskonała na ciepłe dni.</p><p>Całość została wykonana z <strong>naturalnych materiałów</strong> – korpus powstał ze sznurka bawełnianego, białe kwiatuszki to połączenie <strong>lnu i bawełny</strong>, a wnętrze wykończone zostało <strong>podszewką z lnu i wiskozy</strong>. Uszy to <strong>bawełniane włókno splecione w marynarski sznur</strong>, co nadaje jej lekkości i wyjątkowego charakteru.</p><p>Do wyboru są dwie wersje ozdobne: <strong>„kwiatowa koronka”</strong> lub <strong>kwiatuszki z frędzelkami</strong> – w zależności od tego, czy wolisz subtelną elegancję, czy bardziej boho styl.</p><p><strong>Wymiary:</strong>&nbsp;podstawa: 12 × 23 cm, wysokość: 20 cm</p><p>&nbsp;</p><p><strong>Dlaczego Luna?</strong></p><ul>\t<li>\t<p>w 100% naturalne materiały</p>\t</li>\t<li>\t<p>ręcznie robione detale – kwiaty i koronki</p>\t</li>\t<li>\t<p>lekka i wygodna, idealna na lato</p>\t</li>\t<li>\t<p>marynarskie, bawełniane uszy – trwałe i stylowe</p>\t</li>\t<li>\t<p>unikatowy, romantyczny charakter</p>\t</li></ul>",
+    "description": "Torebka Luna\n\n \n\nTo model stworzony z myślą o lekkich, letnich stylizacjach. Naturalna, subtelna i niezwykle kobieca – doskonała na ciepłe dni.\n\nCałość została wykonana z naturalnych materiałów – korpus powstał ze sznurka bawełnianego, białe kwiatuszki to połączenie lnu i bawełny, a wnętrze wykończone zostało podszewką z lnu i wiskozy. Uszy to bawełniane włókno splecione w marynarski sznur, co nadaje jej lekkości i wyjątkowego charakteru.\n\nDo wyboru są dwie wersje ozdobne: „kwiatowa koronka” lub kwiatuszki z frędzelkami – w zależności od tego, czy wolisz subtelną elegancję, czy bardziej boho styl.\n\nWymiary: podstawa: 12 × 23 cm, wysokość: 20 cm\n\n \n\nDlaczego Luna?\n\n\t• \tw 100% naturalne materiały\n\n\t\n\t• \tręcznie robione detale – kwiaty i koronki\n\n\t\n\t• \tlekka i wygodna, idealna na lato\n\n\t\n\t• \tmarynarskie, bawełniane uszy – trwałe i stylowe\n\n\t\n\t• \tunikatowy, romantyczny charakter",
+    "options": [],
+    "items": [
+      {
+        "price": 265,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Torebka Mellona",
+    "slug": "torebka-mellona",
+    "price": 240,
+    "minPrice": 240,
+    "maxPrice": 240,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Torebka Mellona</strong></p><p>&nbsp;</p><p>To mały, ale niezwykle pojemny model, który zachwyca elegancją i praktycznością. Idealna zarówno na co dzień, jak i na wyjątkowe okazje.</p><p>Klapka oraz boki zostały wykonane z <strong>naturalnej skóry produkowanej w Polsce</strong>, natomiast środek i tył zdobi efektowny <strong>jodełkowy wzór ze sznurka poliestrowego</strong>. Do wyboru jest aż <strong>29 kolorów skóry</strong> i ponad <strong>70 odcieni przędzy poliestrowej</strong>, które można dowolnie łączyć, tworząc niepowtarzalne zestawienia.</p><p>Całość dopełnia <strong>łańcuszek</strong>, który może być przepleciony przędzą. Dzięki temu torebkę można wygodnie nosić przez ramię. Metalowe dodatki dostępne są w kolorze <strong>srebra lub złota</strong>.</p><p><strong>Wymiary:</strong>&nbsp;wysokość: 20 cm, szerokość: 18 cm, głębokość: 6 cm</p><p>&nbsp;</p><p><strong>Dlaczego Mellona?</strong></p><ul>\t<li>\t<p>kompaktowy rozmiar, ale zaskakująca pojemność</p>\t</li>\t<li>\t<p>możliwość łączenia aż 29 kolorów skóry i ponad 70 kolorów przędzy</p>\t</li>\t<li>\t<p>elegancki łańcuszek, który może być przepleciony dla wyjątkowego efektu</p>\t</li>\t<li>\t<p>trwałe i naturalne materiały – skóra i poliestrowy sznurek</p>\t</li>\t<li>\t<p>uniwersalny fason – idealny na co dzień i specjalne okazje</p>\t</li></ul><p>&nbsp;</p><p><strong>Jeśli zastanawiasz się nad wyborem koloru, napisz śmiało – posiadam karty kolorystyczne obejmujące wszystkie dostępne odcienie i chętnie wyślę zdjęcie wybranego koloru lub zestawienie kilku opcji!</strong></p>",
+    "description": "Torebka Mellona\n\n \n\nTo mały, ale niezwykle pojemny model, który zachwyca elegancją i praktycznością. Idealna zarówno na co dzień, jak i na wyjątkowe okazje.\n\nKlapka oraz boki zostały wykonane z naturalnej skóry produkowanej w Polsce, natomiast środek i tył zdobi efektowny jodełkowy wzór ze sznurka poliestrowego. Do wyboru jest aż 29 kolorów skóry i ponad 70 odcieni przędzy poliestrowej, które można dowolnie łączyć, tworząc niepowtarzalne zestawienia.\n\nCałość dopełnia łańcuszek, który może być przepleciony przędzą. Dzięki temu torebkę można wygodnie nosić przez ramię. Metalowe dodatki dostępne są w kolorze srebra lub złota.\n\nWymiary: wysokość: 20 cm, szerokość: 18 cm, głębokość: 6 cm\n\n \n\nDlaczego Mellona?\n\n\t• \tkompaktowy rozmiar, ale zaskakująca pojemność\n\n\t\n\t• \tmożliwość łączenia aż 29 kolorów skóry i ponad 70 kolorów przędzy\n\n\t\n\t• \telegancki łańcuszek, który może być przepleciony dla wyjątkowego efektu\n\n\t\n\t• \ttrwałe i naturalne materiały – skóra i poliestrowy sznurek\n\n\t\n\t• \tuniwersalny fason – idealny na co dzień i specjalne okazje\n\n\t\n \n\nJeśli zastanawiasz się nad wyborem koloru, napisz śmiało – posiadam karty kolorystyczne obejmujące wszystkie dostępne odcienie i chętnie wyślę zdjęcie wybranego koloru lub zestawienie kilku opcji!",
+    "options": [],
+    "items": [
+      {
+        "price": 240,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Torebka Wenus",
+    "slug": "torebka-wenus",
+    "price": 165,
+    "minPrice": 165,
+    "maxPrice": 165,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Torebka Wenus</strong></p><p>&nbsp;</p><p><strong>Torebka Wenus</strong> to wyjątkowy model, który w ciekawy sposób uzupełni każdą stylizację.<br>Wykonana jest z <strong>najwyższej jakości bawełnianej przędzy produkowanej w Polsce</strong>. Do wyboru jest ponad <strong>70 kolorów</strong>, a dodatki mogą być w odcieniach <strong>srebra lub złota</strong>. Torebka zawieszona jest na <strong>eleganckim łańcuszku</strong>, który na życzenie może być przepleciony przędzą w kolorze torebki.</p><p>Klapkę zdobi <strong>motyw serca</strong>, co nadaje całości romantycznego i kobiecego charakteru. To <strong>autorski projekt</strong>, którego nie znajdziesz nigdzie indziej!</p><p><strong>Wymiary: </strong>podstawa: 20 × 11 cm, wysokość: ok. 14 cm</p><p>&nbsp;</p><p><strong>Dlaczego Wenus?</strong></p><ul>\t<li>\t<p>wykonana z miękkiej i trwałej <strong>bawełnianej przędzy</strong>,</p>\t</li>\t<li>\t<p><strong>autorski model</strong> – jedyny w swoim rodzaju,</p>\t</li>\t<li>\t<p>ponad <strong>70 kolorów do wyboru</strong>,</p>\t</li>\t<li>\t<p>elegancki <strong>łańcuszek</strong> (z możliwością przeplecenia sznurkiem),</p>\t</li>\t<li>\t<p><strong>motyw serca</strong> na klapce – subtelny detal, który przyciąga uwagę.</p>\t</li></ul><p>&nbsp;</p><p><strong>Jeśli zastanawiasz się nad wyborem koloru, napisz śmiało – posiadam karty kolorystyczne obejmujące wszystkie dostępne odcienie i chętnie wyślę zdjęcie wybranego koloru lub zestawienie kilku opcji!</strong></p>",
+    "description": "Torebka Wenus\n\n \n\nTorebka Wenus to wyjątkowy model, który w ciekawy sposób uzupełni każdą stylizację.\nWykonana jest z najwyższej jakości bawełnianej przędzy produkowanej w Polsce. Do wyboru jest ponad 70 kolorów, a dodatki mogą być w odcieniach srebra lub złota. Torebka zawieszona jest na eleganckim łańcuszku, który na życzenie może być przepleciony przędzą w kolorze torebki.\n\nKlapkę zdobi motyw serca, co nadaje całości romantycznego i kobiecego charakteru. To autorski projekt, którego nie znajdziesz nigdzie indziej!\n\nWymiary: podstawa: 20 × 11 cm, wysokość: ok. 14 cm\n\n \n\nDlaczego Wenus?\n\n\t• \twykonana z miękkiej i trwałej bawełnianej przędzy,\n\n\t\n\t• \tautorski model – jedyny w swoim rodzaju,\n\n\t\n\t• \tponad 70 kolorów do wyboru,\n\n\t\n\t• \telegancki łańcuszek (z możliwością przeplecenia sznurkiem),\n\n\t\n\t• \tmotyw serca na klapce – subtelny detal, który przyciąga uwagę.\n\n\t\n \n\nJeśli zastanawiasz się nad wyborem koloru, napisz śmiało – posiadam karty kolorystyczne obejmujące wszystkie dostępne odcienie i chętnie wyślę zdjęcie wybranego koloru lub zestawienie kilku opcji!",
+    "options": [],
+    "items": [
+      {
+        "price": 165,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Torebka Westa",
+    "slug": "torebka-westa",
+    "price": 190,
+    "minPrice": 190,
+    "maxPrice": 190,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Torebka Westa</strong></p><p>&nbsp;</p><p>Elegancka i subtelna – taka właśnie jest <strong>szydełkowa torebka Westa</strong>.<br>Ma <strong>zaokrąglone wykończenie u dołu</strong> oraz <strong>półokrągłą klapkę</strong>, co nadaje jej delikatnego i kobiecego charakteru. Wykonana jest ze <strong>sznurka poliestrowego produkowanego w Polsce</strong>, a całość uzupełnia <strong>łańcuszek</strong>, który może być dodatkowo przepleciony pasującym sznurkiem.</p><p>To model idealny na co dzień, ale także świetny dodatek do eleganckiej stylizacji.</p><p><strong>Wymiary:</strong> 20 × 20 cm</p><p>&nbsp;</p><p><strong>Dlaczego Westa?</strong></p><ul>\t<li>\t<p>niewielki, poręczny rozmiar – zawsze pod ręką,</p>\t</li>\t<li>\t<p><strong>okrągłe wykończenia</strong> nadają wyjątkowego charakteru,</p>\t</li>\t<li>\t<p>możliwość wyboru dodatków w kolorze <strong>srebra lub złota</strong>,</p>\t</li>\t<li>\t<p>opcja <strong>łańcuszka przeplecionego sznurkiem</strong>,</p>\t</li>\t<li>\t<p>ponad <strong>70 kolorów do wyboru</strong>.</p>\t</li></ul><p>&nbsp;</p><p><strong>Jeśli zastanawiasz się nad wyborem koloru, napisz śmiało – posiadam karty kolorystyczne obejmujące wszystkie dostępne odcienie i chętnie wyślę zdjęcie wybranego koloru lub zestawienie kilku opcji!</strong></p>",
+    "description": "Torebka Westa\n\n \n\nElegancka i subtelna – taka właśnie jest szydełkowa torebka Westa.\nMa zaokrąglone wykończenie u dołu oraz półokrągłą klapkę, co nadaje jej delikatnego i kobiecego charakteru. Wykonana jest ze sznurka poliestrowego produkowanego w Polsce, a całość uzupełnia łańcuszek, który może być dodatkowo przepleciony pasującym sznurkiem.\n\nTo model idealny na co dzień, ale także świetny dodatek do eleganckiej stylizacji.\n\nWymiary: 20 × 20 cm\n\n \n\nDlaczego Westa?\n\n\t• \tniewielki, poręczny rozmiar – zawsze pod ręką,\n\n\t\n\t• \tokrągłe wykończenia nadają wyjątkowego charakteru,\n\n\t\n\t• \tmożliwość wyboru dodatków w kolorze srebra lub złota,\n\n\t\n\t• \topcja łańcuszka przeplecionego sznurkiem,\n\n\t\n\t• \tponad 70 kolorów do wyboru.\n\n\t\n \n\nJeśli zastanawiasz się nad wyborem koloru, napisz śmiało – posiadam karty kolorystyczne obejmujące wszystkie dostępne odcienie i chętnie wyślę zdjęcie wybranego koloru lub zestawienie kilku opcji!",
+    "options": [],
+    "items": [
+      {
+        "price": 190,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Zajączek w ogrodniczkach",
+    "slug": "zajączek-w-ogrodniczkach",
+    "price": 150,
+    "minPrice": 150,
+    "maxPrice": 150,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Szydełkowy zajączek w ogrodniczkach</strong></p><p>&nbsp;</p><p>Uroczy, ręcznie wykonany zajączek w ogrodniczkach to wyjątkowa maskotka handmade. Zajączek<strong> ma ok. 35 cm</strong>, brązowy nosek, oczka<strong> zapinane od wewnętrznej</strong> strony oraz wypełnienie z hipoalergicznej kulki silikonowej, dzięki czemu w razie potrzeby <strong>można go prać.</strong></p><p>Ogrodniczki posiadają <strong>kieszonkę z małą marchewką</strong>, a bluzeczka wykończona jest lamówkami w kolorze spodenek. Kolory można dobrać dowolnie, tworząc naprawdę wyjątkową i niepowtarzalną maskotkę.</p><p>&nbsp;</p><p><strong>Dlaczego warto?</strong></p><p>&nbsp;</p><p>• ręcznie wykonana maskotka handmade<br>• miękkie, hipoalergiczne wypełnienie – możliwość prania<br>• urocze detale: ogrodniczki, kieszonka z marchewką, ozdobne lamówki<br>• możliwość dopasowania kolorów</p><p>&nbsp;</p><p><strong>Urocza maskotka, która będzie wyjątkowym dodatkiem i piękną dekoracją do pokoju dziecięcego.</strong></p>",
+    "description": "Szydełkowy zajączek w ogrodniczkach\n\nUroczy, ręcznie wykonany zajączek w ogrodniczkach to wyjątkowa maskotka handmade. Zajączek ma ok. 35 cm, brązowy nosek, oczka zapinane od wewnętrznej strony oraz wypełnienie z hipoalergicznej kulki silikonowej, dzięki czemu w razie potrzeby można go prać.\n\nOgrodniczki posiadają kieszonkę z małą marchewką, a bluzeczka wykończona jest lamówkami w kolorze spodenek. Kolory można dobrać dowolnie, tworząc naprawdę wyjątkową i niepowtarzalną maskotkę.\n\nDlaczego warto?\n\n• ręcznie wykonana maskotka handmade\n• miękkie, hipoalergiczne wypełnienie – możliwość prania\n• urocze detale: ogrodniczki, kieszonka z marchewką, ozdobne lamówki\n• możliwość dopasowania kolorów\n\nUrocza maskotka, która będzie wyjątkowym dodatkiem i piękną dekoracją do pokoju dziecięcego.",
+    "options": [],
+    "items": [
+      {
+        "price": 150,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Zestaw koszyczków",
+    "slug": "zestaw-koszyczków",
+    "price": 150,
+    "minPrice": 150,
+    "maxPrice": 150,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Zestaw szydełkowych koszyczków – duży + mały</strong></p><p>&nbsp;</p><p>Dodaj odrobiny ciepła i porządku do swojego wnętrza dzięki wyjątkowemu zestawowi szydełkowych koszyczków. Każdy komplet to starannie wykonane rękodzieło – miękka, gruba przędza w modnych kolorach połączona z solidnym, drewnianym dnem ze sklejki.</p><p>Koszyczki różnią się wielkością, więc świetnie sprawdzą się w duecie – większy na kosmetyki, klucze czy drobiazgi w przedpokoju, a mniejszy na biżuterię, świeczki lub ulubione herbaty. Są nie tylko praktyczne, ale też pięknie się prezentują – stanowią subtelną ozdobę każdego wnętrza w stylu boho, skandynawskim czy minimalistycznym.</p><p>&nbsp;</p><p><strong>Dlaczego pokochasz ten zestaw?</strong></p><ul>\t<li>Ręczne wykonanie z dbałością o każdy detal</li>\t<li>Solidne drewniane dno – trwałość i elegancja</li>\t<li>Idealny na prezent – gotowy, by sprawić komuś (lub sobie!) przyjemność</li>\t<li>Dostępny w różnych kolorach i wzorach – wybierz swój styl</li></ul><p>&nbsp;</p><p><strong>Podana cena jest ceną za komplet!</strong><br>&nbsp;</p>",
+    "description": "Zestaw szydełkowych koszyczków – duży + mały\n\nDodaj odrobiny ciepła i porządku do swojego wnętrza dzięki wyjątkowemu zestawowi szydełkowych koszyczków. Każdy komplet to starannie wykonane rękodzieło – miękka, gruba przędza w modnych kolorach połączona z solidnym, drewnianym dnem ze sklejki.\n\nKoszyczki różnią się wielkością, więc świetnie sprawdzą się w duecie – większy na kosmetyki, klucze czy drobiazgi w przedpokoju, a mniejszy na biżuterię, świeczki lub ulubione herbaty. Są nie tylko praktyczne, ale też pięknie się prezentują – stanowią subtelną ozdobę każdego wnętrza w stylu boho, skandynawskim czy minimalistycznym.\n\nDlaczego pokochasz ten zestaw?\n\n\t• Ręczne wykonanie z dbałością o każdy detal\n\t• Solidne drewniane dno – trwałość i elegancja\n\t• Idealny na prezent – gotowy, by sprawić komuś (lub sobie!) przyjemność\n\t• Dostępny w różnych kolorach i wzorach – wybierz swój styl\n\nPodana cena jest ceną za komplet!",
+    "options": [],
+    "items": [
+      {
+        "price": 150,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  },
+  {
+    "name": "Żabka",
+    "slug": "żabka",
+    "price": 110,
+    "minPrice": 110,
+    "maxPrice": 110,
+    "hasOptions": false,
+    "descriptionHtml": "<p><strong>Szydełkowa żabka</strong></p><p>Ręcznie wykonana szydełkowa żabka wiernie przypomina prawdziwą <strong>zieloną żabkę</strong>, co czyni ją uroczą maskotką handmade. Wykonana z miękkiej włóczki, jest przyjemna w dotyku i wypełniona <strong>hipoalergiczną kulką silikonową</strong>, którą można prać, zapewniając trwałość i łatwość w utrzymaniu czystości.</p><p>&nbsp;</p><p><strong>Dlaczego warto?</strong></p><p>• ręcznie wykonana maskotka handmade<br>• miękka, przyjemna w dotyku i możliwość prania<br>• starannie wykonane detale, realistyczny wygląd<br>• uniwersalny dodatek do kolekcji lub dekoracji</p><p>&nbsp;</p><p><strong>Urocza żabka, która sprawdzi się jako prezent lub oryginalny element kolekcji maskotek.</strong></p>",
+    "description": "Szydełkowa żabka\n\nRęcznie wykonana szydełkowa żabka wiernie przypomina prawdziwą zieloną żabkę, co czyni ją uroczą maskotką handmade. Wykonana z miękkiej włóczki, jest przyjemna w dotyku i wypełniona hipoalergiczną kulką silikonową, którą można prać, zapewniając trwałość i łatwość w utrzymaniu czystości.\n\nDlaczego warto?\n\n• ręcznie wykonana maskotka handmade\n• miękka, przyjemna w dotyku i możliwość prania\n• starannie wykonane detale, realistyczny wygląd\n• uniwersalny dodatek do kolekcji lub dekoracji\n\nUrocza żabka, która sprawdzi się jako prezent lub oryginalny element kolekcji maskotek.",
+    "options": [],
+    "items": [
+      {
+        "price": 110,
+        "selections": [],
+        "surcharge": 0
+      }
+    ]
+  }
+]
