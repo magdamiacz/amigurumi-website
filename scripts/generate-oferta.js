@@ -152,8 +152,8 @@ const WIX_NAME = {
   "Zestaw 01": "BabyBox dla chłopca",
   "Zestaw 02": "BabyBox dla chłopca",
   "Zestaw 03": "BabyBox dla dziewczynki",
+  "Zestaw 04": "BabyBox dla chłopca",
   "Zestaw 05": "BabyBox dla chłopca",
-  "Zestaw 06": "BabyBox dla chłopca",
   "Kubeczek 01": "Kubeczek ze sweterkiem skrzat",
   "Kubeczek 02": "Kubeczek ze sweterkiem skrzat",
   "Kubeczek 03": "Kubeczek ze sweterkiem skrzat",
@@ -165,24 +165,6 @@ const WIX_NAME = {
 };
 
 const LOCAL_DESC = {
-  "Zestaw 04": `<p><strong>BabyBox – zestaw prezentowy</strong></p>
-<p>To idealny prezent dla maluszka – na <strong>chrzest, powitanie dziecka</strong> lub <strong>baby shower</strong>. Zestaw stworzony został z myślą o dzieciach w wieku <strong>0–3 miesięcy</strong> i łączy w sobie praktyczność z urokiem ręcznie wykonanych elementów. Do wyboru wersja dla chłopca albo dla dziewczynki.</p>
-<p>Zestaw zawiera:</p>
-<ul>
-<li><strong>spodenki-ogrodniczki na szelkach</strong> zapinane na guziczki <em>albo</em> <strong>sukienkę</strong> zapinaną na dole na guziczki,</li>
-<li><strong>dużą maskotkę</strong>,</li>
-<li><strong>maskotkę na drewnianym kółeczku</strong>,</li>
-<li><strong>wywijane buciki</strong> albo <strong>buciki z kokardką</strong>.</li>
-</ul>
-<p>Kolory elementów można wybrać dowolnie, a dla dodatkowej wyjątkowości istnieje opcja <strong>opakowania w ozdobne pudełeczko z okienkiem</strong> oraz dodania <strong>imienia dziecka pod spodem</strong>.</p>
-<p><strong>Dlaczego BabyBox?</strong></p>
-<ul>
-<li>idealny jako prezent powitalny, na chrzest lub baby shower</li>
-<li>starannie dobrany komplet dla maluszka 0–3 miesiące</li>
-<li>ręcznie wykonane, miękkie i bezpieczne elementy</li>
-<li>możliwość indywidualnego doboru kolorów</li>
-<li>opcja eleganckiego opakowania z imieniem dziecka</li>
-</ul>`,
   Koniki: `<p><strong>Szydełkowy konik na podstawie zdjęcia</strong></p>
 <p>Wyjątkowa, ręcznie wykonana maskotka inspirowana Twoim ukochanym koniem. Powstaje na podstawie przesłanego zdjęcia i może pełnić funkcję <strong>dekoracji</strong> albo <strong>breloczka</strong>.</p>
 <p><strong>Dlaczego warto?</strong></p>
@@ -418,9 +400,8 @@ const cats = [
       { name: "Zestaw 01", price: "od 220 zł", folder: 1 },
       { name: "Zestaw 02", price: "od 220 zł", folder: 5 },
       { name: "Zestaw 03", price: "od 220 zł", folder: 8 },
-      { name: "Zestaw 04", price: "od 220 zł", folder: 11 },
-      { name: "Zestaw 05", price: "od 220 zł", folder: 14 },
-      { name: "Zestaw 06", price: "od 220 zł", folder: 17 },
+      { name: "Zestaw 04", price: "od 220 zł", folder: 14 },
+      { name: "Zestaw 05", price: "od 220 zł", folder: 17 },
     ],
   },
   {
