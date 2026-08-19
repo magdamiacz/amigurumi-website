@@ -29,7 +29,7 @@ const CARE_PET =
 const LEAD_TIME_GENERAL =
   "Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie.";
 
-const CACHE = "20260818c";
+const CACHE = "20260819c";
 
 function copyFor(c) {
   return {
@@ -149,6 +149,85 @@ const WIX_NAME = {
   "Dywan krokodyl": "Dywan + taborecik krokodyl",
   "Dywan lisek": "Dywan + taborecik lisek",
   "Dywan piłka": "Dywan piłka",
+  "Zestaw 01": "BabyBox dla chłopca",
+  "Zestaw 02": "BabyBox dla chłopca",
+  "Zestaw 03": "BabyBox dla dziewczynki",
+  "Zestaw 05": "BabyBox dla chłopca",
+  "Zestaw 06": "BabyBox dla chłopca",
+  "Kubeczek 01": "Kubeczek ze sweterkiem skrzat",
+  "Kubeczek 02": "Kubeczek ze sweterkiem skrzat",
+  "Kubeczek 03": "Kubeczek ze sweterkiem skrzat",
+  "Kubeczek 04": "Kubeczki ze sweterkiem serce",
+  "Kubeczek 05": "Kubeczek ze sweterkiem skrzat",
+  "Kubeczek 06": "Kubeczki ze sweterkiem jesienne",
+  "Kubeczek 07": "Kubeczki ze sweterkiem jesienne",
+  "Kubeczek 08": "Kubeczek ze sweterkiem skrzat",
+};
+
+const LOCAL_DESC = {
+  "Zestaw 04": `<p><strong>BabyBox – zestaw prezentowy</strong></p>
+<p>To idealny prezent dla maluszka – na <strong>chrzest, powitanie dziecka</strong> lub <strong>baby shower</strong>. Zestaw stworzony został z myślą o dzieciach w wieku <strong>0–3 miesięcy</strong> i łączy w sobie praktyczność z urokiem ręcznie wykonanych elementów. Do wyboru wersja dla chłopca albo dla dziewczynki.</p>
+<p>Zestaw zawiera:</p>
+<ul>
+<li><strong>spodenki-ogrodniczki na szelkach</strong> zapinane na guziczki <em>albo</em> <strong>sukienkę</strong> zapinaną na dole na guziczki,</li>
+<li><strong>dużą maskotkę</strong>,</li>
+<li><strong>maskotkę na drewnianym kółeczku</strong>,</li>
+<li><strong>wywijane buciki</strong> albo <strong>buciki z kokardką</strong>.</li>
+</ul>
+<p>Kolory elementów można wybrać dowolnie, a dla dodatkowej wyjątkowości istnieje opcja <strong>opakowania w ozdobne pudełeczko z okienkiem</strong> oraz dodania <strong>imienia dziecka pod spodem</strong>.</p>
+<p><strong>Dlaczego BabyBox?</strong></p>
+<ul>
+<li>idealny jako prezent powitalny, na chrzest lub baby shower</li>
+<li>starannie dobrany komplet dla maluszka 0–3 miesiące</li>
+<li>ręcznie wykonane, miękkie i bezpieczne elementy</li>
+<li>możliwość indywidualnego doboru kolorów</li>
+<li>opcja eleganckiego opakowania z imieniem dziecka</li>
+</ul>`,
+  Koniki: `<p><strong>Szydełkowy konik na podstawie zdjęcia</strong></p>
+<p>Wyjątkowa, ręcznie wykonana maskotka inspirowana Twoim ukochanym koniem. Powstaje na podstawie przesłanego zdjęcia i może pełnić funkcję <strong>dekoracji</strong> albo <strong>breloczka</strong>.</p>
+<p><strong>Dlaczego warto?</strong></p>
+<ul>
+<li>wykonanie na zamówienie według zdjęcia</li>
+<li>ręcznie szydełkowane detale i kolory dopasowane do pupila</li>
+<li>możliwość wersji jako breloczek</li>
+<li>unikalna pamiątka, której nie znajdziesz w sklepie</li>
+</ul>`,
+  Kotki: `<p><strong>Szydełkowy kotek na podstawie zdjęcia</strong></p>
+<p>Wyjątkowa, ręcznie wykonana maskotka inspirowana Twoim ukochanym kotem. Powstaje na podstawie przesłanego zdjęcia i może pełnić funkcję <strong>dekoracji</strong> albo <strong>breloczka</strong>.</p>
+<p><strong>Dlaczego warto?</strong></p>
+<ul>
+<li>wykonanie na zamówienie według zdjęcia</li>
+<li>ręcznie szydełkowane detale i kolory dopasowane do pupila</li>
+<li>możliwość wersji jako breloczek</li>
+<li>unikalna pamiątka, której nie znajdziesz w sklepie</li>
+</ul>`,
+  Pieski: `<p><strong>Szydełkowy piesek na podstawie zdjęcia</strong></p>
+<p>Wyjątkowa, ręcznie wykonana maskotka inspirowana Twoim ukochanym psem. Powstaje na podstawie przesłanego zdjęcia i może pełnić funkcję <strong>dekoracji</strong> albo <strong>breloczka</strong>.</p>
+<p><strong>Dlaczego warto?</strong></p>
+<ul>
+<li>wykonanie na zamówienie według zdjęcia</li>
+<li>ręcznie szydełkowane detale i kolory dopasowane do pupila</li>
+<li>możliwość wersji jako breloczek</li>
+<li>unikalna pamiątka, której nie znajdziesz w sklepie</li>
+</ul>`,
+  "Zabawki dla kotów": `<p><strong>Szydełkowe zabawki dla kotów</strong></p>
+<p>Ręcznie wykonane zabawki stworzone z myślą o kociej zabawie. W ofercie m.in. <strong>wędki</strong> z szydełkową końcówką – meduza, rybka i inne faktury, które wabią do ruchu.</p>
+<p><strong>Dlaczego warto?</strong></p>
+<ul>
+<li>ręcznie wykonane, z różnorodnymi fakturami</li>
+<li>drewniany kijek do zabawy pod nadzorem opiekuna</li>
+<li>możliwość doboru kolorów</li>
+<li>zabawa interaktywna, która zachęca kota do ruchu</li>
+</ul>`,
+  "Zabawki dla piesków": `<p><strong>Szydełkowe zabawki dla piesków</strong></p>
+<p>Ręcznie wykonane zabawki do wspólnej zabawy – m.in. <strong>hot-dogi, kostka i pączek</strong>. Miękkie, lekkie i stworzone z myślą o małych i większych pupilach.</p>
+<p><strong>Dlaczego warto?</strong></p>
+<ul>
+<li>ręcznie szydełkowane, z dopracowanymi detalami</li>
+<li>zabawa pod nadzorem opiekuna</li>
+<li>możliwość doboru kolorów i wzoru</li>
+<li>uroczy prezent dla psa i jego człowieka</li>
+</ul>`,
 };
 
 function findWix(localName) {
@@ -170,7 +249,33 @@ function parsePriceNumber(price) {
 }
 
 function useWixProduct(name) {
+  if (WIX_NAME[name]) return true;
   return !/^Zestaw \d/i.test(name) && !/^Kubeczek \d/i.test(name);
+}
+
+function normalizeDescHtml(html) {
+  let out = String(html || "")
+    .replace(/bosukowi/gi, "borsukowi")
+    .replace(/<p>(?:\s|&nbsp;)*<\/p>/gi, "");
+  out = out.replace(/<p>([\s\S]*?)<\/p>/gi, (full, inner) => {
+    if (!/[•]/.test(inner) && !/&#8226;/.test(inner)) return full;
+    const parts = inner
+      .split(/<br\s*\/?>/i)
+      .map((part) =>
+        part
+          .replace(/&nbsp;/g, " ")
+          .replace(/&#8226;/g, "•")
+          .replace(/^[\s•]+/, "")
+          .trim()
+      )
+      .filter(Boolean);
+    if (parts.length < 2) return full;
+    return `<ul>${parts.map((item) => `<li>${item}</li>`).join("")}</ul>`;
+  });
+  return out
+    .replace(/<li>\s*<p>([\s\S]*?)<\/p>\s*<\/li>/gi, "<li>$1</li>")
+    .replace(/\t+/g, "")
+    .trim();
 }
 
 function polishOptionValue(value) {
@@ -202,7 +307,7 @@ function enrichCatalog(categories) {
         hasOptions,
         options: hasOptions ? polishOptions(wix.options) : [],
         items: hasOptions ? wix.items : [],
-        descHtml: wix?.descriptionHtml || "",
+        descHtml: normalizeDescHtml(LOCAL_DESC[p.name] || wix?.descriptionHtml || ""),
         desc: wix?.description || p.desc || c.short,
         price: hasOptions ? `od ${minPrice} zł` : minPrice ? `${minPrice} zł` : p.price,
         colorCharts: chartsFor(p.name),
@@ -467,7 +572,7 @@ function productGalleryImages(c, product, index) {
   if (!imgs.length && index === 0 && CAT_FALLBACKS[c.slug]) {
     imgs = [{ src: CAT_FALLBACKS[c.slug], alt: product.name }];
   }
-  return withColorCharts(imgs, product.colorCharts).map((img, i) =>
+  return withColorCharts(imgs, c.slug === "torebki" || c.slug === "plecaki" ? [] : product.colorCharts).map((img, i) =>
     i === 0 || img.alt ? img : { ...img, alt: product.name }
   );
 }
@@ -644,7 +749,25 @@ function pdpActions(inquireName) {
           </div>`;
 }
 
-function pdpInfoHtml({ crumbs, title, desc, descHtml, variants, price, copy, inquireName }) {
+function colorChartsBlock(charts) {
+  if (!charts?.length) return "";
+  const buttons = charts
+    .map(
+      (chart) => `
+            <button type="button" class="pdp__color-swatch" data-color-chart-src="${esc(chart.src)}" data-color-chart-alt="${esc(chart.alt)}" aria-label="${esc(chart.label)} — powiększ">
+              <img src="${chart.src}" alt="" width="72" height="72" />
+            </button>`
+    )
+    .join("");
+  return `
+          <div class="pdp__colors">
+            <p class="pdp__colors-label">Kolory do wyboru</p>
+            <div class="pdp__colors-list">${buttons}
+            </div>
+          </div>`;
+}
+
+function pdpInfoHtml({ crumbs, title, desc, descHtml, variants, price, copy, inquireName, colorCharts }) {
   const descBlock = descHtml
     ? `<div class="pdp__desc pdp__desc--rich">${sanitizeHtml(descHtml)}</div>`
     : `<p class="pdp__desc">${esc(desc)}</p>`;
@@ -656,9 +779,13 @@ function pdpInfoHtml({ crumbs, title, desc, descHtml, variants, price, copy, inq
           <h1 id="page-title" class="pdp__title">${esc(title)}</h1>
           ${pdpActions(inquireName)}
           ${variants || ""}
+          ${colorChartsBlock(colorCharts)}
           <p class="pdp__price" data-pdp-price>${esc(price)}</p>
-          ${descBlock}
           <div class="pdp__accordions">
+            <details class="faq__item pdp__accordion">
+              <summary class="faq__question">Opis</summary>
+              <div class="faq__answer">${descBlock}</div>
+            </details>
             <details class="faq__item pdp__accordion">
               <summary class="faq__question">Bezpieczeństwo</summary>
               <div class="faq__answer pdp__safety">${copy.safetyHtml ? sanitizeHtml(copy.safetyHtml) : `<p>${esc(copy.safety)}</p>`}</div>
@@ -750,6 +877,7 @@ function productPdpSection(c, product, index) {
           price: displayPrice(product.price),
           copy,
           inquireName: product.name,
+          colorCharts: c.slug === "torebki" || c.slug === "plecaki" ? product.colorCharts : [],
         })}
       </div>
     </section>`;
@@ -799,8 +927,13 @@ function lightboxMarkup(c) {
         <div class="lightbox__info" id="lightbox-info">
           <h2 class="lightbox__title" id="lightbox-title"></h2>
           <p class="lightbox__price" id="lightbox-price"></p>
-          <p class="lightbox__desc" id="lightbox-desc"></p>
           <div class="lightbox__accordions">
+            <details class="faq__item lightbox__accordion">
+              <summary class="faq__question">Opis</summary>
+              <div class="faq__answer">
+                <p class="lightbox__desc" id="lightbox-desc"></p>
+              </div>
+            </details>
             <details class="faq__item lightbox__accordion">
               <summary class="faq__question">Bezpieczeństwo</summary>
               <div class="faq__answer pdp__safety" id="lightbox-safety"></div>

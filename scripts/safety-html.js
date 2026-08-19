@@ -19,11 +19,15 @@ const SAFETY_BY_SLUG = {
       <li>Elementy metalowe mogą nagrzewać się pod wpływem wysokiej temperatury oraz mogą ulec uszkodzeniu w wyniku niewłaściwego użytkowania lub kontaktu z substancjami chemicznymi.</li>
     </ul>
     <h3>Pielęgnacja</h3>
-    <p><strong>Torebki bez elementów ze skóry naturalnej:</strong> można prać ręcznie w temperaturze do 30°C. Zaleca się delikatne pranie bez intensywnego pocierania i wykręcania. Po praniu należy nadać torebce odpowiedni kształt i pozostawić ją do wyschnięcia w sposób zgodny z właściwościami użytych materiałów.</p>
-    <p><strong>Torebki zawierające elementy ze skóry naturalnej:</strong> nie należy prać ani moczyć torebki. Kontakt skóry z wodą może prowadzić do jej odkształcenia, odbarwienia lub pogorszenia jej właściwości. Torebkę należy czyścić za pomocą wilgotnej ściereczki.</p>
+    <ul>
+      <li><strong>Torebki bez elementów ze skóry naturalnej:</strong> można prać ręcznie w temperaturze do 30°C. Zaleca się delikatne pranie bez intensywnego pocierania i wykręcania. Po praniu należy nadać torebce odpowiedni kształt i pozostawić ją do wyschnięcia w sposób zgodny z właściwościami użytych materiałów.</li>
+      <li><strong>Torebki zawierające elementy ze skóry naturalnej:</strong> nie należy prać ani moczyć torebki. Kontakt skóry z wodą może prowadzić do jej odkształcenia, odbarwienia lub pogorszenia jej właściwości. Torebkę należy czyścić za pomocą wilgotnej ściereczki.</li>
+    </ul>
     <h3>Ważne</h3>
-    <p>Torebka jest produktem wykonywanym ręcznie. Drobne różnice w wyglądzie, ułożeniu splotu czy strukturze materiału są naturalną cechą rękodzieła i nie stanowią wady produktu.</p>
-    <p>W przypadku wystąpienia uszkodzenia mogącego wpływać na bezpieczeństwo użytkowania należy zaprzestać korzystania z produktu i skontaktować się z Pracownią.</p>`,
+    <ul>
+      <li>Torebka jest produktem wykonywanym ręcznie. Drobne różnice w wyglądzie, ułożeniu splotu czy strukturze materiału są naturalną cechą rękodzieła i nie stanowią wady produktu.</li>
+      <li>W przypadku wystąpienia uszkodzenia mogącego wpływać na bezpieczeństwo użytkowania należy zaprzestać korzystania z produktu i skontaktować się z Pracownią.</li>
+    </ul>`,
 
   plecaki: `
     ${manufacturer()}
@@ -37,10 +41,15 @@ const SAFETY_BY_SLUG = {
       <li>Jeżeli plecak posiada dekoracyjny chwost lub breloczek mocowany za pomocą karabińczyka, przed użyciem należy sprawdzić jego prawidłowe zamocowanie.</li>
     </ul>
     <h3>Pielęgnacja</h3>
-    <p>Plecaki można prać ręcznie w temperaturze do 30°C. Zaleca się delikatne pranie bez intensywnego pocierania i wykręcania. Po praniu należy nadać plecakowi odpowiedni kształt i pozostawić go do wyschnięcia w sposób zgodny z właściwościami użytych materiałów.</p>
+    <ul>
+      <li>Plecaki można prać ręcznie w temperaturze do 30°C. Zaleca się delikatne pranie bez intensywnego pocierania i wykręcania.</li>
+      <li>Po praniu należy nadać plecakowi odpowiedni kształt i pozostawić go do wyschnięcia w sposób zgodny z właściwościami użytych materiałów.</li>
+    </ul>
     <h3>Ważne</h3>
-    <p>Plecak jest produktem wykonywanym ręcznie. Drobne różnice w wyglądzie, ułożeniu splotu czy strukturze materiału są naturalną cechą rękodzieła i nie stanowią wady produktu.</p>
-    <p>W przypadku wystąpienia uszkodzenia mogącego wpływać na bezpieczeństwo użytkowania należy zaprzestać korzystania z produktu i skontaktować się z Pracownią.</p>`,
+    <ul>
+      <li>Plecak jest produktem wykonywanym ręcznie. Drobne różnice w wyglądzie, ułożeniu splotu czy strukturze materiału są naturalną cechą rękodzieła i nie stanowią wady produktu.</li>
+      <li>W przypadku wystąpienia uszkodzenia mogącego wpływać na bezpieczeństwo użytkowania należy zaprzestać korzystania z produktu i skontaktować się z Pracownią.</li>
+    </ul>`,
 
   maskotki: `
     ${manufacturer()}
@@ -55,11 +64,16 @@ const SAFETY_BY_SLUG = {
       <li>Maskotki należy przechowywać w sposób zapobiegający ich uszkodzeniu.</li>
     </ul>
     <h3>Pielęgnacja</h3>
-    <p>Maskotki można prać ręcznie w temperaturze do 30°C. Zaleca się delikatne pranie bez intensywnego pocierania, szorowania i wykręcania.</p>
-    <p>Po praniu należy delikatnie odcisnąć nadmiar wody, nadać maskotce odpowiedni kształt i pozostawić ją do całkowitego wyschnięcia. Nie zaleca się suszenia w wysokiej temperaturze ani przy bezpośrednim źródle ciepła.</p>
+    <ul>
+      <li>Maskotki można prać ręcznie w temperaturze do 30°C. Zaleca się delikatne pranie bez intensywnego pocierania, szorowania i wykręcania.</li>
+      <li>Po praniu należy delikatnie odcisnąć nadmiar wody, nadać maskotce odpowiedni kształt i pozostawić ją do całkowitego wyschnięcia.</li>
+      <li>Nie zaleca się suszenia w wysokiej temperaturze ani przy bezpośrednim źródle ciepła.</li>
+    </ul>
     <h3>Ważne</h3>
-    <p>Maskotka jest produktem wykonywanym ręcznie. Drobne różnice w wyglądzie, kształcie, ułożeniu splotu czy strukturze włóczki są naturalną cechą rękodzieła i nie stanowią wady produktu.</p>
-    <p>W przypadku wystąpienia uszkodzenia mogącego wpływać na bezpieczeństwo użytkowania należy zaprzestać korzystania z produktu i skontaktować się z Pracownią.</p>`,
+    <ul>
+      <li>Maskotka jest produktem wykonywanym ręcznie. Drobne różnice w wyglądzie, kształcie, ułożeniu splotu czy strukturze włóczki są naturalną cechą rękodzieła i nie stanowią wady produktu.</li>
+      <li>W przypadku wystąpienia uszkodzenia mogącego wpływać na bezpieczeństwo użytkowania należy zaprzestać korzystania z produktu i skontaktować się z Pracownią.</li>
+    </ul>`,
 
   "zestawy-dla-dzieci": `
     ${manufacturer()}
@@ -74,13 +88,17 @@ const SAFETY_BY_SLUG = {
       <li>Zestaw należy użytkować zgodnie z jego przeznaczeniem oraz informacjami dotyczącymi bezpieczeństwa dołączonymi do produktu.</li>
     </ul>
     <h3>Pielęgnacja</h3>
-    <p>Elementy tekstylne oraz maskotki można prać ręcznie w temperaturze do 30°C. Zaleca się delikatne pranie bez intensywnego pocierania, szorowania i wykręcania.</p>
-    <p>Po praniu należy delikatnie odcisnąć nadmiar wody, nadać produktom odpowiedni kształt i pozostawić je do całkowitego wyschnięcia.</p>
-    <p>Elementów zawierających drewniane kółeczko nie należy moczyć ani prać w całości. Drewniane elementy należy chronić przed długotrwałym kontaktem z wodą.</p>
+    <ul>
+      <li>Elementy tekstylne oraz maskotki można prać ręcznie w temperaturze do 30°C. Zaleca się delikatne pranie bez intensywnego pocierania, szorowania i wykręcania.</li>
+      <li>Po praniu należy delikatnie odcisnąć nadmiar wody, nadać produktom odpowiedni kształt i pozostawić je do całkowitego wyschnięcia.</li>
+      <li>Elementów zawierających drewniane kółeczko nie należy moczyć ani prać w całości. Drewniane elementy należy chronić przed długotrwałym kontaktem z wodą.</li>
+    </ul>
     <h3>Ważne</h3>
-    <p>Produkty wykonywane są ręcznie. Drobne różnice w wyglądzie, ułożeniu splotu, kształcie czy strukturze włóczki są naturalną cechą rękodzieła i nie stanowią wady produktu.</p>
-    <p>W przypadku wystąpienia jakiegokolwiek uszkodzenia mogącego wpływać na bezpieczeństwo dziecka należy natychmiast zaprzestać korzystania z produktu.</p>
-    <p>Szczególną uwagę należy zwracać na stan szwów, guzików, oczek, elementów drewnianych oraz pozostałych elementów mogących ulec poluzowaniu podczas użytkowania.</p>`,
+    <ul>
+      <li>Produkty wykonywane są ręcznie. Drobne różnice w wyglądzie, ułożeniu splotu, kształcie czy strukturze włóczki są naturalną cechą rękodzieła i nie stanowią wady produktu.</li>
+      <li>W przypadku wystąpienia jakiegokolwiek uszkodzenia mogącego wpływać na bezpieczeństwo dziecka należy natychmiast zaprzestać korzystania z produktu.</li>
+      <li>Szczególną uwagę należy zwracać na stan szwów, guzików, oczek, elementów drewnianych oraz pozostałych elementów mogących ulec poluzowaniu podczas użytkowania.</li>
+    </ul>`,
 
   "personalizowane-zwierzaki": `
     ${manufacturer()}
@@ -95,11 +113,16 @@ const SAFETY_BY_SLUG = {
       <li>Produkt nie jest przeznaczony do intensywnej zabawy ani jako przedmiot przeznaczony dla małych dzieci.</li>
     </ul>
     <h3>Pielęgnacja</h3>
-    <p>Maskotki można prać ręcznie w temperaturze do 30°C. Zaleca się delikatne pranie bez intensywnego pocierania, szorowania i wykręcania.</p>
-    <p>Po praniu należy delikatnie odcisnąć nadmiar wody, nadać maskotce odpowiedni kształt i pozostawić ją do całkowitego wyschnięcia. W przypadku modeli posiadających metalowe elementy mocujące należy unikać długotrwałego moczenia.</p>
+    <ul>
+      <li>Maskotki można prać ręcznie w temperaturze do 30°C. Zaleca się delikatne pranie bez intensywnego pocierania, szorowania i wykręcania.</li>
+      <li>Po praniu należy delikatnie odcisnąć nadmiar wody, nadać maskotce odpowiedni kształt i pozostawić ją do całkowitego wyschnięcia.</li>
+      <li>W przypadku modeli posiadających metalowe elementy mocujące należy unikać długotrwałego moczenia.</li>
+    </ul>
     <h3>Ważne</h3>
-    <p>Maskotka jest produktem wykonywanym ręcznie na podstawie zdjęcia zwierzęcia przesłanego przez klienta. Drobne różnice w wyglądzie, proporcjach, kolorystyce, ułożeniu splotu czy strukturze włóczki są naturalną cechą rękodzieła i wynikają również z charakteru artystycznego odwzorowania.</p>
-    <p>W przypadku wystąpienia uszkodzenia mogącego wpływać na bezpieczeństwo użytkowania należy zaprzestać korzystania z produktu i skontaktować się z Pracownią.</p>`,
+    <ul>
+      <li>Maskotka jest produktem wykonywanym ręcznie na podstawie zdjęcia zwierzęcia przesłanego przez klienta. Drobne różnice w wyglądzie, proporcjach, kolorystyce, ułożeniu splotu czy strukturze włóczki są naturalną cechą rękodzieła i wynikają również z charakteru artystycznego odwzorowania.</li>
+      <li>W przypadku wystąpienia uszkodzenia mogącego wpływać na bezpieczeństwo użytkowania należy zaprzestać korzystania z produktu i skontaktować się z Pracownią.</li>
+    </ul>`,
 
   "zabawki-dla-zwierzat": `
     ${manufacturer()}
@@ -115,13 +138,17 @@ const SAFETY_BY_SLUG = {
       <li>W przypadku wędek dla kotów należy korzystać z nich pod nadzorem opiekuna. Drewniany kijek służy do trzymania zabawki przez opiekuna i nie jest przeznaczony do gryzienia przez zwierzę.</li>
     </ul>
     <h3>Pielęgnacja</h3>
-    <p>Zabawki można prać ręcznie w temperaturze do 30°C. Zaleca się delikatne pranie bez intensywnego pocierania, szorowania i wykręcania.</p>
-    <p>Po praniu należy delikatnie odcisnąć nadmiar wody i pozostawić zabawkę do całkowitego wyschnięcia przed ponownym udostępnieniem jej zwierzęciu.</p>
-    <p>W przypadku wędek dla kotów nie należy moczyć drewnianego kijka. Część szydełkową należy czyścić zgodnie z powyższymi zaleceniami.</p>
+    <ul>
+      <li>Zabawki można prać ręcznie w temperaturze do 30°C. Zaleca się delikatne pranie bez intensywnego pocierania, szorowania i wykręcania.</li>
+      <li>Po praniu należy delikatnie odcisnąć nadmiar wody i pozostawić zabawkę do całkowitego wyschnięcia przed ponownym udostępnieniem jej zwierzęciu.</li>
+      <li>W przypadku wędek dla kotów nie należy moczyć drewnianego kijka. Część szydełkową należy czyścić zgodnie z powyższymi zaleceniami.</li>
+    </ul>
     <h3>Ważne</h3>
-    <p>Zabawki wykonywane są ręcznie. Drobne różnice w wyglądzie, ułożeniu splotu, kształcie czy strukturze włóczki są naturalną cechą rękodzieła i nie stanowią wady produktu.</p>
-    <p>Zabawki dla zwierząt nie są produktami niezniszczalnymi. Ich zużycie lub uszkodzenie może nastąpić w zależności od indywidualnego sposobu zabawy zwierzęcia.</p>
-    <p>W przypadku wystąpienia uszkodzenia mogącego wpływać na bezpieczeństwo zwierzęcia należy natychmiast zaprzestać korzystania z produktu.</p>`,
+    <ul>
+      <li>Zabawki wykonywane są ręcznie. Drobne różnice w wyglądzie, ułożeniu splotu, kształcie czy strukturze włóczki są naturalną cechą rękodzieła i nie stanowią wady produktu.</li>
+      <li>Zabawki dla zwierząt nie są produktami niezniszczalnymi. Ich zużycie lub uszkodzenie może nastąpić w zależności od indywidualnego sposobu zabawy zwierzęcia.</li>
+      <li>W przypadku wystąpienia uszkodzenia mogącego wpływać na bezpieczeństwo zwierzęcia należy natychmiast zaprzestać korzystania z produktu.</li>
+    </ul>`,
 
   dekoracje: `
     ${manufacturer()}
@@ -136,12 +163,16 @@ const SAFETY_BY_SLUG = {
       <li>Dekoracje nie są przeznaczone do zabawy ani do intensywnego użytkowania.</li>
     </ul>
     <h3>Pielęgnacja</h3>
-    <p>Sposób pielęgnacji zależy od rodzaju konkretnej dekoracji i zastosowanych materiałów.</p>
-    <p>W przypadku dekoracji wykonanych ze sznurka bawełnianego zaleca się delikatne czyszczenie, najlepiej poprzez delikatne odkurzanie lub przetarcie powierzchni suchą albo lekko wilgotną ściereczką.</p>
-    <p>Jeżeli dana dekoracja może być prana, informacja o możliwości prania i zalecanej temperaturze znajduje się w opisie produktu lub zostaje przekazana klientowi przed zakupem.</p>
+    <ul>
+      <li>Sposób pielęgnacji zależy od rodzaju konkretnej dekoracji i zastosowanych materiałów.</li>
+      <li>W przypadku dekoracji wykonanych ze sznurka bawełnianego zaleca się delikatne czyszczenie, najlepiej poprzez delikatne odkurzanie lub przetarcie powierzchni suchą albo lekko wilgotną ściereczką.</li>
+      <li>Jeżeli dana dekoracja może być prana, informacja o możliwości prania i zalecanej temperaturze znajduje się w opisie produktu lub zostaje przekazana klientowi przed zakupem.</li>
+    </ul>
     <h3>Ważne</h3>
-    <p>Dekoracja jest produktem wykonywanym ręcznie. Drobne różnice w wyglądzie, ułożeniu splotu, kształcie czy strukturze sznurka są naturalną cechą rękodzieła i nie stanowią wady produktu.</p>
-    <p>W przypadku wystąpienia uszkodzenia mogącego wpływać na bezpieczeństwo użytkowania należy zaprzestać korzystania z produktu i skontaktować się z Pracownią.</p>`,
+    <ul>
+      <li>Dekoracja jest produktem wykonywanym ręcznie. Drobne różnice w wyglądzie, ułożeniu splotu, kształcie czy strukturze sznurka są naturalną cechą rękodzieła i nie stanowią wady produktu.</li>
+      <li>W przypadku wystąpienia uszkodzenia mogącego wpływać na bezpieczeństwo użytkowania należy zaprzestać korzystania z produktu i skontaktować się z Pracownią.</li>
+    </ul>`,
 
   kubeczki: `
     ${manufacturer()}
@@ -156,12 +187,16 @@ const SAFETY_BY_SLUG = {
       <li>Gorące napoje mogą powodować nagrzewanie się powierzchni ceramicznego kubeczka. Należy zachować ostrożność podczas przenoszenia kubeczka z gorącą zawartością.</li>
     </ul>
     <h3>Pielęgnacja</h3>
-    <p><strong>Ceramiczny kubeczek:</strong> należy myć zgodnie z zaleceniami dotyczącymi zastosowanej ceramiki. Przed myciem należy zdjąć szydełkowy sweterek.</p>
-    <p><strong>Szydełkowy sweterek:</strong> można prać ręcznie w temperaturze do 30°C. Zaleca się delikatne pranie bez intensywnego pocierania i wykręcania. Po praniu należy delikatnie odcisnąć nadmiar wody, nadać sweterkowi odpowiedni kształt i pozostawić go do całkowitego wyschnięcia.</p>
+    <ul>
+      <li><strong>Ceramiczny kubeczek:</strong> należy myć zgodnie z zaleceniami dotyczącymi zastosowanej ceramiki. Przed myciem należy zdjąć szydełkowy sweterek.</li>
+      <li><strong>Szydełkowy sweterek:</strong> można prać ręcznie w temperaturze do 30°C. Zaleca się delikatne pranie bez intensywnego pocierania i wykręcania. Po praniu należy delikatnie odcisnąć nadmiar wody, nadać sweterkowi odpowiedni kształt i pozostawić go do całkowitego wyschnięcia.</li>
+    </ul>
     <h3>Ważne</h3>
-    <p>Sweterek jest produktem wykonywanym ręcznie. Drobne różnice w wyglądzie, ułożeniu splotu czy strukturze włóczki są naturalną cechą rękodzieła i nie stanowią wady produktu.</p>
-    <p>Sweterek jest elementem dekoracyjnym i nie stanowi części naczynia przeznaczonej do bezpośredniego kontaktu z żywnością lub napojem.</p>
-    <p>W przypadku wystąpienia uszkodzenia kubeczka lub sweterka mogącego wpływać na bezpieczeństwo użytkowania należy zaprzestać korzystania z produktu.</p>`,
+    <ul>
+      <li>Sweterek jest produktem wykonywanym ręcznie. Drobne różnice w wyglądzie, ułożeniu splotu czy strukturze włóczki są naturalną cechą rękodzieła i nie stanowią wady produktu.</li>
+      <li>Sweterek jest elementem dekoracyjnym i nie stanowi części naczynia przeznaczonej do bezpośredniego kontaktu z żywnością lub napojem.</li>
+      <li>W przypadku wystąpienia uszkodzenia kubeczka lub sweterka mogącego wpływać na bezpieczeństwo użytkowania należy zaprzestać korzystania z produktu.</li>
+    </ul>`,
 
   dywany: `
     ${manufacturer()}
@@ -185,11 +220,15 @@ const SAFETY_BY_SLUG = {
       <li>Dziecko korzystające z taboretu powinno pozostawać pod odpowiednim nadzorem osoby dorosłej.</li>
     </ul>
     <h3>Pielęgnacja</h3>
-    <p><strong>Dywany:</strong> sposób pielęgnacji zależy od zastosowanych materiałów. Zaleca się regularne delikatne odkurzanie oraz czyszczenie zgodnie z zaleceniami dotyczącymi konkretnego produktu. Jeżeli dywan może być prany ręcznie, zalecana temperatura to 30°C. Informacja o możliwości prania zostaje przekazana klientowi przed zakupem.</p>
-    <p><strong>Taborety:</strong> szydełkową część taboretu należy czyścić delikatnie, zgodnie z właściwościami zastosowanych materiałów. Elementów drewnianych nie należy moczyć ani narażać na długotrwały kontakt z wodą.</p>
+    <ul>
+      <li><strong>Dywany:</strong> sposób pielęgnacji zależy od zastosowanych materiałów. Zaleca się regularne delikatne odkurzanie oraz czyszczenie zgodnie z zaleceniami dotyczącymi konkretnego produktu. Jeżeli dywan może być prany ręcznie, zalecana temperatura to 30°C. Informacja o możliwości prania zostaje przekazana klientowi przed zakupem.</li>
+      <li><strong>Taborety:</strong> szydełkową część taboretu należy czyścić delikatnie, zgodnie z właściwościami zastosowanych materiałów. Elementów drewnianych nie należy moczyć ani narażać na długotrwały kontakt z wodą.</li>
+    </ul>
     <h3>Ważne</h3>
-    <p>Dywany i taborety są produktami wykonywanymi ręcznie. Drobne różnice w wyglądzie, kształcie, ułożeniu splotu czy strukturze włóczki są naturalną cechą rękodzieła i nie stanowią wady produktu.</p>
-    <p>W przypadku wystąpienia uszkodzenia mogącego wpływać na bezpieczeństwo użytkowania należy zaprzestać korzystania z produktu i skontaktować się z Pracownią.</p>`,
+    <ul>
+      <li>Dywany i taborety są produktami wykonywanymi ręcznie. Drobne różnice w wyglądzie, kształcie, ułożeniu splotu czy strukturze włóczki są naturalną cechą rękodzieła i nie stanowią wady produktu.</li>
+      <li>W przypadku wystąpienia uszkodzenia mogącego wpływać na bezpieczeństwo użytkowania należy zaprzestać korzystania z produktu i skontaktować się z Pracownią.</li>
+    </ul>`,
 };
 
 SAFETY_BY_SLUG.dodatki = SAFETY_BY_SLUG.dekoracje;

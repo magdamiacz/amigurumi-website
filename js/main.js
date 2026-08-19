@@ -540,6 +540,17 @@ if (form) {
 }
 
 /* ---------- Category product gallery ---------- */
+document.querySelectorAll("[data-color-chart-src]").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const group = btn.closest(".pdp__colors-list");
+    const buttons = group ? [...group.querySelectorAll("[data-color-chart-src]")] : [btn];
+    const items = buttons.map((el) => el.getAttribute("data-color-chart-src")).filter(Boolean);
+    const start = Math.max(0, buttons.indexOf(btn));
+    const title = btn.getAttribute("data-color-chart-alt") || "Kolory do wyboru";
+    openLightboxGallery(items, title, start);
+  });
+});
+
 document.querySelectorAll("[data-pdp-gallery]").forEach((gallery) => {
   const main = gallery.querySelector(".pdp__main");
   const thumbs = [...gallery.querySelectorAll("[data-pdp-thumb]")];
