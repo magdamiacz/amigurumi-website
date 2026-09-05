@@ -29,7 +29,7 @@ const CARE_PET =
 const LEAD_TIME_GENERAL =
   "Zwykle 7–21 dni roboczych od potwierdzenia warunków. Termin i koszt wysyłki ustalamy indywidualnie w odpowiedzi na zapytanie.";
 
-const CACHE = "20260819c";
+const CACHE = "20260905a";
 
 function copyFor(c) {
   return {

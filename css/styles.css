@@ -8,7 +8,9 @@ body {
   line-height: var(--leading-body);
   color: var(--text);
   background: var(--bg);
-  overflow-x: hidden;
+  /* clip keeps horizontal overflow clipped without making body the scroll
+     container — overflow-x: hidden breaks CSS scroll-behavior: smooth in Chromium */
+  overflow-x: clip;
 }
 
 /* ---------- Scrollbar (brand teal) ---------- */

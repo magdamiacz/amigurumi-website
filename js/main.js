@@ -133,6 +133,35 @@ document.querySelectorAll(".nav__logo, .footer__logo").forEach((logo) => {
   logo.addEventListener("click", scrollToHero);
 });
 
+/* ---------- In-page smooth scroll (hash links) ---------- */
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  // Logo scroll-to-top has its own handler on the homepage
+  if (anchor.classList.contains("nav__logo") || anchor.classList.contains("footer__logo")) {
+    return;
+  }
+
+  anchor.addEventListener("click", (e) => {
+    const href = anchor.getAttribute("href");
+    if (!href || href === "#") return;
+
+    const id = href.slice(1);
+    const target = document.getElementById(id);
+    if (!target) return;
+
+    e.preventDefault();
+    closeMenu();
+
+    // Wait a frame so mobile menu overflow unlock applies before scrolling
+    requestAnimationFrame(() => {
+      target.scrollIntoView({
+        behavior: prefersReducedMotion ? "auto" : "smooth",
+        block: "start",
+      });
+      history.pushState(null, "", href);
+    });
+  });
+});
+
 /* ---------- Lightbox (single + product gallery) ---------- */
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = lightbox?.querySelector(".lightbox__img");
