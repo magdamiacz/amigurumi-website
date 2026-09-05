@@ -63,7 +63,12 @@ jobs:
               --verbose \
               --exclude-glob .git/ \
               --exclude-glob .github/ \
+              --exclude-glob .cursor/ \
+              --exclude-glob scripts/ \
+              --exclude-glob serve.py \
+              --exclude-glob package.json \
               --exclude-glob README.md \
+              --exclude-glob assets/images/README.md \
               ./ /;
 
             bye;
